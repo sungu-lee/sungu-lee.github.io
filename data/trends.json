@@ -1,7 +1,57 @@
 {
-  "updated": null,
-  "sources": [],
-  "count": 0,
-  "items": [],
-  "note": "GitHub Actions(update-trends.yml)가 첫 실행되면 이 파일이 자동으로 채워집니다. 로컬에서 미리 채우려면: python scripts/fetch_trends.py"
+  "updated": "2026-10-02T09:26:06Z",
+  "sources": [
+    "ESA"
+  ],
+  "count": 6,
+  "items": [
+    {
+      "source": "ESA",
+      "cat": "Observing the Earth",
+      "title": "Italy’s IRIDE completes Eaglet II constellation",
+      "url": "https://www.esa.int/Applications/Observing_the_Earth/IRIDE/Italy_s_IRIDE_completes_Eaglet_II_constellation",
+      "date": "2026-10-02",
+      "summary": "The final batch of Eaglet II satellites for Italy’s IRIDE Earth observation programme has reached orbit, bringing the programme a step closer to providing a full range of satellite data for Italy’s environmental, emergency and security ser…"
+    },
+    {
+      "source": "ESA",
+      "cat": "Observing the Earth",
+      "title": "EarthCARE’s view of volcanic plume boosts air safety",
+      "url": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/EarthCARE/EarthCARE_s_view_of_volcanic_plume_boosts_air_safety",
+      "date": "2026-10-01",
+      "summary": "When Anak Krakatau erupted a few weeks ago, the European Space Agency’s EarthCARE satellite, orbiting above, captured vertical profiles of different constituents within the volcanic plume. Designed primarily to advance our understanding of…"
+    },
+    {
+      "source": "ESA",
+      "cat": "Observing the Earth",
+      "title": "Three Earth Explorer candidates go forward",
+      "url": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Three_Earth_Explorer_candidates_go_forward",
+      "date": "2026-09-25",
+      "summary": ""
+    },
+    {
+      "source": "ESA",
+      "cat": "Observing the Earth",
+      "title": "Earth from Space: Venetian Lagoon",
+      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/09/Earth_from_Space_Venetian_Lagoon",
+      "date": "2026-09-25",
+      "summary": "Image: This image of the Venetian Lagoon in northern Italy was acquired by the IRIDE satellites on 17 May 2026."
+    },
+    {
+      "source": "ESA",
+      "cat": "Observing the Earth",
+      "title": "Earth from Space: Laguna Colorada",
+      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/09/Earth_from_Space_Laguna_Colorada",
+      "date": "2026-09-18",
+      "summary": "Image: This Copernicus Sentinel-2 image, acquired on 25 August 2026, shows an area of the Andean Altiplano in southern Bolivia near the border with Chile."
+    },
+    {
+      "source": "ESA",
+      "cat": "Observing the Earth",
+      "title": "ESA awards contracts for Europe’s EOGS blueprint",
+      "url": "https://www.esa.int/Applications/Observing_the_Earth/ESA_awards_contracts_for_Europe_s_EOGS_blueprint",
+      "date": "2026-09-17",
+      "summary": "The European Space Agency has awarded two contracts, one to ICEYE and one to Leonardo, to carry out parallel architecture studies for the EU’s future Earth Observation Governmental Service (EOGS). These activities are funded by the Europea…"
+    }
+  ]
 }
