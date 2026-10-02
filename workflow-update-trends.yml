@@ -1,0 +1,54 @@
+name: Update research trends and orbital elements
+
+# 최신 연구동향 자동 수집
+#  - 매일 06:00 KST (= 21:00 UTC 전날) 실행
+#  - 저장소에 푸시할 때마다 1회 실행 (배포 직후 바로 채워지도록)
+#  - Actions 탭에서 "Run workflow" 로 수동 실행 가능
+on:
+  schedule:
+    - cron: "0 21 * * *"
+    # TLE 는 하루 한 번이면 지상 투영 오차가 수 km 수준으로 유지된다
+  push:
+    branches: [main]
+    paths:
+      - "scripts/fetch_trends.py"
+      - "scripts/fetch_tle.py"
+      - ".github/workflows/update-trends.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-trends
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Collect feeds
+        run: python scripts/fetch_trends.py --out data/trends.json --max 18
+        continue-on-error: true
+
+      - name: Collect orbital elements (TLE)
+        run: python scripts/fetch_tle.py --out data/tle.json
+        continue-on-error: true
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- data/; then
+            echo "변경 없음 — 커밋 생략"
+          else
+            git add data/
+            git commit -m "chore: update research trends and TLE [skip ci]"
+            git push
+          fi

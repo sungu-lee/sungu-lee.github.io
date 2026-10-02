@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>위성활용 시뮬레이터 | 이선구</title>
+<meta name="description" content="지표 피복 분광 반사율과 센서 특성으로 합성한 장면에 실제 연구의 처리 체인을 적용하는 위성활용 시뮬레이터.">
+<meta name="theme-color" content="#071428">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230b2545'/><circle cx='50' cy='50' r='22' fill='none' stroke='%233fb3c9' stroke-width='6'/><circle cx='50' cy='50' r='7' fill='%23e8f4f8'/></svg>">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="sim-body">
+
+<a class="skip" href="#main">본문 바로가기</a>
+
+<header class="topbar scrolled">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8">
+          <circle cx="12" cy="12" r="4.2"/><ellipse cx="12" cy="12" rx="10.4" ry="4.6" transform="rotate(-28 12 12)"/>
+        </svg>
+      </span>
+      <span class="brand-text" id="brandText"></span>
+    </a>
+    <nav class="nav">
+      <a href="index.html" id="backLink"></a>
+    </nav>
+    <div class="topbar-actions">
+      <button class="lang-btn" id="langBtn" type="button" aria-label="Change language"></button>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="section">
+  <div class="wrap">
+    <h1 class="sec-title" id="simHeading"></h1>
+    <p class="sec-lead" id="simLead"></p>
+
+    <div class="sim-controls" id="simControls"></div>
+
+    <div class="sim-grid">
+      <figure class="sim-stage">
+        <canvas id="simCanvas" width="480" height="300" role="img"
+                aria-label="Simulated satellite scene"></canvas>
+        <figcaption>
+          <span class="sim-tag" id="simTagApp"></span>
+          <span class="sim-tag ghost" id="simTagSensor"></span>
+          <span class="sim-tag ghost" id="simTagProduct"></span>
+          <span class="sim-scale" id="simScale"></span>
+        </figcaption>
+        <p class="sim-desc" id="simDesc"></p>
+        <p class="sim-sarnote" id="simSarNote" hidden></p>
+      </figure>
+
+      <aside class="sim-side">
+        <div class="side-block">
+          <h3 id="chainTitle"></h3>
+          <ol class="cs-stages light" id="simChain"></ol>
+        </div>
+        <div class="side-block">
+          <h3 id="statsTitle"></h3>
+          <dl class="sim-stats" id="simStats"></dl>
+        </div>
+        <div class="side-block">
+          <h3 id="legendTitle"></h3>
+          <div class="sim-legend" id="simLegend"></div>
+        </div>
+      </aside>
+    </div>
+
+    <p class="sim-disclaimer" id="simDisclaimer"></p>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p id="footCopy"></p>
+    <p class="muted" id="footNote"></p>
+  </div>
+</footer>
+
+<script src="assets/js/content.js"></script>
+<script src="assets/js/simulator.js"></script>
+<script src="assets/js/simpage.js"></script>
+</body>
+</html>

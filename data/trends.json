@@ -1,0 +1,7 @@
+{
+  "updated": null,
+  "sources": [],
+  "count": 0,
+  "items": [],
+  "note": "GitHub Actions(update-trends.yml)가 첫 실행되면 이 파일이 자동으로 채워집니다. 로컬에서 미리 채우려면: python scripts/fetch_trends.py"
+}
