@@ -1,10 +1,18 @@
 {
-  "updated": "2026-10-02T09:26:06Z",
+  "updated": "2026-10-03T00:16:14Z",
   "sources": [
     "ESA"
   ],
   "count": 6,
   "items": [
+    {
+      "source": "ESA",
+      "cat": "Observing the Earth",
+      "title": "Earth from Space: Typhoon Surigae",
+      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Earth_from_Space_Typhoon_Surigae",
+      "date": "2026-10-02",
+      "summary": "Image: This false-colour, polarised image from Copernicus Sentinel-1 shows us the surface of the sea beneath the clouds, as seen by the satellite’s radar instrument. The sea conditions reflect the strong winds as Typhoon Surigae passes ove…"
+    },
     {
       "source": "ESA",
       "cat": "Observing the Earth",
@@ -44,14 +52,6 @@
       "url": "https://www.esa.int/ESA_Multimedia/Images/2026/09/Earth_from_Space_Laguna_Colorada",
       "date": "2026-09-18",
       "summary": "Image: This Copernicus Sentinel-2 image, acquired on 25 August 2026, shows an area of the Andean Altiplano in southern Bolivia near the border with Chile."
-    },
-    {
-      "source": "ESA",
-      "cat": "Observing the Earth",
-      "title": "ESA awards contracts for Europe’s EOGS blueprint",
-      "url": "https://www.esa.int/Applications/Observing_the_Earth/ESA_awards_contracts_for_Europe_s_EOGS_blueprint",
-      "date": "2026-09-17",
-      "summary": "The European Space Agency has awarded two contracts, one to ICEYE and one to Leonardo, to carry out parallel architecture studies for the EU’s future Earth Observation Governmental Service (EOGS). These activities are funded by the Europea…"
     }
   ]
 }
