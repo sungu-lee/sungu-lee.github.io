@@ -1,9 +1,10 @@
 {
-  "updated": "2026-10-03T00:16:14Z",
+  "updated": "2026-10-03T23:35:15Z",
   "sources": [
-    "ESA"
+    "ESA",
+    "arXiv"
   ],
-  "count": 6,
+  "count": 18,
   "items": [
     {
       "source": "ESA",
@@ -22,12 +23,108 @@
       "summary": "The final batch of Eaglet II satellites for Italy’s IRIDE Earth observation programme has reached orbit, bringing the programme a step closer to providing a full range of satellite data for Italy’s environmental, emergency and security ser…"
     },
     {
+      "source": "arXiv",
+      "cat": "Remote Sensing AI",
+      "title": "Harnessing Domain Specialists in Multimodal Mixture-of-Experts for Efficient Adaptation",
+      "url": "https://arxiv.org/abs/2610.02123v1",
+      "date": "2026-10-01",
+      "summary": "Mixture-of-Experts (MoE) architectures scale model capacity through sparse computation, routing each token through only a small subset of experts. In this work, we explore whether this sparsity gives rise to emergent intrinsic organization…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Remote Sensing AI",
+      "title": "CoEvolve: Construct-to-Edit Visual Grounding with Bidirectional State Refinement",
+      "url": "https://arxiv.org/abs/2610.01710v1",
+      "date": "2026-10-01",
+      "summary": "Visual grounding localizes an object described by language with a bounding box. Most multimodal grounding models compress target identification, spatial reasoning, and boundary estimation into one terminal prediction. Free-form rationales …"
+    },
+    {
       "source": "ESA",
       "cat": "Observing the Earth",
       "title": "EarthCARE’s view of volcanic plume boosts air safety",
       "url": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/EarthCARE/EarthCARE_s_view_of_volcanic_plume_boosts_air_safety",
       "date": "2026-10-01",
       "summary": "When Anak Krakatau erupted a few weeks ago, the European Space Agency’s EarthCARE satellite, orbiting above, captured vertical profiles of different constituents within the volcanic plume. Designed primarily to advance our understanding of…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Remote Sensing AI",
+      "title": "FedMAD: Modulation-Aware Directional Aggregation for Federated Learning in Remote Sensing Image Classification",
+      "url": "https://arxiv.org/abs/2610.00693v1",
+      "date": "2026-09-30",
+      "summary": "Federated learning (FL) has recently attracted increasing attention in remote sensing (RS) since it enables collaborative model training across decentralized RS image archives without requiring direct access to local data. However, FL perf…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Remote Sensing AI",
+      "title": "Hyperspectral Image Models: Technical Report",
+      "url": "https://arxiv.org/abs/2609.39871v1",
+      "date": "2026-09-30",
+      "summary": "Hyperspectral remote sensing has advanced across diverse deep learning paradigms, including spectral spatial CNNs, Vision Transformers, Mamba, graph neural networks, Kolmogorov Arnold networks, and self supervised masked autoencoding. Yet …"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Remote Sensing AI",
+      "title": "COBICount: Separating Object and Background Responses for Remote Sensing Object Counting Without Training on Target Data",
+      "url": "https://arxiv.org/abs/2609.39366v1",
+      "date": "2026-09-30",
+      "summary": "Remote sensing object counting estimates how many buildings, vehicles, or ships appear in overhead images. Most supervised counters predict a density map, whose sum gives the object count, and assume similar categories, sizes, and backgrou…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Remote Sensing AI",
+      "title": "After a Decade: Bringing Shadow Removal into the Real World with Agentic Training Data",
+      "url": "https://arxiv.org/abs/2609.38607v1",
+      "date": "2026-09-29",
+      "summary": "Shadow removal looks nearly solved on established benchmarks, yet remains brittle in the real world. Models have advanced; the paired training data they rely on have barely changed in nearly a decade. The reason is simple: obtaining a shad…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Satellite Imagery",
+      "title": "Cropland PAtteRNS: Parallel Dimensional Attention Networks and Attention to Dataset Disparity for Crop Segmentation in Satellite Imagery Time Series Data",
+      "url": "https://arxiv.org/abs/2609.38165v1",
+      "date": "2026-09-29",
+      "summary": "The landscape of satellite imagery time series datasets and boundary-pushing architectures for cropland segmentation has never been richer. However, in this gold rush, important truths are being missed on both fronts, as a drive for the mo…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Satellite Imagery",
+      "title": "Pixel-Level Transformers in Remote Sensing: A Canopy Height Case Study",
+      "url": "https://arxiv.org/abs/2609.37809v1",
+      "date": "2026-09-29",
+      "summary": "Predicting canopy height from medium-resolution satellite imagery is a common and scalable approach for assessing the condition of the world's forests, which play a crucial role in climate change mitigation. While Transformer-based archite…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Satellite Imagery",
+      "title": "Spectral Super-Resolution using Spatial-Spectral Residual Operator Networks",
+      "url": "https://arxiv.org/abs/2609.35410v1",
+      "date": "2026-09-28",
+      "summary": "Spectral super-resolution of multispectral satellite images can enable high temporal- and spatial-resolution hyperspectral satellite imagery at a modest cost, significantly increasing the applicability of hyperspectral remote sensing. This…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Satellite Imagery",
+      "title": "Temporal Modelling for Burn Scars on Sentinel-3",
+      "url": "https://arxiv.org/abs/2609.34596v1",
+      "date": "2026-09-28",
+      "summary": "Rapid and accurate burn scar delineation from satellite imagery is essential for post-fire damage assessment. Sentinel-3 OLCI, with daily revisit and 21 spectral bands, suits rapid mapping, yet most pipelines treat acquisitions independent…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Satellite Imagery",
+      "title": "Resource-Aware Parameter-Efficient Model Adaptation for Onboard High-Dimensional Data",
+      "url": "https://arxiv.org/abs/2609.33687v1",
+      "date": "2026-09-27",
+      "summary": "Onboard satellite models often require frequent updates, but the weights adapted to earlier data distributions can quickly become outdated. However, updating large-scale model parameters in orbit presents significant challenges due to the …"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Satellite Imagery",
+      "title": "Label Less, Learn More: Resource-Efficient Active Semi-Supervised Learning for Onboard Satellite Image Annotation",
+      "url": "https://arxiv.org/abs/2609.37481v1",
+      "date": "2026-09-25",
+      "summary": "Large-scale pervasive sensing increasingly relies on high-resolution satellite imagery, yet task-specific onboard vision is constrained by costly annotation and limited computation, memory, energy, and communication resources. Existing app…"
     },
     {
       "source": "ESA",
@@ -46,12 +143,12 @@
       "summary": "Image: This image of the Venetian Lagoon in northern Italy was acquired by the IRIDE satellites on 17 May 2026."
     },
     {
-      "source": "ESA",
-      "cat": "Observing the Earth",
-      "title": "Earth from Space: Laguna Colorada",
-      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/09/Earth_from_Space_Laguna_Colorada",
-      "date": "2026-09-18",
-      "summary": "Image: This Copernicus Sentinel-2 image, acquired on 25 August 2026, shows an area of the Andean Altiplano in southern Bolivia near the border with Chile."
+      "source": "arXiv",
+      "cat": "Sea Ice",
+      "title": "Taking a Second Look: Correcting Sea Ice Forecasts with Sparse Observations",
+      "url": "https://arxiv.org/abs/2609.24591v2",
+      "date": "2026-09-21",
+      "summary": "Sea ice forecasts are issued several days ahead, allowing errors to accumulate while new, often sparse sea ice concentration (SIC) observations become available. We find that fixed-propagation errors concentrate near structured, high-gradi…"
     }
   ]
 }
