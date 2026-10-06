@@ -1,11 +1,51 @@
 {
-  "updated": "2026-10-04T23:51:54Z",
+  "updated": "2026-10-06T01:41:29Z",
   "sources": [
     "ESA",
     "arXiv"
   ],
   "count": 18,
   "items": [
+    {
+      "source": "arXiv",
+      "cat": "Remote Sensing AI",
+      "title": "A Geometric-Transformation Feature-Adaptive Manifold Restoration Method for Open-Vocabulary Semantic Segmentation of Remote Sensing Images",
+      "url": "https://arxiv.org/abs/2610.04300v1",
+      "date": "2026-10-03",
+      "summary": "The semantic information of objects in remote sensing images is typically invariant to geometric transformations from the dihedral group D4. However, SAM3-based open-vocabulary semantic segmentation (OVSS) methods often exhibit inconsisten…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Sea Ice",
+      "title": "ClimateBench v2.0: Probabilistic Climate Model Benchmarking",
+      "url": "https://arxiv.org/abs/2610.04558v1",
+      "date": "2026-10-03",
+      "summary": "We present ClimateBench v2, a standardized protocol for evaluating climate models on diagnostics expected to be informative for their skill in projecting mid-century regional temperature and precipitation changes. The protocol is designed …"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Remote Sensing AI",
+      "title": "Why Convolution Still Matters: Evaluating Inductive Biases in Cryospheric Image Classification",
+      "url": "https://arxiv.org/abs/2610.04073v1",
+      "date": "2026-10-02",
+      "summary": "Recent advances in attention-based deep learning have motivated their adoption for remote sensing image classification; however, their benefits for cryospheric imagery, where surface states are dominated by fine-grained textures and class …"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Satellite Imagery",
+      "title": "On-Board Anomaly Detection for Efficient Marine Environmental Monitoring",
+      "url": "https://arxiv.org/abs/2610.03649v1",
+      "date": "2026-10-02",
+      "summary": "Marine ecosystems are impacted by various threats such as oil spills, algal blooms, and sediment floods, which disrupt habitats, wildlife, and human activities. Advances in satellite imagery and Artificial Intelligence (AI) have enhanced o…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Forest / Vegetation",
+      "title": "A Two-Stage Cascade for Near-Real-Time Forest Anomaly Detection from Sentinel-1 SAR Time Series",
+      "url": "https://arxiv.org/abs/2610.02763v1",
+      "date": "2026-10-02",
+      "summary": "Tropical forest monitoring is essential for global climate stability and biodiversity preservation. To address the urgent need for rapid, reliable detection of forest loss which is essential for timely intervention against illegal logging,…"
+    },
     {
       "source": "ESA",
       "cat": "Observing the Earth",
@@ -57,26 +97,10 @@
     {
       "source": "arXiv",
       "cat": "Remote Sensing AI",
-      "title": "Hyperspectral Image Models: Technical Report",
-      "url": "https://arxiv.org/abs/2609.39871v1",
+      "title": "A PyTorch Library for Hyperspectral Image Models: Technical Report",
+      "url": "https://arxiv.org/abs/2609.39871v2",
       "date": "2026-09-30",
       "summary": "Hyperspectral remote sensing has advanced across diverse deep learning paradigms, including spectral spatial CNNs, Vision Transformers, Mamba, graph neural networks, Kolmogorov Arnold networks, and self supervised masked autoencoding. Yet …"
-    },
-    {
-      "source": "arXiv",
-      "cat": "Remote Sensing AI",
-      "title": "COBICount: Separating Object and Background Responses for Remote Sensing Object Counting Without Training on Target Data",
-      "url": "https://arxiv.org/abs/2609.39366v1",
-      "date": "2026-09-30",
-      "summary": "Remote sensing object counting estimates how many buildings, vehicles, or ships appear in overhead images. Most supervised counters predict a density map, whose sum gives the object count, and assume similar categories, sizes, and backgrou…"
-    },
-    {
-      "source": "arXiv",
-      "cat": "Remote Sensing AI",
-      "title": "After a Decade: Bringing Shadow Removal into the Real World with Agentic Training Data",
-      "url": "https://arxiv.org/abs/2609.38607v1",
-      "date": "2026-09-29",
-      "summary": "Shadow removal looks nearly solved on established benchmarks, yet remains brittle in the real world. Models have advanced; the paired training data they rely on have barely changed in nearly a decade. The reason is simple: obtaining a shad…"
     },
     {
       "source": "arXiv",
@@ -119,36 +143,12 @@
       "summary": "Onboard satellite models often require frequent updates, but the weights adapted to earlier data distributions can quickly become outdated. However, updating large-scale model parameters in orbit presents significant challenges due to the …"
     },
     {
-      "source": "arXiv",
-      "cat": "Satellite Imagery",
-      "title": "Label Less, Learn More: Resource-Efficient Active Semi-Supervised Learning for Onboard Satellite Image Annotation",
-      "url": "https://arxiv.org/abs/2609.37481v1",
-      "date": "2026-09-25",
-      "summary": "Large-scale pervasive sensing increasingly relies on high-resolution satellite imagery, yet task-specific onboard vision is constrained by costly annotation and limited computation, memory, energy, and communication resources. Existing app…"
-    },
-    {
       "source": "ESA",
       "cat": "Observing the Earth",
       "title": "Three Earth Explorer candidates go forward",
       "url": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Three_Earth_Explorer_candidates_go_forward",
       "date": "2026-09-25",
       "summary": ""
-    },
-    {
-      "source": "ESA",
-      "cat": "Observing the Earth",
-      "title": "Earth from Space: Venetian Lagoon",
-      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/09/Earth_from_Space_Venetian_Lagoon",
-      "date": "2026-09-25",
-      "summary": "Image: This image of the Venetian Lagoon in northern Italy was acquired by the IRIDE satellites on 17 May 2026."
-    },
-    {
-      "source": "arXiv",
-      "cat": "Sea Ice",
-      "title": "Taking a Second Look: Correcting Sea Ice Forecasts with Sparse Observations",
-      "url": "https://arxiv.org/abs/2609.24591v2",
-      "date": "2026-09-21",
-      "summary": "Sea ice forecasts are issued several days ahead, allowing errors to accumulate while new, often sparse sea ice concentration (SIC) observations become available. We find that fixed-propagation errors concentrate near structured, high-gradi…"
     }
   ]
 }
