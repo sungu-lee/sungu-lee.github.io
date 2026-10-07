@@ -1,11 +1,59 @@
 {
-  "updated": "2026-10-06T01:41:29Z",
+  "updated": "2026-10-07T00:27:37Z",
   "sources": [
     "ESA",
     "arXiv"
   ],
   "count": 18,
   "items": [
+    {
+      "source": "arXiv",
+      "cat": "Remote Sensing AI",
+      "title": "EORestore-Agent: Fidelity-Guided Agentic Restoration of Remote Sensing Images with Composite Degradations",
+      "url": "https://arxiv.org/abs/2610.06196v1",
+      "date": "2026-10-05",
+      "summary": "Remote sensing images often carry composite degradations, in which haze, cloud, noise, blur, low light, and low resolution coexist. Restoring them requires deciding which tool to apply, in what order, and when to stop, yet no clean referen…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Remote Sensing AI",
+      "title": "FairRSFM: A Biome-Aware Benchmark and Debiasing Framework for Remote Sensing Foundation Models",
+      "url": "https://arxiv.org/abs/2610.05790v1",
+      "date": "2026-10-05",
+      "summary": "Remote sensing foundation models (RSFMs) are commonly evaluated using aggregate metrics, which can hide systematic performance disparities across ecological regions. We introduce FairRSFM, a biome-aware benchmark for evaluating ecological …"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Remote Sensing AI",
+      "title": "T-JEPA: A Temporal Joint-Embedding Predictive Architecture for Learning Better Remote Sensing Representations",
+      "url": "https://arxiv.org/abs/2610.05731v1",
+      "date": "2026-10-05",
+      "summary": "Earth observation (EO) data provide rich temporal supervision, yet existing remote sensing foundation models mainly exploit sequential observations through imposing predefined pairwise relations or aggregating holistic reconstruction conte…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Forest / Vegetation",
+      "title": "Evaluating LiDAR Data Sources, Predictor Resolution, and Spatial Random Effects in Bayesian Change-of-Support Models for Forest Inventory",
+      "url": "https://arxiv.org/abs/2610.06476v1",
+      "date": "2026-10-05",
+      "summary": "Forest managers require timely stand-level information for operational planning. Model-based estimation combines sparse field samples with remotely sensed auxiliary data to estimate growing stock volume (GSV) for small-area units. This is …"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Remote Sensing AI",
+      "title": "RSure-Agent: Reliable Use of Tool Observations for Remote Sensing Agents",
+      "url": "https://arxiv.org/abs/2610.04836v1",
+      "date": "2026-10-04",
+      "summary": "Remote sensing agents rely on perception, measurement, and raster analysis tools to solve Earth observation tasks. We refer to their judgments and quantitative results about ground objects as tool observations. However, these observations …"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Calibration",
+      "title": "A Framework for Automated Multi-Source Satellite Data Analytics and LLM-Based Report Generation",
+      "url": "https://arxiv.org/abs/2610.05625v1",
+      "date": "2026-10-04",
+      "summary": "This paper presents the workflow for building an automated ArcGIS Pro tool using ArcPy to extract the Land Surface Temperature (LST) from Landsat 7, 8 and 9 datasets. The tool eliminates the need for manual band selection and repetitive ra…"
+    },
     {
       "source": "arXiv",
       "cat": "Remote Sensing AI",
@@ -63,44 +111,12 @@
       "summary": "The final batch of Eaglet II satellites for Italy’s IRIDE Earth observation programme has reached orbit, bringing the programme a step closer to providing a full range of satellite data for Italy’s environmental, emergency and security ser…"
     },
     {
-      "source": "arXiv",
-      "cat": "Remote Sensing AI",
-      "title": "Harnessing Domain Specialists in Multimodal Mixture-of-Experts for Efficient Adaptation",
-      "url": "https://arxiv.org/abs/2610.02123v1",
-      "date": "2026-10-01",
-      "summary": "Mixture-of-Experts (MoE) architectures scale model capacity through sparse computation, routing each token through only a small subset of experts. In this work, we explore whether this sparsity gives rise to emergent intrinsic organization…"
-    },
-    {
-      "source": "arXiv",
-      "cat": "Remote Sensing AI",
-      "title": "CoEvolve: Construct-to-Edit Visual Grounding with Bidirectional State Refinement",
-      "url": "https://arxiv.org/abs/2610.01710v1",
-      "date": "2026-10-01",
-      "summary": "Visual grounding localizes an object described by language with a bounding box. Most multimodal grounding models compress target identification, spatial reasoning, and boundary estimation into one terminal prediction. Free-form rationales …"
-    },
-    {
       "source": "ESA",
       "cat": "Observing the Earth",
       "title": "EarthCARE’s view of volcanic plume boosts air safety",
       "url": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/EarthCARE/EarthCARE_s_view_of_volcanic_plume_boosts_air_safety",
       "date": "2026-10-01",
       "summary": "When Anak Krakatau erupted a few weeks ago, the European Space Agency’s EarthCARE satellite, orbiting above, captured vertical profiles of different constituents within the volcanic plume. Designed primarily to advance our understanding of…"
-    },
-    {
-      "source": "arXiv",
-      "cat": "Remote Sensing AI",
-      "title": "FedMAD: Modulation-Aware Directional Aggregation for Federated Learning in Remote Sensing Image Classification",
-      "url": "https://arxiv.org/abs/2610.00693v1",
-      "date": "2026-09-30",
-      "summary": "Federated learning (FL) has recently attracted increasing attention in remote sensing (RS) since it enables collaborative model training across decentralized RS image archives without requiring direct access to local data. However, FL perf…"
-    },
-    {
-      "source": "arXiv",
-      "cat": "Remote Sensing AI",
-      "title": "A PyTorch Library for Hyperspectral Image Models: Technical Report",
-      "url": "https://arxiv.org/abs/2609.39871v2",
-      "date": "2026-09-30",
-      "summary": "Hyperspectral remote sensing has advanced across diverse deep learning paradigms, including spectral spatial CNNs, Vision Transformers, Mamba, graph neural networks, Kolmogorov Arnold networks, and self supervised masked autoencoding. Yet …"
     },
     {
       "source": "arXiv",
@@ -133,22 +149,6 @@
       "url": "https://arxiv.org/abs/2609.34596v1",
       "date": "2026-09-28",
       "summary": "Rapid and accurate burn scar delineation from satellite imagery is essential for post-fire damage assessment. Sentinel-3 OLCI, with daily revisit and 21 spectral bands, suits rapid mapping, yet most pipelines treat acquisitions independent…"
-    },
-    {
-      "source": "arXiv",
-      "cat": "Satellite Imagery",
-      "title": "Resource-Aware Parameter-Efficient Model Adaptation for Onboard High-Dimensional Data",
-      "url": "https://arxiv.org/abs/2609.33687v1",
-      "date": "2026-09-27",
-      "summary": "Onboard satellite models often require frequent updates, but the weights adapted to earlier data distributions can quickly become outdated. However, updating large-scale model parameters in orbit presents significant challenges due to the …"
-    },
-    {
-      "source": "ESA",
-      "cat": "Observing the Earth",
-      "title": "Three Earth Explorer candidates go forward",
-      "url": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Three_Earth_Explorer_candidates_go_forward",
-      "date": "2026-09-25",
-      "summary": ""
     }
   ]
 }
