@@ -1,11 +1,35 @@
 {
-  "updated": "2026-10-07T00:27:37Z",
+  "updated": "2026-10-08T00:48:18Z",
   "sources": [
     "ESA",
     "arXiv"
   ],
   "count": 18,
   "items": [
+    {
+      "source": "arXiv",
+      "cat": "Remote Sensing AI",
+      "title": "RSJEV: Discriminative Remote Sensing Scene Classification with Multimodal Large Language Models",
+      "url": "https://arxiv.org/abs/2610.08539v1",
+      "date": "2026-10-06",
+      "summary": "Remote sensing scene classification is a fundamental task in Earth observation and geospatial analysis. Existing approaches mainly follow three paradigms: task-specific visual classification, vision-language similarity matching, and autore…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Remote Sensing AI",
+      "title": "How Many Independent Samples Does a Satellite Image Contain? Generalization Bounds for Spatially Dependent Data",
+      "url": "https://arxiv.org/abs/2610.08227v1",
+      "date": "2026-10-06",
+      "summary": "Machine learning classifiers for remote sensing imagery are typically evaluated as though every pixel were an independent sample. Spatial autocorrelation violates this assumption, since neighboring pixels carry redundant information which …"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Remote Sensing AI",
+      "title": "RBMatch: Dual-Level Class Rebalancing for Semi-Supervised Building Footprint Extraction",
+      "url": "https://arxiv.org/abs/2610.07698v1",
+      "date": "2026-10-06",
+      "summary": "Accurate building footprint extraction from high-resolution remote sensing imagery is essential for urban planning, disaster response, and environmental monitoring. However, obtaining dense pixel-level annotations is costly, motivating the…"
+    },
     {
       "source": "arXiv",
       "cat": "Remote Sensing AI",
@@ -32,19 +56,19 @@
     },
     {
       "source": "arXiv",
+      "cat": "Sea Ice",
+      "title": "Well-posed by Design: Learning Constitutive Laws from Velocity Data using Convex Neural Network Potentials",
+      "url": "https://arxiv.org/abs/2610.07236v1",
+      "date": "2026-10-05",
+      "summary": "Learning constitutive laws of complex fluids from velocity data (i.e. indirect observations) is a PDE-constrained inverse problem in which expressive neural parameterizations risk breaking the well-posedness of the forward physics model. W…"
+    },
+    {
+      "source": "arXiv",
       "cat": "Forest / Vegetation",
       "title": "Evaluating LiDAR Data Sources, Predictor Resolution, and Spatial Random Effects in Bayesian Change-of-Support Models for Forest Inventory",
       "url": "https://arxiv.org/abs/2610.06476v1",
       "date": "2026-10-05",
       "summary": "Forest managers require timely stand-level information for operational planning. Model-based estimation combines sparse field samples with remotely sensed auxiliary data to estimate growing stock volume (GSV) for small-area units. This is …"
-    },
-    {
-      "source": "arXiv",
-      "cat": "Remote Sensing AI",
-      "title": "RSure-Agent: Reliable Use of Tool Observations for Remote Sensing Agents",
-      "url": "https://arxiv.org/abs/2610.04836v1",
-      "date": "2026-10-04",
-      "summary": "Remote sensing agents rely on perception, measurement, and raster analysis tools to solve Earth observation tasks. We refer to their judgments and quantitative results about ground objects as tool observations. However, these observations …"
     },
     {
       "source": "arXiv",
@@ -56,27 +80,11 @@
     },
     {
       "source": "arXiv",
-      "cat": "Remote Sensing AI",
-      "title": "A Geometric-Transformation Feature-Adaptive Manifold Restoration Method for Open-Vocabulary Semantic Segmentation of Remote Sensing Images",
-      "url": "https://arxiv.org/abs/2610.04300v1",
-      "date": "2026-10-03",
-      "summary": "The semantic information of objects in remote sensing images is typically invariant to geometric transformations from the dihedral group D4. However, SAM3-based open-vocabulary semantic segmentation (OVSS) methods often exhibit inconsisten…"
-    },
-    {
-      "source": "arXiv",
       "cat": "Sea Ice",
       "title": "ClimateBench v2.0: Probabilistic Climate Model Benchmarking",
       "url": "https://arxiv.org/abs/2610.04558v1",
       "date": "2026-10-03",
       "summary": "We present ClimateBench v2, a standardized protocol for evaluating climate models on diagnostics expected to be informative for their skill in projecting mid-century regional temperature and precipitation changes. The protocol is designed …"
-    },
-    {
-      "source": "arXiv",
-      "cat": "Remote Sensing AI",
-      "title": "Why Convolution Still Matters: Evaluating Inductive Biases in Cryospheric Image Classification",
-      "url": "https://arxiv.org/abs/2610.04073v1",
-      "date": "2026-10-02",
-      "summary": "Recent advances in attention-based deep learning have motivated their adoption for remote sensing image classification; however, their benefits for cryospheric imagery, where surface states are dominated by fine-grained textures and class …"
     },
     {
       "source": "arXiv",
@@ -141,14 +149,6 @@
       "url": "https://arxiv.org/abs/2609.35410v1",
       "date": "2026-09-28",
       "summary": "Spectral super-resolution of multispectral satellite images can enable high temporal- and spatial-resolution hyperspectral satellite imagery at a modest cost, significantly increasing the applicability of hyperspectral remote sensing. This…"
-    },
-    {
-      "source": "arXiv",
-      "cat": "Satellite Imagery",
-      "title": "Temporal Modelling for Burn Scars on Sentinel-3",
-      "url": "https://arxiv.org/abs/2609.34596v1",
-      "date": "2026-09-28",
-      "summary": "Rapid and accurate burn scar delineation from satellite imagery is essential for post-fire damage assessment. Sentinel-3 OLCI, with daily revisit and 21 spectral bands, suits rapid mapping, yet most pipelines treat acquisitions independent…"
     }
   ]
 }
