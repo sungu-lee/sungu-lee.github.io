@@ -1,58 +1,26 @@
 {
-  "updated": "2026-10-08T00:48:18Z",
+  "updated": "2026-10-09T01:02:57Z",
   "sources": [
     "ESA",
     "arXiv"
   ],
-  "count": 18,
+  "count": 12,
   "items": [
     {
-      "source": "arXiv",
-      "cat": "Remote Sensing AI",
-      "title": "RSJEV: Discriminative Remote Sensing Scene Classification with Multimodal Large Language Models",
-      "url": "https://arxiv.org/abs/2610.08539v1",
-      "date": "2026-10-06",
-      "summary": "Remote sensing scene classification is a fundamental task in Earth observation and geospatial analysis. Existing approaches mainly follow three paradigms: task-specific visual classification, vision-language similarity matching, and autore…"
+      "source": "ESA",
+      "cat": "Observing the Earth",
+      "title": "Sentinel-3C returns its first views of Earth",
+      "url": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-3/Sentinel-3C_returns_its_first_views_of_Earth",
+      "date": "2026-10-08",
+      "summary": "Just two weeks after it was launched, the Copernicus Sentinel-3C satellite returned its first images and measurements from two of its key instruments – a major milestone that confirms the satellite is working well and on the road to monito…"
     },
     {
-      "source": "arXiv",
-      "cat": "Remote Sensing AI",
-      "title": "How Many Independent Samples Does a Satellite Image Contain? Generalization Bounds for Spatially Dependent Data",
-      "url": "https://arxiv.org/abs/2610.08227v1",
-      "date": "2026-10-06",
-      "summary": "Machine learning classifiers for remote sensing imagery are typically evaluated as though every pixel were an independent sample. Spatial autocorrelation violates this assumption, since neighboring pixels carry redundant information which …"
-    },
-    {
-      "source": "arXiv",
-      "cat": "Remote Sensing AI",
-      "title": "RBMatch: Dual-Level Class Rebalancing for Semi-Supervised Building Footprint Extraction",
-      "url": "https://arxiv.org/abs/2610.07698v1",
-      "date": "2026-10-06",
-      "summary": "Accurate building footprint extraction from high-resolution remote sensing imagery is essential for urban planning, disaster response, and environmental monitoring. However, obtaining dense pixel-level annotations is costly, motivating the…"
-    },
-    {
-      "source": "arXiv",
-      "cat": "Remote Sensing AI",
-      "title": "EORestore-Agent: Fidelity-Guided Agentic Restoration of Remote Sensing Images with Composite Degradations",
-      "url": "https://arxiv.org/abs/2610.06196v1",
-      "date": "2026-10-05",
-      "summary": "Remote sensing images often carry composite degradations, in which haze, cloud, noise, blur, low light, and low resolution coexist. Restoring them requires deciding which tool to apply, in what order, and when to stop, yet no clean referen…"
-    },
-    {
-      "source": "arXiv",
-      "cat": "Remote Sensing AI",
-      "title": "FairRSFM: A Biome-Aware Benchmark and Debiasing Framework for Remote Sensing Foundation Models",
-      "url": "https://arxiv.org/abs/2610.05790v1",
-      "date": "2026-10-05",
-      "summary": "Remote sensing foundation models (RSFMs) are commonly evaluated using aggregate metrics, which can hide systematic performance disparities across ecological regions. We introduce FairRSFM, a biome-aware benchmark for evaluating ecological …"
-    },
-    {
-      "source": "arXiv",
-      "cat": "Remote Sensing AI",
-      "title": "T-JEPA: A Temporal Joint-Embedding Predictive Architecture for Learning Better Remote Sensing Representations",
-      "url": "https://arxiv.org/abs/2610.05731v1",
-      "date": "2026-10-05",
-      "summary": "Earth observation (EO) data provide rich temporal supervision, yet existing remote sensing foundation models mainly exploit sequential observations through imposing predefined pairwise relations or aggregating holistic reconstruction conte…"
+      "source": "ESA",
+      "cat": "Observing the Earth",
+      "title": "Introducing ESA’s Earth Virtual Expert",
+      "url": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Introducing_ESA_s_Earth_Virtual_Expert",
+      "date": "2026-10-08",
+      "summary": "The European Space Agency (ESA) has released Earth Virtual Expert (EVE), a platform powered with Artificial Intelligence (AI), to make Earth observation information more accessible and easier to understand. Built on trusted scientific sour…"
     },
     {
       "source": "arXiv",
@@ -64,43 +32,11 @@
     },
     {
       "source": "arXiv",
-      "cat": "Forest / Vegetation",
-      "title": "Evaluating LiDAR Data Sources, Predictor Resolution, and Spatial Random Effects in Bayesian Change-of-Support Models for Forest Inventory",
-      "url": "https://arxiv.org/abs/2610.06476v1",
-      "date": "2026-10-05",
-      "summary": "Forest managers require timely stand-level information for operational planning. Model-based estimation combines sparse field samples with remotely sensed auxiliary data to estimate growing stock volume (GSV) for small-area units. This is …"
-    },
-    {
-      "source": "arXiv",
-      "cat": "Calibration",
-      "title": "A Framework for Automated Multi-Source Satellite Data Analytics and LLM-Based Report Generation",
-      "url": "https://arxiv.org/abs/2610.05625v1",
-      "date": "2026-10-04",
-      "summary": "This paper presents the workflow for building an automated ArcGIS Pro tool using ArcPy to extract the Land Surface Temperature (LST) from Landsat 7, 8 and 9 datasets. The tool eliminates the need for manual band selection and repetitive ra…"
-    },
-    {
-      "source": "arXiv",
       "cat": "Sea Ice",
       "title": "ClimateBench v2.0: Probabilistic Climate Model Benchmarking",
       "url": "https://arxiv.org/abs/2610.04558v1",
       "date": "2026-10-03",
       "summary": "We present ClimateBench v2, a standardized protocol for evaluating climate models on diagnostics expected to be informative for their skill in projecting mid-century regional temperature and precipitation changes. The protocol is designed …"
-    },
-    {
-      "source": "arXiv",
-      "cat": "Satellite Imagery",
-      "title": "On-Board Anomaly Detection for Efficient Marine Environmental Monitoring",
-      "url": "https://arxiv.org/abs/2610.03649v1",
-      "date": "2026-10-02",
-      "summary": "Marine ecosystems are impacted by various threats such as oil spills, algal blooms, and sediment floods, which disrupt habitats, wildlife, and human activities. Advances in satellite imagery and Artificial Intelligence (AI) have enhanced o…"
-    },
-    {
-      "source": "arXiv",
-      "cat": "Forest / Vegetation",
-      "title": "A Two-Stage Cascade for Near-Real-Time Forest Anomaly Detection from Sentinel-1 SAR Time Series",
-      "url": "https://arxiv.org/abs/2610.02763v1",
-      "date": "2026-10-02",
-      "summary": "Tropical forest monitoring is essential for global climate stability and biodiversity preservation. To address the urgent need for rapid, reliable detection of forest loss which is essential for timely intervention against illegal logging,…"
     },
     {
       "source": "ESA",
@@ -127,28 +63,44 @@
       "summary": "When Anak Krakatau erupted a few weeks ago, the European Space Agency’s EarthCARE satellite, orbiting above, captured vertical profiles of different constituents within the volcanic plume. Designed primarily to advance our understanding of…"
     },
     {
-      "source": "arXiv",
-      "cat": "Satellite Imagery",
-      "title": "Cropland PAtteRNS: Parallel Dimensional Attention Networks and Attention to Dataset Disparity for Crop Segmentation in Satellite Imagery Time Series Data",
-      "url": "https://arxiv.org/abs/2609.38165v1",
-      "date": "2026-09-29",
-      "summary": "The landscape of satellite imagery time series datasets and boundary-pushing architectures for cropland segmentation has never been richer. However, in this gold rush, important truths are being missed on both fronts, as a drive for the mo…"
+      "source": "ESA",
+      "cat": "Observing the Earth",
+      "title": "Three Earth Explorer candidates go forward",
+      "url": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Three_Earth_Explorer_candidates_go_forward",
+      "date": "2026-09-25",
+      "summary": ""
     },
     {
       "source": "arXiv",
-      "cat": "Satellite Imagery",
-      "title": "Pixel-Level Transformers in Remote Sensing: A Canopy Height Case Study",
-      "url": "https://arxiv.org/abs/2609.37809v1",
-      "date": "2026-09-29",
-      "summary": "Predicting canopy height from medium-resolution satellite imagery is a common and scalable approach for assessing the condition of the world's forests, which play a crucial role in climate change mitigation. While Transformer-based archite…"
+      "cat": "Sea Ice",
+      "title": "Taking a Second Look: Correcting Sea Ice Forecasts with Sparse Observations",
+      "url": "https://arxiv.org/abs/2609.24591v2",
+      "date": "2026-09-21",
+      "summary": "Sea ice forecasts are issued several days ahead, allowing errors to accumulate while new, often sparse sea ice concentration (SIC) observations become available. We find that fixed-propagation errors concentrate near structured, high-gradi…"
     },
     {
       "source": "arXiv",
-      "cat": "Satellite Imagery",
-      "title": "Spectral Super-Resolution using Spatial-Spectral Residual Operator Networks",
-      "url": "https://arxiv.org/abs/2609.35410v1",
-      "date": "2026-09-28",
-      "summary": "Spectral super-resolution of multispectral satellite images can enable high temporal- and spatial-resolution hyperspectral satellite imagery at a modest cost, significantly increasing the applicability of hyperspectral remote sensing. This…"
+      "cat": "Sea Ice",
+      "title": "Multi-Label Proportion Learning for Sea-Ice Type Prediction",
+      "url": "https://arxiv.org/abs/2609.16347v1",
+      "date": "2026-09-14",
+      "summary": "Sea-ice type prediction is important for climate monitoring, maritime navigation, and decision-making in polar regions. The main source of label data for this task is the ice chart, produced manually by ice analysts who interpret satellite…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Sea Ice",
+      "title": "Weak Solutions for the Unregularised Hibler Momentum Equation with Degenerate Coefficients",
+      "url": "https://arxiv.org/abs/2609.12925v1",
+      "date": "2026-09-11",
+      "summary": "We study the momentum equation of the decoupled unregularised Hibler sea-ice model with non-negative ice mass and ice strength, both of which may vanish. The ocean drag provides coercivity, while the stress law and mixed boundary condition…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Sea Ice",
+      "title": "Uncertainty-Aware Learning from Multi-Expert Interval Targets",
+      "url": "https://arxiv.org/abs/2610.00102v1",
+      "date": "2026-09-08",
+      "summary": "Many machine learning (ML) applications rely on expert labels, and qualified experts may provide different but plausible interpretations of the same observation. Such variation across expert labels may reflect genuine disagreement or ambig…"
     }
   ]
 }
