@@ -1,11 +1,43 @@
 {
-  "updated": "2026-10-12T00:17:26Z",
+  "updated": "2026-10-13T02:28:19Z",
   "sources": [
     "ESA",
     "arXiv"
   ],
   "count": 18,
   "items": [
+    {
+      "source": "arXiv",
+      "cat": "Remote Sensing AI",
+      "title": "Revisiting the Task of Building Damage Assessment by Satellite Imaging",
+      "url": "https://arxiv.org/abs/2610.13857v1",
+      "date": "2026-10-09",
+      "summary": "Natural disasters such as earthquakes, tropical storms, and floods cause extensive damage to buildings, and rapid, reliable damage maps are essential to guide emergency response. Automating this task, referred to as building damage assessm…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Remote Sensing AI",
+      "title": "Benchmarking Answer-Grounding Consistency in Remote Sensing Visual Question Answering",
+      "url": "https://arxiv.org/abs/2610.13636v1",
+      "date": "2026-10-09",
+      "summary": "In grounded remote sensing visual question answering, a model produces a textual answer and identifies relevant objects in the image as grounding evidence. Existing evaluations measure answer correctness and localization quality, but do no…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Remote Sensing AI",
+      "title": "MOSAIC: Multi-Scale Object-Centric Slot Adaptation with Image-Guided Prototype Conditioning for Remote Sensing Image Super-Resolution",
+      "url": "https://arxiv.org/abs/2610.13547v1",
+      "date": "2026-10-09",
+      "summary": "Pretrained diffusion Transformers provide powerful generative priors for image restoration, yet adapting them to structure-sensitive tasks remains challenging. Existing methods mainly rely on dense low-resolution features as conditions, wh…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Remote Sensing AI",
+      "title": "Knowing Whether, Not Just Where: Anchor-Probing Distillation for Open-Set Remote Sensing Visual Grounding",
+      "url": "https://arxiv.org/abs/2610.13535v1",
+      "date": "2026-10-09",
+      "summary": "Open-set visual grounding in remote sensing requires models to determine not only where a queried object is located, but also whether the image provides sufficient evidence for the query at all. Existing closed-set grounding models, howeve…"
+    },
     {
       "source": "ESA",
       "cat": "Observing the Earth",
@@ -57,42 +89,18 @@
     {
       "source": "arXiv",
       "cat": "Remote Sensing AI",
-      "title": "EM-SNN: Efficiently Modulated Spiking Neural Network for Remote Sensing Image Dehazing",
-      "url": "https://arxiv.org/abs/2610.09275v1",
+      "title": "TerraAgent: Demonstration-Grounded Multi-Agent Reasoning for Long-Context Remote Sensing Visual Question Answering",
+      "url": "https://arxiv.org/abs/2610.12517v1",
       "date": "2026-10-07",
-      "summary": "Although spiking neural networks (SNNs) provide an energy-efficient alternative to artificial neural networks (ANNs), their application to remote sensing image dehazing remains limited. A key challenge arises from the coupling between haze…"
+      "summary": "Remote sensing visual question answering (RS-VQA) requires answers that truly depend on image evidence, yet current remote sensing multimodal large language models (RS MLLMs) are still evaluated mainly by accuracy, which cannot reveal whet…"
     },
     {
       "source": "arXiv",
-      "cat": "Remote Sensing AI",
+      "cat": "Satellite Imagery",
       "title": "Anaximander: Interactively Running Geospatial Deep Learning Models on Any Compute Backend",
       "url": "https://arxiv.org/abs/2610.09085v1",
       "date": "2026-10-06",
       "summary": "Applying deep learning models to satellite imagery from within geographic information systems (GIS) remains high-friction for remote sensing practitioners. Models arrive in incompatible formats and target different compute environments, fr…"
-    },
-    {
-      "source": "arXiv",
-      "cat": "Remote Sensing AI",
-      "title": "RSJEV: Discriminative Remote Sensing Scene Classification with Multimodal Large Language Models",
-      "url": "https://arxiv.org/abs/2610.08539v1",
-      "date": "2026-10-06",
-      "summary": "Remote sensing scene classification is a fundamental task in Earth observation and geospatial analysis. Existing approaches mainly follow three paradigms: task-specific visual classification, vision-language similarity matching, and autore…"
-    },
-    {
-      "source": "arXiv",
-      "cat": "Remote Sensing AI",
-      "title": "How Many Independent Samples Does a Satellite Image Contain? Generalization Bounds for Spatially Dependent Data",
-      "url": "https://arxiv.org/abs/2610.08227v1",
-      "date": "2026-10-06",
-      "summary": "Machine learning classifiers for remote sensing imagery are typically evaluated as though every pixel were an independent sample. Spatial autocorrelation violates this assumption, since neighboring pixels carry redundant information which …"
-    },
-    {
-      "source": "arXiv",
-      "cat": "Remote Sensing AI",
-      "title": "RBMatch: Dual-Level Class Rebalancing for Semi-Supervised Building Footprint Extraction",
-      "url": "https://arxiv.org/abs/2610.07698v1",
-      "date": "2026-10-06",
-      "summary": "Accurate building footprint extraction from high-resolution remote sensing imagery is essential for urban planning, disaster response, and environmental monitoring. However, obtaining dense pixel-level annotations is costly, motivating the…"
     },
     {
       "source": "arXiv",
@@ -141,14 +149,6 @@
       "url": "https://arxiv.org/abs/2610.02763v1",
       "date": "2026-10-02",
       "summary": "Tropical forest monitoring is essential for global climate stability and biodiversity preservation. To address the urgent need for rapid, reliable detection of forest loss which is essential for timely intervention against illegal logging,…"
-    },
-    {
-      "source": "ESA",
-      "cat": "Observing the Earth",
-      "title": "Earth from Space: Typhoon Surigae",
-      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Earth_from_Space_Typhoon_Surigae",
-      "date": "2026-10-02",
-      "summary": "Image: This false-colour, polarised image from Copernicus Sentinel-1 shows us the surface of the sea beneath the clouds, as seen by the satellite’s radar instrument. The sea conditions reflect the strong winds as Typhoon Surigae passes ove…"
     }
   ]
 }
