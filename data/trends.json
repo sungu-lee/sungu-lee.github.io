@@ -1,10 +1,75 @@
 {
-  "updated": "2026-10-14T00:13:35Z",
+  "updated": "2026-10-14T23:45:25Z",
   "sources": [
-    "ESA"
+    "ESA",
+    "arXiv"
   ],
-  "count": 6,
+  "count": 18,
   "items": [
+    {
+      "source": "arXiv",
+      "cat": "Remote Sensing AI",
+      "title": "Trust Before Autonomy: Rethinking Agentic Remote Sensing for Crisis Response",
+      "url": "https://arxiv.org/abs/2610.18789v1",
+      "date": "2026-10-13",
+      "summary": "Agentic remote sensing is evaluated on how many questions it can answer, whereas crisis response depends on whether its answers can be relied on and how much of the decision can safely be handed to the agent. This paper argues that \\emph{a…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Remote Sensing AI",
+      "title": "ReDiS: Reasoning-Diagnosis Self-Evolution for Multimodal Reasoning in Remote Sensing",
+      "url": "https://arxiv.org/abs/2610.18388v1",
+      "date": "2026-10-13",
+      "summary": "Multimodal large language models (MLLMs) have shown strong potential for remote sensing understanding, yet reliable reasoning remains challenging when tasks require fine-grained visual grounding and multi-step inference. Existing approache…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Remote Sensing AI",
+      "title": "Hallucination-aware Faithful Reasoning in Remote Sensing",
+      "url": "https://arxiv.org/abs/2610.18369v1",
+      "date": "2026-10-13",
+      "summary": "Multimodal large language models (MLLMs) have demonstrated promising capabilities for remote sensing reasoning, yet they frequently generate visually unsupported reasoning that contradicts the visual evidence. Existing post-training method…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Remote Sensing AI",
+      "title": "Omni-RS: Unifying Multi-Task Understanding and Generation in Remote Sensing",
+      "url": "https://arxiv.org/abs/2610.18323v1",
+      "date": "2026-10-13",
+      "summary": "Practical remote sensing applications often require both understanding and generation capabilities for the same geographic scene. However, most existing methods address either understanding or generation in isolation, while existing unifie…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Remote Sensing AI",
+      "title": "From Sound to Sense: An Anatomy of Semantic Supervision for Speech-Driven Visual Grounding in Remote Sensing Imagery",
+      "url": "https://arxiv.org/abs/2610.16364v1",
+      "date": "2026-10-12",
+      "summary": "Speech-driven visual grounding in remote sensing (RSVG) removes the typing bottleneck of text-based interaction and is intended to preserve prosodic intent, enabling hands-free target acquisition in time-critical missions. The direct-audio…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Remote Sensing AI",
+      "title": "Building age estimation based on widely available multi-source1 geospatial data",
+      "url": "https://arxiv.org/abs/2610.16320v1",
+      "date": "2026-10-12",
+      "summary": "Building age is fundamental for urban infrastructure safety, operation, and planning, as it directly affects structural safety, and sustainable development. Existing methods mostly rely on detailed building information such as street view,…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Sea Ice",
+      "title": "Identifying Arctic states vulnerable to rapid ice loss with a convolutional neural network",
+      "url": "https://arxiv.org/abs/2610.16584v1",
+      "date": "2026-10-12",
+      "summary": "This work investigates the incidence of rapid ice-loss events in the Arctic, in which a substantial fraction of September sea-ice is lost in only a few years. Such events are seen to occur in climate model simulations forced with increasin…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Satellite Imagery",
+      "title": "Revisiting the Task of Building Damage Assessment by Satellite Imaging",
+      "url": "https://arxiv.org/abs/2610.13857v1",
+      "date": "2026-10-09",
+      "summary": "Natural disasters such as earthquakes, tropical storms, and floods cause extensive damage to buildings, and rapid, reliable damage maps are essential to guide emergency response. Automating this task, referred to as building damage assessm…"
+    },
     {
       "source": "ESA",
       "cat": "Observing the Earth",
@@ -20,6 +85,14 @@
       "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Earth_from_Space_Namibia_s_biggest_salt_pan",
       "date": "2026-10-09",
       "summary": "Image: This image from Copernicus Sentinel-2, acquired on 5 April 2026, shows the Etosha National Park in northern Namibia."
+    },
+    {
+      "source": "arXiv",
+      "cat": "Satellite Imagery",
+      "title": "SatFix: Absolute Visual Localization of UAVs in Satellite Maps from a Single Oblique Image",
+      "url": "https://arxiv.org/abs/2610.11049v1",
+      "date": "2026-10-08",
+      "summary": "We study absolute metric UAV localization within a provided geo-referenced satellite region, recovering continuous map position and viewing heading from a single oblique image or a short multi-view clip. Existing cross-view geo-localizatio…"
     },
     {
       "source": "ESA",
@@ -38,20 +111,44 @@
       "summary": "The European Space Agency (ESA) has released Earth Virtual Expert (EVE), a platform powered with Artificial Intelligence (AI), to make Earth observation information more accessible and easier to understand. Built on trusted scientific sour…"
     },
     {
-      "source": "ESA",
-      "cat": "Observing the Earth",
-      "title": "Earth from Space: Typhoon Surigae",
-      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Earth_from_Space_Typhoon_Surigae",
-      "date": "2026-10-02",
-      "summary": "Image: This false-colour, polarised image from Copernicus Sentinel-1 shows us the surface of the sea beneath the clouds, as seen by the satellite’s radar instrument. The sea conditions reflect the strong winds as Typhoon Surigae passes ove…"
+      "source": "arXiv",
+      "cat": "Satellite Imagery",
+      "title": "Anaximander: Interactively Running Geospatial Deep Learning Models on Any Compute Backend",
+      "url": "https://arxiv.org/abs/2610.09085v1",
+      "date": "2026-10-06",
+      "summary": "Applying deep learning models to satellite imagery from within geographic information systems (GIS) remains high-friction for remote sensing practitioners. Models arrive in incompatible formats and target different compute environments, fr…"
     },
     {
-      "source": "ESA",
-      "cat": "Observing the Earth",
-      "title": "Italy’s IRIDE completes Eaglet II constellation",
-      "url": "https://www.esa.int/Applications/Observing_the_Earth/IRIDE/Italy_s_IRIDE_completes_Eaglet_II_constellation",
-      "date": "2026-10-02",
-      "summary": "The final batch of Eaglet II satellites for Italy’s IRIDE Earth observation programme has reached orbit, bringing the programme a step closer to providing a full range of satellite data for Italy’s environmental, emergency and security ser…"
+      "source": "arXiv",
+      "cat": "Sea Ice",
+      "title": "Well-posed by Design: Learning Constitutive Laws from Velocity Data using Convex Neural Network Potentials",
+      "url": "https://arxiv.org/abs/2610.07236v1",
+      "date": "2026-10-05",
+      "summary": "Learning constitutive laws of complex fluids from velocity data (i.e. indirect observations) is a PDE-constrained inverse problem in which expressive neural parameterizations risk breaking the well-posedness of the forward physics model. W…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Forest / Vegetation",
+      "title": "Evaluating LiDAR Data Sources, Predictor Resolution, and Spatial Random Effects in Bayesian Change-of-Support Models for Forest Inventory",
+      "url": "https://arxiv.org/abs/2610.06476v2",
+      "date": "2026-10-05",
+      "summary": "Forest managers need timely stand-level information to support operational planning, particularly in mixed-species, structurally heterogeneous forests facing climate-related disturbance. Model-based estimation combines sparse field data wi…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Calibration",
+      "title": "A Framework for Automated Multi-Source Satellite Data Analytics and LLM-Based Report Generation",
+      "url": "https://arxiv.org/abs/2610.05625v1",
+      "date": "2026-10-04",
+      "summary": "This paper presents the workflow for building an automated ArcGIS Pro tool using ArcPy to extract the Land Surface Temperature (LST) from Landsat 7, 8 and 9 datasets. The tool eliminates the need for manual band selection and repetitive ra…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Sea Ice",
+      "title": "ClimateBench v2.0: Probabilistic Climate Model Benchmarking",
+      "url": "https://arxiv.org/abs/2610.04558v1",
+      "date": "2026-10-03",
+      "summary": "We present ClimateBench v2, a standardized protocol for evaluating climate models on diagnostics expected to be informative for their skill in projecting mid-century regional temperature and precipitation changes. The protocol is designed …"
     }
   ]
 }
