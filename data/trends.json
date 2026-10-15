@@ -1,11 +1,35 @@
 {
-  "updated": "2026-10-14T23:45:25Z",
+  "updated": "2026-10-15T23:34:22Z",
   "sources": [
     "ESA",
     "arXiv"
   ],
   "count": 18,
   "items": [
+    {
+      "source": "arXiv",
+      "cat": "Sea Ice",
+      "title": "Mapping Arctic Polynyas from Sea Ice Concentration Data Using Hierarchical Partitioning and Differentiated Region Growing: Sensitivity to Threshold and Product Choices",
+      "url": "https://arxiv.org/abs/2610.19647v1",
+      "date": "2026-10-14",
+      "summary": "Accurately delineating Arctic coastal polynyas from sea ice concentration data remains challenging because of complex coastal geometry and spatially heterogeneous ice conditions. We develop a daily sea ice concentration (SIC) mapping frame…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Sea Ice",
+      "title": "Physical Processes Driving Year-to-Year Surface Temperature Variability Changes in a Warming Climate",
+      "url": "https://arxiv.org/abs/2610.19389v1",
+      "date": "2026-10-14",
+      "summary": "Under anthropogenic greenhouse forcing, climate models project a decrease in year-to-year temperature variability in the mid-to-high latitudes and an increase in the tropics and subtropics. Here, we examine year-to-year temperature variabi…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Remote Sensing AI",
+      "title": "The Gap Is in the Geometry: A Convergent Meta-Analysis of Multi-Facet Aerial and Remote Sensing Video Understanding",
+      "url": "https://arxiv.org/abs/2610.19102v1",
+      "date": "2026-10-13",
+      "summary": "Aerial and remote sensing video is increasingly evaluated like web video, by posing multiple-choice questions to multimodal large language models (MLLMs) over sampled frames and reporting accuracy. This paper argues that this recipe measur…"
+    },
     {
       "source": "arXiv",
       "cat": "Remote Sensing AI",
@@ -40,6 +64,22 @@
     },
     {
       "source": "arXiv",
+      "cat": "Sea Ice",
+      "title": "Benchmarking 3D Reconstruction for Under-Ice Robotic Perception in Arctic Environments",
+      "url": "https://arxiv.org/abs/2610.19097v1",
+      "date": "2026-10-13",
+      "summary": "As the Arctic transitions toward a seasonally ice-free state, capturing the complex morphology of submerged sea ice is crucial for advancing models of ocean-ice-atmosphere heat exchange and monitoring under-ice habitats. Currently, sub-sur…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Forest / Vegetation",
+      "title": "Exploring Interpretability in Deep Learning-Based Forest Classification - Separating Similar Forest Classes using Sentinel-2 Time Series",
+      "url": "https://arxiv.org/abs/2610.19270v1",
+      "date": "2026-10-13",
+      "summary": "The ecological insurance theory posits that diverse forests are more resilient and better able to adapt to changing environmental conditions. Increasing drought and heat stress in Central Europe promotes mixed forests for maintaining ecosy…"
+    },
+    {
+      "source": "arXiv",
       "cat": "Remote Sensing AI",
       "title": "From Sound to Sense: An Anatomy of Semantic Supervision for Speech-Driven Visual Grounding in Remote Sensing Imagery",
       "url": "https://arxiv.org/abs/2610.16364v1",
@@ -48,7 +88,7 @@
     },
     {
       "source": "arXiv",
-      "cat": "Remote Sensing AI",
+      "cat": "Satellite Imagery",
       "title": "Building age estimation based on widely available multi-source1 geospatial data",
       "url": "https://arxiv.org/abs/2610.16320v1",
       "date": "2026-10-12",
@@ -109,46 +149,6 @@
       "url": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Introducing_ESA_s_Earth_Virtual_Expert",
       "date": "2026-10-08",
       "summary": "The European Space Agency (ESA) has released Earth Virtual Expert (EVE), a platform powered with Artificial Intelligence (AI), to make Earth observation information more accessible and easier to understand. Built on trusted scientific sour…"
-    },
-    {
-      "source": "arXiv",
-      "cat": "Satellite Imagery",
-      "title": "Anaximander: Interactively Running Geospatial Deep Learning Models on Any Compute Backend",
-      "url": "https://arxiv.org/abs/2610.09085v1",
-      "date": "2026-10-06",
-      "summary": "Applying deep learning models to satellite imagery from within geographic information systems (GIS) remains high-friction for remote sensing practitioners. Models arrive in incompatible formats and target different compute environments, fr…"
-    },
-    {
-      "source": "arXiv",
-      "cat": "Sea Ice",
-      "title": "Well-posed by Design: Learning Constitutive Laws from Velocity Data using Convex Neural Network Potentials",
-      "url": "https://arxiv.org/abs/2610.07236v1",
-      "date": "2026-10-05",
-      "summary": "Learning constitutive laws of complex fluids from velocity data (i.e. indirect observations) is a PDE-constrained inverse problem in which expressive neural parameterizations risk breaking the well-posedness of the forward physics model. W…"
-    },
-    {
-      "source": "arXiv",
-      "cat": "Forest / Vegetation",
-      "title": "Evaluating LiDAR Data Sources, Predictor Resolution, and Spatial Random Effects in Bayesian Change-of-Support Models for Forest Inventory",
-      "url": "https://arxiv.org/abs/2610.06476v2",
-      "date": "2026-10-05",
-      "summary": "Forest managers need timely stand-level information to support operational planning, particularly in mixed-species, structurally heterogeneous forests facing climate-related disturbance. Model-based estimation combines sparse field data wi…"
-    },
-    {
-      "source": "arXiv",
-      "cat": "Calibration",
-      "title": "A Framework for Automated Multi-Source Satellite Data Analytics and LLM-Based Report Generation",
-      "url": "https://arxiv.org/abs/2610.05625v1",
-      "date": "2026-10-04",
-      "summary": "This paper presents the workflow for building an automated ArcGIS Pro tool using ArcPy to extract the Land Surface Temperature (LST) from Landsat 7, 8 and 9 datasets. The tool eliminates the need for manual band selection and repetitive ra…"
-    },
-    {
-      "source": "arXiv",
-      "cat": "Sea Ice",
-      "title": "ClimateBench v2.0: Probabilistic Climate Model Benchmarking",
-      "url": "https://arxiv.org/abs/2610.04558v1",
-      "date": "2026-10-03",
-      "summary": "We present ClimateBench v2, a standardized protocol for evaluating climate models on diagnostics expected to be informative for their skill in projecting mid-century regional temperature and precipitation changes. The protocol is designed …"
     }
   ]
 }
