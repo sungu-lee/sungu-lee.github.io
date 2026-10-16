@@ -52,8 +52,8 @@ const SITE = {
     },
     nav: {
       home: "Home", tracking: "Live Map", about: "About", research: "Research",
-      aiwatch: "AI Watch", media: "Media", publications: "Publications", teaching: "UST Teaching",
-      apps: "Simulator", contact: "Contact"
+      aiwatch: "AI Watch", media: "Media", publications: "Publications", teaching: "Teaching",
+      apps: "Simulator", sites: "Links", contact: "Contact"
     },
     hero: {
       eyebrow: "Radiometric calibration · SAR · Multi-sensor convergence",
@@ -64,7 +64,7 @@ const SITE = {
         "Associate Professor, UST KARI School (Aerospace System Engineering)"
       ],
       tagline:
-        "My discipline is radiometric calibration — making the numbers a satellite records physically trustworthy. On that foundation I work on SAR applications and on fusing the Korean satellite constellation into measurements of soil moisture, forests, ice and crops.",
+        "My discipline is radiometric calibration — making the numbers a satellite records physically trustworthy. On that foundation I work on optical and SAR image applications, and on fusing the Korean satellite constellation into measurements of soil moisture, forests, ice and crops.",
       cta: [
         { label: "Research Areas", href: "#research" },
         { label: "Student Supervision", href: "#teaching", ghost: true }
@@ -547,8 +547,7 @@ const SITE = {
             { label: "National Land Satellite Centre", sub: "NGII · land observation", url: "https://www.ngii.go.kr/nlsc/" },
             { label: "National Meteorological Satellite Centre", sub: "KMA · GEO-KOMPSAT", url: "https://nmsc.kma.go.kr" },
             { label: "Environmental Satellite Centre", sub: "NIER · GEMS", url: "https://nesc.nier.go.kr/ko/html/index.do" },
-            { label: "Korea Ocean Satellite Centre", sub: "KIOST · GOCI", url: "https://kosc.kiost.ac.kr" },
-            { label: "National Ocean Satellite Centre", sub: "KHOA · ocean applications", url: "https://www.nosc.go.kr/main.do" }
+            { label: "Korea Ocean Satellite Centre", sub: "KIOST · GOCI", url: "https://kosc.kiost.ac.kr" }
           ]
         },
         {
@@ -590,8 +589,8 @@ const SITE = {
     },
     nav: {
       home: "홈", tracking: "실시간 위치", about: "소개", research: "연구분야",
-      aiwatch: "AI 동향", media: "영상·자료", publications: "성과", teaching: "UST 교원활동",
-      apps: "시뮬레이터", contact: "연락처"
+      aiwatch: "AI 동향", media: "영상·자료", publications: "성과", teaching: "교원활동",
+      apps: "시뮬레이터", sites: "관련 사이트", contact: "연락처"
     },
     hero: {
       eyebrow: "복사 검보정 · SAR 활용 · 융복합활용",
@@ -602,7 +601,7 @@ const SITE = {
         "UST 한국항공우주연구원 스쿨 부교수 (항공우주시스템공학)"
       ],
       tagline:
-        "주 전공은 복사 검보정입니다. 위성이 기록한 값을 신뢰할 수 있는 물리량으로 만드는 일에서 출발해, SAR 활용과 국내 위성군의 융복합으로 토양수분·산림·해빙·작물을 측정하는 연구를 합니다.",
+        "주 전공은 복사 검보정입니다. 위성이 기록한 값을 신뢰할 수 있는 물리량으로 만드는 일에서 출발해, 광학·SAR 영상 활용과 국내 위성군의 융복합으로 토양수분·산림·해빙·작물을 측정하는 연구를 합니다.",
       cta: [
         { label: "연구분야 보기", href: "#research" },
         { label: "UST 학생 지도", href: "#teaching", ghost: true }
@@ -1078,8 +1077,7 @@ const SITE = {
             { label: "국토위성센터", sub: "국토지리정보원 · 국토관측", url: "https://www.ngii.go.kr/nlsc/" },
             { label: "국가기상위성센터", sub: "기상청 · 천리안위성", url: "https://nmsc.kma.go.kr" },
             { label: "환경위성센터", sub: "국립환경과학원 · GEMS", url: "https://nesc.nier.go.kr/ko/html/index.do" },
-            { label: "해양위성센터", sub: "한국해양과학기술원 · GOCI", url: "https://kosc.kiost.ac.kr" },
-            { label: "국가해양위성센터", sub: "국립해양조사원 · 해양활용", url: "https://www.nosc.go.kr/main.do" }
+            { label: "해양위성센터", sub: "한국해양과학기술원 · GOCI", url: "https://kosc.kiost.ac.kr" }
           ]
         },
         {

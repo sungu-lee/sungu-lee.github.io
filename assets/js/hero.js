@@ -665,8 +665,11 @@
   }
 
   function paintBeam(G, S, a, tm, kind) {
-    if (kind === "sar") paintSarBeam(G, S, tm);
-    else inZones(G, S, function () { paintOpticalBeam(G, S, tm); });
+    // 본문 글자 위를 빔이 가로지르지 않도록 광학·SAR 모두 같은 구간으로 자른다
+    inZones(G, S, function () {
+      if (kind === "sar") paintSarBeam(G, S, tm);
+      else paintOpticalBeam(G, S, tm);
+    });
   }
 
   /* ---------- 위성 편대 ----------
