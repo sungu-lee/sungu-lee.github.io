@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16T04:52:17Z",
+  "updated": "2026-10-16T05:00:43Z",
   "source": "arXiv API (cs.CV · cs.LG · eess.IV), filtered to Earth-observation context",
   "window": "last 12 months",
   "trackCounts": {
@@ -11,6 +11,10 @@
     "restoration": 5
   },
   "volume": [
+    {
+      "month": "2025-10",
+      "count": 64
+    },
     {
       "month": "2025-11",
       "count": 63
@@ -54,10 +58,6 @@
     {
       "month": "2026-09",
       "count": 47
-    },
-    {
-      "month": "2026-10",
-      "count": 24
     }
   ],
   "count": 26,
