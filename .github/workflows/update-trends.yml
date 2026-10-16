@@ -1,4 +1,4 @@
-name: Update research trends and orbital elements
+name: Update research trends, orbital elements and AI watch
 
 # 최신 연구동향 자동 수집
 #  - 매일 06:00 KST (= 21:00 UTC 전날) 실행
@@ -13,6 +13,7 @@ on:
     paths:
       - "scripts/fetch_trends.py"
       - "scripts/fetch_tle.py"
+      - "scripts/fetch_ai.py"
       - ".github/workflows/update-trends.yml"
   workflow_dispatch:
 
@@ -39,6 +40,10 @@ jobs:
 
       - name: Collect orbital elements (TLE)
         run: python scripts/fetch_tle.py --out data/tle.json
+        continue-on-error: true
+
+      - name: Collect AI technology trends
+        run: python scripts/fetch_ai.py --out data/ai.json --months 12 --per-track 5
         continue-on-error: true
 
       - name: Commit if changed
