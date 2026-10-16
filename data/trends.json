@@ -1,11 +1,35 @@
 {
-  "updated": "2026-10-15T23:34:22Z",
+  "updated": "2026-10-16T04:39:21Z",
   "sources": [
     "ESA",
     "arXiv"
   ],
   "count": 18,
   "items": [
+    {
+      "source": "arXiv",
+      "cat": "Remote Sensing AI",
+      "title": "Data-Efficient ConvNeXt Pretraining for High-Resolution Sentinel-1 GRD SAR Representation Learning",
+      "url": "https://arxiv.org/abs/2610.21993v1",
+      "date": "2026-10-15",
+      "summary": "Labeled Sentinel-1 Ground Range Detected (S1GRD) datasets remain scarce, limiting supervised deep learning for land-surface remote sensing, while self-supervised pretraining for this domain has been dominated by Vision Transformer (ViT)-ba…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Remote Sensing AI",
+      "title": "A large-scale climate-aware satellite image dataset for domain adaptive land-cover semantic segmentation",
+      "url": "https://arxiv.org/abs/2610.21238v1",
+      "date": "2026-10-15",
+      "summary": "A few well-annotated datasets for land-cover semantic segmentation have recently been introduced to advance the field of earth observation technologies. However, these datasets overlook the significant diversity among geographic areas with…"
+    },
+    {
+      "source": "arXiv",
+      "cat": "Satellite Imagery",
+      "title": "AI-Driven Disaster Response and Displacement Monitoring",
+      "url": "https://arxiv.org/abs/2610.21482v1",
+      "date": "2026-10-15",
+      "summary": "ARTIFICIAL INTELLIGENCE (AI) has demonstrated its potential across a wide range of humanitarian tasks, offering scalable and data-driven solutions to some of the world's most pressing challenges. For instance, in addressing climate change,…"
+    },
     {
       "source": "arXiv",
       "cat": "Sea Ice",
@@ -56,14 +80,6 @@
     },
     {
       "source": "arXiv",
-      "cat": "Remote Sensing AI",
-      "title": "Omni-RS: Unifying Multi-Task Understanding and Generation in Remote Sensing",
-      "url": "https://arxiv.org/abs/2610.18323v1",
-      "date": "2026-10-13",
-      "summary": "Practical remote sensing applications often require both understanding and generation capabilities for the same geographic scene. However, most existing methods address either understanding or generation in isolation, while existing unifie…"
-    },
-    {
-      "source": "arXiv",
       "cat": "Sea Ice",
       "title": "Benchmarking 3D Reconstruction for Under-Ice Robotic Perception in Arctic Environments",
       "url": "https://arxiv.org/abs/2610.19097v1",
@@ -77,14 +93,6 @@
       "url": "https://arxiv.org/abs/2610.19270v1",
       "date": "2026-10-13",
       "summary": "The ecological insurance theory posits that diverse forests are more resilient and better able to adapt to changing environmental conditions. Increasing drought and heat stress in Central Europe promotes mixed forests for maintaining ecosy…"
-    },
-    {
-      "source": "arXiv",
-      "cat": "Remote Sensing AI",
-      "title": "From Sound to Sense: An Anatomy of Semantic Supervision for Speech-Driven Visual Grounding in Remote Sensing Imagery",
-      "url": "https://arxiv.org/abs/2610.16364v1",
-      "date": "2026-10-12",
-      "summary": "Speech-driven visual grounding in remote sensing (RSVG) removes the typing bottleneck of text-based interaction and is intended to preserve prosodic intent, enabling hands-free target acquisition in time-critical missions. The direct-audio…"
     },
     {
       "source": "arXiv",
@@ -141,14 +149,6 @@
       "url": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-3/Sentinel-3C_returns_its_first_views_of_Earth",
       "date": "2026-10-08",
       "summary": "Just two weeks after it was launched, the Copernicus Sentinel-3C satellite returned its first images and measurements from two of its key instruments – a major milestone that confirms the satellite is working well and on the road to monito…"
-    },
-    {
-      "source": "ESA",
-      "cat": "Observing the Earth",
-      "title": "Introducing ESA’s Earth Virtual Expert",
-      "url": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Introducing_ESA_s_Earth_Virtual_Expert",
-      "date": "2026-10-08",
-      "summary": "The European Space Agency (ESA) has released Earth Virtual Expert (EVE), a platform powered with Artificial Intelligence (AI), to make Earth observation information more accessible and easier to understand. Built on trusted scientific sour…"
     }
   ]
 }

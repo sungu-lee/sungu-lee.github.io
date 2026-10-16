@@ -1,0 +1,274 @@
+{
+  "updated": "2026-10-16T04:40:21Z",
+  "source": "arXiv API (cs.CV · cs.LG · eess.IV), filtered to Earth-observation context",
+  "window": "last 12 months",
+  "trackCounts": {
+    "foundation": 5,
+    "vlm": 5,
+    "sar": 5,
+    "ssl": 5,
+    "agentic": 5,
+    "restoration": 5
+  },
+  "volume": [
+    {
+      "month": "2025-11",
+      "count": null
+    },
+    {
+      "month": "2025-12",
+      "count": null
+    },
+    {
+      "month": "2026-01",
+      "count": null
+    },
+    {
+      "month": "2026-02",
+      "count": null
+    },
+    {
+      "month": "2026-03",
+      "count": null
+    },
+    {
+      "month": "2026-04",
+      "count": null
+    },
+    {
+      "month": "2026-05",
+      "count": null
+    },
+    {
+      "month": "2026-06",
+      "count": null
+    },
+    {
+      "month": "2026-07",
+      "count": null
+    },
+    {
+      "month": "2026-08",
+      "count": null
+    },
+    {
+      "month": "2026-09",
+      "count": null
+    },
+    {
+      "month": "2026-10",
+      "count": null
+    }
+  ],
+  "count": 26,
+  "papers": [
+    {
+      "track": "sar",
+      "title": "Data-Efficient ConvNeXt Pretraining for High-Resolution Sentinel-1 GRD SAR Representation Learning",
+      "authors": "Yuki Natsume, Sang-Ho Yun, Chai Kiat Yeo",
+      "url": "https://arxiv.org/abs/2610.21993v1",
+      "date": "2026-10-15",
+      "summary": "Labeled Sentinel-1 Ground Range Detected (S1GRD) datasets remain scarce, limiting supervised deep learning for land-surface remote sensing, while self-supervised pretraining for this domain has been dominated by Vision Transformer (ViT)-based masked image mod…"
+    },
+    {
+      "track": "agentic",
+      "title": "ISW-Agent: Integrating LLM-Driven Dialogue with n8n Workflow for Internal Solitary Wave Remote Sensing Image Processing",
+      "authors": "Hao Zhang, Hengrui Liu, Lina Sun 외 1명",
+      "url": "https://arxiv.org/abs/2610.21502v1",
+      "date": "2026-10-15",
+      "summary": "Internal solitary wave (ISW) remote sensing requires task parameters and spatial information to be transferred across image acquisition, detection, stripe extraction, and propagation prediction. Here, we present ISW-Agent, which integrates large language mode…"
+    },
+    {
+      "track": "foundation",
+      "title": "PiCo: Physics-Informed Concept Probing for Geo-Foundation Models",
+      "authors": "Yihang She, Andrew Blake, Jianbo Qi 외 1명",
+      "url": "https://arxiv.org/abs/2610.20973v1",
+      "date": "2026-10-14",
+      "summary": "Geo-foundation models (GFMs) are typically evaluated by downstream task predictive performance, revealing little about which physical features they are sensitive to or use in prediction. This limits developers' ability to test hypotheses about model behaviour…"
+    },
+    {
+      "track": "foundation",
+      "title": "MajorTOM:Elliot Pretrain, A Multi-Sensor, Multi-Temporal Pretraining Dataset for Earth Observation",
+      "authors": "Carmen Oliver Huidobro, Mikolaj Czerkawski, Kevin Monsalvez-Pozo 외 3명",
+      "url": "https://arxiv.org/abs/2610.18624v1",
+      "date": "2026-10-13",
+      "summary": "Pretraining generalist Earth observation foundation models requires data that combine several sensors, varied temporal sampling and, increasingly, text, yet open datasets rarely provide all three in one consistent, easily accessible form. We introduce MajorTO…"
+    },
+    {
+      "track": "vlm",
+      "title": "The Gap Is in the Geometry: A Convergent Meta-Analysis of Multi-Facet Aerial and Remote Sensing Video Understanding",
+      "authors": "Georgios Angelidis, Aggelos Psiris, Maria Vakalopoulou 외 3명",
+      "url": "https://arxiv.org/abs/2610.19102v1",
+      "date": "2026-10-13",
+      "summary": "Aerial and remote sensing video is increasingly evaluated like web video, by posing multiple-choice questions to multimodal large language models (MLLMs) over sampled frames and reporting accuracy. This paper argues that this recipe measures the wrong aspect,…"
+    },
+    {
+      "track": "vlm",
+      "title": "ReDiS: Reasoning-Diagnosis Self-Evolution for Multimodal Reasoning in Remote Sensing",
+      "authors": "Yi Liu, Wentao Jiang, Shuo Ni 외 5명",
+      "url": "https://arxiv.org/abs/2610.18388v1",
+      "date": "2026-10-13",
+      "summary": "Multimodal large language models (MLLMs) have shown strong potential for remote sensing understanding, yet reliable reasoning remains challenging when tasks require fine-grained visual grounding and multi-step inference. Existing approaches typically rely on …"
+    },
+    {
+      "track": "vlm",
+      "title": "Hallucination-aware Faithful Reasoning in Remote Sensing",
+      "authors": "Yi Liu, Jing Zhang, Xiang Feng 외 5명",
+      "url": "https://arxiv.org/abs/2610.18369v1",
+      "date": "2026-10-13",
+      "summary": "Multimodal large language models (MLLMs) have demonstrated promising capabilities for remote sensing reasoning, yet they frequently generate visually unsupported reasoning that contradicts the visual evidence. Existing post-training methods optimize primarily…"
+    },
+    {
+      "track": "vlm",
+      "title": "Omni-RS: Unifying Multi-Task Understanding and Generation in Remote Sensing",
+      "authors": "Pan Yin. Shuai Yang, Yuanhao Liu, Datao Tang 외 6명",
+      "url": "https://arxiv.org/abs/2610.18323v1",
+      "date": "2026-10-13",
+      "summary": "Practical remote sensing applications often require both understanding and generation capabilities for the same geographic scene. However, most existing methods address either understanding or generation in isolation, while existing unified remote sensing mod…"
+    },
+    {
+      "track": "ssl",
+      "title": "Deficit-Driven Stratified Acquisition for Building STRATA-S12: An Open SAR-Optical Corpus for Self-Supervised Learning",
+      "authors": "Christian Sanchez-Leon, Dongming Chen, Dongqi Wang",
+      "url": "https://arxiv.org/abs/2610.17680v1",
+      "date": "2026-10-13",
+      "summary": "Building a co-registered SAR-optical corpus for self-supervised Earth Observation is above all an acquisition problem, yet the main multi-modal datasets are collected opportunistically, with no per-stratum quota control and no mechanism against the geographic…"
+    },
+    {
+      "track": "agentic",
+      "title": "The Last Remote Sensing Model Built by Humans? Casting Any Earth Observation Task as Recursive Self-Improvement",
+      "authors": "Sijie Zhao, Zeqi Zhou, Heli Qi 외 6명",
+      "url": "https://arxiv.org/abs/2610.18845v2",
+      "date": "2026-10-13",
+      "summary": "Earth observation (EO) models are still built by hand. For each new task, experts design a training recipe and tune it against a benchmark. We show that this loop can be handed to an agent. Any verifiable task can be cast as a harness and a verifier, where th…"
+    },
+    {
+      "track": "agentic",
+      "title": "Trust Before Autonomy: Rethinking Agentic Remote Sensing for Crisis Response",
+      "authors": "Georgios Angelidis, Aggelos Psiris, Spyridon Evangelatos 외 4명",
+      "url": "https://arxiv.org/abs/2610.18789v1",
+      "date": "2026-10-13",
+      "summary": "Agentic remote sensing is evaluated on how many questions it can answer, whereas crisis response depends on whether its answers can be relied on and how much of the decision can safely be handed to the agent. This paper argues that \\emph{autonomy should be ea…"
+    },
+    {
+      "track": "sar",
+      "title": "UAV SAR Imaging via Diffusion Posterior Sampling under Non-Ideal Motion in ISAC Systems",
+      "authors": "Keying Zhu, Le Liang, Jie Yang 외 2명",
+      "url": "https://arxiv.org/abs/2610.14516v1",
+      "date": "2026-10-10",
+      "summary": "Unmanned aerial vehicle-enabled synthetic aperture radar (SAR) offers significant potential for providing communication services to ground users while sensing the surrounding environment in low-altitude integrated sensing and communication (ISAC) systems. How…"
+    },
+    {
+      "track": "foundation",
+      "title": "Revisiting the Task of Building Damage Assessment by Satellite Imaging",
+      "authors": "Anthony Cioppa, Virgile Blua, Sébastien Piérard 외 2명",
+      "url": "https://arxiv.org/abs/2610.13857v1",
+      "date": "2026-10-09",
+      "summary": "Natural disasters such as earthquakes, tropical storms, and floods cause extensive damage to buildings, and rapid, reliable damage maps are essential to guide emergency response. Automating this task, referred to as building damage assessment (BDA), from sate…"
+    },
+    {
+      "track": "foundation",
+      "title": "PlacePulse: Learning Transferable Place Representations from Structural Geographic Data",
+      "authors": "Lucía García-Duarte, Miguel Álvarez, Diego Vicente 외 2명",
+      "url": "https://arxiv.org/abs/2610.13390v1",
+      "date": "2026-10-09",
+      "summary": "Geospatial machine learning often depends on task-specific feature engineering over large collections of sociodemographic, business, and environmental variables. Geospatial foundation models offer reusable representations of place, but leading approaches typi…"
+    },
+    {
+      "track": "restoration",
+      "title": "MOSAIC: Multi-Scale Object-Centric Slot Adaptation with Image-Guided Prototype Conditioning for Remote Sensing Image Super-Resolution",
+      "authors": "Liuqian Wang, Hanyu Xie, Rongzhen Zhao 외 6명",
+      "url": "https://arxiv.org/abs/2610.13547v1",
+      "date": "2026-10-09",
+      "summary": "Pretrained diffusion Transformers provide powerful generative priors for image restoration, yet adapting them to structure-sensitive tasks remains challenging. Existing methods mainly rely on dense low-resolution features as conditions, which often entangle s…"
+    },
+    {
+      "track": "ssl",
+      "title": "Onboard Marine Anomaly Detection on $Φ$sat-2: From Simulation-Based Development to In-Orbit Demonstration",
+      "authors": "Clotilde Szywala, Thomas Goudemant, Marjorie Bellizzi 외 2명",
+      "url": "https://arxiv.org/abs/2610.11735v1",
+      "date": "2026-10-08",
+      "summary": "Onboard Artificial Intelligence can improve responsiveness and bandwidth efficiency of Earth Observation systems by processing data directly on the satellite. This paper presents the experience gained from the development, onboard integration, and post-launch…"
+    },
+    {
+      "track": "sar",
+      "title": "CNet: A Complex-Valued Deep Learning Framework with Wirtinger Autodifferentiation and FFT--Hadamard Convolution",
+      "authors": "Marcel Crasmaru",
+      "url": "https://arxiv.org/abs/2610.08592v3",
+      "date": "2026-10-06",
+      "summary": "CNet is a C++/CUDA framework for deep complex-valued neural networks (CVNNs), trained by gradient descent with explicit Wirtinger (CR-calculus) derivatives. Complex models are underexplored yet natural where data is intrinsically complex -- RF/IQ, MRI k-space…"
+    },
+    {
+      "track": "sar",
+      "title": "CETUS: How Far Do Representations Trained on Earth Transfer to Cassini SAR of Titan?",
+      "authors": "Kevin Lee",
+      "url": "https://arxiv.org/abs/2610.07576v1",
+      "date": "2026-10-06",
+      "summary": "Cassini synthetic aperture radar (SAR) images reveal the dunes, plains, and lake basins of Titan, providing an instance of representations learned from Earth imagery for planetary terrain classification. Cross-domain Evaluation of Earth-to-Titan Transfer Usin…"
+    },
+    {
+      "track": "foundation",
+      "title": "FairRSFM: A Biome-Aware Benchmark and Debiasing Framework for Remote Sensing Foundation Models",
+      "authors": "Md Aminur Hossain, Omkumar Vaghasiya, Rajeev Ranjan Dwivedi 외 2명",
+      "url": "https://arxiv.org/abs/2610.05790v1",
+      "date": "2026-10-05",
+      "summary": "Remote sensing foundation models (RSFMs) are commonly evaluated using aggregate metrics, which can hide systematic performance disparities across ecological regions. We introduce FairRSFM, a biome-aware benchmark for evaluating ecological group robustness in …"
+    },
+    {
+      "track": "restoration",
+      "title": "Multi-Task Partially Supervised Learning for Super-Resolution and Semantic Segmentation on Earth Observation data",
+      "authors": "Hoàng-Ân Lê, Minh-Tan Pham, Solange Lemai-Chenevier 외 1명",
+      "url": "https://arxiv.org/abs/2610.06389v1",
+      "date": "2026-10-05",
+      "summary": "Super-resolution and semantic segmentation are known to benefit one another, especially in the Earth observation context. However, learning both tasks in a joint model often requires both task annotations, which is impractical and expensive. In this paper, we…"
+    },
+    {
+      "track": "ssl",
+      "title": "LEON: Location Embeddings from OSM Neighborhoods via Hexagonal Graph Masked Autoencoders",
+      "authors": "Szymon Soltysiak, Radoslaw Malek, Jedrzej Kusnierz 외 3명",
+      "url": "https://arxiv.org/abs/2610.05497v1",
+      "date": "2026-10-04",
+      "summary": "Geographic information systems increasingly rely on sophisticated spatial representation learning techniques to extract meaningful patterns from complex geospatial data. This paper introduces LEON, a novel self-supervised framework that adapts Graph Masked Au…"
+    },
+    {
+      "track": "sar",
+      "title": "Variational Quantum Attention for Molecular Graph Learning",
+      "authors": "Yu-Cheng Lin, Yu-Chao Hsu, Tai-Yue Li 외 2명",
+      "url": "https://arxiv.org/abs/2610.04588v1",
+      "date": "2026-10-03",
+      "summary": "Molecular property prediction is central to computational drug discovery, where graph neural networks learn to weight neighboring atomic environments during message passing. Yet it remains unclear how variational quantum circuits alter learned attention behav…"
+    },
+    {
+      "track": "ssl",
+      "title": "On-Board Anomaly Detection for Efficient Marine Environmental Monitoring",
+      "authors": "Thomas Goudemant, Clotilde Szywala, Benjamin Francesconi 외 4명",
+      "url": "https://arxiv.org/abs/2610.03649v1",
+      "date": "2026-10-02",
+      "summary": "Marine ecosystems are impacted by various threats such as oil spills, algal blooms, and sediment floods, which disrupt habitats, wildlife, and human activities. Advances in satellite imagery and Artificial Intelligence (AI) have enhanced our capabilities for …"
+    },
+    {
+      "track": "restoration",
+      "title": "CoEvolve: Construct-to-Edit Visual Grounding with Bidirectional State Refinement",
+      "authors": "Dongwei Sun, Yujie Zhang, Bowen Yao 외 3명",
+      "url": "https://arxiv.org/abs/2610.01710v1",
+      "date": "2026-10-01",
+      "summary": "Visual grounding localizes an object described by language with a bounding box. Most multimodal grounding models compress target identification, spatial reasoning, and boundary estimation into one terminal prediction. Free-form rationales make reasoning lingu…"
+    },
+    {
+      "track": "restoration",
+      "title": "Spectral Super-Resolution using Spatial-Spectral Residual Operator Networks",
+      "authors": "Seokhyun Chin",
+      "url": "https://arxiv.org/abs/2609.35410v1",
+      "date": "2026-09-28",
+      "summary": "Spectral super-resolution of multispectral satellite images can enable high temporal- and spatial-resolution hyperspectral satellite imagery at a modest cost, significantly increasing the applicability of hyperspectral remote sensing. This task is inherently …"
+    },
+    {
+      "track": "restoration",
+      "title": "Experimental Validation of Combined Imaging and Vibration Mitigation for High-Altitude Platforms",
+      "authors": "Ákos Radványi, Anita Keszler, Dániel Balogh 외 6명",
+      "url": "https://arxiv.org/abs/2609.09376v1",
+      "date": "2026-09-08",
+      "summary": "The demand for continuous, high-resolution aerial monitoring is driving interest in High- Altitude Pseudo-Satellites (HAPS), which offer a cost-effective alternative to satellites with greater flexibility. While HAPS platforms provide valuable Earth observati…"
+    }
+  ]
+}
