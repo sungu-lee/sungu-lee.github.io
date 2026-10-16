@@ -221,9 +221,18 @@ const SITE = {
       heading: "Research",
       lead: "Radiometric calibration is the foundation; SAR and multi-sensor convergence extend what one optical scene can answer; applications turn that into measurements of soil, forests, ice and crops.",
       refsHeading: "Related outputs",
+      // 연구분야 카드를 세 묶음으로 나눠 보여준다 (areas[].group 이 여기 key 를 가리킴)
+      groups: [
+        { key: "calval", label: "Calibration & standard products",
+          note: "Making the recorded numbers physically trustworthy — and the products built directly on them" },
+        { key: "imagery", label: "Optical & SAR image applications",
+          note: "What a single scene can be made to answer, and how AI raises that ceiling" },
+        { key: "fusion", label: "Multi-sensor convergence & domain applications",
+          note: "Fusing the constellation into measurements of soil, forests, ice and crops" }
+      ],
       areas: [
         {
-          viz: "calval",
+          viz: "calval", group: "calval",
           tag: "Core discipline",
           title: "Radiometric Calibration",
           body:
@@ -235,7 +244,7 @@ const SITE = {
           ]
         },
         {
-          viz: "sar",
+          viz: "sar", group: "imagery",
           tag: "Radar",
           title: "SAR Applications",
           body:
@@ -252,7 +261,7 @@ const SITE = {
           ]
         },
         {
-          viz: "fusion",
+          viz: "fusion", group: "fusion",
           tag: "Convergence",
           title: "Multi-sensor Convergence",
           body:
@@ -264,7 +273,7 @@ const SITE = {
           ]
         },
         {
-          viz: "indices",
+          viz: "indices", group: "calval",
           tag: "Spectral indices",
           title: "Tasseled Cap & Vegetation Indices",
           body:
@@ -276,7 +285,7 @@ const SITE = {
           ]
         },
         {
-          viz: "forest",
+          viz: "forest", group: "fusion",
           tag: "Ecosystems",
           title: "Forest, Crop & Habitat Monitoring",
           body:
@@ -284,7 +293,7 @@ const SITE = {
           keywords: ["Pine wilt disease", "Crop yield prediction", "Species distribution", "Multi-temporal", "KARI-SDM"]
         },
         {
-          viz: "seaice",
+          viz: "seaice", group: "fusion",
           tag: "Cryosphere",
           title: "Polar & Route Safety",
           body:
@@ -292,7 +301,7 @@ const SITE = {
           keywords: ["Sea ice", "Northern Sea Route", "Campbell Glacier", "Offset tracking", "Time series"]
         },
         {
-          viz: "ai",
+          viz: "ai", group: "imagery",
           tag: "AI for EO",
           title: "AI for Remote Sensing",
           body:
@@ -300,7 +309,7 @@ const SITE = {
           keywords: ["Vision-language models", "Data augmentation", "Agentic AI", "GPU parallel processing", "Image matching"]
         },
         {
-          viz: "ontology",
+          viz: "ontology", group: "fusion",
           tag: "Platform",
           title: "Imagery Platform & Applications",
           body:
@@ -752,9 +761,18 @@ const SITE = {
       heading: "연구분야",
       lead: "복사 검보정이 토대이고, SAR과 융복합활용이 단일 광학 영상의 한계를 넘어서며, 그 위에서 토양·산림·해빙·작물을 실제로 측정하는 활용 연구가 이루어집니다.",
       refsHeading: "관련 성과",
+      // 연구분야 카드를 세 묶음으로 나눠 보여준다 (areas[].group 이 여기 key 를 가리킴)
+      groups: [
+        { key: "calval", label: "복사 검보정 · 표준산출물",
+          note: "위성이 기록한 값을 신뢰할 수 있는 물리량으로 만드는 일과, 그 위에 바로 세워지는 산출물" },
+        { key: "imagery", label: "광학 · SAR 영상 활용",
+          note: "한 장의 영상에서 답을 끌어내는 처리 기술과, AI로 그 한계를 끌어올리는 연구" },
+        { key: "fusion", label: "융복합활용 · 도메인 응용",
+          note: "국내 위성군을 융합해 토양·산림·해빙·작물을 실제로 측정하는 연구" }
+      ],
       areas: [
         {
-          viz: "calval",
+          viz: "calval", group: "calval",
           tag: "주 전공",
           title: "복사 검보정",
           body:
@@ -766,7 +784,7 @@ const SITE = {
           ]
         },
         {
-          viz: "sar",
+          viz: "sar", group: "imagery",
           tag: "레이더",
           title: "SAR 활용",
           body:
@@ -783,7 +801,7 @@ const SITE = {
           ]
         },
         {
-          viz: "fusion",
+          viz: "fusion", group: "fusion",
           tag: "융복합",
           title: "다중센서 융복합활용",
           body:
@@ -795,7 +813,7 @@ const SITE = {
           ]
         },
         {
-          viz: "indices",
+          viz: "indices", group: "calval",
           tag: "분광지수",
           title: "TCT · 식생지수 개발",
           body:
@@ -807,7 +825,7 @@ const SITE = {
           ]
         },
         {
-          viz: "forest",
+          viz: "forest", group: "fusion",
           tag: "생태계",
           title: "산림 · 작물 · 서식지 모니터링",
           body:
@@ -815,7 +833,7 @@ const SITE = {
           keywords: ["소나무재선충", "작물 생산량 예측", "종분포 모델", "다시기 분석", "KARI-SDM"]
         },
         {
-          viz: "seaice",
+          viz: "seaice", group: "fusion",
           tag: "극지",
           title: "극지 · 항로 안전",
           body:
@@ -823,7 +841,7 @@ const SITE = {
           keywords: ["해빙", "북극항로", "Campbell Glacier", "오프셋트래킹", "시계열"]
         },
         {
-          viz: "ai",
+          viz: "ai", group: "imagery",
           tag: "AI",
           title: "원격탐사 AI",
           body:
@@ -831,7 +849,7 @@ const SITE = {
           keywords: ["비전-언어 모델", "데이터 증강", "에이전틱 AI", "GPU 병렬처리", "영상정합"]
         },
         {
-          viz: "ontology",
+          viz: "ontology", group: "fusion",
           tag: "플랫폼",
           title: "지상시스템 · 활용 서비스",
           body:

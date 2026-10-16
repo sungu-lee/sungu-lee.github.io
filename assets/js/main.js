@@ -439,9 +439,35 @@
   }
 
   function renderResearch(L) {
-    var grid = $("#researchAreas");
-    clear(grid);
+    var host = $("#researchAreas");
+    clear(host);
+    // 그룹 정의가 있으면 소제목 + 그리드로 묶고, 없으면 예전처럼 한 그리드에 전부 넣는다
+    var defs = (L.research.groups && L.research.groups.length) ? L.research.groups : null;
+    var grids = {};
+    var fallback = null;
+    if (defs) {
+      defs.forEach(function (g) {
+        var hit = L.research.areas.filter(function (a) { return a.group === g.key; });
+        if (!hit.length) return;
+        var block = el("section", "rgroup");
+        var head = el("div", "rgroup-head");
+        head.appendChild(el("h3", null, g.label));
+        if (g.note) head.appendChild(el("p", null, g.note));
+        block.appendChild(head);
+        var gr = el("div", "card-grid");
+        block.appendChild(gr);
+        host.appendChild(block);
+        grids[g.key] = gr;
+      });
+    }
+    function slot(a) {
+      if (defs && grids[a.group]) return grids[a.group];
+      if (!fallback) { fallback = el("div", "card-grid"); host.appendChild(fallback); }
+      return fallback;
+    }
+
     L.research.areas.forEach(function (a) {
+      var grid = slot(a);
       var c = el("article", "card");
       if (a.viz && window.VIZ && window.VIZ[a.viz]) {
         var fig = el("div", "card-viz");
@@ -458,8 +484,12 @@
       }
       // 관련 성과 — 출판사 DOI 링크와 공개 가능한 원문 PDF
       if (a.refs && a.refs.length) {
-        var box = el("div", "refs");
-        box.appendChild(el("h4", null, L.research.refsHeading || "Related outputs"));
+        // 기본은 접어 둔다 — 카드 높이가 들쭉날쭉해지는 주범이라 제목만 남기고 숨긴다
+        var box = el("details", "refs");
+        var sum = el("summary");
+        sum.appendChild(el("h4", null, L.research.refsHeading || "Related outputs"));
+        sum.appendChild(el("span", "refs-n", String(a.refs.length)));
+        box.appendChild(sum);
         var ul = el("ul");
         a.refs.forEach(function (r) {
           var li = el("li", r.kind === "pdf" ? "is-pdf" : "is-doi");
@@ -630,67 +660,68 @@
     $("#recruitBtn").textContent = L.teaching.recruitCta;
   }
 
+  /* ---------- 관련 사이트 ----------
+     성격별(활용센터 / 학회 / 소속)로 묶어 배너 카드로 보여준다.
+     각 그룹의 첫 항목에 lead:true 가 있으면 가로로 넓은 대표 배너가 된다. */
+  function siteIcon(key) {
+    var paths = {
+      centre: '<ellipse cx="12" cy="6" rx="7" ry="3"/>' +
+              '<path d="M5 6v6c0 1.66 3.13 3 7 3s7-1.34 7-3V6"/>' +
+              '<path d="M5 12v6c0 1.66 3.13 3 7 3s7-1.34 7-3v-6"/>',
+      society: '<path d="M12 3 2 8l10 5 10-5-10-5Z"/><path d="M6 10.5V16c0 1.7 2.7 3 6 3s6-1.3 6-3v-5.5"/>',
+      org: '<path d="M3 21h18"/><path d="M5 21V8l7-4 7 4v13"/><path d="M9.5 21v-5h5v5"/>'
+    };
+    var s = document.createElement("span");
+    s.className = "rs-ic";
+    s.setAttribute("aria-hidden", "true");
+    s.innerHTML = '<svg viewBox="0 0 24 24" width="19" height="19" fill="none" ' +
+      'stroke="currentColor" stroke-width="1.6" stroke-linecap="round" ' +
+      'stroke-linejoin="round">' + (paths[key] || paths.org) + "</svg>";
+    return s;
+  }
+
+  function siteCard(it, key, lead) {
+    var a = el("a", "rs" + (lead ? " is-lead" : ""));
+    a.href = it.url;
+    a.target = "_blank";
+    a.rel = "noopener";
+    a.appendChild(siteIcon(key));
+    var tx = el("span", "rs-tx");
+    tx.appendChild(el("strong", null, it.label));
+    if (it.sub) tx.appendChild(el("span", null, it.sub));
+    a.appendChild(tx);
+    var go = el("span", "rs-go");
+    go.setAttribute("aria-hidden", "true");
+    go.textContent = "↗";
+    a.appendChild(go);
+    return a;
+  }
+
   function renderFamily(L) {
     var box = $("#familyList");
     if (!box) return;
     clear(box);
     var F = L.family;
-    if (!F || !F.items || !F.items.length) return;
-    F.items.forEach(function (it) {
-      var a = el("a", "fam");
-      a.href = it.url;
-      a.target = "_blank";
-      a.rel = "noopener";
+    if (!F || !F.groups || !F.groups.length) return;
 
-      var ic = el("span", "fam-ic");
-      ic.setAttribute("aria-hidden", "true");
-      ic.innerHTML =
-        '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" ' +
-        'stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">' +
-        '<ellipse cx="12" cy="6" rx="7" ry="3"/>' +
-        '<path d="M5 6v6c0 1.66 3.13 3 7 3s7-1.34 7-3V6"/>' +
-        '<path d="M5 12v6c0 1.66 3.13 3 7 3s7-1.34 7-3v-6"/></svg>';
-      a.appendChild(ic);
+    F.groups.forEach(function (g) {
+      if (!g.items || !g.items.length) return;
+      var sec = el("section", "rs-group");
+      var head = el("div", "rs-head");
+      head.appendChild(el("h3", null, g.label));
+      if (g.note) head.appendChild(el("span", null, g.note));
+      sec.appendChild(head);
 
-      var tx = el("span", "fam-tx");
-      if (it.tag) tx.appendChild(el("span", "fam-tag", it.tag));
-      tx.appendChild(el("strong", null, it.label));
-      if (it.sub) tx.appendChild(el("span", "fam-sub", it.sub));
-      a.appendChild(tx);
-
-      var go = el("span", "fam-go");
-      go.setAttribute("aria-hidden", "true");
-      go.textContent = "↗";
-      a.appendChild(go);
-
-      box.appendChild(a);
+      var leads = g.items.filter(function (i) { return i.lead; });
+      var rest = g.items.filter(function (i) { return !i.lead; });
+      leads.forEach(function (i) { sec.appendChild(siteCard(i, g.key, true)); });
+      if (rest.length) {
+        var grid = el("div", "rs-grid");
+        rest.forEach(function (i) { grid.appendChild(siteCard(i, g.key, false)); });
+        sec.appendChild(grid);
+      }
+      box.appendChild(sec);
     });
-
-    // 그룹별 링크 — 기관 / 활용센터 / 학회
-    var host = box.parentNode;
-    var oldG = host.querySelector(".fam-groups");
-    if (oldG) oldG.remove();
-    if (F.groups && F.groups.length) {
-      var wrap = el("div", "fam-groups");
-      F.groups.forEach(function (g) {
-        if (!g.items || !g.items.length) return;
-        var sec = el("div", "fam-group");
-        sec.appendChild(el("h3", null, g.label));
-        var ul = el("ul");
-        g.items.forEach(function (it) {
-          var li = el("li");
-          var a2 = el("a", null, it.label);
-          a2.href = it.url;
-          a2.target = "_blank";
-          a2.rel = "noopener";
-          li.appendChild(a2);
-          ul.appendChild(li);
-        });
-        sec.appendChild(ul);
-        wrap.appendChild(sec);
-      });
-      host.appendChild(wrap);
-    }
   }
 
   function renderContact(L) {
@@ -1074,6 +1105,8 @@
   function compact(L) {
     collapseCards(L);
     limitChildren($("#aboutBody"), 2, L);
+    // 연구분야는 묶음마다 2장까지만 펼쳐 두고 나머지는 "더 보기"
+    $$("#researchAreas .card-grid").forEach(function (g) { limitChildren(g, 2, L); });
     limitChildren($("#projectList"), 3, L);
     limitChildren($("#highlights"), 2, L);
     limitChildren($("#topicGrid"), 3, L);
