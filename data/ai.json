@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16T04:40:21Z",
+  "updated": "2026-10-16T04:52:17Z",
   "source": "arXiv API (cs.CV · cs.LG · eess.IV), filtered to Earth-observation context",
   "window": "last 12 months",
   "trackCounts": {
@@ -13,51 +13,51 @@
   "volume": [
     {
       "month": "2025-11",
-      "count": null
+      "count": 63
     },
     {
       "month": "2025-12",
-      "count": null
+      "count": 55
     },
     {
       "month": "2026-01",
-      "count": null
+      "count": 50
     },
     {
       "month": "2026-02",
-      "count": null
+      "count": 47
     },
     {
       "month": "2026-03",
-      "count": null
+      "count": 77
     },
     {
       "month": "2026-04",
-      "count": null
+      "count": 65
     },
     {
       "month": "2026-05",
-      "count": null
+      "count": 76
     },
     {
       "month": "2026-06",
-      "count": null
+      "count": 58
     },
     {
       "month": "2026-07",
-      "count": null
+      "count": 57
     },
     {
       "month": "2026-08",
-      "count": null
+      "count": 67
     },
     {
       "month": "2026-09",
-      "count": null
+      "count": 47
     },
     {
       "month": "2026-10",
-      "count": null
+      "count": 24
     }
   ],
   "count": 26,
@@ -270,5 +270,6 @@
       "date": "2026-09-08",
       "summary": "The demand for continuous, high-resolution aerial monitoring is driving interest in High- Altitude Pseudo-Satellites (HAPS), which offer a cost-effective alternative to satellites with greater flexibility. While HAPS platforms provide valuable Earth observati…"
     }
-  ]
+  ],
+  "warnings": []
 }
