@@ -166,10 +166,19 @@ def latest(track: str, search: str, n: int) -> list[Paper]:
     return out
 
 
-def month_spans(months: int) -> list[tuple[str, str, str]]:
-    """최근 months 개월의 (라벨, 시작, 끝) 을 오래된 순으로 돌려준다."""
+def month_spans(months: int, skip_current: bool = True) -> list[tuple[str, str, str]]:
+    """최근 months 개월의 (라벨, 시작, 끝) 을 오래된 순으로 돌려준다.
+
+    기본적으로 이번 달은 제외한다. 아직 끝나지 않은 달을 완료된 달과 나란히
+    두면 마지막 점이 급락한 것처럼 읽히기 때문이다(같은 길이의 구간이 아님).
+    """
     now = datetime.now(timezone.utc)
     y, m = now.year, now.month
+    if skip_current:
+        m -= 1
+        if m == 0:
+            m = 12
+            y -= 1
     spans: list[tuple[str, str, str]] = []
     for back in range(months - 1, -1, -1):
         yy, mm = y, m - back
