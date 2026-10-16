@@ -92,6 +92,12 @@ const SITE = {
           { k: "B", nm: "450–520 nm" }, { k: "G", nm: "520–600 nm" },
           { k: "R", nm: "630–690 nm" }, { k: "NIR", nm: "760–900 nm" }
         ],
+        sampleHeading: "Sample scene at this stage",
+        sampleTags: [
+          "L0 · raw DN", "L1R · calibrated DN", "L1G · TOA reflectance",
+          "L2 · surface reflectance", "TCT · B/G/W composite", "NDVI · index map",
+          "AI · change mask", "QA · quality flags"
+        ],
         stageHeading: "Processing stages",
         stages: [
           "L0 → L1R restoration",
@@ -596,6 +602,12 @@ const SITE = {
         bands: [
           { k: "B", nm: "450–520 nm" }, { k: "G", nm: "520–600 nm" },
           { k: "R", nm: "630–690 nm" }, { k: "NIR", nm: "760–900 nm" }
+        ],
+        sampleHeading: "현재 단계의 샘플 영상",
+        sampleTags: [
+          "L0 · 원시 DN", "L1R · 보정 DN", "L1G · TOA 반사도",
+          "L2 · 지표 반사도", "TCT · B/G/W 합성", "NDVI · 지수영상",
+          "AI · 변화 마스크", "QA · 품질 플래그"
         ],
         stageHeading: "처리 단계",
         stages: [

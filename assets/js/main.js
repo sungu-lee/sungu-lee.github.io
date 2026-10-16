@@ -109,6 +109,157 @@
     }
   }
 
+  /* ---------- 처리 단계별 샘플 장면 ----------
+     처리 레벨이 바뀔 때 같은 장면이 어떻게 달라지는지를 보여주는 작은 칩.
+     격자 셀마다 4밴드 반사도와 지표피복을 만들어 두고, 단계별로 다르게
+     색을 입힌다. 합성 영상이며 실제 KOMPSAT 자료가 아니다.
+  --------------------------------------------------------------------- */
+  var SCENE_COLS = 46, SCENE_ROWS = 29;
+  var sceneCells = null;
+
+  function sHash(x, y, s) {
+    var h = Math.imul(x | 0, 374761393) + Math.imul(y | 0, 668265263) + Math.imul(s | 0, 1442695041);
+    h = Math.imul(h ^ (h >>> 13), 1274126177);
+    return ((h ^ (h >>> 16)) >>> 0) / 4294967295;
+  }
+
+  function sNoise(x, y, s) {
+    var xi = Math.floor(x), yi = Math.floor(y), xf = x - xi, yf = y - yi;
+    var u = xf * xf * (3 - 2 * xf), v = yf * yf * (3 - 2 * yf);
+    var a = sHash(xi, yi, s), b = sHash(xi + 1, yi, s);
+    var c2 = sHash(xi, yi + 1, s), d = sHash(xi + 1, yi + 1, s);
+    var top = a + (b - a) * u, bot = c2 + (d - c2) * u;
+    return top + (bot - top) * v;
+  }
+
+  function sFbm(x, y, s) {
+    return (sNoise(x, y, s) * 0.55 + sNoise(x * 2.1, y * 2.1, s + 7) * 0.3
+          + sNoise(x * 4.3, y * 4.3, s + 13) * 0.15);
+  }
+
+  function buildScene() {
+    var cells = [];
+    for (var j = 0; j < SCENE_ROWS; j++) {
+      for (var i = 0; i < SCENE_COLS; i++) {
+        var x = i / 7, y = j / 7;
+        var land = sFbm(x, y, 11);                 // 지표/수계
+        var veg = sFbm(x + 31, y + 17, 23);        // 식생 활력
+        var cloud = sFbm(x * 0.7 + 60, y * 0.7, 41);
+        var isWater = land < 0.4;
+        var b, g, r, n, cls;
+        if (isWater) {
+          cls = "water"; b = 0.07; g = 0.05; r = 0.035; n = 0.02;
+        } else if (veg > 0.56) {
+          cls = "veg";   b = 0.04; g = 0.07; r = 0.04; n = 0.38 + veg * 0.12;
+        } else if (veg > 0.44) {
+          cls = "crop";  b = 0.06; g = 0.10; r = 0.09; n = 0.26;
+        } else {
+          cls = "soil";  b = 0.11; g = 0.14; r = 0.19; n = 0.24;
+        }
+        var urban = sFbm(x * 3 + 90, y * 3, 57) > 0.72 && !isWater;
+        if (urban) { cls = "urban"; b = 0.15; g = 0.16; r = 0.17; n = 0.18; }
+        cells.push({
+          b: b, g: g, r: r, n: n, cls: cls,
+          cloud: Math.max(0, (cloud - 0.68) * 3),          // 0~1 구름
+          shadow: (!isWater && sFbm(x * 2 + 5, y * 2, 77) > 0.70) ? 0.45 : 0,
+          chg: (cls === "veg" || cls === "crop") && sFbm(x * 2.6 + 13, y * 2.6, 91) > 0.74
+        });
+      }
+    }
+    return cells;
+  }
+
+  function clamp255(v) { return v < 0 ? 0 : v > 255 ? 255 : v | 0; }
+
+  // 단계별 셀 → 색
+  function stageColor(cell, stage, i, j) {
+    var b = cell.b, g = cell.g, r = cell.r, n = cell.n;
+    var sh = 1 - cell.shadow;
+    var ndvi = (n - r) / (n + r + 1e-6);
+
+    if (stage <= 1) {
+      // L0/L1R — DN 영역. L0 은 검출기 줄무늬와 잡음이 남아 있다
+      var gain = stage === 0 ? (0.82 + 0.3 * sHash(i, 0, 5)) : 1;
+      var noise = stage === 0 ? (sHash(i, j, 99) - 0.5) * 26 : 0;
+      var dn = function (v) { return clamp255((v * sh * 520 + 24) * gain + noise); };
+      return [dn(r), dn(g), dn(b)];
+    }
+    if (stage === 2) {
+      // TOA — 대기 산란이 남아 푸르고 뿌옇다
+      var haze = 0.055;
+      return [clamp255((r * sh + haze * 0.5) * 620), clamp255((g * sh + haze * 0.8) * 620),
+              clamp255((b * sh + haze * 1.5) * 620)];
+    }
+    if (stage === 3) {
+      // 지표 반사도 — 대기·그림자 보정 후
+      return [clamp255(r * 660), clamp255(g * 660), clamp255(b * 660)];
+    }
+    if (stage === 4) {
+      // TCT — 밝기/녹색도/습윤도를 RGB 로
+      var bri = 0.30 * b + 0.28 * g + 0.47 * r + 0.56 * n;
+      var grn = -0.29 * b - 0.56 * g - 0.60 * r + 0.49 * n;
+      var wet = 0.15 * b + 0.42 * g - 0.05 * r - 0.74 * n;
+      return [clamp255(60 + bri * 420), clamp255(70 + grn * 520), clamp255(130 + wet * 420)];
+    }
+    if (stage === 5) {
+      // NDVI — 한 색 계열의 단계 (물은 따로)
+      if (cell.cls === "water") return [26, 48, 74];
+      var t = Math.max(0, Math.min(1, (ndvi + 0.1) / 0.95));
+      return [clamp255(214 - t * 176), clamp255(206 - t * 56), clamp255(150 - t * 96)];
+    }
+    if (stage === 6) {
+      // AI 변화탐지 — 지수영상 위에 변화 화소를 표시
+      if (cell.chg) return [255, 104, 92];
+      if (cell.cls === "water") return [24, 42, 66];
+      var t2 = Math.max(0, Math.min(1, (ndvi + 0.1) / 0.95));
+      var gy = clamp255(72 + t2 * 70);
+      return [gy, gy + 6, gy + 14];
+    }
+    // QA — 구름/그림자/수계 플래그
+    if (cell.cloud > 0.25) return [236, 240, 245];
+    if (cell.shadow > 0) return [120, 96, 168];
+    if (cell.cls === "water") return [64, 128, 196];
+    var base = clamp255(70 + (b + g + r) * 180);
+    return [base, base, base + 10];
+  }
+
+  // 단계별 렌더를 외부에서 검증할 수 있도록 노출 (테스트·디버그용)
+  window.__paintScene = function (cv, stage) { paintScene(cv, stage); };
+
+  function paintScene(cv, stage) {
+    if (!cv) return;
+    if (!sceneCells) sceneCells = buildScene();
+    var ctx = cv.getContext("2d");
+    if (!ctx) return;
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    var w = cv.clientWidth || 240, h = Math.round(w * SCENE_ROWS / SCENE_COLS);
+    if (cv.width !== Math.round(w * dpr)) {
+      cv.width = Math.round(w * dpr);
+      cv.height = Math.round(h * dpr);
+      cv.style.height = h + "px";
+    }
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    var cw = w / SCENE_COLS, ch = h / SCENE_ROWS;
+    for (var j = 0; j < SCENE_ROWS; j++) {
+      for (var i = 0; i < SCENE_COLS; i++) {
+        var c3 = stageColor(sceneCells[j * SCENE_COLS + i], stage, i, j);
+        ctx.fillStyle = "rgb(" + c3[0] + "," + c3[1] + "," + c3[2] + ")";
+        ctx.fillRect(i * cw, j * ch, cw + 0.6, ch + 0.6);
+      }
+    }
+    // 구름은 TOA 단계까지만 남아 있다
+    if (stage <= 2) {
+      for (var k = 0; k < sceneCells.length; k++) {
+        var cell = sceneCells[k];
+        if (cell.cloud <= 0.08) continue;
+        ctx.globalAlpha = Math.min(0.9, cell.cloud);
+        ctx.fillStyle = "#eef3f8";
+        ctx.fillRect((k % SCENE_COLS) * cw, Math.floor(k / SCENE_COLS) * ch, cw + 0.6, ch + 0.6);
+      }
+      ctx.globalAlpha = 1;
+    }
+  }
+
   /* ---------- KOMPSAT-3 관측·처리 콘솔 (개념 시연) ----------
      실제 위성 텔레메트리가 아니라 연구 처리 흐름을 시각화한 패널입니다. */
   function renderConsole(L) {
@@ -132,14 +283,21 @@
 
     // 분광 밴드 응답
     box.appendChild(el("h3", "cs-label", c.bandHeading));
+    // 밴드마다 제 파장대의 색을 쓴다. 숫자·파장 라벨이 함께 있어
+    // 색만으로 구분하게 두지 않는다(색각 이상 대비).
+    var BAND_COLOR = { B: "#4d8dff", G: "#3ddc84", R: "#ff5a5a", NIR: "#c45aff" };
     var bandBox = el("div", "cs-bands");
     var bars = [];
     c.bands.forEach(function (b) {
+      var col = BAND_COLOR[b.k] || "#6fd8e0";
       var row = el("div", "cs-band");
-      row.appendChild(el("span", "cs-bk", b.k));
+      var kk = el("span", "cs-bk", b.k);
+      kk.style.color = col;
+      row.appendChild(kk);
       row.appendChild(el("span", "cs-bn", b.nm));
       var track = el("span", "cs-track");
       var fill = el("i");
+      fill.style.background = "linear-gradient(90deg," + col + "99," + col + ")";
       track.appendChild(fill);
       row.appendChild(track);
       var val = el("span", "cs-bv", "—");
@@ -160,6 +318,23 @@
       return li;
     });
     box.appendChild(list);
+
+    // 처리 레벨에 따라 바뀌는 샘플 장면
+    var sampleCv = null, sampleTag = null;
+    if (c.sampleTags && c.sampleTags.length === c.stages.length) {
+      var fig = el("figure", "cs-sample");
+      sampleCv = document.createElement("canvas");
+      sampleCv.className = "cs-sample-cv";
+      sampleCv.setAttribute("role", "img");
+      sampleCv.setAttribute("aria-label", c.sampleHeading);
+      fig.appendChild(sampleCv);
+      var cap = el("figcaption");
+      sampleTag = el("b", null, c.sampleTags[0]);
+      cap.appendChild(sampleTag);
+      cap.appendChild(el("span", null, c.sampleHeading));
+      fig.appendChild(cap);
+      box.appendChild(fig);
+    }
 
     // 화면에 그려지는 위성 편대
     var fleet = SITE.config.fleet || [];
@@ -204,6 +379,12 @@
       items.forEach(function (li, i) {
         li.className = i < step ? "done" : (i === step ? "active" : "");
       });
+      // 샘플 장면은 현재 처리 중인 단계를 따라간다
+      if (sampleCv) {
+        var shown = Math.min(step, items.length - 1);
+        paintScene(sampleCv, shown);
+        if (sampleTag) sampleTag.textContent = c.sampleTags[shown];
+      }
       step = (step + 1) % (items.length + 1);
     }
 
