@@ -102,7 +102,7 @@ h1,h2,h3,h4,p{margin:0}
   text-transform:uppercase;margin-bottom:16px;
 }
 .hero-name{
-  font-size:clamp(2.6rem,5.6vw,3.9rem);line-height:1.1;color:#fff;letter-spacing:-.03em;font-weight:800;
+  font-size:clamp(2.05rem,3.9vw,2.95rem);line-height:1.14;color:#fff;letter-spacing:-.025em;font-weight:800;
   text-shadow:0 2px 30px rgba(0,0,0,.45);
 }
 .hero-namesub{color:#8fa9c2;font-size:17px;margin-top:8px;letter-spacing:.02em}
@@ -809,7 +809,7 @@ h1,h2,h3,h4,p{margin:0}
   body{line-height:1.66}
   .sec-title{font-size:30px}
   .sec-lead{font-size:16px;line-height:1.66}
-  .hero-name{font-size:clamp(38px,11vw,52px)}
+  .hero-name{font-size:clamp(31px,8.6vw,40px)}
   .hero-tagline{font-size:15.5px}
   .section{padding:48px 0}
   .sec-lead{margin-bottom:22px}

@@ -515,13 +515,146 @@ const SITE = {
         ]
       },
       topicsHeading: "Supervision Topics",
+      // 각 주제 카드의 "자세히" 안에 들어가는 강의 내용 — goals(학습목표) · modules(핵심 내용) ·
+      // practice(데이터·도구) · refs(관련 자료). 초안이므로 자유롭게 고쳐 쓰세요.
+      topicLabels: { goals: "What you will learn", modules: "Core content", practice: "Data & tools", refs: "Related material", open: "Lecture outline & material", close: "Close" },
       topics: [
-        { title: "Radiometric calibration & image quality", body: "Absolute, relative and vicarious calibration of KOMPSAT sensors; cross-sensor validation; SNR, MTF and RER characterisation." },
-        { title: "SAR applications", body: "KOMPSAT-5 soil moisture, super-resolution and refocusing, polarimetric analysis, PolInSAR forest height, offset tracking." },
-        { title: "Multi-sensor convergence", body: "Spatio-temporal fusion of KOMPSAT-3A with Sentinel-2, harmonisation across the Korean constellation, cross-platform index continuity." },
-        { title: "Spectral index development", body: "TCT and vegetation index design, atmospheric, topographic and shadow correction, suitability for Korean land surfaces." },
-        { title: "Ecosystem & polar monitoring", body: "Pine wilt disease detection, crop yield prediction, species distribution modelling, sea ice and glacier time series." },
-        { title: "AI for Earth observation", body: "Vision-language models, data augmentation, agentic workflows, GPU-parallel processing, model reliability and explainability." }
+        {
+          title: "Radiometric calibration & image quality",
+          body: "Absolute, relative and vicarious calibration of KOMPSAT sensors; cross-sensor validation; SNR, MTF and RER characterisation.",
+          goals: [
+            "Derive absolute gain and offset for a multispectral sensor from reflectance-based vicarious targets",
+            "Cross-calibrate against a reference sensor and account for spectral response differences",
+            "Characterise image quality — SNR, MTF, RER — from in-scene targets and report it defensibly"
+          ],
+          modules: [
+            "Sensor radiometric model: DN → at-sensor radiance → TOA reflectance; sources of uncertainty",
+            "Vicarious calibration: reflectance-based method, site selection, field spectroradiometry, atmospheric transfer with 6S",
+            "Cross-calibration: simultaneous nadir overpass, spectral band adjustment factors, trend monitoring",
+            "Spatial quality: edge-target MTF, relative edge response, SNR over uniform targets",
+            "Case study: establishing the KOMPSAT-2 absolute calibration standard and the KOMPSAT-3/3A/5 cal-val programme"
+          ],
+          practice: "KOMPSAT-3/3A L1R scenes with calibration reference datasets · Landsat-8/9 Collection 2 · Py6S · Python (NumPy, rasterio)",
+          refs: [
+            { label: "Absolute radiometric calibration of the KOMPSAT-2 multispectral camera (J. Appl. Remote Sens., 2012)", url: "https://doi.org/10.1117/1.JRS.6.063594", kind: "doi" },
+            { label: "NDVI from top-of-canopy reflectance of KOMPSAT-3A (ISPRS IJGI, 2020)", url: "https://doi.org/10.3390/ijgi9040257", kind: "doi" },
+            { label: "Py6S — Python interface to the 6S radiative transfer code", url: "https://py6s.readthedocs.io", kind: "web" }
+          ]
+        },
+        {
+          title: "SAR applications",
+          body: "KOMPSAT-5 soil moisture, super-resolution and refocusing, polarimetric analysis, PolInSAR forest height, offset tracking.",
+          goals: [
+            "Read X-band backscatter physically — geometry, speckle, σ⁰ calibration — before applying any model",
+            "Implement and validate a semi-empirical soil moisture retrieval against in-situ data",
+            "Apply polarimetric and interferometric methods to a real forest or glacier problem"
+          ],
+          modules: [
+            "SAR imaging geometry, speckle statistics, radiometric calibration to σ⁰ and terrain flattening",
+            "Soil moisture: semi-empirical models, roughness and vegetation effects, KOMPSAT-5 versus Sentinel-1",
+            "Point-target super-resolution and refocusing of target responses",
+            "Polarimetry: decompositions, single/dual/quad-pol comparison for landslide detection",
+            "PolInSAR forest height (RVoG) and coarse-to-fine offset tracking for glacier velocity"
+          ],
+          practice: "KOMPSAT-5 L1A/L1D · Sentinel-1 GRD/SLC · ESA SNAP · PolSARpro · Python",
+          refs: [
+            { label: "KOMPSAT-5 vs Sentinel-1 for soil moisture, semi-empirical model (Remote Sensing, 2022)", url: "https://doi.org/10.3390/rs14164042", kind: "doi" },
+            { label: "Open-access PDF — soil moisture paper", url: "files/rs-2022-kompsat5-sentinel1-soil-moisture.pdf", kind: "pdf" },
+            { label: "Super-resolution procedure for target responses in KOMPSAT-5 images (Sensors, 2022)", url: "https://doi.org/10.3390/s22197189", kind: "doi" },
+            { label: "Open-access PDF — KOMPSAT-5 super-resolution", url: "files/sensors-2022-kompsat5-super-resolution.pdf", kind: "pdf" },
+            { label: "Single-, dual- and quad-polarimetric SAR for landslide detection (ISPRS IJGI, 2019)", url: "https://doi.org/10.3390/ijgi8090384", kind: "doi" },
+            { label: "Fine-tuning of forest height retrieval in PolInSAR (IEEE GRSL, 2025)", url: "https://ieeexplore.ieee.org/document/10930519", kind: "doi" },
+            { label: "ESA SNAP toolbox", url: "https://step.esa.int/main/toolboxes/snap/", kind: "web" }
+          ]
+        },
+        {
+          title: "Multi-sensor convergence",
+          body: "Spatio-temporal fusion of KOMPSAT-3A with Sentinel-2, harmonisation across the Korean constellation, cross-platform index continuity.",
+          goals: [
+            "Make reflectance from different sensors comparable — spectrally, radiometrically and geometrically",
+            "Implement a spatio-temporal fusion method and evaluate it honestly against held-out scenes",
+            "Build an analysis-ready data cube from heterogeneous sources"
+          ],
+          modules: [
+            "Spectral response differences, band adjustment factors, BRDF normalisation",
+            "Co-registration and resampling: where fusion errors actually come from",
+            "Spatio-temporal fusion: STARFM-family methods and deep-learning alternatives, KOMPSAT-3A × Sentinel-2",
+            "Harmonised Tasseled Cap across KOMPSAT-3/3A/5 and CAS500 for cross-platform index continuity",
+            "Open Data Cube, STAC catalogues and the KIWI-SAT array database as the platform layer"
+          ],
+          practice: "KOMPSAT-3A + Sentinel-2 L2A pairs · Open Data Cube · Orfeo ToolBox · xarray / rasterio",
+          refs: [
+            { label: "NDVI from KOMPSAT-3A top-of-canopy reflectance via Orfeo ToolBox (ISPRS IJGI, 2020)", url: "https://doi.org/10.3390/ijgi9040257", kind: "doi" },
+            { label: "Soil moisture across KOMPSAT-5 and Sentinel-1 (Remote Sensing, 2022)", url: "https://doi.org/10.3390/rs14164042", kind: "doi" },
+            { label: "Open Data Cube", url: "https://www.opendatacube.org", kind: "web" },
+            { label: "Copernicus Data Space Ecosystem — Sentinel-2 access", url: "https://dataspace.copernicus.eu", kind: "web" }
+          ]
+        },
+        {
+          title: "Spectral index development",
+          body: "TCT and vegetation index design, atmospheric, topographic and shadow correction, suitability for Korean land surfaces.",
+          goals: [
+            "Derive sensor-specific Tasseled Cap coefficients by PCA and understand what each axis means physically",
+            "Design a sampling strategy that keeps the derivation representative of Korean land cover",
+            "Correct for atmosphere, topography and shadow before trusting any index"
+          ],
+          modules: [
+            "Tasseled Cap theory: Kauth–Thomas, Crist–Cicone, and why coefficients are sensor-specific",
+            "PCA / Gram–Schmidt derivation, balanced scene sampling, comparison with deep-learning derivations",
+            "Shadow-aware TCT and topographic correction (C-correction, SCS+C) for mountainous terrain",
+            "NDVI, EVI, Greenness: comparability across sensors and processing levels",
+            "Validation design: field reference, cross-sensor consistency, seasonal stability"
+          ],
+          practice: "KOMPSAT-3 L1G scenes over Korea · scikit-learn · Python · QGIS",
+          refs: [
+            { label: "NDVI with top-of-canopy reflectance from KOMPSAT-3A (ISPRS IJGI, 2020)", url: "https://doi.org/10.3390/ijgi9040257", kind: "doi" },
+            { label: "Absolute radiometric calibration underpinning index derivation (J. Appl. Remote Sens., 2012)", url: "https://doi.org/10.1117/1.JRS.6.063594", kind: "doi" },
+            { label: "Patent in progress — adaptive-PCA TCT coefficient derivation (see Publications → Patents)", url: "#publications", kind: "web" }
+          ]
+        },
+        {
+          title: "Ecosystem & polar monitoring",
+          body: "Pine wilt disease detection, crop yield prediction, species distribution modelling, sea ice and glacier time series.",
+          goals: [
+            "Turn a sequence of scenes into a defensible measurement of change, not just a pretty map",
+            "Fuse several weak indicators probabilistically rather than relying on one threshold",
+            "Validate against field or reference data and quantify uncertainty"
+          ],
+          modules: [
+            "Pine wilt disease: multi-indicator probabilistic fusion over KOMPSAT-3 at 2.8 m",
+            "Crop yield: phenology from time series, early-season prediction with deep learning",
+            "Species distribution modelling and habitat prediction — the KARI-SDM QGIS plugin",
+            "Sea ice concentration and type from combined optical and SAR observation; Northern Sea Route safety",
+            "Glacier velocity from KOMPSAT-5 offset tracking in East Antarctica"
+          ],
+          practice: "Multi-temporal KOMPSAT-3/3A · Sentinel-1/2 · QGIS · PyTorch · NSIDC and Copernicus marine products",
+          refs: [
+            { label: "SIRMS — Satellite-based Ice Route Monitoring System (KARI × UST, 2026–27)", url: "#research", kind: "web" },
+            { label: "NSIDC Sea Ice Index", url: "https://nsidc.org/data/seaice_index", kind: "web" },
+            { label: "Copernicus Data Space Ecosystem — Sentinel-1/2 access", url: "https://dataspace.copernicus.eu", kind: "web" }
+          ]
+        },
+        {
+          title: "AI for Earth observation",
+          body: "Vision-language models, data augmentation, agentic workflows, GPU-parallel processing, model reliability and explainability.",
+          goals: [
+            "Adapt a foundation or vision-language model to satellite imagery with limited labels",
+            "Generate and audit synthetic training data for a real EO task",
+            "Build an agentic processing workflow and make its outputs explainable and reliable"
+          ],
+          modules: [
+            "EO foundation models and self-supervised pretraining; what transfers to KOMPSAT and what does not",
+            "Vision-language models for scene understanding, captioning and retrieval",
+            "Label-to-image translation and other augmentation strategies; measuring their real effect",
+            "Agentic workflows: LLM-driven pipelines over processing chains, tool use, guardrails",
+            "GPU-parallel unsupervised classification of out-of-memory scenes; explainability and reliability"
+          ],
+          practice: "PyTorch 2.x · Hugging Face · LangGraph · KOMPSAT-3A chips with reference labels",
+          refs: [
+            { label: "AI Watch — live radar and feed of remote-sensing AI papers on this site", url: "#aiwatch", kind: "web" },
+            { label: "Papers with Code — remote sensing benchmarks", url: "https://paperswithcode.com/area/computer-vision/remote-sensing", kind: "web" }
+          ]
+        }
       ],
       offerHeading: "What Students Get",
       offers: [
@@ -1054,13 +1187,144 @@ const SITE = {
         ]
       },
       topicsHeading: "지도 가능 연구주제",
+      topicLabels: { goals: "학습 목표", modules: "핵심 내용", practice: "데이터 · 도구", refs: "관련 자료", open: "강의 개요 · 관련 자료", close: "접기" },
       topics: [
-        { title: "복사 검보정 및 영상 품질", body: "KOMPSAT 센서의 절대·상대·대리 검보정, 센서 간 교차 검증, SNR·MTF·RER 특성 분석." },
-        { title: "SAR 활용", body: "KOMPSAT-5 토양수분, 초해상화·재초점화, 편파 분석, PolInSAR 산림 수고, 오프셋트래킹." },
-        { title: "다중센서 융복합", body: "KOMPSAT-3A와 Sentinel-2 시공간 융합, 국내 위성군 조화, 플랫폼 간 지수 연속성." },
-        { title: "분광지수 개발", body: "TCT·식생지수 설계, 대기·지형·그림자 보정, 국내 지표 환경 적합성 평가." },
-        { title: "생태계 · 극지 모니터링", body: "소나무재선충 탐지, 작물 생산량 예측, 종분포 모델링, 해빙·빙하 시계열." },
-        { title: "지구관측 AI", body: "비전-언어 모델, 데이터 증강, 에이전틱 워크플로, GPU 병렬처리, 모델 신뢰도·설명가능성." }
+        {
+          title: "복사 검보정 및 영상 품질",
+          body: "KOMPSAT 센서의 절대·상대·대리 검보정, 센서 간 교차 검증, SNR·MTF·RER 특성 분석.",
+          goals: [
+            "반사도 기반 대리 표적으로 다중분광 센서의 절대 gain·offset을 도출한다",
+            "기준 센서와 교차 검보정하고 분광응답 차이를 보정한다",
+            "SNR·MTF·RER을 장면 내 표적에서 산출하고 근거 있게 보고한다"
+          ],
+          modules: [
+            "센서 복사 모델: DN → 센서 입사 복사휘도 → TOA 반사도, 불확도 요인",
+            "대리 검보정: 반사도 기반 방법, 사이트 선정, 현장 분광측정, 6S 대기 전달",
+            "교차 검보정: 동시 관측, 분광 밴드 보정계수(SBAF), 경년 추세 감시",
+            "공간 품질: 엣지 표적 MTF, 상대 엣지 응답(RER), 균일 표적 SNR",
+            "사례: KOMPSAT-2 절대검보정 표준 수립과 KOMPSAT-3/3A/5 검보정 프로그램"
+          ],
+          practice: "KOMPSAT-3/3A L1R + 검보정 기준 자료 · Landsat-8/9 Collection 2 · Py6S · Python(NumPy, rasterio)",
+          refs: [
+            { label: "KOMPSAT-2 다중분광카메라 절대복사검보정 (J. Appl. Remote Sens., 2012)", url: "https://doi.org/10.1117/1.JRS.6.063594", kind: "doi" },
+            { label: "KOMPSAT-3A 수관 상부 반사도 기반 NDVI (ISPRS IJGI, 2020)", url: "https://doi.org/10.3390/ijgi9040257", kind: "doi" },
+            { label: "Py6S — 6S 복사전달 코드 파이썬 인터페이스", url: "https://py6s.readthedocs.io", kind: "web" }
+          ]
+        },
+        {
+          title: "SAR 활용",
+          body: "KOMPSAT-5 토양수분, 초해상화·재초점화, 편파 분석, PolInSAR 산림 수고, 오프셋트래킹.",
+          goals: [
+            "모델을 적용하기 전에 X-밴드 후방산란을 물리적으로 읽는다 — 기하, 스페클, σ⁰ 보정",
+            "반경험적 토양수분 추정을 구현하고 현장 자료로 검증한다",
+            "편파·간섭 기법을 실제 산림 또는 빙하 문제에 적용한다"
+          ],
+          modules: [
+            "SAR 영상 기하, 스페클 통계, σ⁰ 복사보정과 지형 평탄화",
+            "토양수분: 반경험적 모델, 거칠기·식생 영향, KOMPSAT-5 대 Sentinel-1",
+            "점표적 초해상화와 표적 응답 재초점화",
+            "편파: 분해 기법, 단일·이중·사중 편파의 산사태 탐지 비교",
+            "PolInSAR 산림 수고(RVoG)와 coarse-to-fine 오프셋트래킹 빙하 이동속도"
+          ],
+          practice: "KOMPSAT-5 L1A/L1D · Sentinel-1 GRD/SLC · ESA SNAP · PolSARpro · Python",
+          refs: [
+            { label: "KOMPSAT-5와 Sentinel-1 비교 반경험적 토양수분 추정 (Remote Sensing, 2022)", url: "https://doi.org/10.3390/rs14164042", kind: "doi" },
+            { label: "오픈액세스 PDF — 토양수분 논문", url: "files/rs-2022-kompsat5-sentinel1-soil-moisture.pdf", kind: "pdf" },
+            { label: "KOMPSAT-5 영상 표적 응답 초해상화 (Sensors, 2022)", url: "https://doi.org/10.3390/s22197189", kind: "doi" },
+            { label: "오픈액세스 PDF — KOMPSAT-5 초해상화", url: "files/sensors-2022-kompsat5-super-resolution.pdf", kind: "pdf" },
+            { label: "단일·이중·사중 편파 SAR 기반 산사태 탐지 (ISPRS IJGI, 2019)", url: "https://doi.org/10.3390/ijgi8090384", kind: "doi" },
+            { label: "PolInSAR 산림 수고 추정 미세조정 (IEEE GRSL, 2025)", url: "https://ieeexplore.ieee.org/document/10930519", kind: "doi" },
+            { label: "ESA SNAP 툴박스", url: "https://step.esa.int/main/toolboxes/snap/", kind: "web" }
+          ]
+        },
+        {
+          title: "다중센서 융복합",
+          body: "KOMPSAT-3A와 Sentinel-2 시공간 융합, 국내 위성군 조화, 플랫폼 간 지수 연속성.",
+          goals: [
+            "서로 다른 센서의 반사도를 분광·복사·기하적으로 비교 가능하게 만든다",
+            "시공간 융합 기법을 구현하고 별도 장면으로 정직하게 평가한다",
+            "이기종 자료로 분석준비자료(ARD) 데이터 큐브를 구축한다"
+          ],
+          modules: [
+            "분광응답 차이, 밴드 보정계수, BRDF 정규화",
+            "정합과 리샘플링: 융합 오차가 실제로 어디서 생기는가",
+            "시공간 융합: STARFM 계열과 딥러닝 대안, KOMPSAT-3A × Sentinel-2",
+            "KOMPSAT-3/3A/5·CAS500 조화 TCT 프레임워크로 플랫폼 간 지수 연속성 확보",
+            "Open Data Cube, STAC 카탈로그, KIWI-SAT 다차원 배열 DB — 플랫폼 계층"
+          ],
+          practice: "KOMPSAT-3A + Sentinel-2 L2A 쌍 · Open Data Cube · Orfeo ToolBox · xarray / rasterio",
+          refs: [
+            { label: "Orfeo ToolBox 기반 KOMPSAT-3A 수관 상부 반사도 NDVI (ISPRS IJGI, 2020)", url: "https://doi.org/10.3390/ijgi9040257", kind: "doi" },
+            { label: "KOMPSAT-5·Sentinel-1 토양수분 (Remote Sensing, 2022)", url: "https://doi.org/10.3390/rs14164042", kind: "doi" },
+            { label: "Open Data Cube", url: "https://www.opendatacube.org", kind: "web" },
+            { label: "Copernicus Data Space Ecosystem — Sentinel-2 자료", url: "https://dataspace.copernicus.eu", kind: "web" }
+          ]
+        },
+        {
+          title: "분광지수 개발",
+          body: "TCT·식생지수 설계, 대기·지형·그림자 보정, 국내 지표 환경 적합성 평가.",
+          goals: [
+            "PCA로 센서 전용 Tasseled Cap 계수를 도출하고 각 축의 물리적 의미를 이해한다",
+            "국내 토지피복을 대표하도록 도출용 표본 설계를 한다",
+            "지수를 신뢰하기 전에 대기·지형·그림자를 보정한다"
+          ],
+          modules: [
+            "Tasseled Cap 이론: Kauth–Thomas, Crist–Cicone, 계수가 센서별인 이유",
+            "PCA / Gram–Schmidt 도출, 균형 장면 샘플링, 딥러닝 도출과의 비교",
+            "그림자 인지 TCT와 산악 지형 보정(C-correction, SCS+C)",
+            "NDVI·EVI·Greenness: 센서·처리수준 간 비교 가능성",
+            "검증 설계: 현장 기준, 센서 간 일관성, 계절 안정성"
+          ],
+          practice: "국내 KOMPSAT-3 L1G 장면 · scikit-learn · Python · QGIS",
+          refs: [
+            { label: "KOMPSAT-3A 수관 상부 반사도 NDVI (ISPRS IJGI, 2020)", url: "https://doi.org/10.3390/ijgi9040257", kind: "doi" },
+            { label: "지수 도출의 토대가 되는 절대복사검보정 (J. Appl. Remote Sens., 2012)", url: "https://doi.org/10.1117/1.JRS.6.063594", kind: "doi" },
+            { label: "출원 진행 중 특허 — 적응형 PCA 기반 TCT 계수 도출 (성과 → 특허 참조)", url: "#publications", kind: "web" }
+          ]
+        },
+        {
+          title: "생태계 · 극지 모니터링",
+          body: "소나무재선충 탐지, 작물 생산량 예측, 종분포 모델링, 해빙·빙하 시계열.",
+          goals: [
+            "장면의 나열을 보기 좋은 지도가 아니라 근거 있는 변화 측정으로 만든다",
+            "하나의 임계값 대신 여러 약한 지표를 확률적으로 융합한다",
+            "현장·기준 자료로 검증하고 불확도를 정량화한다"
+          ],
+          modules: [
+            "소나무재선충병: KOMPSAT-3 2.8 m 영상 다중지표 확률 융합",
+            "작물 생산량: 시계열 생물계절, 딥러닝 기반 조기 예측",
+            "종분포 모델링과 서식지 예측 — KARI-SDM QGIS 플러그인",
+            "광학·SAR 결합 해빙 농도·유형, 북극항로(NSR) 안전",
+            "동남극 KOMPSAT-5 오프셋트래킹 빙하 이동속도"
+          ],
+          practice: "다시기 KOMPSAT-3/3A · Sentinel-1/2 · QGIS · PyTorch · NSIDC·Copernicus 해양 산출물",
+          refs: [
+            { label: "SIRMS — 위성 기반 빙해 항로 감시 체계 (KARI × UST, 2026–27)", url: "#research", kind: "web" },
+            { label: "NSIDC Sea Ice Index", url: "https://nsidc.org/data/seaice_index", kind: "web" },
+            { label: "Copernicus Data Space Ecosystem — Sentinel-1/2 자료", url: "https://dataspace.copernicus.eu", kind: "web" }
+          ]
+        },
+        {
+          title: "지구관측 AI",
+          body: "비전-언어 모델, 데이터 증강, 에이전틱 워크플로, GPU 병렬처리, 모델 신뢰도·설명가능성.",
+          goals: [
+            "라벨이 적은 위성영상에 파운데이션·비전-언어 모델을 적응시킨다",
+            "실제 EO 과제용 합성 학습자료를 생성하고 그 효과를 검증한다",
+            "에이전틱 처리 워크플로를 구축하고 결과를 설명 가능·신뢰 가능하게 만든다"
+          ],
+          modules: [
+            "EO 파운데이션 모델과 자기지도 사전학습; KOMPSAT에 전이되는 것과 안 되는 것",
+            "장면 이해·캡셔닝·검색을 위한 비전-언어 모델",
+            "Label-to-image 변환 등 증강 전략과 실제 효과 측정",
+            "에이전틱 워크플로: LLM 기반 처리체인 파이프라인, 도구 사용, 가드레일",
+            "메모리 초과 장면의 GPU 병렬 무감독 분류; 설명가능성과 신뢰도"
+          ],
+          practice: "PyTorch 2.x · Hugging Face · LangGraph · 기준 라벨이 있는 KOMPSAT-3A 칩",
+          refs: [
+            { label: "AI 동향 — 이 사이트의 원격탐사 AI 논문 레이더·피드", url: "#aiwatch", kind: "web" },
+            { label: "Papers with Code — 원격탐사 벤치마크", url: "https://paperswithcode.com/area/computer-vision/remote-sensing", kind: "web" }
+          ]
+        }
       ],
       offerHeading: "학생에게 제공하는 것",
       offers: [

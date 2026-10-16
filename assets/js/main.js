@@ -650,10 +650,58 @@
 
     var tg = $("#topicGrid");
     clear(tg);
+    var TL = L.teaching.topicLabels || {};
     L.teaching.topics.forEach(function (t) {
       var d = el("article", "topic");
       d.appendChild(el("h4", null, t.title));
       d.appendChild(el("p", null, t.body));
+
+      // 강의 개요 · 관련 자료 — 있을 때만 접힌 상세로 붙인다
+      var has = (t.goals && t.goals.length) || (t.modules && t.modules.length) || t.practice || (t.refs && t.refs.length);
+      if (has) {
+        var det = el("details", "topic-more");
+        var sum = el("summary");
+        sum.appendChild(el("span", "tm-open", TL.open || "Lecture outline & material"));
+        sum.appendChild(el("span", "tm-close", TL.close || "Close"));
+        det.appendChild(sum);
+        var body = el("div", "tm-body");
+
+        function list(label, items, cls) {
+          if (!items || !items.length) return;
+          var blk = el("div", "tm-blk");
+          blk.appendChild(el("h5", null, label));
+          var ul = el("ul", cls || null);
+          items.forEach(function (x) { ul.appendChild(el("li", null, x)); });
+          blk.appendChild(ul);
+          body.appendChild(blk);
+        }
+        list(TL.goals || "What you will learn", t.goals, "tm-goals");
+        list(TL.modules || "Core content", t.modules, "tm-modules");
+        if (t.practice) {
+          var pr = el("div", "tm-blk");
+          pr.appendChild(el("h5", null, TL.practice || "Data & tools"));
+          pr.appendChild(el("p", "tm-practice", t.practice));
+          body.appendChild(pr);
+        }
+        if (t.refs && t.refs.length) {
+          var rb = el("div", "tm-blk");
+          rb.appendChild(el("h5", null, TL.refs || "Related material"));
+          var rl = el("ul", "refs-list");
+          t.refs.forEach(function (r) {
+            var li = el("li", "is-" + (r.kind || "web"));
+            var a = el("a", null, r.label);
+            a.href = r.url;
+            if (/^https?:/.test(r.url)) { a.target = "_blank"; a.rel = "noopener"; }
+            else if (/\.pdf$/i.test(r.url)) { a.setAttribute("download", ""); }
+            li.appendChild(a);
+            rl.appendChild(li);
+          });
+          rb.appendChild(rl);
+          body.appendChild(rb);
+        }
+        det.appendChild(body);
+        d.appendChild(det);
+      }
       tg.appendChild(d);
     });
 
