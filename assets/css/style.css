@@ -331,6 +331,27 @@ h1,h2,h3,h4,p{margin:0}
 
 /* ---------- Research cards ---------- */
 .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:18px;margin-top:40px}
+
+/* 연구분야 — 세 묶음으로 나눠 스캔하기 쉽게 */
+.research-groups{display:grid;gap:54px;margin-top:44px}
+.rgroup-head{
+  display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;
+  padding-bottom:12px;border-bottom:1px solid var(--line);
+}
+.rgroup-head h3{
+  font-size:13px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--teal);flex:none;
+}
+.rgroup-head p{color:var(--ink-2);font-size:14.5px;line-height:1.5;margin:0}
+/* 묶음 안에서는 2열 고정 — 카드가 넓어져 줄바꿈이 줄고, 마지막 줄에 외톨이 카드가 남지 않는다 */
+.rgroup .card-grid{margin-top:20px;grid-template-columns:repeat(2,1fr)}
+@media (max-width:860px){ .rgroup .card-grid{grid-template-columns:1fr} }
+@media (max-width:780px){
+  .research-groups{gap:36px;margin-top:30px}
+  .rgroup-head h3{font-size:12px}
+  .rgroup-head p{font-size:13.5px}
+  .rgroup .card-grid{margin-top:16px}
+}
 .card{
   background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;
   transition:transform .18s,box-shadow .18s,border-color .18s;
@@ -350,9 +371,25 @@ h1,h2,h3,h4,p{margin:0}
 
 /* 관련 성과 링크 (DOI · 원문 PDF) */
 .refs{margin-top:16px;padding-top:14px;border-top:1px dashed var(--line)}
+.refs>summary{
+  display:flex;align-items:center;gap:8px;cursor:pointer;list-style:none;
+  padding:2px 0;border-radius:6px;
+}
+.refs>summary::-webkit-details-marker{display:none}
+.refs>summary::after{
+  content:"▾";margin-left:auto;font-size:11px;color:var(--ink-2);
+  transition:transform .15s;
+}
+.refs[open]>summary::after{transform:rotate(180deg)}
+.refs>summary:hover h4{color:var(--teal)}
+.refs-n{
+  font-size:11px;font-weight:700;color:var(--ink-2);background:var(--bg-alt);
+  border:1px solid var(--line);border-radius:999px;padding:1px 7px;line-height:1.5;
+}
+.refs[open] ul{margin-top:12px}
 .refs h4{
   font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
-  color:var(--teal);margin-bottom:9px;
+  color:var(--teal);margin:0;transition:color .15s;
 }
 .refs ul{display:grid;gap:7px}
 .refs li{position:relative;padding-left:20px;line-height:1.5}
