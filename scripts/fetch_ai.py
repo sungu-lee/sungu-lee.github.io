@@ -193,11 +193,18 @@ def volume(months: int) -> tuple[list[dict[str, object]], list[str]]:
     for label, start, end in month_spans(months):
         search = f"{VOLUME_QUERY} AND submittedDate:[{start} TO {end}]"
         try:
-            root = query({"search_query": search, "start": 0, "max_results": 0})
+            root = query({"search_query": search, "start": 0, "max_results": 1})
             total = root.findtext(f"{OPENSEARCH}totalResults", "0")
             series.append({"month": label, "count": int(total or 0)})
+        except urllib.error.HTTPError as exc:
+            body = ""
+            try:
+                body = exc.read().decode("utf-8", "replace")[:160].replace("\n", " ")
+            except Exception:
+                pass
+            failed.append(f"volume/{label}: HTTP {exc.code} {body}")
         except (urllib.error.URLError, ET.ParseError, OSError, ValueError) as exc:
-            failed.append(f"volume/{label}: {exc}")
+            failed.append(f"volume/{label}: {type(exc).__name__}: {exc}")
             series.append({"month": label, "count": None})
         time.sleep(POLITE_DELAY)
     return series, failed
@@ -257,6 +264,7 @@ def main() -> int:
         "volume": series,
         "count": len(papers),
         "papers": [asdict(p) for p in papers],
+        "warnings": failed[:20],
     }
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(

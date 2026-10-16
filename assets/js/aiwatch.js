@@ -163,6 +163,19 @@ window.AIWATCH = (function () {
       p.className = "aiw-empty";
       p.textContent = A.volumeEmpty;
       host.appendChild(p);
+      // 월별 추이가 없더라도 수집된 논문 수는 보여줄 수 있다
+      if (data && data.count) {
+        var one = document.createElement("ul");
+        one.className = "aiw-stats one";
+        var li = document.createElement("li");
+        var b = document.createElement("b");
+        b.textContent = String(data.count);
+        var sp = document.createElement("span");
+        sp.textContent = A.statTracked;
+        li.appendChild(b); li.appendChild(sp);
+        one.appendChild(li);
+        host.appendChild(one);
+      }
       return;
     }
 

@@ -590,6 +590,7 @@ h1,h2,h3,h4,p{margin:0}
 
 .aiw-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px;
   padding-top:16px;border-top:1px solid rgba(143,227,240,.14)}
+.aiw-stats.one{grid-template-columns:1fr}
 .aiw-stats b{display:block;color:#fff;font-size:26px;letter-spacing:-.02em;line-height:1.15;
   font-variant-numeric:tabular-nums}
 .aiw-stats span{display:block;color:#88a5c0;font-size:12px;margin-top:4px;line-height:1.4}
