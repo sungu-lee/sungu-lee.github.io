@@ -32,14 +32,48 @@ TIMEOUT = 25
 ARXIV_API = "http://export.arxiv.org/api/query"
 ATOM = "{http://www.w3.org/2005/Atom}"
 
-# (표시 카테고리, arXiv search_query) — 관심 주제를 늘리려면 여기에 추가
+# 원격탐사 맥락으로 한정하는 공통 조건
+RS = ('(abs:"remote sensing" OR abs:"satellite" OR abs:"earth observation" '
+      'OR abs:"spaceborne")')
+
+# (표시 카테고리, arXiv search_query)
+#   고해상도 지구관측 → 표준영상(L1) → L2 부가산출물 → 센서 도메인별 활용
+#   순서로, 연구 흐름을 그대로 따라간다. AI 적용 여부는 질의로 거르지 않고
+#   수집 후 is_ai() 로 표시한다 — 비(非)AI 쪽 진전도 놓치지 않기 위해서다.
 ARXIV_QUERIES: list[tuple[str, str]] = [
-    ("Remote Sensing AI", 'abs:"remote sensing" AND (cat:eess.IV OR cat:cs.CV)'),
-    ("Satellite Imagery", 'abs:"satellite imagery" AND (cat:cs.CV OR cat:eess.IV)'),
-    ("Sea Ice", 'abs:"sea ice"'),
-    ("Forest / Vegetation", 'abs:"forest" AND abs:"remote sensing"'),
-    ("Calibration", 'abs:"radiometric calibration"'),
+    ("High-resolution EO",
+     f'{RS} AND (abs:"high-resolution" OR abs:"very high resolution" '
+     f'OR abs:"sub-meter" OR abs:"submeter")'),
+    ("Standard products · L1",
+     f'{RS} AND (abs:"radiometric calibration" OR abs:"geometric correction" '
+     f'OR abs:"orthorectification" OR abs:"sensor model" OR abs:"image registration" '
+     f'OR abs:"vicarious calibration")'),
+    ("L2 value-added",
+     f'{RS} AND (abs:"atmospheric correction" OR abs:"surface reflectance" '
+     f'OR abs:"biophysical" OR abs:"vegetation index" OR abs:"soil moisture" '
+     f'OR abs:"land cover")'),
+    ("SAR",
+     '(abs:"synthetic aperture radar" OR abs:"SAR imagery") AND '
+     '(abs:"polarimetric" OR abs:"interferometric" OR abs:"backscatter" '
+     'OR abs:"despeckling" OR abs:"deep learning")'),
+    ("Optical · multispectral",
+     f'{RS} AND (abs:"multispectral" OR abs:"pansharpening" '
+     f'OR abs:"panchromatic" OR abs:"super-resolution")'),
+    ("Hyperspectral",
+     'abs:"hyperspectral" AND (abs:"remote sensing" OR abs:"satellite" '
+     'OR abs:"unmixing" OR abs:"classification")'),
+    ("Multi-sensor fusion",
+     f'{RS} AND (abs:"data fusion" OR abs:"multi-sensor" OR abs:"multimodal" '
+     f'OR abs:"cross-sensor")'),
 ]
+
+# AI 적용 연구를 가려내는 표지 — 제목·초록에서 찾는다
+AI_RE = re.compile(
+    r"\b(deep learning|neural network|transformer|foundation model|self-supervised|"
+    r"convolutional|machine learning|diffusion model|vision-language|segment anything|"
+    r"large language model|attention mechanism|generative adversarial)\b",
+    re.I,
+)
 
 # (표시 소스, 카테고리, RSS URL)
 RSS_FEEDS: list[tuple[str, str, str]] = [
@@ -64,6 +98,12 @@ class Item:
     url: str
     date: str          # YYYY-MM-DD
     summary: str
+    ai: bool = False   # AI 기법을 쓴 연구인지
+
+
+def is_ai(title: str, summary: str) -> bool:
+    """AI 기법을 적용한 연구인지 제목·초록으로 판별한다."""
+    return bool(AI_RE.search(f"{title} {summary}"))
 
 
 def clean(text: str, limit: int = 240) -> str:
@@ -113,6 +153,7 @@ def from_arxiv(cat: str, query: str, n: int = 6) -> list[Item]:
         link = entry.findtext(f"{ATOM}id", "").strip()
         if not title or not link:
             continue
+        summary = clean(entry.findtext(f"{ATOM}summary", ""))
         out.append(
             Item(
                 source="arXiv",
@@ -120,7 +161,8 @@ def from_arxiv(cat: str, query: str, n: int = 6) -> list[Item]:
                 title=title,
                 url=link.replace("http://", "https://"),
                 date=parse_date(entry.findtext(f"{ATOM}published", "")),
-                summary=clean(entry.findtext(f"{ATOM}summary", "")),
+                summary=summary,
+                ai=is_ai(title, entry.findtext(f"{ATOM}summary", "") or ""),
             )
         )
     return out
@@ -195,10 +237,15 @@ def dedupe(items: list[Item]) -> list[Item]:
     return out
 
 
+def _rev(date: str) -> str:
+    """문자열 날짜를 내림차순 정렬 키로 바꾼다(최신이 앞)."""
+    return "".join(chr(ord("9") - int(ch)) if ch.isdigit() else ch for ch in date)
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--out", default="data/trends.json", type=Path)
-    ap.add_argument("--max", default=18, type=int, help="저장할 최대 항목 수")
+    ap.add_argument("--max", default=21, type=int, help="저장할 최대 항목 수")
     args = ap.parse_args()
 
     items, failed = collect()
@@ -210,13 +257,16 @@ def main() -> int:
         return 1
 
     items = dedupe(items)
-    items.sort(key=lambda i: i.date, reverse=True)
+    # AI 적용 연구를 앞세우되(요청 사항), 같은 그룹 안에서는 최신순
+    items.sort(key=lambda i: (not i.ai, _rev(i.date)))
     items = items[: args.max]
 
     payload = {
         "updated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "sources": sorted({i.source for i in items}),
         "count": len(items),
+        "aiCount": sum(1 for i in items if i.ai),
+        "categories": [c for c, _ in ARXIV_QUERIES],
         "items": [asdict(i) for i in items],
     }
 

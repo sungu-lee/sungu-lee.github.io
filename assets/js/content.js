@@ -164,10 +164,10 @@ const SITE = {
     },
     trends: {
       heading: "Research Feed",
-      sub: "auto-collected from arXiv · NASA · ESA",
+      sub: "high-resolution EO · standard products · L2 · multi-sensor — auto-collected daily, AI work first",
       updatedPrefix: "updated", liveLabel: "LIVE",
       emptyTitle: "Waiting for the first automated collection",
-      emptyBody: "A GitHub Action gathers new papers and mission news for these topics every day at 06:00 KST and lists them here.",
+      emptyBody: "A GitHub Action queries arXiv, NASA and ESA every day at 06:00 KST across these tracks. Papers that apply AI are marked and listed first.",
       pause: "Pause", resume: "Play"
     },
     tracking: {
@@ -670,10 +670,10 @@ const SITE = {
     },
     trends: {
       heading: "최신 연구동향",
-      sub: "arXiv · NASA · ESA 자동 수집",
+      sub: "고해상도 지구관측 · 표준영상 · L2 부가산출물 · 융복합활용 — 매일 자동 수집, AI 연구 우선",
       updatedPrefix: "갱신", liveLabel: "LIVE",
       emptyTitle: "첫 자동 수집을 기다리는 중입니다",
-      emptyBody: "GitHub Actions 가 매일 06:00(KST) 아래 키워드로 최신 논문·뉴스를 모아 이 자리에 표시합니다.",
+      emptyBody: "GitHub Actions 가 매일 06:00(KST) 아래 주제로 arXiv·NASA·ESA 를 훑습니다. AI 를 적용한 연구에는 표시가 붙고 앞쪽에 배치됩니다.",
       pause: "일시정지", resume: "재생"
     },
     tracking: {

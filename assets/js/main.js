@@ -925,6 +925,7 @@
     var top = el("div", "trend-top");
     top.appendChild(el("span", "trend-src", it.source));
     top.appendChild(el("span", "trend-cat", it.cat));
+    if (it.ai) top.appendChild(el("span", "trend-ai", "AI"));
     a.appendChild(top);
     a.appendChild(el("p", "trend-title", it.title));
     a.appendChild(el("span", "trend-date", it.date));
@@ -943,7 +944,9 @@
       box.appendChild(el("strong", null, L.trends.emptyTitle));
       box.appendChild(el("span", null, L.trends.emptyBody));
       var kw = el("div", "trend-kw");
-      ["Remote sensing AI", "Satellite imagery", "Sea ice", "Forest / Vegetation", "Radiometric calibration"]
+      ((data && data.categories) ||
+        ["High-resolution EO", "Standard products · L1", "L2 value-added",
+         "SAR", "Optical · multispectral", "Hyperspectral", "Multi-sensor fusion"])
         .forEach(function (k) { kw.appendChild(el("span", null, k)); });
       box.appendChild(kw);
       track.appendChild(box);

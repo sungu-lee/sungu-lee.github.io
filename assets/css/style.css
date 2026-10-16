@@ -241,6 +241,10 @@ h1,h2,h3,h4,p{margin:0}
 .trend-top{display:flex;align-items:center;gap:7px;margin-bottom:7px}
 .trend-src{font-size:10.5px;font-weight:800;letter-spacing:.06em;color:#0a1c33;background:#6fd8e0;padding:2px 7px;border-radius:4px}
 .trend-cat{font-size:11px;color:#8fa9c2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.trend-ai{
+  flex:none;font-size:9px;font-weight:800;letter-spacing:.1em;color:#0a1c33;
+  background:#6fd8e0;border-radius:4px;padding:2px 5px;
+}
 .trend-title{
   color:#eaf4fb;font-size:13.5px;line-height:1.5;font-weight:600;
   display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;
