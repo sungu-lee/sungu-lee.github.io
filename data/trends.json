@@ -1,6 +1,7 @@
 {
-  "updated": "2026-10-16T05:44:54Z",
+  "updated": "2026-10-16T23:18:26Z",
   "sources": [
+    "ESA",
     "arXiv"
   ],
   "count": 18,
@@ -151,6 +152,15 @@
       "ai": true
     },
     {
+      "source": "ESA",
+      "cat": "Observing the Earth",
+      "title": "Earth from Space: West Antarctica",
+      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Earth_from_Space_West_Antarctica",
+      "date": "2026-10-16",
+      "summary": "Image: This image over part of West Antarctica was captured by Copernicus Sentinel-3 on 30 September 2026.",
+      "ai": false
+    },
+    {
       "source": "arXiv",
       "cat": "L2 value-added",
       "title": "A large-scale climate-aware satellite image dataset for domain adaptive land-cover semantic segmentation",
@@ -166,15 +176,6 @@
       "url": "https://arxiv.org/abs/2610.20789v1",
       "date": "2026-10-14",
       "summary": "Urban hydrodynamic flood models typically rely on a surveyed terrain model, an explicit pipe drainage network, and rain gauge measurements, none of which were available for the inundation following Typhoon Matmo in My Dinh and Tay Mo, Hano…",
-      "ai": false
-    },
-    {
-      "source": "arXiv",
-      "cat": "Optical · multispectral",
-      "title": "PiCo: Physics-Informed Concept Probing for Geo-Foundation Models",
-      "url": "https://arxiv.org/abs/2610.20973v1",
-      "date": "2026-10-14",
-      "summary": "Geo-foundation models (GFMs) are typically evaluated by downstream task predictive performance, revealing little about which physical features they are sensitive to or use in prediction. This limits developers' ability to test hypotheses a…",
       "ai": false
     }
   ]
