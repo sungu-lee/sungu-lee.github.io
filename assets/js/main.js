@@ -665,6 +665,32 @@
 
       box.appendChild(a);
     });
+
+    // 그룹별 링크 — 기관 / 활용센터 / 학회
+    var host = box.parentNode;
+    var oldG = host.querySelector(".fam-groups");
+    if (oldG) oldG.remove();
+    if (F.groups && F.groups.length) {
+      var wrap = el("div", "fam-groups");
+      F.groups.forEach(function (g) {
+        if (!g.items || !g.items.length) return;
+        var sec = el("div", "fam-group");
+        sec.appendChild(el("h3", null, g.label));
+        var ul = el("ul");
+        g.items.forEach(function (it) {
+          var li = el("li");
+          var a2 = el("a", null, it.label);
+          a2.href = it.url;
+          a2.target = "_blank";
+          a2.rel = "noopener";
+          li.appendChild(a2);
+          ul.appendChild(li);
+        });
+        sec.appendChild(ul);
+        wrap.appendChild(sec);
+      });
+      host.appendChild(wrap);
+    }
   }
 
   function renderContact(L) {

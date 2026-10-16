@@ -535,7 +535,34 @@ const SITE = {
       linkLabels: { kari: "KARI", ust: "UST", ustSchool: "UST KARI School", orcid: "ORCID", googleScholar: "Google Scholar", researchGate: "ResearchGate" }
     },
     family: {
-      heading: "Family site",
+      heading: "Family sites",
+      groups: [
+        {
+          label: "Institute",
+          items: [
+            { label: "Korea Aerospace Research Institute", url: "https://www.kari.re.kr" },
+            { label: "UST KARI School", url: "https://ust.ac.kr" }
+          ]
+        },
+        {
+          label: "National satellite utilisation centres",
+          items: [
+            { label: "National Land Satellite Centre", url: "https://www.ngii.go.kr/nlsc/" },
+            { label: "National Meteorological Satellite Centre", url: "https://nmsc.kma.go.kr" },
+            { label: "Environmental Satellite Centre", url: "https://nesc.nier.go.kr/ko/html/index.do" },
+            { label: "Korea Ocean Satellite Centre (KIOST)", url: "https://kosc.kiost.ac.kr" },
+            { label: "National Ocean Satellite Centre (KHOA)", url: "https://www.nosc.go.kr/main.do" }
+          ]
+        },
+        {
+          label: "Societies",
+          items: [
+            { label: "Korean Society of Remote Sensing", url: "https://www.ksrs.or.kr" },
+            { label: "Korean Association of Geographic Information Studies", url: "https://kagis.or.kr" },
+            { label: "Society for Aerospace System Engineering", url: "https://sase.or.kr" }
+          ]
+        }
+      ],
       items: [
         {
           tag: "KARI",
@@ -1040,6 +1067,33 @@ const SITE = {
     },
     family: {
       heading: "패밀리 사이트",
+      groups: [
+        {
+          label: "기관",
+          items: [
+            { label: "한국항공우주연구원", url: "https://www.kari.re.kr" },
+            { label: "UST 한국항공우주연구원 스쿨", url: "https://ust.ac.kr" }
+          ]
+        },
+        {
+          label: "국내 위성정보 활용센터",
+          items: [
+            { label: "국토위성센터", url: "https://www.ngii.go.kr/nlsc/" },
+            { label: "국가기상위성센터", url: "https://nmsc.kma.go.kr" },
+            { label: "환경위성센터", url: "https://nesc.nier.go.kr/ko/html/index.do" },
+            { label: "해양위성센터 (KIOST)", url: "https://kosc.kiost.ac.kr" },
+            { label: "국가해양위성센터 (국립해양조사원)", url: "https://www.nosc.go.kr/main.do" }
+          ]
+        },
+        {
+          label: "학회",
+          items: [
+            { label: "대한원격탐사학회", url: "https://www.ksrs.or.kr" },
+            { label: "한국지리정보학회", url: "https://kagis.or.kr" },
+            { label: "항공우주시스템공학회", url: "https://sase.or.kr" }
+          ]
+        }
+      ],
       items: [
         {
           tag: "한국항공우주연구원",
