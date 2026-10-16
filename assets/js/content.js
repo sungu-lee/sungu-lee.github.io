@@ -535,40 +535,40 @@ const SITE = {
       linkLabels: { kari: "KARI", ust: "UST", ustSchool: "UST KARI School", orcid: "ORCID", googleScholar: "Google Scholar", researchGate: "ResearchGate" }
     },
     family: {
-      heading: "Family sites",
+      heading: "Related sites",
+      lead: "Institutions, national utilisation centres and societies I work with.",
       groups: [
         {
-          label: "Institute",
-          items: [
-            { label: "Korea Aerospace Research Institute", url: "https://www.kari.re.kr" },
-            { label: "UST KARI School", url: "https://ust.ac.kr" }
-          ]
-        },
-        {
+          key: "centre",
           label: "National satellite utilisation centres",
+          note: "Domain centres that operate and distribute Korean satellite products",
           items: [
-            { label: "National Land Satellite Centre", url: "https://www.ngii.go.kr/nlsc/" },
-            { label: "National Meteorological Satellite Centre", url: "https://nmsc.kma.go.kr" },
-            { label: "Environmental Satellite Centre", url: "https://nesc.nier.go.kr/ko/html/index.do" },
-            { label: "Korea Ocean Satellite Centre (KIOST)", url: "https://kosc.kiost.ac.kr" },
-            { label: "National Ocean Satellite Centre (KHOA)", url: "https://www.nosc.go.kr/main.do" }
+            { label: "KSATDB", sub: "Satellite Information Utilization Support Service · KARI", url: "https://ksatdb.kari.re.kr/main/main.do", lead: true },
+            { label: "National Land Satellite Centre", sub: "NGII · land observation", url: "https://www.ngii.go.kr/nlsc/" },
+            { label: "National Meteorological Satellite Centre", sub: "KMA · GEO-KOMPSAT", url: "https://nmsc.kma.go.kr" },
+            { label: "Environmental Satellite Centre", sub: "NIER · GEMS", url: "https://nesc.nier.go.kr/ko/html/index.do" },
+            { label: "Korea Ocean Satellite Centre", sub: "KIOST · GOCI", url: "https://kosc.kiost.ac.kr" },
+            { label: "National Ocean Satellite Centre", sub: "KHOA · ocean applications", url: "https://www.nosc.go.kr/main.do" }
           ]
         },
         {
-          label: "Societies",
+          key: "society",
+          label: "Academic societies",
+          note: "Societies where I serve on the board or publish",
           items: [
-            { label: "Korean Society of Remote Sensing", url: "https://www.ksrs.or.kr" },
-            { label: "Korean Association of Geographic Information Studies", url: "https://kagis.or.kr" },
-            { label: "Society for Aerospace System Engineering", url: "https://sase.or.kr" }
+            { label: "Korean Society of Remote Sensing", sub: "KSRS", url: "https://www.ksrs.or.kr" },
+            { label: "Korean Association of Geographic Information Studies", sub: "KAGIS · Standing Director", url: "https://kagis.or.kr" },
+            { label: "Society for Aerospace System Engineering", sub: "SASE · Technical Director", url: "https://sase.or.kr" }
           ]
-        }
-      ],
-      items: [
+        },
         {
-          tag: "KARI",
-          label: "KSATDB · Satellite Information Utilization Support Service",
-          sub: "National Satellite Information Utilization Support Center — search and browse KOMPSAT/Arirang imagery by map, category and application field",
-          url: "https://ksatdb.kari.re.kr/main/main.do"
+          key: "org",
+          label: "Affiliation",
+          note: "",
+          items: [
+            { label: "Korea Aerospace Research Institute", sub: "KARI", url: "https://www.kari.re.kr" },
+            { label: "UST KARI School", sub: "University of Science and Technology", url: "https://ust.ac.kr" }
+          ]
         }
       ]
     },
@@ -1066,40 +1066,40 @@ const SITE = {
       linkLabels: { kari: "한국항공우주연구원", ust: "UST 과학기술연합대학원대학교", ustSchool: "UST 한국항공우주연구원 스쿨", orcid: "ORCID", googleScholar: "Google Scholar", researchGate: "ResearchGate" }
     },
     family: {
-      heading: "패밀리 사이트",
+      heading: "관련 사이트",
+      lead: "함께 일하는 기관, 국내 위성정보 활용센터, 학회입니다.",
       groups: [
         {
-          label: "기관",
-          items: [
-            { label: "한국항공우주연구원", url: "https://www.kari.re.kr" },
-            { label: "UST 한국항공우주연구원 스쿨", url: "https://ust.ac.kr" }
-          ]
-        },
-        {
+          key: "centre",
           label: "국내 위성정보 활용센터",
+          note: "국내 위성 산출물을 운영·배포하는 분야별 센터",
           items: [
-            { label: "국토위성센터", url: "https://www.ngii.go.kr/nlsc/" },
-            { label: "국가기상위성센터", url: "https://nmsc.kma.go.kr" },
-            { label: "환경위성센터", url: "https://nesc.nier.go.kr/ko/html/index.do" },
-            { label: "해양위성센터 (KIOST)", url: "https://kosc.kiost.ac.kr" },
-            { label: "국가해양위성센터 (국립해양조사원)", url: "https://www.nosc.go.kr/main.do" }
+            { label: "KSATDB", sub: "위성정보 활용지원 서비스 · 한국항공우주연구원", url: "https://ksatdb.kari.re.kr/main/main.do", lead: true },
+            { label: "국토위성센터", sub: "국토지리정보원 · 국토관측", url: "https://www.ngii.go.kr/nlsc/" },
+            { label: "국가기상위성센터", sub: "기상청 · 천리안위성", url: "https://nmsc.kma.go.kr" },
+            { label: "환경위성센터", sub: "국립환경과학원 · GEMS", url: "https://nesc.nier.go.kr/ko/html/index.do" },
+            { label: "해양위성센터", sub: "한국해양과학기술원 · GOCI", url: "https://kosc.kiost.ac.kr" },
+            { label: "국가해양위성센터", sub: "국립해양조사원 · 해양활용", url: "https://www.nosc.go.kr/main.do" }
           ]
         },
         {
+          key: "society",
           label: "학회",
+          note: "임원으로 활동하거나 논문을 싣는 학회",
           items: [
-            { label: "대한원격탐사학회", url: "https://www.ksrs.or.kr" },
-            { label: "한국지리정보학회", url: "https://kagis.or.kr" },
-            { label: "항공우주시스템공학회", url: "https://sase.or.kr" }
+            { label: "대한원격탐사학회", sub: "KSRS", url: "https://www.ksrs.or.kr" },
+            { label: "한국지리정보학회", sub: "KAGIS · 상임이사", url: "https://kagis.or.kr" },
+            { label: "항공우주시스템공학회", sub: "SASE · 기술이사", url: "https://sase.or.kr" }
           ]
-        }
-      ],
-      items: [
+        },
         {
-          tag: "한국항공우주연구원",
-          label: "KSATDB · 위성정보 활용지원 서비스",
-          sub: "국가위성정보활용지원센터 — 아리랑(KOMPSAT) 위성영상을 지도·분야별로 검색하고 활용사례를 볼 수 있습니다",
-          url: "https://ksatdb.kari.re.kr/main/main.do"
+          key: "org",
+          label: "소속",
+          note: "",
+          items: [
+            { label: "한국항공우주연구원", sub: "KARI", url: "https://www.kari.re.kr" },
+            { label: "UST 한국항공우주연구원 스쿨", sub: "과학기술연합대학원대학교", url: "https://ust.ac.kr" }
+          ]
         }
       ]
     },
