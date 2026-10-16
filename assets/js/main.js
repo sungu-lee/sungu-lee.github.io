@@ -6,7 +6,7 @@
   "use strict";
 
   var LANG_KEY = "sgl-site-lang";
-  var state = { lang: null, pubTab: "papers", trends: null, tick: null, trackerLoaded: false };
+  var state = { lang: null, pubTab: "papers", trends: null, ai: null, tick: null, trackerLoaded: false };
 
   /* ---------- helpers ---------- */
   function $(sel, root) { return (root || document).querySelector(sel); }
@@ -381,7 +381,10 @@
     var sorted = items.slice().sort(function (a, b) { return (b.year || 0) - (a.year || 0); });
     var ul = el("ul", "pub-list");
     sorted.forEach(function (it) {
-      ul.appendChild(state.pubTab === "papers" ? paperItem(it) : patentItem(it, L));
+      // 학술대회도 저자·발표처 구조라 논문과 같은 렌더러를 쓴다
+      // (특허·프로그램만 번호·등록상태 구조)
+      var isPaperLike = state.pubTab === "papers" || state.pubTab === "conferences";
+      ul.appendChild(isPaperLike ? paperItem(it) : patentItem(it, L));
     });
     panel.appendChild(ul);
     if (L.publications.disclaimer) {
@@ -521,6 +524,134 @@
   }
 
   /* ---------- Media: 영상(지연 로딩) + 결과 이미지 갤러리 ---------- */
+  /* ---------- AI 기술동향 ---------- */
+  function aiCard(p, L) {
+    var track = (L.aiwatch.tracks || []).filter(function (t) { return t.key === p.track; })[0];
+    var a = el("a", "aip");
+    a.href = p.url;
+    a.target = "_blank";
+    a.rel = "noopener";
+    a.setAttribute("data-track", p.track);
+
+    var head = el("div", "aip-head");
+    var tag = el("span", "aip-tag", (track && track.short) || p.track);
+    if (track && window.AIWATCH) {
+      tag.style.borderColor = AIWATCH.ringColor[track.ring];
+      tag.style.color = AIWATCH.ringColor[track.ring];
+    }
+    head.appendChild(tag);
+    head.appendChild(el("span", "aip-date", p.date || ""));
+    a.appendChild(head);
+
+    a.appendChild(el("h4", null, p.title));
+    if (p.authors) a.appendChild(el("span", "aip-authors", p.authors));
+    if (p.summary) a.appendChild(el("p", null, p.summary));
+    return a;
+  }
+
+  function renderAiWatch(L, data) {
+    var radar = $("#aiRadar");
+    if (radar && window.AIWATCH) AIWATCH.radar(radar, L);
+    var vol = $("#aiVolume");
+    if (vol && window.AIWATCH) AIWATCH.volume(vol, data, L);
+
+    var upd = $("#aiUpdated");
+    var list = $("#aiList");
+    var filters = $("#aiFilters");
+    if (!list || !filters) return;
+    clear(list);
+    clear(filters);
+
+    var papers = (data && data.papers) || [];
+    if (upd) {
+      upd.textContent = papers.length
+        ? L.aiwatch.updatedPrefix + " " + String(data.updated || "").slice(0, 10)
+        : "";
+    }
+
+    if (!papers.length) {
+      var box = el("div", "aiw-empty-box");
+      box.appendChild(el("strong", null, L.aiwatch.emptyTitle));
+      box.appendChild(el("span", null, L.aiwatch.emptyBody));
+      var kw = el("div", "trend-kw");
+      (L.aiwatch.tracks || []).forEach(function (t) { kw.appendChild(el("span", null, t.label)); });
+      box.appendChild(kw);
+      list.appendChild(box);
+      return;
+    }
+
+    // 트랙 필터 — 논문이 있는 트랙만 노출한다
+    var present = {};
+    papers.forEach(function (p) { present[p.track] = (present[p.track] || 0) + 1; });
+    var opts = [{ key: "", label: L.aiwatch.allLabel, n: papers.length }];
+    (L.aiwatch.tracks || []).forEach(function (t) {
+      if (present[t.key]) opts.push({ key: t.key, label: t.label, n: present[t.key], ring: t.ring });
+    });
+
+    var cards = papers.map(function (p) { return aiCard(p, L); });
+    cards.forEach(function (c) { list.appendChild(c); });
+
+    // 기본은 최신 8건만 — 트랙을 고르면 그 트랙 전체가 펼쳐진다
+    var LIMIT = isMobile() ? 4 : 8;
+    var showAll = false;
+    var moreBtn = null;
+
+    function apply(key) {
+      var shown = 0;
+      cards.forEach(function (c) {
+        var hit = !key || c.getAttribute("data-track") === key;
+        var over = !key && !showAll && shown >= LIMIT;
+        c.classList.toggle("is-off", !hit || over);
+        if (hit && !over) shown++;
+      });
+      if (moreBtn) {
+        var rest = papers.length - LIMIT;
+        moreBtn.hidden = !!key || rest <= 0;
+        moreBtn.textContent = showAll ? L.ui.less : L.ui.more + " +" + rest;
+        moreBtn.classList.toggle("is-open", showAll);
+      }
+    }
+
+    opts.forEach(function (o, i) {
+      var b = el("button", "aiw-chip");
+      b.type = "button";
+      b.setAttribute("aria-pressed", String(i === 0));
+      b.appendChild(el("span", null, o.label));
+      b.appendChild(el("b", null, String(o.n)));
+      if (o.ring && window.AIWATCH) {
+        var dot = el("i");
+        dot.style.background = AIWATCH.ringColor[o.ring];
+        b.insertBefore(dot, b.firstChild);
+      }
+      b.addEventListener("click", function () {
+        $$("#aiFilters .aiw-chip").forEach(function (x) {
+          x.setAttribute("aria-pressed", String(x === b));
+        });
+        showAll = false;
+        apply(o.key);
+      });
+      filters.appendChild(b);
+    });
+
+    moreBtn = el("button", "more-btn aiw-more");
+    moreBtn.type = "button";
+    moreBtn.addEventListener("click", function () {
+      showAll = !showAll;
+      apply("");
+    });
+    list.parentNode.insertBefore(moreBtn, list.nextSibling);
+    apply("");
+  }
+
+  function loadAi() {
+    var url = SITE.config.aiUrl || "data/ai.json";
+    if (!window.fetch) { renderAiWatch(SITE[state.lang], null); return; }
+    fetch(url, { cache: "no-cache" })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .catch(function () { return null; })
+      .then(function (d) { state.ai = d; renderAiWatch(SITE[state.lang], d); });
+  }
+
   function renderMedia(L) {
     var grid = $("#videoGrid");
     clear(grid);
@@ -759,6 +890,7 @@
     renderAbout(L);
     renderResearch(L);
     renderMedia(L);
+    renderAiWatch(L, state.ai);
     renderPublications(L);
     renderTeaching(L);
     renderContact(L);
@@ -837,6 +969,7 @@
     window.addEventListener("resize", onScroll);
 
     loadTrends();
+    loadAi();
   }
 
   if (document.readyState === "loading") {

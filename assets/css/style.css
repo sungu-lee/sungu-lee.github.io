@@ -546,6 +546,109 @@ h1,h2,h3,h4,p{margin:0}
   .to-top{right:14px;bottom:14px}
 }
 
+/* ---------- AI Watch (dark instrument panel) ---------- */
+.aiw{
+  background:linear-gradient(165deg,#07192c 0%,#0c2338 60%,#0e2b43 100%);
+  color:#dceaf6;border-top:1px solid rgba(143,227,240,.16);
+  border-bottom:1px solid rgba(143,227,240,.16);
+}
+.aiw .sec-title{color:#fff}
+.aiw .sec-title::after{background:#35dfe8}
+.aiw .sec-lead{color:#a9c4da;max-width:74ch}
+.aiw-top{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:30px}
+.aiw-fig{margin:0;background:rgba(255,255,255,.04);border:1px solid rgba(143,227,240,.18);
+  border-radius:14px;padding:18px 18px 16px}
+.aiw-fig figcaption{
+  color:#8fe3f0;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+  margin-bottom:12px;
+}
+.aiw-plot{position:relative}
+.aiw-plot svg{display:block;overflow:visible}
+.aiw-note{color:#88a5c0;font-size:12.5px;line-height:1.6;margin-top:12px}
+.aiw-empty{color:#88a5c0;font-size:14px;padding:34px 0;text-align:center}
+
+.radar-legend,.radar-key{display:grid;gap:7px;margin-top:14px}
+.radar-legend li,.radar-key li{display:flex;align-items:baseline;gap:9px;font-size:12.5px;line-height:1.5}
+.radar-legend i,.radar-key i{flex:none;width:9px;height:9px;border-radius:50%;transform:translateY(1px)}
+.radar-legend b,.radar-key b{color:#eaf4fb;font-size:11.5px;letter-spacing:.04em;min-width:58px}
+.radar-legend span,.radar-key span{color:#90aec8}
+.radar-key{margin-top:16px;padding-top:14px;border-top:1px solid rgba(143,227,240,.14)}
+
+.aiw-tip{
+  position:absolute;top:2px;transform:translateX(-50%);white-space:nowrap;pointer-events:none;
+  background:rgba(6,20,34,.95);border:1px solid rgba(143,227,240,.4);border-radius:7px;
+  padding:5px 9px;font-size:11.5px;color:#eaf4fb;font-variant-numeric:tabular-nums;
+}
+.aiw-table{margin-top:12px;color:#88a5c0;font-size:12.5px}
+.aiw-table summary{cursor:pointer}
+.aiw-table table{margin-top:8px;border-collapse:collapse;width:100%;max-width:280px}
+.aiw-table th,.aiw-table td{
+  text-align:left;padding:4px 10px 4px 0;border-bottom:1px solid rgba(143,227,240,.12);
+  font-variant-numeric:tabular-nums;
+}
+.aiw-table th{color:#a9c4da;font-weight:700;font-size:11px;letter-spacing:.06em;text-transform:uppercase}
+
+.aiw-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px;
+  padding-top:16px;border-top:1px solid rgba(143,227,240,.14)}
+.aiw-stats b{display:block;color:#fff;font-size:26px;letter-spacing:-.02em;line-height:1.15;
+  font-variant-numeric:tabular-nums}
+.aiw-stats span{display:block;color:#88a5c0;font-size:12px;margin-top:4px;line-height:1.4}
+
+.aiw-feedhead{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:38px 0 14px}
+.aiw-feedhead h3{font-size:18px;color:#fff;letter-spacing:-.01em}
+.aiw-feedhead .live{color:#42e3a0}
+.aiw-updated{color:#7f9bb5;font-size:12px;margin-left:auto;font-variant-numeric:tabular-nums}
+
+.aiw-filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.aiw-chip{
+  display:inline-flex;align-items:center;gap:7px;padding:7px 13px;border-radius:999px;cursor:pointer;
+  background:rgba(255,255,255,.05);border:1px solid rgba(143,227,240,.22);color:#c3d9ea;
+  font:600 13px/1 var(--sans);transition:background .15s,border-color .15s,color .15s;
+}
+.aiw-chip i{width:8px;height:8px;border-radius:50%;flex:none}
+.aiw-chip b{color:#7f9bb5;font-size:11.5px;font-variant-numeric:tabular-nums}
+.aiw-chip:hover{background:rgba(255,255,255,.1);border-color:#8fe3f0}
+.aiw-chip[aria-pressed="true"]{background:rgba(53,223,232,.16);border-color:#35dfe8;color:#eaf8fc}
+.aiw-chip[aria-pressed="true"] b{color:#8fe3f0}
+
+.aiw-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.aip{
+  display:block;padding:16px 18px;border-radius:12px;color:#dceaf6;
+  background:rgba(255,255,255,.04);border:1px solid rgba(143,227,240,.16);
+  transition:background .15s,border-color .15s,transform .15s;
+}
+.aip:hover{background:rgba(255,255,255,.09);border-color:#8fe3f0;text-decoration:none;transform:translateY(-1px)}
+.aip.is-off{display:none}
+.aip-head{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+.aip-tag{
+  font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;
+  border:1px solid currentColor;border-radius:5px;padding:2px 7px;
+}
+.aip-date{color:#7f9bb5;font-size:11.5px;margin-left:auto;font-variant-numeric:tabular-nums}
+.aip h4{font-size:15px;line-height:1.45;color:#fff;letter-spacing:-.01em}
+.aip-authors{display:block;color:#8fa9c2;font-size:12px;margin-top:6px}
+.aip p{color:#9fb9d0;font-size:13px;line-height:1.6;margin-top:8px;
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.aiw-more{background:rgba(255,255,255,.05);border-color:rgba(143,227,240,.3);color:#c3d9ea}
+.aiw-more:hover{border-color:#8fe3f0;color:#eaf8fc}
+.aiw-empty-box{
+  grid-column:1/-1;display:grid;gap:8px;padding:30px 24px;border-radius:12px;
+  background:rgba(255,255,255,.04);border:1px dashed rgba(143,227,240,.3);
+}
+.aiw-empty-box strong{color:#fff;font-size:15px}
+.aiw-empty-box span{color:#9fb9d0;font-size:13.5px}
+
+@media (max-width:980px){
+  .aiw-top{grid-template-columns:1fr}
+  .aiw-list{grid-template-columns:1fr}
+}
+@media (max-width:780px){
+  .aiw-fig{padding:14px 14px 13px}
+  .aiw-feedhead{margin:28px 0 12px}
+  .aiw-updated{margin-left:0;width:100%}
+  .radar-legend b,.radar-key b{min-width:50px}
+}
+
 /* ---------- 패밀리 사이트 배너 ---------- */
 .family{background:var(--navy-2);border-top:1px solid rgba(143,227,240,.14);padding:26px 0 28px}
 .family-inner{display:grid;gap:12px}

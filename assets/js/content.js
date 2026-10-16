@@ -14,6 +14,7 @@ const SITE = {
     defaultLang: "en",               // 방문자에게 먼저 보이는 언어
     email: "leesg@kari.re.kr",
     phone: "+82-42-860-2854",        // CV 기재 번호. 비우면 표시 안 됨
+    aiUrl: "data/ai.json",
     trendsUrl: "data/trends.json",
     tleUrl: "data/tle.json",       // GitHub Actions 가 매일 CelesTrak 에서 갱신
     // 첫 화면 애니메이션에 그려지는 위성 편대 (순서대로 궤도를 통과)
@@ -51,7 +52,7 @@ const SITE = {
     },
     nav: {
       home: "Home", tracking: "Live Map", about: "About", research: "Research",
-      media: "Media", publications: "Publications", teaching: "UST Teaching",
+      aiwatch: "AI Watch", media: "Media", publications: "Publications", teaching: "UST Teaching",
       apps: "Simulator", contact: "Contact"
     },
     hero: {
@@ -203,6 +204,7 @@ const SITE = {
       ],
       societyHeading: "Professional Service",
       societies: [
+        "Korean Society for Aerospace System Engineering — organiser, Organized Session on Earth observation imagery and AI, Autumn 2026",
         "Standing Director, Korean Association of Geographic Information Studies",
         "Technical Director, Korean Society for Aerospace System Engineering",
         "Guest Editor, Remote Sensing (MDPI) — Special Issue “Earth Observation from KOMPSAT”",
@@ -349,6 +351,59 @@ const SITE = {
         }
       ]
     },
+    aiwatch: {
+      heading: "AI Watch",
+      lead:
+        "Where machine learning for Earth observation is actually moving, and where I place each technique in my own work. The radar is my judgement; the feed below is collected automatically from arXiv every morning so the two can be checked against each other.",
+      liveLabel: "AUTO",
+      radarHeading: "Technology radar",
+      radarNote:
+        "Placement reflects how far each technique has come in my own KOMPSAT work — not its popularity. Reviewed each half-year.",
+      rings: [
+        { key: "adopt",  label: "ADOPT",  note: "In production use on KOMPSAT data" },
+        { key: "trial",  label: "TRIAL",  note: "Prototyped and published, not yet operational" },
+        { key: "assess", label: "ASSESS", note: "Tracking closely; no results of my own yet" },
+        { key: "hold",   label: "HOLD",   note: "Watching, but not worth committing to now" }
+      ],
+      tracks: [
+        { key: "sar",         short: "SAR-DL",  ring: "adopt",
+          label: "SAR deep learning",
+          note: "Soil moisture retrieval and super-resolution on KOMPSAT-5" },
+        { key: "restoration", short: "SR",      ring: "adopt",
+          label: "Super-resolution · restoration",
+          note: "Registered as software; used on KOMPSAT-3/3A products" },
+        { key: "vlm",         short: "VLM",     ring: "trial",
+          label: "Vision-language models",
+          note: "Fine-tuned multimodal models for scene understanding (IGARSS 2025)" },
+        { key: "agentic",     short: "AGENT",   ring: "trial",
+          label: "Agentic AI",
+          note: "Prototype of an agent-driven satellite application pipeline" },
+        { key: "foundation",  short: "FM",      ring: "assess",
+          label: "Earth observation foundation models",
+          note: "Moving fast; the calibration question underneath them is still open" },
+        { key: "ssl",         short: "SSL",     ring: "assess",
+          label: "Self-supervised · few-shot",
+          note: "Promising where labelled KOMPSAT data is thin" }
+      ],
+      feedHeading: "Latest papers by track",
+      allLabel: "All tracks",
+      volumeHeading: "Monthly publication volume",
+      volumeNote:
+        "arXiv submissions combining Earth observation with machine learning, counted per month. A rough but honest measure of how fast the field is moving.",
+      volumeUnit: "papers",
+      volumeEmpty: "Waiting for the first automated collection.",
+      statLatest: "papers this month",
+      statDelta: "change over 12 months",
+      statTracked: "papers in the feed",
+      tableLabel: "View as table",
+      tableMonth: "Month",
+      tableCount: "Papers",
+      updatedPrefix: "collected",
+      emptyTitle: "Waiting for the first automated collection",
+      emptyBody:
+        "A GitHub Action queries arXiv every morning at 06:00 KST and files the results by track."
+    },
+
     media: {
       heading: "Media & Results",
       lead: "Earth observation mission videos and research result imagery.",
@@ -397,6 +452,7 @@ const SITE = {
       ],
 
       conferences: [
+        { year: 2026, authors: "Lee, S.-G.", title: "A methodological framework for satellite-based forest pest and disease monitoring using multi-feature probabilistic fusion of KOMPSAT-3 multispectral imagery", venue: "77th International Astronautical Congress (IAC 2026), Earth Observation Symposium — Paper ID 106539", type: "Conference" },
         { year: 2025, authors: "Lee, D.-H., Chung, D.-W., Lee, S.-G.", title: "Development of a web-based analytical framework for soil moisture estimation using multi-polarized SAR data", venue: "ISPRS Geo-Spatial Week 2025", type: "Conference" },
         { year: 2025, authors: "Park, K.-H., Lee, S.-G.", title: "Satellite data augmentation via label-to-image translation for KOMPSAT imagery", venue: "International Symposium on Remote Sensing 2025", type: "Conference" },
         { year: 2025, authors: "Oh, H., Shin, D.-B., Seo, H.-W., Lee, S.-G., Chung, D.-W.", title: "Enhancing satellite image analysis with fine-tuned vision-language models", venue: "IEEE IGARSS 2025", type: "Conference" },
@@ -501,7 +557,7 @@ const SITE = {
     },
     nav: {
       home: "홈", tracking: "실시간 위치", about: "소개", research: "연구분야",
-      media: "영상·자료", publications: "성과", teaching: "UST 교원활동",
+      aiwatch: "AI 동향", media: "영상·자료", publications: "성과", teaching: "UST 교원활동",
       apps: "시뮬레이터", contact: "연락처"
     },
     hero: {
@@ -647,6 +703,7 @@ const SITE = {
       ],
       societyHeading: "학회 · 대외 활동",
       societies: [
+        "항공우주시스템공학회 2026 추계학술대회 — 「지구관측위성영상과 AI기술 활용」 OS세션 조직·좌장",
         "한국지리정보학회 상임이사",
         "항공우주시스템공학회 기술이사",
         "Remote Sensing (MDPI) Special Issue “Earth Observation from KOMPSAT” Guest Editor",
@@ -792,6 +849,59 @@ const SITE = {
         }
       ]
     },
+    aiwatch: {
+      heading: "AI 기술동향",
+      lead:
+        "지구관측 분야의 기계학습이 실제로 어디로 가고 있는지, 그리고 제 연구에서 각 기법을 어디에 두고 있는지를 함께 보여줍니다. 레이더는 제 판단이고, 아래 논문 목록은 매일 아침 arXiv에서 자동 수집되므로 둘을 서로 견줘볼 수 있습니다.",
+      liveLabel: "자동",
+      radarHeading: "기술 레이더",
+      radarNote:
+        "유행이 아니라 제 KOMPSAT 연구에서 각 기법이 어디까지 와 있는지를 기준으로 배치했습니다. 반기마다 재검토합니다.",
+      rings: [
+        { key: "adopt",  label: "도입", note: "KOMPSAT 자료에 실제로 쓰고 있음" },
+        { key: "trial",  label: "시험", note: "시제품·논문까지 갔으나 아직 운용 전" },
+        { key: "assess", label: "평가", note: "주시 중 — 아직 제 결과물은 없음" },
+        { key: "hold",   label: "보류", note: "지켜보되 지금 투입할 단계는 아님" }
+      ],
+      tracks: [
+        { key: "sar",         short: "SAR-DL", ring: "adopt",
+          label: "SAR 딥러닝",
+          note: "KOMPSAT-5 토양수분 추정·초해상화에 적용" },
+        { key: "restoration", short: "초해상", ring: "adopt",
+          label: "초해상·영상복원",
+          note: "프로그램 등록 완료, KOMPSAT-3/3A 산출물에 사용" },
+        { key: "vlm",         short: "VLM",    ring: "trial",
+          label: "비전-언어 모델",
+          note: "장면 이해용 멀티모달 모델 미세조정 (IGARSS 2025)" },
+        { key: "agentic",     short: "에이전트", ring: "trial",
+          label: "에이전틱 AI",
+          note: "에이전트 기반 위성활용 파이프라인 프로토타입" },
+        { key: "foundation",  short: "FM",     ring: "assess",
+          label: "지구관측 파운데이션 모델",
+          note: "빠르게 움직이나 그 아래 검보정 문제는 아직 미해결" },
+        { key: "ssl",         short: "SSL",    ring: "assess",
+          label: "자기지도·소수샷 학습",
+          note: "KOMPSAT 라벨 자료가 부족한 영역에서 유망" }
+      ],
+      feedHeading: "트랙별 최신 논문",
+      allLabel: "전체",
+      volumeHeading: "월별 논문 발표량",
+      volumeNote:
+        "지구관측과 기계학습이 함께 등장하는 arXiv 논문을 월 단위로 센 것입니다. 거칠지만 분야의 속도를 가늠하는 정직한 지표입니다.",
+      volumeUnit: "편",
+      volumeEmpty: "첫 자동 수집을 기다리는 중입니다.",
+      statLatest: "이번 달 발표량",
+      statDelta: "12개월 증감",
+      statTracked: "수집된 논문",
+      tableLabel: "표로 보기",
+      tableMonth: "월",
+      tableCount: "편수",
+      updatedPrefix: "수집",
+      emptyTitle: "첫 자동 수집을 기다리는 중입니다",
+      emptyBody:
+        "GitHub Action이 매일 06:00(KST)에 arXiv를 조회해 트랙별로 정리합니다."
+    },
+
     media: {
       heading: "영상 · 연구자료",
       lead: "지구관측 임무 영상과 연구 결과 이미지입니다.",
@@ -840,6 +950,7 @@ const SITE = {
       ],
 
       conferences: [
+        { year: 2026, authors: "이선구", title: "KOMPSAT-3 다중분광영상의 다중지표 확률융합을 이용한 위성 기반 산림 병해충 모니터링 방법론", venue: "제77차 국제우주대회(IAC 2026) 지구관측 심포지엄 — Paper ID 106539", type: "Conference" },
         { year: 2025, authors: "이동호, 정대원, 이선구", title: "Development of a web-based analytical framework for soil moisture estimation using multi-polarized SAR data", venue: "ISPRS Geo-Spatial Week 2025", type: "Conference" },
         { year: 2025, authors: "박강현, 이선구", title: "Satellite data augmentation via label-to-image translation for KOMPSAT imagery", venue: "International Symposium on Remote Sensing 2025", type: "Conference" },
         { year: 2025, authors: "오한, 신동빈, 서현우, 이선구, 정대원", title: "Enhancing satellite image analysis with fine-tuned vision-language models", venue: "IEEE IGARSS 2025", type: "Conference" },

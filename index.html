@@ -136,6 +136,35 @@
     </div>
   </section>
 
+  <!-- ============ AI WATCH ============ -->
+  <section class="section aiw" id="aiwatch">
+    <div class="wrap">
+      <h2 class="sec-title" data-bind="aiwatch.heading"></h2>
+      <p class="sec-lead" data-bind="aiwatch.lead"></p>
+
+      <div class="aiw-top">
+        <figure class="aiw-fig">
+          <figcaption data-bind="aiwatch.radarHeading"></figcaption>
+          <div class="aiw-plot" id="aiRadar"></div>
+          <p class="aiw-note" data-bind="aiwatch.radarNote"></p>
+        </figure>
+        <figure class="aiw-fig">
+          <figcaption data-bind="aiwatch.volumeHeading"></figcaption>
+          <div class="aiw-plot" id="aiVolume"></div>
+          <p class="aiw-note" data-bind="aiwatch.volumeNote"></p>
+        </figure>
+      </div>
+
+      <div class="aiw-feedhead">
+        <span class="live" aria-hidden="true"><i></i><b data-bind="aiwatch.liveLabel"></b></span>
+        <h3 data-bind="aiwatch.feedHeading"></h3>
+        <span class="aiw-updated" id="aiUpdated"></span>
+      </div>
+      <div class="aiw-filters" id="aiFilters"></div>
+      <div class="aiw-list" id="aiList"></div>
+    </div>
+  </section>
+
   <!-- ============ MEDIA ============ -->
   <section class="section" id="media">
     <div class="wrap">
@@ -237,6 +266,7 @@
 <script src="assets/js/orbit.js"></script>
 <script src="assets/js/tracker.js"></script>
 <script src="assets/js/diagrams.js"></script>
+<script src="assets/js/aiwatch.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/hero.js" defer></script>
 </body>
