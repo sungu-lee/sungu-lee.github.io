@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-20T00:09:56Z",
+  "updated": "2026-10-20T23:40:38Z",
   "sources": [
     "ESA",
     "arXiv"
   ],
-  "count": 12,
-  "aiCount": 3,
+  "count": 18,
+  "aiCount": 10,
   "categories": [
     "High-resolution EO",
     "Standard products · L1",
@@ -16,6 +16,69 @@
     "Multi-sensor fusion"
   ],
   "items": [
+    {
+      "source": "arXiv",
+      "cat": "Hyperspectral",
+      "title": "See the Future, Classify the Present: Stochastic Latent World Modeling for Hyperspectral Images",
+      "url": "https://arxiv.org/abs/2610.25781v1",
+      "date": "2026-10-19",
+      "summary": "Hyperspectral image classification (HSIC) relies on static spatial-spectral representations learned from labeled samples, limiting its ability to model structured dependencies in the latent representation space. To address this limitation,…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "SAR",
+      "title": "Preserving the Manifold: Frozen Expert Alignment for Label-Efficient SAR Scene Understanding",
+      "url": "https://arxiv.org/abs/2610.25429v1",
+      "date": "2026-10-18",
+      "summary": "Cross-modal alignment of synthetic aperture radar (SAR) imagery to natural language is constrained by two distinct failures. The first is modality mismatch: text encoders pre-trained on optical imagery, such as CLIP, cannot be efficiently …",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "Multi-sensor fusion",
+      "title": "Domain-specific language alignment of multimodal embeddings towards explainable predictions",
+      "url": "https://arxiv.org/abs/2610.23110v1",
+      "date": "2026-10-16",
+      "summary": "Multimodal data are commonly fused into latent representations that improve downstream task performance but are not interpretable, limiting their application in domains that require explainable model decisions. Vision-language alignment ha…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "L2 value-added",
+      "title": "Monotone Piecewise-Linear Harmonization of Multitemporal Multispectral Surface Reflectance With Unsupervised Deep Multiview Pseudoinvariant Features Learning",
+      "url": "https://arxiv.org/abs/2610.21183v1",
+      "date": "2026-10-15",
+      "summary": "Surface reflectance products derived from optical satellite may exhibit systematic inconsistencies across acquisition dates, because atmospheric correction is generally performed independently for each image. Such residual biases distort t…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "Optical · multispectral",
+      "title": "Digital Typhoon Dataset V3: Benchmarking for Multi-spectral Extension and Analyzing Systematic Bias in Intensity Regression",
+      "url": "https://arxiv.org/abs/2610.21654v1",
+      "date": "2026-10-15",
+      "summary": "This paper presents the Digital Typhoon Dataset V3, a new version of the longest typhoon satellite image dataset spanning nearly 50 years, designed to benchmark machine learning models on long-term spatio-temporal data. The latest addition…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "L2 value-added",
+      "title": "Deep Learning for Forest Plantation Mapping in Godavari Districts of Andhra Pradesh, India",
+      "url": "https://arxiv.org/abs/2610.22415v1",
+      "date": "2026-10-14",
+      "summary": "Small-area forest plantations play a vital role in the socioeconomic well-being of farmers in Southeast Asia. Most plantations are established on former agricultural land, often on land less suitable for agriculture. Plantations that are c…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "High-resolution EO",
+      "title": "Spatio-Temporal Detection of Photovoltaic Systems on Industrial Building Rooftops Using Satellite Imagery and Machine Learning",
+      "url": "https://arxiv.org/abs/2610.23970v1",
+      "date": "2026-10-12",
+      "summary": "The global transition toward carbon-neutral energy systems is heavily dependent on the rapid deployment of solar photovoltaic (PV) infrastructure, yet the speed of this expansion has outpaced the ability of administrative registries to mai…",
+      "ai": true
+    },
     {
       "source": "arXiv",
       "cat": "Standard products · L1",
@@ -46,6 +109,33 @@
     {
       "source": "ESA",
       "cat": "Observing the Earth",
+      "title": "MetOp-SG-B1 weather satellite arrives at Europe’s Spaceport",
+      "url": "https://www.esa.int/Applications/Observing_the_Earth/Meteorological_missions/MetOp_Second_Generation/MetOp-SG-B1_weather_satellite_arrives_at_Europe_s_Spaceport",
+      "date": "2026-10-20",
+      "summary": "Following a 10-day voyage across the Atlantic from Bordeaux in France, the MetOp Second Generation-B1 weather satellite, has arrived at Europe’s Spaceport in French Guiana. After a short storage period, this new satellite will be prepared …",
+      "ai": false
+    },
+    {
+      "source": "arXiv",
+      "cat": "High-resolution EO",
+      "title": "A 36.34-day Sub-Neptune Candidate Transiting the Nearby K Dwarf TIC 402710280",
+      "url": "https://arxiv.org/abs/2610.26056v1",
+      "date": "2026-10-19",
+      "summary": "We report a transiting sub-Neptune candidate with a period of 36.34 days around TIC 402710280 (TYC 9041-03677-1), a K dwarf of TESS magnitude 9.24 at 66.8 pc that the Transiting Exoplanet Survey Satellite (TESS) has observed only in full-f…",
+      "ai": false
+    },
+    {
+      "source": "arXiv",
+      "cat": "Optical · multispectral",
+      "title": "Quantifying Uncertainty Bounds in Spectral Shallow Water Bathymetry: The Profile Likelihood Framework for Semi-Analytical Models",
+      "url": "https://arxiv.org/abs/2610.26352v1",
+      "date": "2026-10-19",
+      "summary": "Accurate bathymetric mapping in shallow waters is critical for coastal monitoring, navigation safety, and environmental conservation. While semi-analytical (SA) models have proven effective for estimating water column depth (WCD) from opti…",
+      "ai": false
+    },
+    {
+      "source": "ESA",
+      "cat": "Observing the Earth",
       "title": "Sentinel-3C captures Hurricane Rachel",
       "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Sentinel-3C_captures_Hurricane_Rachel",
       "date": "2026-10-19",
@@ -53,75 +143,39 @@
       "ai": false
     },
     {
-      "source": "ESA",
-      "cat": "Observing the Earth",
-      "title": "Earth from Space: West Antarctica",
-      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Earth_from_Space_West_Antarctica",
+      "source": "arXiv",
+      "cat": "L2 value-added",
+      "title": "Exploiting sparse conditional dependence in remote sensing observing systems",
+      "url": "https://arxiv.org/abs/2610.24710v1",
+      "date": "2026-10-17",
+      "summary": "We develop a novel filtering algorithm for remote sensing inverse problems that exploits sparsity in the precision (inverse covariance) matrix arising from conditional independence structures in spatio-temporal satellite data. Motivated by…",
+      "ai": false
+    },
+    {
+      "source": "arXiv",
+      "cat": "High-resolution EO",
+      "title": "The START mission: Probing the 2029 Apophis Flyby via a Low-Cost Geocentric SmallSat",
+      "url": "https://arxiv.org/abs/2610.22904v1",
       "date": "2026-10-16",
-      "summary": "Image: This image over part of West Antarctica was captured by Copernicus Sentinel-3 on 30 September 2026.",
+      "summary": "The Student-led Threatening Asteroid Reconnaissance of Tsinghua (START) marks the inaugural mission of the Tianxing Program, a deep-space exploration initiative led by students at Tsinghua University. Conceived as a low-cost, rapid-respons…",
       "ai": false
     },
     {
       "source": "arXiv",
-      "cat": "Standard products · L1",
-      "title": "RSAJEV: Training-Free Abstaining Prototype Memory for Eliminating Silent Hallucination in JEV-Based Remote Sensing Classification",
-      "url": "https://arxiv.org/abs/2610.15742v1",
-      "date": "2026-10-11",
-      "summary": "Scene classification of remote sensing imagery with multimodal large language models (MLLMs) is formulated as a single-forward-pass decision problem: candidate class names are lettered options in the prompt, a registered answer slot is con…",
-      "ai": false
-    },
-    {
-      "source": "ESA",
-      "cat": "Observing the Earth",
-      "title": "Gibraltar imaged by IRIDE Eaglet II",
-      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Gibraltar_imaged_by_IRIDE_Eaglet_II",
-      "date": "2026-10-09",
-      "summary": "Image: While the final eight IRIDE Eaglet II satellites were launched a week ago, the first images from Eaglet II satellites launched earlier are being returned, including a view of Gibraltar featured here.",
-      "ai": false
-    },
-    {
-      "source": "ESA",
-      "cat": "Observing the Earth",
-      "title": "Earth from Space: Namibia’s biggest salt pan",
-      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Earth_from_Space_Namibia_s_biggest_salt_pan",
-      "date": "2026-10-09",
-      "summary": "Image: This image from Copernicus Sentinel-2, acquired on 5 April 2026, shows the Etosha National Park in northern Namibia.",
-      "ai": false
-    },
-    {
-      "source": "ESA",
-      "cat": "Observing the Earth",
-      "title": "Sentinel-3C returns its first views of Earth",
-      "url": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-3/Sentinel-3C_returns_its_first_views_of_Earth",
-      "date": "2026-10-08",
-      "summary": "Just two weeks after it was launched, the Copernicus Sentinel-3C satellite returned its first images and measurements from two of its key instruments – a major milestone that confirms the satellite is working well and on the road to monito…",
-      "ai": false
-    },
-    {
-      "source": "ESA",
-      "cat": "Observing the Earth",
-      "title": "Introducing ESA’s Earth Virtual Expert",
-      "url": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Introducing_ESA_s_Earth_Virtual_Expert",
-      "date": "2026-10-08",
-      "summary": "The European Space Agency (ESA) has released Earth Virtual Expert (EVE), a platform powered with Artificial Intelligence (AI), to make Earth observation information more accessible and easier to understand. Built on trusted scientific sour…",
+      "cat": "High-resolution EO",
+      "title": "$\\texttt{GASTRO-BH}$: Effects of a Central Black Hole in GSE-like Dwarf-galaxy Mergers Around Milky Way-like Hosts",
+      "url": "https://arxiv.org/abs/2610.22860v1",
+      "date": "2026-10-16",
+      "summary": "Recent evidence points to an intermediate-mass black hole (IMBH) in the most massive globular cluster of the Milky Way, $ω$ Centauri. This globular cluster is commonly associated with the Gaia-Sausage/Enceladus (GSE) dwarf galaxy, the last…",
       "ai": false
     },
     {
       "source": "arXiv",
-      "cat": "Standard products · L1",
-      "title": "ObliCity: A Benchmark and Baseline for Roof-to-Ground Projection Displacement Correction",
-      "url": "https://arxiv.org/abs/2607.25210v1",
-      "date": "2026-07-28",
-      "summary": "Oblique-view urban remote sensing imagery inevitably exhibits geometric projection displacements between building roofs and footprints, leading to significant distortions in spatial structure. Existing approaches either ignore these deform…",
-      "ai": false
-    },
-    {
-      "source": "arXiv",
-      "cat": "Standard products · L1",
-      "title": "Integrating national forest inventory, airborne lidar, and satellite imagery for wall-to-wall mapping of forest structure with computer vision",
-      "url": "https://arxiv.org/abs/2606.20291v1",
-      "date": "2026-06-18",
-      "summary": "Remote sensing is increasingly relied upon to deliver actionable science for forest and wildfire risk management across large landscapes. Wall-to-wall, annually updated maps are a persistent need for effective forest management. Many plann…",
+      "cat": "Multi-sensor fusion",
+      "title": "GeoReason: Bridging Logical Reasoning and Spatial Fidelity in Remote Sensing Segmentation",
+      "url": "https://arxiv.org/abs/2610.23416v1",
+      "date": "2026-10-16",
+      "summary": "Multimodal Large Language Models (MLLMs) have significantly advanced instruction-driven perception through the \"Embedding-as-Mask\" paradigm. However, extending this capability to Remote Sensing (RS) reasoning segmentation remains exception…",
       "ai": false
     }
   ]
