@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-20T23:40:38Z",
+  "updated": "2026-10-21T23:55:48Z",
   "sources": [
     "ESA",
     "arXiv"
@@ -107,6 +107,15 @@
       "ai": true
     },
     {
+      "source": "arXiv",
+      "cat": "Hyperspectral",
+      "title": "From Proper Scoring Rules and Edge Biases to Mumford-Shah Models: Robust Unsupervised Hyperspectral Image Segmentation",
+      "url": "https://arxiv.org/abs/2610.27958v1",
+      "date": "2026-10-20",
+      "summary": "Hyperspectral images provide a rich representation of the underlying spectrum for each pixel, allowing for a pixel-wise classification/segmentation into different classes. As the availability of labeled hyperspectral images is limited and …",
+      "ai": false
+    },
+    {
       "source": "ESA",
       "cat": "Observing the Earth",
       "title": "MetOp-SG-B1 weather satellite arrives at Europe’s Spaceport",
@@ -134,6 +143,15 @@
       "ai": false
     },
     {
+      "source": "arXiv",
+      "cat": "Multi-sensor fusion",
+      "title": "Analytical Chemistry at the Planetary Frontier",
+      "url": "https://arxiv.org/abs/2610.27197v1",
+      "date": "2026-10-19",
+      "summary": "Planetary science depends on chemical measurements made under conditions very different from those in a terrestrial laboratory. This review treats the analytical methods of planetary science as one connected chain, from orbital remote sens…",
+      "ai": false
+    },
+    {
       "source": "ESA",
       "cat": "Observing the Earth",
       "title": "Sentinel-3C captures Hurricane Rachel",
@@ -153,29 +171,11 @@
     },
     {
       "source": "arXiv",
-      "cat": "High-resolution EO",
-      "title": "The START mission: Probing the 2029 Apophis Flyby via a Low-Cost Geocentric SmallSat",
-      "url": "https://arxiv.org/abs/2610.22904v1",
-      "date": "2026-10-16",
-      "summary": "The Student-led Threatening Asteroid Reconnaissance of Tsinghua (START) marks the inaugural mission of the Tianxing Program, a deep-space exploration initiative led by students at Tsinghua University. Conceived as a low-cost, rapid-respons…",
-      "ai": false
-    },
-    {
-      "source": "arXiv",
-      "cat": "High-resolution EO",
-      "title": "$\\texttt{GASTRO-BH}$: Effects of a Central Black Hole in GSE-like Dwarf-galaxy Mergers Around Milky Way-like Hosts",
-      "url": "https://arxiv.org/abs/2610.22860v1",
-      "date": "2026-10-16",
-      "summary": "Recent evidence points to an intermediate-mass black hole (IMBH) in the most massive globular cluster of the Milky Way, $ω$ Centauri. This globular cluster is commonly associated with the Gaia-Sausage/Enceladus (GSE) dwarf galaxy, the last…",
-      "ai": false
-    },
-    {
-      "source": "arXiv",
-      "cat": "Multi-sensor fusion",
-      "title": "GeoReason: Bridging Logical Reasoning and Spatial Fidelity in Remote Sensing Segmentation",
-      "url": "https://arxiv.org/abs/2610.23416v1",
-      "date": "2026-10-16",
-      "summary": "Multimodal Large Language Models (MLLMs) have significantly advanced instruction-driven perception through the \"Embedding-as-Mask\" paradigm. However, extending this capability to Remote Sensing (RS) reasoning segmentation remains exception…",
+      "cat": "SAR",
+      "title": "StarMind: Challenges and Opportunities in Orbital Computing",
+      "url": "https://arxiv.org/abs/2610.26916v1",
+      "date": "2026-10-17",
+      "summary": "Space-based artificial intelligence (AI) is moving beyond isolated onboard processing toward constellation-scale computing over optical inter-satellite links (OISLs). Yet current infrastructures remain fragmented, making end-to-end (E2E) c…",
       "ai": false
     }
   ]

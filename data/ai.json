@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-20T23:41:40Z",
+  "updated": "2026-10-21T23:56:47Z",
   "source": "arXiv API (cs.CV · cs.LG · eess.IV), filtered to Earth-observation context",
   "window": "last 12 months",
   "trackCounts": {
@@ -42,6 +42,14 @@
   ],
   "count": 27,
   "papers": [
+    {
+      "track": "foundation",
+      "title": "MatchCityLoc: Aerial Localization in LoD City Models via Surface Normal Matching",
+      "authors": "Oussema Dhaouadi, Zuria Bauer, Johannes Michael Meier 외 3명",
+      "url": "https://arxiv.org/abs/2610.27110v1",
+      "date": "2026-10-19",
+      "summary": "Autonomous Unmanned Aerial Vehicle (UAV) navigation in urban environments requires precise pose estimation. Because Global Navigation Satellite System (GNSS) signals are often unreliable in cities, visual localization serves as a crucial complement. Within th…"
+    },
     {
       "track": "sar",
       "title": "A 105 MS/s 4.18 nJ/inference 0.765 $\\text{mm}^\\text{2}$ Mixed-Signal Streaming ML Engine for Wireless Baseband in 12LP+ FinFET",
@@ -142,7 +150,7 @@
       "track": "ssl",
       "title": "Deficit-Driven Stratified Acquisition for Building STRATA-S12: An Open SAR-Optical Corpus for Self-Supervised Learning",
       "authors": "Christian Sanchez-Leon, Dongming Chen, Dongqi Wang",
-      "url": "https://arxiv.org/abs/2610.17680v1",
+      "url": "https://arxiv.org/abs/2610.17680v2",
       "date": "2026-10-13",
       "summary": "Building a co-registered SAR-optical corpus for self-supervised Earth Observation is above all an acquisition problem, yet the main multi-modal datasets are collected opportunistically, with no per-stratum quota control and no mechanism against the geographic…"
     },
@@ -209,14 +217,6 @@
       "url": "https://arxiv.org/abs/2610.08592v3",
       "date": "2026-10-06",
       "summary": "CNet is a C++/CUDA framework for deep complex-valued neural networks (CVNNs), trained by gradient descent with explicit Wirtinger (CR-calculus) derivatives. Complex models are underexplored yet natural where data is intrinsically complex -- RF/IQ, MRI k-space…"
-    },
-    {
-      "track": "foundation",
-      "title": "FairRSFM: A Biome-Aware Benchmark and Debiasing Framework for Remote Sensing Foundation Models",
-      "authors": "Md Aminur Hossain, Omkumar Vaghasiya, Rajeev Ranjan Dwivedi 외 2명",
-      "url": "https://arxiv.org/abs/2610.05790v1",
-      "date": "2026-10-05",
-      "summary": "Remote sensing foundation models (RSFMs) are commonly evaluated using aggregate metrics, which can hide systematic performance disparities across ecological regions. We introduce FairRSFM, a biome-aware benchmark for evaluating ecological group robustness in …"
     },
     {
       "track": "restoration",
