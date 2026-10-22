@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-21T23:55:48Z",
+  "updated": "2026-10-22T23:54:31Z",
   "sources": [
     "ESA",
     "arXiv"
   ],
   "count": 18,
-  "aiCount": 10,
+  "aiCount": 11,
   "categories": [
     "High-resolution EO",
     "Standard products · L1",
@@ -16,6 +16,15 @@
     "Multi-sensor fusion"
   ],
   "items": [
+    {
+      "source": "arXiv",
+      "cat": "Multi-sensor fusion",
+      "title": "YingLan: A Multimodal Ocean Foundation Model for Unified Representation Learning from Heterogeneous Observations",
+      "url": "https://arxiv.org/abs/2610.29313v1",
+      "date": "2026-10-21",
+      "summary": "Multimodal ocean modeling remains challenging due to substantial heterogeneity in data structures, physical semantics, and spatiotemporal characteristics across satellite imagery, gridded oceanographic fields, and buoy observations. Existi…",
+      "ai": true
+    },
     {
       "source": "arXiv",
       "cat": "Hyperspectral",
@@ -108,6 +117,15 @@
     },
     {
       "source": "arXiv",
+      "cat": "High-resolution EO",
+      "title": "OpenEarth-OVS44: A Multimodal Remote Sensing Dataset for Open-Vocabulary Segmentation",
+      "url": "https://arxiv.org/abs/2610.29642v1",
+      "date": "2026-10-21",
+      "summary": "In remote sensing, open-vocabulary segmentation is particularly important for flexible and scalable land-cover understanding across diverse regions, as it improves generalization to novel categories without requiring exhaustive pixel-level…",
+      "ai": false
+    },
+    {
+      "source": "arXiv",
       "cat": "Hyperspectral",
       "title": "From Proper Scoring Rules and Edge Biases to Mumford-Shah Models: Robust Unsupervised Hyperspectral Image Segmentation",
       "url": "https://arxiv.org/abs/2610.27958v1",
@@ -158,24 +176,6 @@
       "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Sentinel-3C_captures_Hurricane_Rachel",
       "date": "2026-10-19",
       "summary": "Image: Demonstrating that the visible channels of Sentinel-3C’s sea and land surface temperature radiometer are working as expected, on 2 October the instrument captured this image of Hurricane Rachel over the eastern Pacific Ocean, off th…",
-      "ai": false
-    },
-    {
-      "source": "arXiv",
-      "cat": "L2 value-added",
-      "title": "Exploiting sparse conditional dependence in remote sensing observing systems",
-      "url": "https://arxiv.org/abs/2610.24710v1",
-      "date": "2026-10-17",
-      "summary": "We develop a novel filtering algorithm for remote sensing inverse problems that exploits sparsity in the precision (inverse covariance) matrix arising from conditional independence structures in spatio-temporal satellite data. Motivated by…",
-      "ai": false
-    },
-    {
-      "source": "arXiv",
-      "cat": "SAR",
-      "title": "StarMind: Challenges and Opportunities in Orbital Computing",
-      "url": "https://arxiv.org/abs/2610.26916v1",
-      "date": "2026-10-17",
-      "summary": "Space-based artificial intelligence (AI) is moving beyond isolated onboard processing toward constellation-scale computing over optical inter-satellite links (OISLs). Yet current infrastructures remain fragmented, making end-to-end (E2E) c…",
       "ai": false
     }
   ]

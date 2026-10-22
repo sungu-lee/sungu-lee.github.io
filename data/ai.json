@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21T23:56:47Z",
+  "updated": "2026-10-22T23:55:30Z",
   "source": "arXiv API (cs.CV · cs.LG · eess.IV), filtered to Earth-observation context",
   "window": "last 12 months",
   "trackCounts": {
@@ -42,6 +42,22 @@
   ],
   "count": 27,
   "papers": [
+    {
+      "track": "foundation",
+      "title": "YingLan: A Multimodal Ocean Foundation Model for Unified Representation Learning from Heterogeneous Observations",
+      "authors": "Sen Jia, Siqi Wei, Junyu Wang 외 8명",
+      "url": "https://arxiv.org/abs/2610.29313v1",
+      "date": "2026-10-21",
+      "summary": "Multimodal ocean modeling remains challenging due to substantial heterogeneity in data structures, physical semantics, and spatiotemporal characteristics across satellite imagery, gridded oceanographic fields, and buoy observations. Existing approaches largel…"
+    },
+    {
+      "track": "vlm",
+      "title": "OpenEarth-OVS44: A Multimodal Remote Sensing Dataset for Open-Vocabulary Segmentation",
+      "authors": "Yimin Wei, Hongruixuan Chen, Hao Zheng 외 5명",
+      "url": "https://arxiv.org/abs/2610.29642v1",
+      "date": "2026-10-21",
+      "summary": "In remote sensing, open-vocabulary segmentation is particularly important for flexible and scalable land-cover understanding across diverse regions, as it improves generalization to novel categories without requiring exhaustive pixel-level annotations. Despit…"
+    },
     {
       "track": "foundation",
       "title": "MatchCityLoc: Aerial Localization in LoD City Models via Surface Normal Matching",
@@ -99,14 +115,6 @@
       "summary": "Parameterized quantum circuits are widely investigated in quantum machine learning, yet how their architecture can provide task-aligned inductive biases remains poorly understood. We study data reuploading quantum circuits with two distinct inputs: a signal t…"
     },
     {
-      "track": "vlm",
-      "title": "Multi-modal transmission forecasting for the Vera C. Rubin Observatory",
-      "authors": "Peter Xiangyuan Ma, Joshua S. Bloom",
-      "url": "https://arxiv.org/abs/2610.22725v1",
-      "date": "2026-10-15",
-      "summary": "In the age of large automated surveys conducted at facilities like the NSF-DOE Vera C. Rubin Observatory, delivering precision science goals demands highly efficient scheduling strategies that remain agile and dynamic to changing environments on the summit. O…"
-    },
-    {
       "track": "sar",
       "title": "Data-Efficient ConvNeXt Pretraining for High-Resolution Sentinel-1 GRD SAR Representation Learning",
       "authors": "Yuki Natsume, Sang-Ho Yun, Chai Kiat Yeo",
@@ -139,20 +147,20 @@
       "summary": "Pretraining generalist Earth observation foundation models requires data that combine several sensors, varied temporal sampling and, increasingly, text, yet open datasets rarely provide all three in one consistent, easily accessible form. We introduce MajorTO…"
     },
     {
-      "track": "vlm",
-      "title": "The Gap Is in the Geometry: A Convergent Meta-Analysis of Multi-Facet Aerial and Remote Sensing Video Understanding",
-      "authors": "Georgios Angelidis, Aggelos Psiris, Maria Vakalopoulou 외 3명",
-      "url": "https://arxiv.org/abs/2610.19102v1",
-      "date": "2026-10-13",
-      "summary": "Aerial and remote sensing video is increasingly evaluated like web video, by posing multiple-choice questions to multimodal large language models (MLLMs) over sampled frames and reporting accuracy. This paper argues that this recipe measures the wrong aspect,…"
-    },
-    {
       "track": "ssl",
       "title": "Deficit-Driven Stratified Acquisition for Building STRATA-S12: An Open SAR-Optical Corpus for Self-Supervised Learning",
       "authors": "Christian Sanchez-Leon, Dongming Chen, Dongqi Wang",
       "url": "https://arxiv.org/abs/2610.17680v2",
       "date": "2026-10-13",
       "summary": "Building a co-registered SAR-optical corpus for self-supervised Earth Observation is above all an acquisition problem, yet the main multi-modal datasets are collected opportunistically, with no per-stratum quota control and no mechanism against the geographic…"
+    },
+    {
+      "track": "agentic",
+      "title": "The Gap Is in the Geometry: A Convergent Meta-Analysis of Multi-Facet Aerial and Remote Sensing Video Understanding",
+      "authors": "Georgios Angelidis, Aggelos Psiris, Maria Vakalopoulou 외 3명",
+      "url": "https://arxiv.org/abs/2610.19102v1",
+      "date": "2026-10-13",
+      "summary": "Aerial and remote sensing video is increasingly evaluated like web video, by posing multiple-choice questions to multimodal large language models (MLLMs) over sampled frames and reporting accuracy. This paper argues that this recipe measures the wrong aspect,…"
     },
     {
       "track": "agentic",
@@ -185,14 +193,6 @@
       "url": "https://arxiv.org/abs/2610.13857v1",
       "date": "2026-10-09",
       "summary": "Natural disasters such as earthquakes, tropical storms, and floods cause extensive damage to buildings, and rapid, reliable damage maps are essential to guide emergency response. Automating this task, referred to as building damage assessment (BDA), from sate…"
-    },
-    {
-      "track": "foundation",
-      "title": "PlacePulse: Learning Transferable Place Representations from Structural Geographic Data",
-      "authors": "Lucía García-Duarte, Miguel Álvarez, Diego Vicente 외 2명",
-      "url": "https://arxiv.org/abs/2610.13390v1",
-      "date": "2026-10-09",
-      "summary": "Geospatial machine learning often depends on task-specific feature engineering over large collections of sociodemographic, business, and environmental variables. Geospatial foundation models offer reusable representations of place, but leading approaches typi…"
     },
     {
       "track": "restoration",
