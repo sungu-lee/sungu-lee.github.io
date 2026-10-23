@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-22T23:54:31Z",
+  "updated": "2026-10-23T23:46:53Z",
   "sources": [
     "ESA",
     "arXiv"
   ],
   "count": 18,
-  "aiCount": 11,
+  "aiCount": 10,
   "categories": [
     "High-resolution EO",
     "Standard products · L1",
@@ -72,15 +72,6 @@
     },
     {
       "source": "arXiv",
-      "cat": "L2 value-added",
-      "title": "Deep Learning for Forest Plantation Mapping in Godavari Districts of Andhra Pradesh, India",
-      "url": "https://arxiv.org/abs/2610.22415v1",
-      "date": "2026-10-14",
-      "summary": "Small-area forest plantations play a vital role in the socioeconomic well-being of farmers in Southeast Asia. Most plantations are established on former agricultural land, often on land less suitable for agriculture. Plantations that are c…",
-      "ai": true
-    },
-    {
-      "source": "arXiv",
       "cat": "High-resolution EO",
       "title": "Spatio-Temporal Detection of Photovoltaic Systems on Industrial Building Rooftops Using Satellite Imagery and Machine Learning",
       "url": "https://arxiv.org/abs/2610.23970v1",
@@ -116,6 +107,33 @@
       "ai": true
     },
     {
+      "source": "ESA",
+      "cat": "Observing the Earth",
+      "title": "Earth from Space: The pink city",
+      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Earth_from_Space_The_pink_city",
+      "date": "2026-10-23",
+      "summary": "Image: This image shows a detailed view of the city of Toulouse in southwest France, with its terracotta tiled rooftops lending it the nickname la ville rose, or the pink city.",
+      "ai": false
+    },
+    {
+      "source": "arXiv",
+      "cat": "L2 value-added",
+      "title": "In-Orbit Computing for Remote Sensing: Task-Oriented Processing and Transmission",
+      "url": "https://arxiv.org/abs/2610.30693v1",
+      "date": "2026-10-22",
+      "summary": "The growing volume and timeliness requirements of remote sensing data are exposing the limitations of the conventional \"transmit-then-process\" architecture, particularly under intermittent satellite-ground connectivity, constrained downlin…",
+      "ai": false
+    },
+    {
+      "source": "arXiv",
+      "cat": "High-resolution EO",
+      "title": "Bayesian Downscaling of Satellite-Derived Solar-Induced Chlorophyll Fluorescence",
+      "url": "https://arxiv.org/abs/2610.30508v1",
+      "date": "2026-10-21",
+      "summary": "We present an extendable Bayesian framework for spatial downscaling of satellite-derived measurements with coarse, irregular footprints. Motivated by measurements of solar-induced chlorophyll fluorescence (SIF) from the earth-observing OCO…",
+      "ai": false
+    },
+    {
       "source": "arXiv",
       "cat": "High-resolution EO",
       "title": "OpenEarth-OVS44: A Multimodal Remote Sensing Dataset for Open-Vocabulary Segmentation",
@@ -146,9 +164,9 @@
       "source": "arXiv",
       "cat": "High-resolution EO",
       "title": "A 36.34-day Sub-Neptune Candidate Transiting the Nearby K Dwarf TIC 402710280",
-      "url": "https://arxiv.org/abs/2610.26056v1",
+      "url": "https://arxiv.org/abs/2610.26056v2",
       "date": "2026-10-19",
-      "summary": "We report a transiting sub-Neptune candidate with a period of 36.34 days around TIC 402710280 (TYC 9041-03677-1), a K dwarf of TESS magnitude 9.24 at 66.8 pc that the Transiting Exoplanet Survey Satellite (TESS) has observed only in full-f…",
+      "summary": "Transiting sub-Neptunes on orbits longer than a month are rare around bright stars. We report a candidate with a 36.34-day period around TIC 402710280, a $V = 10.0$ K dwarf at 66.8 pc that the Transiting Exoplanet Survey Satellite (TESS) h…",
       "ai": false
     },
     {
@@ -158,24 +176,6 @@
       "url": "https://arxiv.org/abs/2610.26352v1",
       "date": "2026-10-19",
       "summary": "Accurate bathymetric mapping in shallow waters is critical for coastal monitoring, navigation safety, and environmental conservation. While semi-analytical (SA) models have proven effective for estimating water column depth (WCD) from opti…",
-      "ai": false
-    },
-    {
-      "source": "arXiv",
-      "cat": "Multi-sensor fusion",
-      "title": "Analytical Chemistry at the Planetary Frontier",
-      "url": "https://arxiv.org/abs/2610.27197v1",
-      "date": "2026-10-19",
-      "summary": "Planetary science depends on chemical measurements made under conditions very different from those in a terrestrial laboratory. This review treats the analytical methods of planetary science as one connected chain, from orbital remote sens…",
-      "ai": false
-    },
-    {
-      "source": "ESA",
-      "cat": "Observing the Earth",
-      "title": "Sentinel-3C captures Hurricane Rachel",
-      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Sentinel-3C_captures_Hurricane_Rachel",
-      "date": "2026-10-19",
-      "summary": "Image: Demonstrating that the visible channels of Sentinel-3C’s sea and land surface temperature radiometer are working as expected, on 2 October the instrument captured this image of Hurricane Rachel over the eastern Pacific Ocean, off th…",
       "ai": false
     }
   ]
