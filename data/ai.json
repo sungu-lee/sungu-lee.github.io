@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25T23:04:58Z",
+  "updated": "2026-10-27T00:17:17Z",
   "source": "arXiv API (cs.CV · cs.LG · eess.IV), filtered to Earth-observation context",
   "window": "last 12 months",
   "trackCounts": {
@@ -40,8 +40,40 @@
       "count": 66
     }
   ],
-  "count": 27,
+  "count": 28,
   "papers": [
+    {
+      "track": "vlm",
+      "title": "LoCA: Enabling Multi-Modality in Geospatial Location Encoders",
+      "authors": "Panagiotis Koromilas, Eleanna Vali, Diogenis Antonopoulos 외 7명",
+      "url": "https://arxiv.org/abs/2610.32894v1",
+      "date": "2026-10-23",
+      "summary": "Location encoders map geographic coordinates to high-dimensional descriptors through contrastive alignment with paired Earth Observation imagery. We prove that this construction is structurally limited: any Lipschitz location encoder produces an output of int…"
+    },
+    {
+      "track": "vlm",
+      "title": "GeoLEON-CLIP: Graph-Anchored Multimodal Contrastive Learning for Geographic Region Representation",
+      "authors": "Radoslaw Malek, Szymon Soltysiak, Aleksandra Kawala-Sterniuk 외 1명",
+      "url": "https://arxiv.org/abs/2610.32311v1",
+      "date": "2026-10-23",
+      "summary": "Geographic regions are multimodal: satellite imagery captures visual morphology, text conveys human-interpretable semantics, and map structures describe urban context. Existing geospatial contrastive methods typically align image-text or image-location pairs,…"
+    },
+    {
+      "track": "vlm",
+      "title": "OlmoEarth v1.3: Embeddings",
+      "authors": "Gabriel Tseng, Favyen Bastani, Patrick Alan Johnson 외 13명",
+      "url": "https://arxiv.org/abs/2610.32294v1",
+      "date": "2026-10-23",
+      "summary": "We make some OlmoEarth embeddings. To do this, we train a new model: OlmoEarth v1.3. OlmoEarth v1.3 is designed to condense multimodal, multitemporal remote sensing data into a single digestible 64 or 128-dimensional vector. OlmoEarth v1.3 produces state-of-t…"
+    },
+    {
+      "track": "restoration",
+      "title": "SCDM-HTD: Spectral-Wise Conditional Diffusion Model for Hyperspectral Target Detection",
+      "authors": "Dunbin Shen, Wenfeng Kong, Jianjun Liu 외 2명",
+      "url": "https://arxiv.org/abs/2610.32768v1",
+      "date": "2026-10-23",
+      "summary": "Hyperspectral target detection (HTD) aims to locate and recognize objects at a fine-grained scale, playing a pivotal role in remote sensing. Despite significant progress, current HTD methods primarily focus on feature comparison while neglecting distribution …"
+    },
     {
       "track": "vlm",
       "title": "Data-Driven Vision-Language Models for Remote Sensing: A Survey",
@@ -99,28 +131,20 @@
       "summary": "Cross-modal alignment of synthetic aperture radar (SAR) imagery to natural language is constrained by two distinct failures. The first is modality mismatch: text encoders pre-trained on optical imagery, such as CLIP, cannot be efficiently fine-tuned on SAR, b…"
     },
     {
-      "track": "vlm",
-      "title": "GeoReason: Bridging Logical Reasoning and Spatial Fidelity in Remote Sensing Segmentation",
-      "authors": "Cheng Fan, Han Wu, Tingzhang Luo 외 3명",
-      "url": "https://arxiv.org/abs/2610.23416v1",
-      "date": "2026-10-16",
-      "summary": "Multimodal Large Language Models (MLLMs) have significantly advanced instruction-driven perception through the \"Embedding-as-Mask\" paradigm. However, extending this capability to Remote Sensing (RS) reasoning segmentation remains exceptionally challenging und…"
-    },
-    {
-      "track": "vlm",
-      "title": "FloodVLM-Pix: Language-Guided Pixel-Level Flood Understanding",
-      "authors": "Chengyang Zhang, Zhihao Wang, Zhiyu Long 외 4명",
-      "url": "https://arxiv.org/abs/2610.23377v1",
-      "date": "2026-10-16",
-      "summary": "As climate change intensifies, floods are becoming more frequent and destructive, making accurate flood understanding an urgent priority. However, existing vision-language models perform poorly on flood-related tasks, suffering from attentional bias and inacc…"
-    },
-    {
       "track": "sar",
       "title": "Task-aligned spectral inductive biases in parameterized quantum circuits",
       "authors": "Felix Frohnert, Adrián Pérez-Salinas, Sebastian Lange 외 3명",
       "url": "https://arxiv.org/abs/2610.23834v1",
       "date": "2026-10-16",
       "summary": "Parameterized quantum circuits are widely investigated in quantum machine learning, yet how their architecture can provide task-aligned inductive biases remains poorly understood. We study data reuploading quantum circuits with two distinct inputs: a signal t…"
+    },
+    {
+      "track": "agentic",
+      "title": "GeoReason: Bridging Logical Reasoning and Spatial Fidelity in Remote Sensing Segmentation",
+      "authors": "Cheng Fan, Han Wu, Tingzhang Luo 외 3명",
+      "url": "https://arxiv.org/abs/2610.23416v1",
+      "date": "2026-10-16",
+      "summary": "Multimodal Large Language Models (MLLMs) have significantly advanced instruction-driven perception through the \"Embedding-as-Mask\" paradigm. However, extending this capability to Remote Sensing (RS) reasoning segmentation remains exceptionally challenging und…"
     },
     {
       "track": "sar",
@@ -227,14 +251,6 @@
       "summary": "Super-resolution and semantic segmentation are known to benefit one another, especially in the Earth observation context. However, learning both tasks in a joint model often requires both task annotations, which is impractical and expensive. In this paper, we…"
     },
     {
-      "track": "ssl",
-      "title": "LEON: Location Embeddings from OSM Neighborhoods via Hexagonal Graph Masked Autoencoders",
-      "authors": "Szymon Soltysiak, Radoslaw Malek, Jedrzej Kusnierz 외 3명",
-      "url": "https://arxiv.org/abs/2610.05497v1",
-      "date": "2026-10-04",
-      "summary": "Geographic information systems increasingly rely on sophisticated spatial representation learning techniques to extract meaningful patterns from complex geospatial data. This paper introduces LEON, a novel self-supervised framework that adapts Graph Masked Au…"
-    },
-    {
       "track": "restoration",
       "title": "CoEvolve: Construct-to-Edit Visual Grounding with Bidirectional State Refinement",
       "authors": "Dongwei Sun, Yujie Zhang, Bowen Yao 외 3명",
@@ -249,14 +265,6 @@
       "url": "https://arxiv.org/abs/2609.35410v1",
       "date": "2026-09-28",
       "summary": "Spectral super-resolution of multispectral satellite images can enable high temporal- and spatial-resolution hyperspectral satellite imagery at a modest cost, significantly increasing the applicability of hyperspectral remote sensing. This task is inherently …"
-    },
-    {
-      "track": "restoration",
-      "title": "Experimental Validation of Combined Imaging and Vibration Mitigation for High-Altitude Platforms",
-      "authors": "Ákos Radványi, Anita Keszler, Dániel Balogh 외 6명",
-      "url": "https://arxiv.org/abs/2609.09376v1",
-      "date": "2026-09-08",
-      "summary": "The demand for continuous, high-resolution aerial monitoring is driving interest in High- Altitude Pseudo-Satellites (HAPS), which offer a cost-effective alternative to satellites with greater flexibility. While HAPS platforms provide valuable Earth observati…"
     }
   ],
   "warnings": [

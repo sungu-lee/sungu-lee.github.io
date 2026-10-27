@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-25T23:03:59Z",
+  "updated": "2026-10-27T00:16:16Z",
   "sources": [
     "ESA",
     "arXiv"
   ],
   "count": 18,
-  "aiCount": 10,
+  "aiCount": 9,
   "categories": [
     "High-resolution EO",
     "Standard products · L1",
@@ -16,6 +16,15 @@
     "Multi-sensor fusion"
   ],
   "items": [
+    {
+      "source": "arXiv",
+      "cat": "Hyperspectral",
+      "title": "SCDM-HTD: Spectral-Wise Conditional Diffusion Model for Hyperspectral Target Detection",
+      "url": "https://arxiv.org/abs/2610.32768v1",
+      "date": "2026-10-23",
+      "summary": "Hyperspectral target detection (HTD) aims to locate and recognize objects at a fine-grained scale, playing a pivotal role in remote sensing. Despite significant progress, current HTD methods primarily focus on feature comparison while negl…",
+      "ai": true
+    },
     {
       "source": "arXiv",
       "cat": "Multi-sensor fusion",
@@ -41,24 +50,6 @@
       "url": "https://arxiv.org/abs/2610.25429v1",
       "date": "2026-10-18",
       "summary": "Cross-modal alignment of synthetic aperture radar (SAR) imagery to natural language is constrained by two distinct failures. The first is modality mismatch: text encoders pre-trained on optical imagery, such as CLIP, cannot be efficiently …",
-      "ai": true
-    },
-    {
-      "source": "arXiv",
-      "cat": "Multi-sensor fusion",
-      "title": "Domain-specific language alignment of multimodal embeddings towards explainable predictions",
-      "url": "https://arxiv.org/abs/2610.23110v1",
-      "date": "2026-10-16",
-      "summary": "Multimodal data are commonly fused into latent representations that improve downstream task performance but are not interpretable, limiting their application in domains that require explainable model decisions. Vision-language alignment ha…",
-      "ai": true
-    },
-    {
-      "source": "arXiv",
-      "cat": "L2 value-added",
-      "title": "Monotone Piecewise-Linear Harmonization of Multitemporal Multispectral Surface Reflectance With Unsupervised Deep Multiview Pseudoinvariant Features Learning",
-      "url": "https://arxiv.org/abs/2610.21183v1",
-      "date": "2026-10-15",
-      "summary": "Surface reflectance products derived from optical satellite may exhibit systematic inconsistencies across acquisition dates, because atmospheric correction is generally performed independently for each image. Such residual biases distort t…",
       "ai": true
     },
     {
@@ -109,6 +100,42 @@
     {
       "source": "ESA",
       "cat": "Observing the Earth",
+      "title": "Ice mission CRISTAL opens its wings",
+      "url": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Ice_mission_CRISTAL_opens_its_wings",
+      "date": "2026-10-26",
+      "summary": "With its solar arrays integrated and key qualification reviews under way, Europe’s new ice-monitoring satellite, CRISTAL, is moving from assembly into the demanding testing phase that will demonstrate its readiness for the rigours of launc…",
+      "ai": false
+    },
+    {
+      "source": "arXiv",
+      "cat": "L2 value-added",
+      "title": "LoCA: Enabling Multi-Modality in Geospatial Location Encoders",
+      "url": "https://arxiv.org/abs/2610.32894v1",
+      "date": "2026-10-23",
+      "summary": "Location encoders map geographic coordinates to high-dimensional descriptors through contrastive alignment with paired Earth Observation imagery. We prove that this construction is structurally limited: any Lipschitz location encoder produ…",
+      "ai": false
+    },
+    {
+      "source": "arXiv",
+      "cat": "Multi-sensor fusion",
+      "title": "GeoLEON-CLIP: Graph-Anchored Multimodal Contrastive Learning for Geographic Region Representation",
+      "url": "https://arxiv.org/abs/2610.32311v1",
+      "date": "2026-10-23",
+      "summary": "Geographic regions are multimodal: satellite imagery captures visual morphology, text conveys human-interpretable semantics, and map structures describe urban context. Existing geospatial contrastive methods typically align image-text or i…",
+      "ai": false
+    },
+    {
+      "source": "arXiv",
+      "cat": "Multi-sensor fusion",
+      "title": "OlmoEarth v1.3: Embeddings",
+      "url": "https://arxiv.org/abs/2610.32294v1",
+      "date": "2026-10-23",
+      "summary": "We make some OlmoEarth embeddings. To do this, we train a new model: OlmoEarth v1.3. OlmoEarth v1.3 is designed to condense multimodal, multitemporal remote sensing data into a single digestible 64 or 128-dimensional vector. OlmoEarth v1.3…",
+      "ai": false
+    },
+    {
+      "source": "ESA",
+      "cat": "Observing the Earth",
       "title": "Earth from Space: The pink city",
       "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Earth_from_Space_The_pink_city",
       "date": "2026-10-23",
@@ -149,33 +176,6 @@
       "url": "https://arxiv.org/abs/2610.27958v1",
       "date": "2026-10-20",
       "summary": "Hyperspectral images provide a rich representation of the underlying spectrum for each pixel, allowing for a pixel-wise classification/segmentation into different classes. As the availability of labeled hyperspectral images is limited and …",
-      "ai": false
-    },
-    {
-      "source": "ESA",
-      "cat": "Observing the Earth",
-      "title": "MetOp-SG-B1 weather satellite arrives at Europe’s Spaceport",
-      "url": "https://www.esa.int/Applications/Observing_the_Earth/Meteorological_missions/MetOp_Second_Generation/MetOp-SG-B1_weather_satellite_arrives_at_Europe_s_Spaceport",
-      "date": "2026-10-20",
-      "summary": "Following a 10-day voyage across the Atlantic from Bordeaux in France, the MetOp Second Generation-B1 weather satellite, has arrived at Europe’s Spaceport in French Guiana. After a short storage period, this new satellite will be prepared …",
-      "ai": false
-    },
-    {
-      "source": "arXiv",
-      "cat": "High-resolution EO",
-      "title": "A 36.34-day Sub-Neptune Candidate Transiting the Nearby K Dwarf TIC 402710280",
-      "url": "https://arxiv.org/abs/2610.26056v2",
-      "date": "2026-10-19",
-      "summary": "Transiting sub-Neptunes on orbits longer than a month are rare around bright stars. We report a candidate with a 36.34-day period around TIC 402710280, a $V = 10.0$ K dwarf at 66.8 pc that the Transiting Exoplanet Survey Satellite (TESS) h…",
-      "ai": false
-    },
-    {
-      "source": "arXiv",
-      "cat": "Optical · multispectral",
-      "title": "Quantifying Uncertainty Bounds in Spectral Shallow Water Bathymetry: The Profile Likelihood Framework for Semi-Analytical Models",
-      "url": "https://arxiv.org/abs/2610.26352v1",
-      "date": "2026-10-19",
-      "summary": "Accurate bathymetric mapping in shallow waters is critical for coastal monitoring, navigation safety, and environmental conservation. While semi-analytical (SA) models have proven effective for estimating water column depth (WCD) from opti…",
       "ai": false
     }
   ]
