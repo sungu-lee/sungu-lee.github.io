@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-27T00:16:16Z",
+  "updated": "2026-10-28T00:18:42Z",
   "sources": [
     "ESA",
     "arXiv"
   ],
   "count": 18,
-  "aiCount": 9,
+  "aiCount": 7,
   "categories": [
     "High-resolution EO",
     "Standard products · L1",
@@ -23,15 +23,6 @@
       "url": "https://arxiv.org/abs/2610.32768v1",
       "date": "2026-10-23",
       "summary": "Hyperspectral target detection (HTD) aims to locate and recognize objects at a fine-grained scale, playing a pivotal role in remote sensing. Despite significant progress, current HTD methods primarily focus on feature comparison while negl…",
-      "ai": true
-    },
-    {
-      "source": "arXiv",
-      "cat": "Multi-sensor fusion",
-      "title": "YingLan: A Multimodal Ocean Foundation Model for Unified Representation Learning from Heterogeneous Observations",
-      "url": "https://arxiv.org/abs/2610.29313v1",
-      "date": "2026-10-21",
-      "summary": "Multimodal ocean modeling remains challenging due to substantial heterogeneity in data structures, physical semantics, and spatiotemporal characteristics across satellite imagery, gridded oceanographic fields, and buoy observations. Existi…",
       "ai": true
     },
     {
@@ -63,15 +54,6 @@
     },
     {
       "source": "arXiv",
-      "cat": "High-resolution EO",
-      "title": "Spatio-Temporal Detection of Photovoltaic Systems on Industrial Building Rooftops Using Satellite Imagery and Machine Learning",
-      "url": "https://arxiv.org/abs/2610.23970v1",
-      "date": "2026-10-12",
-      "summary": "The global transition toward carbon-neutral energy systems is heavily dependent on the rapid deployment of solar photovoltaic (PV) infrastructure, yet the speed of this expansion has outpaced the ability of administrative registries to mai…",
-      "ai": true
-    },
-    {
-      "source": "arXiv",
       "cat": "Standard products · L1",
       "title": "Multimodal Remote Sensing Image Registration: A Comprehensive Review, Challenges and Prospects",
       "url": "https://arxiv.org/abs/2610.11176v1",
@@ -83,7 +65,7 @@
       "source": "arXiv",
       "cat": "Standard products · L1",
       "title": "A Framework for Automated Multi-Source Satellite Data Analytics and LLM-Based Report Generation",
-      "url": "https://arxiv.org/abs/2610.05625v1",
+      "url": "https://arxiv.org/abs/2610.05625v2",
       "date": "2026-10-04",
       "summary": "This paper presents the workflow for building an automated ArcGIS Pro tool using ArcPy to extract the Land Surface Temperature (LST) from Landsat 7, 8 and 9 datasets. The tool eliminates the need for manual band selection and repetitive ra…",
       "ai": true
@@ -98,12 +80,57 @@
       "ai": true
     },
     {
+      "source": "arXiv",
+      "cat": "Optical · multispectral",
+      "title": "From Sentinel-2 to 1-m Imagery: Real-World $\\times 10$ Cross-Sensor Super-Resolution via Visual Autoregressive Modeling",
+      "url": "https://arxiv.org/abs/2610.34742v1",
+      "date": "2026-10-26",
+      "summary": "Reconstructing 1-m imagery from Sentinel-2 combines two difficulties. The input and the reference are observed by different satellites, which differ in spatial resolution, spectral response, radiometry, acquisition time, and local geometry…",
+      "ai": false
+    },
+    {
+      "source": "arXiv",
+      "cat": "Hyperspectral",
+      "title": "Hyperspectral Unmixing using a Structured Linear Mixing Model with Additive Spectral Variability",
+      "url": "https://arxiv.org/abs/2610.35580v1",
+      "date": "2026-10-26",
+      "summary": "Linear hyperspectral unmixing aims at retrieving pure material spectra present in an observed scene and their associated abundance fractions in each pixel. In most practical situations, hyperspectral images are affected by spectral variabi…",
+      "ai": false
+    },
+    {
+      "source": "arXiv",
+      "cat": "Multi-sensor fusion",
+      "title": "AgenticCity-Bench: Longitudinal Multimodal Observations of Urban Dynamics with Agentic Reasoning",
+      "url": "https://arxiv.org/abs/2610.35293v1",
+      "date": "2026-10-26",
+      "summary": "City systems are shaped by interactions among infrastructure, human activity, and environmental conditions. Existing earth observation and urban benchmarks are limited in unified modeling and in capturing their joint dynamics. We introduce…",
+      "ai": false
+    },
+    {
       "source": "ESA",
       "cat": "Observing the Earth",
       "title": "Ice mission CRISTAL opens its wings",
       "url": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Ice_mission_CRISTAL_opens_its_wings",
       "date": "2026-10-26",
       "summary": "With its solar arrays integrated and key qualification reviews under way, Europe’s new ice-monitoring satellite, CRISTAL, is moving from assembly into the demanding testing phase that will demonstrate its readiness for the rigours of launc…",
+      "ai": false
+    },
+    {
+      "source": "arXiv",
+      "cat": "Hyperspectral",
+      "title": "Synthetic Data Augmentation for Functional Data: Wasserstein Risk Bounds and Diffusion-Based Conditional Generation",
+      "url": "https://arxiv.org/abs/2610.34120v1",
+      "date": "2026-10-25",
+      "summary": "Functional data are costly to collect; samples of tens to hundreds of curves are common. Synthetic data augmentation can help, but its theory is developed for finite-dimensional data and relies on total variation, which is uninformative fo…",
+      "ai": false
+    },
+    {
+      "source": "arXiv",
+      "cat": "High-resolution EO",
+      "title": "Cross-Scale Sparse Attention for Referring Segmentation in Remote Sensing",
+      "url": "https://arxiv.org/abs/2610.33551v1",
+      "date": "2026-10-24",
+      "summary": "High-resolution remote sensing (RS) imagery provides fine spatial detail over large areas, making it essential for fine-grained scene understanding. Referring Remote Sensing Image Segmentation (RRSIS) aims to segment regions described by n…",
       "ai": false
     },
     {
@@ -149,33 +176,6 @@
       "url": "https://arxiv.org/abs/2610.30693v1",
       "date": "2026-10-22",
       "summary": "The growing volume and timeliness requirements of remote sensing data are exposing the limitations of the conventional \"transmit-then-process\" architecture, particularly under intermittent satellite-ground connectivity, constrained downlin…",
-      "ai": false
-    },
-    {
-      "source": "arXiv",
-      "cat": "High-resolution EO",
-      "title": "Bayesian Downscaling of Satellite-Derived Solar-Induced Chlorophyll Fluorescence",
-      "url": "https://arxiv.org/abs/2610.30508v1",
-      "date": "2026-10-21",
-      "summary": "We present an extendable Bayesian framework for spatial downscaling of satellite-derived measurements with coarse, irregular footprints. Motivated by measurements of solar-induced chlorophyll fluorescence (SIF) from the earth-observing OCO…",
-      "ai": false
-    },
-    {
-      "source": "arXiv",
-      "cat": "High-resolution EO",
-      "title": "OpenEarth-OVS44: A Multimodal Remote Sensing Dataset for Open-Vocabulary Segmentation",
-      "url": "https://arxiv.org/abs/2610.29642v1",
-      "date": "2026-10-21",
-      "summary": "In remote sensing, open-vocabulary segmentation is particularly important for flexible and scalable land-cover understanding across diverse regions, as it improves generalization to novel categories without requiring exhaustive pixel-level…",
-      "ai": false
-    },
-    {
-      "source": "arXiv",
-      "cat": "Hyperspectral",
-      "title": "From Proper Scoring Rules and Edge Biases to Mumford-Shah Models: Robust Unsupervised Hyperspectral Image Segmentation",
-      "url": "https://arxiv.org/abs/2610.27958v1",
-      "date": "2026-10-20",
-      "summary": "Hyperspectral images provide a rich representation of the underlying spectrum for each pixel, allowing for a pixel-wise classification/segmentation into different classes. As the availability of labeled hyperspectral images is limited and …",
       "ai": false
     }
   ]
