@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28T00:18:42Z",
+  "updated": "2026-10-29T00:39:39Z",
   "sources": [
     "ESA",
     "arXiv"
@@ -78,6 +78,15 @@
       "date": "2026-05-12",
       "summary": "Existing deep learning-based methods can capture shared features from optical and synthetic aperture radar (SAR) images for spatial alignment. However, optical-SAR registration remains challenging under large geometric deformations, becaus…",
       "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "SAR",
+      "title": "Assessing BIOMASS Radiometric Stability using Permanent Scatterers",
+      "url": "https://arxiv.org/abs/2610.37400v1",
+      "date": "2026-10-27",
+      "summary": "Monitoring the relative radiometric stability of the European Space Agency's BIOMASS P-band synthetic aperture radar (SAR) requires separating instrumental and processing effects from temporal changes in the scene backscatter. This study i…",
+      "ai": false
     },
     {
       "source": "arXiv",
@@ -167,15 +176,6 @@
       "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Earth_from_Space_The_pink_city",
       "date": "2026-10-23",
       "summary": "Image: This image shows a detailed view of the city of Toulouse in southwest France, with its terracotta tiled rooftops lending it the nickname la ville rose, or the pink city.",
-      "ai": false
-    },
-    {
-      "source": "arXiv",
-      "cat": "L2 value-added",
-      "title": "In-Orbit Computing for Remote Sensing: Task-Oriented Processing and Transmission",
-      "url": "https://arxiv.org/abs/2610.30693v1",
-      "date": "2026-10-22",
-      "summary": "The growing volume and timeliness requirements of remote sensing data are exposing the limitations of the conventional \"transmit-then-process\" architecture, particularly under intermittent satellite-ground connectivity, constrained downlin…",
       "ai": false
     }
   ]
