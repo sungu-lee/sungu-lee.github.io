@@ -1,19 +1,19 @@
 {
-  "updated": "2026-10-29T00:40:37Z",
+  "updated": "2026-10-30T00:47:50Z",
   "source": "arXiv API (cs.CV · cs.LG · eess.IV), filtered to Earth-observation context",
   "window": "last 12 months",
   "trackCounts": {
-    "foundation": 5,
-    "vlm": 5,
-    "sar": 5,
-    "ssl": 5,
-    "agentic": 5,
-    "restoration": 5
+    "foundation": 0,
+    "vlm": 0,
+    "sar": 0,
+    "ssl": 0,
+    "agentic": 0,
+    "restoration": 0
   },
   "volume": [
     {
       "month": "2025-10",
-      "count": 64
+      "count": null
     },
     {
       "month": "2025-11",
@@ -24,238 +24,40 @@
       "count": 55
     },
     {
-      "month": "2026-01",
-      "count": 50
-    },
-    {
-      "month": "2026-02",
-      "count": 47
-    },
-    {
       "month": "2026-03",
-      "count": 77
+      "count": null
     },
     {
-      "month": "2026-04",
-      "count": 66
+      "month": "2026-06",
+      "count": null
+    },
+    {
+      "month": "2026-08",
+      "count": null
+    },
+    {
+      "month": "2026-09",
+      "count": null
     }
   ],
-  "count": 26,
-  "papers": [
-    {
-      "track": "foundation",
-      "title": "Evaluating AlphaEarth Embeddings for Crop Classification: Separability, Temporal Dynamics, and Cross-Regional Transferability",
-      "authors": "Priyanka Goyal, Maitreyee Sar, Adway Mitra 외 1명",
-      "url": "https://arxiv.org/abs/2610.36857v1",
-      "date": "2026-10-27",
-      "summary": "Earth Observation (EO)-based agricultural monitoring is shifting from pixel-level spectral analysis toward representation-driven modeling, yet systematic evaluation of learned representations across spatial, temporal, and domain-generalization dimensions rema…"
-    },
-    {
-      "track": "vlm",
-      "title": "Efficient Remote Sensing Image-Text Retrieval via Interaction-Free Recall and Text-Guided Reranking",
-      "authors": "Xi Chen, Xu Chen, Xiamgyang Jia 외 3명",
-      "url": "https://arxiv.org/abs/2610.36756v1",
-      "date": "2026-10-27",
-      "summary": "Remote sensing (RS) image-text retrieval plays a critical role in understanding massive RS imagery. However, the dense multi-object distribution and complex backgrounds in RS imagery make it difficult to simultaneously achieve fine-grained cross-modal alignme…"
-    },
-    {
-      "track": "sar",
-      "title": "Quantized Edge Inference of a Self-Supervised SAR-Optical Encoder on Commodity x86 Hardware",
-      "authors": "Christian Sanchez-Leon, Dongming Chen",
-      "url": "https://arxiv.org/abs/2610.37056v1",
-      "date": "2026-10-27",
-      "summary": "Self-supervised vision transformers are increasingly used as reusable encoders for Earth observation, but their inference cost on the hardware available in the field is rarely characterized. We deploy a pretrained SAR-optical masked-autoencoder encoder on thr…"
-    },
-    {
-      "track": "foundation",
-      "title": "Accuracy and efficiency of compact foundation models for surface-water mapping during floods",
-      "authors": "Parastoo Farajpoor, Mohammadreza Narimani",
-      "url": "https://arxiv.org/abs/2610.34904v1",
-      "date": "2026-10-26",
-      "summary": "Pretrained Earth observation models may reduce the effort needed to map surface water, but their value depends on the alternative against which they are compared. We evaluated Prithvi-EO-2.0-Tiny using the 446 hand-labeled Sentinel-2 chips from 11 flood event…"
-    },
-    {
-      "track": "vlm",
-      "title": "AgenticCity-Bench: Longitudinal Multimodal Observations of Urban Dynamics with Agentic Reasoning",
-      "authors": "Xiaofei Yu, Kailai Sun, Yanyu Mao 외 7명",
-      "url": "https://arxiv.org/abs/2610.35293v1",
-      "date": "2026-10-26",
-      "summary": "City systems are shaped by interactions among infrastructure, human activity, and environmental conditions. Existing earth observation and urban benchmarks are limited in unified modeling and in capturing their joint dynamics. We introduce AgenticCity-Bench, …"
-    },
-    {
-      "track": "restoration",
-      "title": "From Sentinel-2 to 1-m Imagery: Real-World $\\times 10$ Cross-Sensor Super-Resolution via Visual Autoregressive Modeling",
-      "authors": "Tailai Chen, Yuluxin Fu, Jie Deng 외 3명",
-      "url": "https://arxiv.org/abs/2610.34742v1",
-      "date": "2026-10-26",
-      "summary": "Reconstructing 1-m imagery from Sentinel-2 combines two difficulties. The input and the reference are observed by different satellites, which differ in spatial resolution, spectral response, radiometry, acquisition time, and local geometry, so no synthetic de…"
-    },
-    {
-      "track": "vlm",
-      "title": "Cross-Scale Sparse Attention for Referring Segmentation in Remote Sensing",
-      "authors": "Yuxi Li, Lu Si, Xia Liao 외 4명",
-      "url": "https://arxiv.org/abs/2610.33551v1",
-      "date": "2026-10-24",
-      "summary": "High-resolution remote sensing (RS) imagery provides fine spatial detail over large areas, making it essential for fine-grained scene understanding. Referring Remote Sensing Image Segmentation (RRSIS) aims to segment regions described by natural language, yet…"
-    },
-    {
-      "track": "ssl",
-      "title": "Component Pooling Trained Across Orientations for Few-Shot Remote Sensing Scene Classification",
-      "authors": "Bingchen Yan, Wenheng Guo, Yuye Zhou",
-      "url": "https://arxiv.org/abs/2610.33518v1",
-      "date": "2026-10-24",
-      "summary": "Few-shot remote sensing scene classification (FSRSSC) aims to recognize novel scene categories from only a few labeled images. Most FSRSSC methods summarize the feature map of an image by global average pooling, which treats the few objects that define an aer…"
-    },
-    {
-      "track": "vlm",
-      "title": "LoCA: Enabling Multi-Modality in Geospatial Location Encoders",
-      "authors": "Panagiotis Koromilas, Eleanna Vali, Diogenis Antonopoulos 외 7명",
-      "url": "https://arxiv.org/abs/2610.32894v1",
-      "date": "2026-10-23",
-      "summary": "Location encoders map geographic coordinates to high-dimensional descriptors through contrastive alignment with paired Earth Observation imagery. We prove that this construction is structurally limited: any Lipschitz location encoder produces an output of int…"
-    },
-    {
-      "track": "vlm",
-      "title": "GeoLEON-CLIP: Graph-Anchored Multimodal Contrastive Learning for Geographic Region Representation",
-      "authors": "Radoslaw Malek, Szymon Soltysiak, Aleksandra Kawala-Sterniuk 외 1명",
-      "url": "https://arxiv.org/abs/2610.32311v1",
-      "date": "2026-10-23",
-      "summary": "Geographic regions are multimodal: satellite imagery captures visual morphology, text conveys human-interpretable semantics, and map structures describe urban context. Existing geospatial contrastive methods typically align image-text or image-location pairs,…"
-    },
-    {
-      "track": "restoration",
-      "title": "SCDM-HTD: Spectral-Wise Conditional Diffusion Model for Hyperspectral Target Detection",
-      "authors": "Dunbin Shen, Wenfeng Kong, Jianjun Liu 외 2명",
-      "url": "https://arxiv.org/abs/2610.32768v1",
-      "date": "2026-10-23",
-      "summary": "Hyperspectral target detection (HTD) aims to locate and recognize objects at a fine-grained scale, playing a pivotal role in remote sensing. Despite significant progress, current HTD methods primarily focus on feature comparison while neglecting distribution …"
-    },
-    {
-      "track": "agentic",
-      "title": "KinoUAV: A Benchmark for Safe and Stable UAV Vision-Language Navigation with Kinodynamic Modeling",
-      "authors": "Chenyao Yang, Peijin Wang, Yingchao Feng 외 1명",
-      "url": "https://arxiv.org/abs/2610.30609v1",
-      "date": "2026-10-22",
-      "summary": "Unmanned aerial vehicles (UAVs) have recently emerged as important remote sensing platforms, and UAV navigation has shown great potential in remote sensing applications. However, existing methods do not explicitly incorporate kinodynamic modeling or safety di…"
-    },
-    {
-      "track": "foundation",
-      "title": "YingLan: A Multimodal Ocean Foundation Model for Unified Representation Learning from Heterogeneous Observations",
-      "authors": "Sen Jia, Siqi Wei, Junyu Wang 외 8명",
-      "url": "https://arxiv.org/abs/2610.29313v1",
-      "date": "2026-10-21",
-      "summary": "Multimodal ocean modeling remains challenging due to substantial heterogeneity in data structures, physical semantics, and spatiotemporal characteristics across satellite imagery, gridded oceanographic fields, and buoy observations. Existing approaches largel…"
-    },
-    {
-      "track": "foundation",
-      "title": "MatchCityLoc: Aerial Localization in LoD City Models via Surface Normal Matching",
-      "authors": "Oussema Dhaouadi, Zuria Bauer, Johannes Michael Meier 외 3명",
-      "url": "https://arxiv.org/abs/2610.27110v1",
-      "date": "2026-10-19",
-      "summary": "Autonomous Unmanned Aerial Vehicle (UAV) navigation in urban environments requires precise pose estimation. Because Global Navigation Satellite System (GNSS) signals are often unreliable in cities, visual localization serves as a crucial complement. Within th…"
-    },
-    {
-      "track": "sar",
-      "title": "A 105 MS/s 4.18 nJ/inference 0.765 $\\text{mm}^\\text{2}$ Mixed-Signal Streaming ML Engine for Wireless Baseband in 12LP+ FinFET",
-      "authors": "Oscar Castañeda, Lavinia Recchioni, Sueda Taner 외 3명",
-      "url": "https://arxiv.org/abs/2610.26552v1",
-      "date": "2026-10-19",
-      "summary": "We present SIXPPAC, the first streaming machine-learning engine for real-time integrated sensing and communication (ISAC) in wireless systems. SIXPPAC integrates two SAR ADCs and a digital binary-weight six-layer neural network (NN). The 0.765 mm$^\\text{2}$ 1…"
-    },
-    {
-      "track": "ssl",
-      "title": "Preserving the Manifold: Frozen Expert Alignment for Label-Efficient SAR Scene Understanding",
-      "authors": "Eli A. Underwood, I. Taylor McKechnie, Leslie M. Collins",
-      "url": "https://arxiv.org/abs/2610.25429v1",
-      "date": "2026-10-18",
-      "summary": "Cross-modal alignment of synthetic aperture radar (SAR) imagery to natural language is constrained by two distinct failures. The first is modality mismatch: text encoders pre-trained on optical imagery, such as CLIP, cannot be efficiently fine-tuned on SAR, b…"
-    },
-    {
-      "track": "sar",
-      "title": "Task-aligned spectral inductive biases in parameterized quantum circuits",
-      "authors": "Felix Frohnert, Adrián Pérez-Salinas, Sebastian Lange 외 3명",
-      "url": "https://arxiv.org/abs/2610.23834v1",
-      "date": "2026-10-16",
-      "summary": "Parameterized quantum circuits are widely investigated in quantum machine learning, yet how their architecture can provide task-aligned inductive biases remains poorly understood. We study data reuploading quantum circuits with two distinct inputs: a signal t…"
-    },
-    {
-      "track": "agentic",
-      "title": "GeoReason: Bridging Logical Reasoning and Spatial Fidelity in Remote Sensing Segmentation",
-      "authors": "Cheng Fan, Han Wu, Tingzhang Luo 외 3명",
-      "url": "https://arxiv.org/abs/2610.23416v1",
-      "date": "2026-10-16",
-      "summary": "Multimodal Large Language Models (MLLMs) have significantly advanced instruction-driven perception through the \"Embedding-as-Mask\" paradigm. However, extending this capability to Remote Sensing (RS) reasoning segmentation remains exceptionally challenging und…"
-    },
-    {
-      "track": "sar",
-      "title": "Data-Efficient ConvNeXt Pretraining for High-Resolution Sentinel-1 GRD SAR Representation Learning",
-      "authors": "Yuki Natsume, Sang-Ho Yun, Chai Kiat Yeo",
-      "url": "https://arxiv.org/abs/2610.21993v1",
-      "date": "2026-10-15",
-      "summary": "Labeled Sentinel-1 Ground Range Detected (S1GRD) datasets remain scarce, limiting supervised deep learning for land-surface remote sensing, while self-supervised pretraining for this domain has been dominated by Vision Transformer (ViT)-based masked image mod…"
-    },
-    {
-      "track": "agentic",
-      "title": "ISW-Agent: Integrating LLM-Driven Dialogue with n8n Workflow for Internal Solitary Wave Remote Sensing Image Processing",
-      "authors": "Hao Zhang, Hengrui Liu, Lina Sun 외 1명",
-      "url": "https://arxiv.org/abs/2610.21502v1",
-      "date": "2026-10-15",
-      "summary": "Internal solitary wave (ISW) remote sensing requires task parameters and spatial information to be transferred across image acquisition, detection, stripe extraction, and propagation prediction. Here, we present ISW-Agent, which integrates large language mode…"
-    },
-    {
-      "track": "foundation",
-      "title": "PiCo: Physics-Informed Concept Probing for Geo-Foundation Models",
-      "authors": "Yihang She, Andrew Blake, Jianbo Qi 외 1명",
-      "url": "https://arxiv.org/abs/2610.20973v1",
-      "date": "2026-10-14",
-      "summary": "Geo-foundation models (GFMs) are typically evaluated by downstream task predictive performance, revealing little about which physical features they are sensitive to or use in prediction. This limits developers' ability to test hypotheses about model behaviour…"
-    },
-    {
-      "track": "agentic",
-      "title": "The Gap Is in the Geometry: A Convergent Meta-Analysis of Multi-Facet Aerial and Remote Sensing Video Understanding",
-      "authors": "Georgios Angelidis, Aggelos Psiris, Maria Vakalopoulou 외 3명",
-      "url": "https://arxiv.org/abs/2610.19102v1",
-      "date": "2026-10-13",
-      "summary": "Aerial and remote sensing video is increasingly evaluated like web video, by posing multiple-choice questions to multimodal large language models (MLLMs) over sampled frames and reporting accuracy. This paper argues that this recipe measures the wrong aspect,…"
-    },
-    {
-      "track": "sar",
-      "title": "UAV SAR Imaging via Diffusion Posterior Sampling under Non-Ideal Motion in ISAC Systems",
-      "authors": "Keying Zhu, Le Liang, Jie Yang 외 2명",
-      "url": "https://arxiv.org/abs/2610.14516v1",
-      "date": "2026-10-10",
-      "summary": "Unmanned aerial vehicle-enabled synthetic aperture radar (SAR) offers significant potential for providing communication services to ground users while sensing the surrounding environment in low-altitude integrated sensing and communication (ISAC) systems. How…"
-    },
-    {
-      "track": "restoration",
-      "title": "MOSAIC: Multi-Scale Object-Centric Slot Adaptation with Image-Guided Prototype Conditioning for Remote Sensing Image Super-Resolution",
-      "authors": "Liuqian Wang, Hanyu Xie, Rongzhen Zhao 외 6명",
-      "url": "https://arxiv.org/abs/2610.13547v1",
-      "date": "2026-10-09",
-      "summary": "Pretrained diffusion Transformers provide powerful generative priors for image restoration, yet adapting them to structure-sensitive tasks remains challenging. Existing methods mainly rely on dense low-resolution features as conditions, which often entangle s…"
-    },
-    {
-      "track": "restoration",
-      "title": "Multi-Task Partially Supervised Learning for Super-Resolution and Semantic Segmentation on Earth Observation data",
-      "authors": "Hoàng-Ân Lê, Minh-Tan Pham, Solange Lemai-Chenevier 외 1명",
-      "url": "https://arxiv.org/abs/2610.06389v1",
-      "date": "2026-10-05",
-      "summary": "Super-resolution and semantic segmentation are known to benefit one another, especially in the Earth observation context. However, learning both tasks in a joint model often requires both task annotations, which is impractical and expensive. In this paper, we…"
-    },
-    {
-      "track": "restoration",
-      "title": "CoEvolve: Construct-to-Edit Visual Grounding with Bidirectional State Refinement",
-      "authors": "Dongwei Sun, Yujie Zhang, Bowen Yao 외 3명",
-      "url": "https://arxiv.org/abs/2610.01710v1",
-      "date": "2026-10-01",
-      "summary": "Visual grounding localizes an object described by language with a bounding box. Most multimodal grounding models compress target identification, spatial reasoning, and boundary estimation into one terminal prediction. Free-form rationales make reasoning lingu…"
-    }
-  ],
+  "count": 0,
+  "papers": [],
   "warnings": [
-    "volume/2026-05: HTTP 429 ",
-    "volume/2026-06: HTTP 429 ",
-    "volume/2026-07: HTTP 429 ",
-    "volume/2026-08: HTTP 429 ",
-    "volume/2026-09: HTTP 429 "
+    "foundation: HTTP Error 429: Unknown Error",
+    "vlm: The read operation timed out",
+    "sar: HTTP Error 429: Unknown Error",
+    "ssl: HTTP Error 429: Too Many Requests",
+    "agentic: The read operation timed out",
+    "restoration: The read operation timed out",
+    "volume/2025-10: TimeoutError: The read operation timed out",
+    "volume/2026-01: HTTP 429 Rate exceeded.",
+    "volume/2026-02: HTTP 429 Rate exceeded.",
+    "volume/2026-03: TimeoutError: The read operation timed out",
+    "volume/2026-04: HTTP 429 Rate exceeded.",
+    "volume/2026-05: HTTP 429 Rate exceeded.",
+    "volume/2026-06: TimeoutError: The read operation timed out",
+    "volume/2026-07: HTTP 429 Rate exceeded.",
+    "volume/2026-08: TimeoutError: The read operation timed out",
+    "volume/2026-09: TimeoutError: The read operation timed out"
   ]
 }
