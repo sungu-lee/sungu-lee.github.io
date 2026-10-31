@@ -1,10 +1,11 @@
 {
-  "updated": "2026-10-30T00:41:51Z",
+  "updated": "2026-10-31T00:32:00Z",
   "sources": [
-    "ESA"
+    "ESA",
+    "arXiv"
   ],
-  "count": 6,
-  "aiCount": 0,
+  "count": 18,
+  "aiCount": 8,
   "categories": [
     "High-resolution EO",
     "Standard products · L1",
@@ -16,6 +17,150 @@
   ],
   "items": [
     {
+      "source": "arXiv",
+      "cat": "High-resolution EO",
+      "title": "Quantum-Inspired Convolutional Networks for High-Resolution Pseudo-Label Generation from Multimodal Earth Observation Data",
+      "url": "https://arxiv.org/abs/2610.39773v1",
+      "date": "2026-10-29",
+      "summary": "Accurate land-cover mapping from multimodal Earth observation (EO) data remains a challenge in regions where high-resolution annotations are scarce or costly to obtain. This work introduces a quantum convolutional encoder-decoder network f…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "Hyperspectral",
+      "title": "SCDM-HTD: Spectral-Wise Conditional Diffusion Model for Hyperspectral Target Detection",
+      "url": "https://arxiv.org/abs/2610.32768v1",
+      "date": "2026-10-23",
+      "summary": "Hyperspectral target detection (HTD) aims to locate and recognize objects at a fine-grained scale, playing a pivotal role in remote sensing. Despite significant progress, current HTD methods primarily focus on feature comparison while negl…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "Hyperspectral",
+      "title": "See the Future, Classify the Present: Stochastic Latent World Modeling for Hyperspectral Images",
+      "url": "https://arxiv.org/abs/2610.25781v1",
+      "date": "2026-10-19",
+      "summary": "Hyperspectral image classification (HSIC) relies on static spatial-spectral representations learned from labeled samples, limiting its ability to model structured dependencies in the latent representation space. To address this limitation,…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "SAR",
+      "title": "Preserving the Manifold: Frozen Expert Alignment for Label-Efficient SAR Scene Understanding",
+      "url": "https://arxiv.org/abs/2610.25429v1",
+      "date": "2026-10-18",
+      "summary": "Cross-modal alignment of synthetic aperture radar (SAR) imagery to natural language is constrained by two distinct failures. The first is modality mismatch: text encoders pre-trained on optical imagery, such as CLIP, cannot be efficiently …",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "Optical · multispectral",
+      "title": "Digital Typhoon Dataset V3: Benchmarking for Multi-spectral Extension and Analyzing Systematic Bias in Intensity Regression",
+      "url": "https://arxiv.org/abs/2610.21654v1",
+      "date": "2026-10-15",
+      "summary": "This paper presents the Digital Typhoon Dataset V3, a new version of the longest typhoon satellite image dataset spanning nearly 50 years, designed to benchmark machine learning models on long-term spatio-temporal data. The latest addition…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "Standard products · L1",
+      "title": "Multimodal Remote Sensing Image Registration: A Comprehensive Review, Challenges and Prospects",
+      "url": "https://arxiv.org/abs/2610.11176v1",
+      "date": "2026-10-08",
+      "summary": "Multimodal remote sensing image registration is a crucial prerequisite for the collaborative processing and downstream application of remote sensing data, such as image fusion, change detection, and target recognition. However, significant…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "Standard products · L1",
+      "title": "A Framework for Automated Multi-Source Satellite Data Analytics and LLM-Based Report Generation",
+      "url": "https://arxiv.org/abs/2610.05625v2",
+      "date": "2026-10-04",
+      "summary": "This paper presents the workflow for building an automated ArcGIS Pro tool using ArcPy to extract the Land Surface Temperature (LST) from Landsat 7, 8 and 9 datasets. The tool eliminates the need for manual band selection and repetitive ra…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "Standard products · L1",
+      "title": "TAR: Text Semantic Assisted Cross-modal Image Registration Framework for Optical and SAR Images",
+      "url": "https://arxiv.org/abs/2605.12064v1",
+      "date": "2026-05-12",
+      "summary": "Existing deep learning-based methods can capture shared features from optical and synthetic aperture radar (SAR) images for spatial alignment. However, optical-SAR registration remains challenging under large geometric deformations, becaus…",
+      "ai": true
+    },
+    {
+      "source": "ESA",
+      "cat": "Observing the Earth",
+      "title": "Sentinel-6B enters service",
+      "url": "https://www.eumetsat.int/sentinel-6b-track-rising-seas-predict-storms-and-aid-forecasts",
+      "date": "2026-10-30",
+      "summary": "Sentinel-6B enters service",
+      "ai": false
+    },
+    {
+      "source": "ESA",
+      "cat": "Observing the Earth",
+      "title": "Earth from Space: Champi’s eerie eye",
+      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Earth_from_Space_Champi_s_eerie_eye",
+      "date": "2026-10-30",
+      "summary": "Image: This image of Super Typhoon Champi from Copernicus Sentinel-3 was captured on 21 October 2026 off the coasts of Taiwan and the Philippines.",
+      "ai": false
+    },
+    {
+      "source": "arXiv",
+      "cat": "L2 value-added",
+      "title": "NeurEO: dissecting Earth observation embeddings with computational neuroscience",
+      "url": "https://arxiv.org/abs/2610.40137v1",
+      "date": "2026-10-29",
+      "summary": "Earth embeddings are compressed representations of rich Earth observation data that enable downstream models to tackle a wide range of complex geospatial tasks. Yet, this increase in performance comes at the cost of decreased interpretabil…",
+      "ai": false
+    },
+    {
+      "source": "arXiv",
+      "cat": "Multi-sensor fusion",
+      "title": "From Next Day Wildfire to Next Days Wildfire: A New Multi-Continent Dataset of Active-Fire Spread for Sequence-to-Sequence Forecasting",
+      "url": "https://arxiv.org/abs/2610.38086v1",
+      "date": "2026-10-28",
+      "summary": "Benchmarks such as WildfireSpreadTS (WSTS) have enabled data-driven forecasting of wildfire spread from multimodal satellite time series, but they suffer from limitations: size restricts them to large fires that burn for weeks, and they ar…",
+      "ai": false
+    },
+    {
+      "source": "arXiv",
+      "cat": "SAR",
+      "title": "Assessing BIOMASS Radiometric Stability using Permanent Scatterers",
+      "url": "https://arxiv.org/abs/2610.37400v1",
+      "date": "2026-10-27",
+      "summary": "Monitoring the relative radiometric stability of the European Space Agency's BIOMASS P-band synthetic aperture radar (SAR) requires separating instrumental and processing effects from temporal changes in the scene backscatter. This study i…",
+      "ai": false
+    },
+    {
+      "source": "arXiv",
+      "cat": "Optical · multispectral",
+      "title": "From Sentinel-2 to 1-m Imagery: Real-World $\\times 10$ Cross-Sensor Super-Resolution via Visual Autoregressive Modeling",
+      "url": "https://arxiv.org/abs/2610.34742v1",
+      "date": "2026-10-26",
+      "summary": "Reconstructing 1-m imagery from Sentinel-2 combines two difficulties. The input and the reference are observed by different satellites, which differ in spatial resolution, spectral response, radiometry, acquisition time, and local geometry…",
+      "ai": false
+    },
+    {
+      "source": "arXiv",
+      "cat": "Hyperspectral",
+      "title": "Hyperspectral Unmixing using a Structured Linear Mixing Model with Additive Spectral Variability",
+      "url": "https://arxiv.org/abs/2610.35580v1",
+      "date": "2026-10-26",
+      "summary": "Linear hyperspectral unmixing aims at retrieving pure material spectra present in an observed scene and their associated abundance fractions in each pixel. In most practical situations, hyperspectral images are affected by spectral variabi…",
+      "ai": false
+    },
+    {
+      "source": "arXiv",
+      "cat": "Multi-sensor fusion",
+      "title": "AgenticCity-Bench: Longitudinal Multimodal Observations of Urban Dynamics with Agentic Reasoning",
+      "url": "https://arxiv.org/abs/2610.35293v1",
+      "date": "2026-10-26",
+      "summary": "City systems are shaped by interactions among infrastructure, human activity, and environmental conditions. Existing earth observation and urban benchmarks are limited in unified modeling and in capturing their joint dynamics. We introduce…",
+      "ai": false
+    },
+    {
       "source": "ESA",
       "cat": "Observing the Earth",
       "title": "Ice mission CRISTAL opens its wings",
@@ -25,48 +170,12 @@
       "ai": false
     },
     {
-      "source": "ESA",
-      "cat": "Observing the Earth",
-      "title": "Earth from Space: The pink city",
-      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Earth_from_Space_The_pink_city",
-      "date": "2026-10-23",
-      "summary": "Image: This image shows a detailed view of the city of Toulouse in southwest France, with its terracotta tiled rooftops lending it the nickname la ville rose, or the pink city.",
-      "ai": false
-    },
-    {
-      "source": "ESA",
-      "cat": "Observing the Earth",
-      "title": "MetOp-SG-B1 weather satellite arrives at Europe’s Spaceport",
-      "url": "https://www.esa.int/Applications/Observing_the_Earth/Meteorological_missions/MetOp_Second_Generation/MetOp-SG-B1_weather_satellite_arrives_at_Europe_s_Spaceport",
-      "date": "2026-10-20",
-      "summary": "Following a 10-day voyage across the Atlantic from Bordeaux in France, the MetOp Second Generation-B1 weather satellite, has arrived at Europe’s Spaceport in French Guiana. After a short storage period, this new satellite will be prepared …",
-      "ai": false
-    },
-    {
-      "source": "ESA",
-      "cat": "Observing the Earth",
-      "title": "Sentinel-3C captures Hurricane Rachel",
-      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Sentinel-3C_captures_Hurricane_Rachel",
-      "date": "2026-10-19",
-      "summary": "Image: Demonstrating that the visible channels of Sentinel-3C’s sea and land surface temperature radiometer are working as expected, on 2 October the instrument captured this image of Hurricane Rachel over the eastern Pacific Ocean, off th…",
-      "ai": false
-    },
-    {
-      "source": "ESA",
-      "cat": "Observing the Earth",
-      "title": "Earth from Space: West Antarctica",
-      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Earth_from_Space_West_Antarctica",
-      "date": "2026-10-16",
-      "summary": "Image: This image over part of West Antarctica was captured by Copernicus Sentinel-3 on 30 September 2026.",
-      "ai": false
-    },
-    {
-      "source": "ESA",
-      "cat": "Observing the Earth",
-      "title": "Gibraltar imaged by IRIDE Eaglet II",
-      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Gibraltar_imaged_by_IRIDE_Eaglet_II",
-      "date": "2026-10-09",
-      "summary": "Image: While the final eight IRIDE Eaglet II satellites were launched a week ago, the first images from Eaglet II satellites launched earlier are being returned, including a view of Gibraltar featured here.",
+      "source": "arXiv",
+      "cat": "Hyperspectral",
+      "title": "Synthetic Data Augmentation for Functional Data: Wasserstein Risk Bounds and Diffusion-Based Conditional Generation",
+      "url": "https://arxiv.org/abs/2610.34120v1",
+      "date": "2026-10-25",
+      "summary": "Functional data are costly to collect; samples of tens to hundreds of curves are common. Synthetic data augmentation can help, but its theory is developed for finite-dimensional data and relies on total variation, which is uninformative fo…",
       "ai": false
     }
   ]
