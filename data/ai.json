@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T23:59:08Z",
+  "updated": "2026-11-02T00:25:04Z",
   "source": "arXiv API (cs.CV · cs.LG · eess.IV), filtered to Earth-observation context",
   "window": "last 12 months",
   "trackCounts": {
@@ -11,10 +11,6 @@
     "restoration": 5
   },
   "volume": [
-    {
-      "month": "2025-10",
-      "count": 64
-    },
     {
       "month": "2025-11",
       "count": 63
@@ -38,6 +34,10 @@
     {
       "month": "2026-04",
       "count": 66
+    },
+    {
+      "month": "2026-05",
+      "count": 76
     }
   ],
   "count": 26,
@@ -252,10 +252,10 @@
     }
   ],
   "warnings": [
-    "volume/2026-05: HTTP 429 ",
     "volume/2026-06: HTTP 429 ",
     "volume/2026-07: HTTP 429 ",
     "volume/2026-08: HTTP 429 ",
-    "volume/2026-09: HTTP 429 "
+    "volume/2026-09: HTTP 429 ",
+    "volume/2026-10: HTTP 429 "
   ]
 }
