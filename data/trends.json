@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-02T00:24:04Z",
+  "updated": "2026-11-03T02:47:50Z",
   "sources": [
     "ESA",
     "arXiv"
   ],
   "count": 18,
-  "aiCount": 8,
+  "aiCount": 9,
   "categories": [
     "High-resolution EO",
     "Standard products · L1",
@@ -16,6 +16,24 @@
     "Multi-sensor fusion"
   ],
   "items": [
+    {
+      "source": "arXiv",
+      "cat": "SAR",
+      "title": "SAR-TS-BERT: Physics-Guided Self-Supervised Pre-Training With Polarimetric Features for SAR Time-Series Crop Classification",
+      "url": "https://arxiv.org/abs/2610.41728v1",
+      "date": "2026-10-30",
+      "summary": "Multitemporal synthetic aperture radar (SAR) imagery provides continuous, cloud-free observations of crop phenology for agricultural monitoring in cloudy and rainy regions, yet high-accuracy classification typically requires extensive labe…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "Hyperspectral",
+      "title": "Spectral Haar Binarizer: Compact Boolean Contrast Representations for Hyperspectral Classification",
+      "url": "https://arxiv.org/abs/2610.41478v1",
+      "date": "2026-10-30",
+      "summary": "Tsetlin Machines offer an interpretable, hardware-friendly alternative to conventional machine learning models, but applying them to continuous hyperspectral measurements requires converting spectral signals into Boolean representations. S…",
+      "ai": true
+    },
     {
       "source": "arXiv",
       "cat": "High-resolution EO",
@@ -32,15 +50,6 @@
       "url": "https://arxiv.org/abs/2610.32768v1",
       "date": "2026-10-23",
       "summary": "Hyperspectral target detection (HTD) aims to locate and recognize objects at a fine-grained scale, playing a pivotal role in remote sensing. Despite significant progress, current HTD methods primarily focus on feature comparison while negl…",
-      "ai": true
-    },
-    {
-      "source": "arXiv",
-      "cat": "Hyperspectral",
-      "title": "See the Future, Classify the Present: Stochastic Latent World Modeling for Hyperspectral Images",
-      "url": "https://arxiv.org/abs/2610.25781v1",
-      "date": "2026-10-19",
-      "summary": "Hyperspectral image classification (HSIC) relies on static spatial-spectral representations learned from labeled samples, limiting its ability to model structured dependencies in the latent representation space. To address this limitation,…",
       "ai": true
     },
     {
@@ -87,6 +96,15 @@
       "date": "2026-05-12",
       "summary": "Existing deep learning-based methods can capture shared features from optical and synthetic aperture radar (SAR) images for spatial alignment. However, optical-SAR registration remains challenging under large geometric deformations, becaus…",
       "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "Multi-sensor fusion",
+      "title": "OCELOT: Planetary-Scale Species Distribution Modeling with Satellite Foundation Embeddings",
+      "url": "https://arxiv.org/abs/2611.00284v1",
+      "date": "2026-10-30",
+      "summary": "Large-scale repositories of species observations now contain billions of occurrence records from around the world, but these sightings cluster heavily in human-accessible areas. Existing models use only a small fraction of these records an…",
+      "ai": false
     },
     {
       "source": "ESA",
@@ -158,24 +176,6 @@
       "url": "https://arxiv.org/abs/2610.35293v1",
       "date": "2026-10-26",
       "summary": "City systems are shaped by interactions among infrastructure, human activity, and environmental conditions. Existing earth observation and urban benchmarks are limited in unified modeling and in capturing their joint dynamics. We introduce…",
-      "ai": false
-    },
-    {
-      "source": "ESA",
-      "cat": "Observing the Earth",
-      "title": "Ice mission CRISTAL opens its wings",
-      "url": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Ice_mission_CRISTAL_opens_its_wings",
-      "date": "2026-10-26",
-      "summary": "With its solar arrays integrated and key qualification reviews under way, Europe’s new ice-monitoring satellite, CRISTAL, is moving from assembly into the demanding testing phase that will demonstrate its readiness for the rigours of launc…",
-      "ai": false
-    },
-    {
-      "source": "arXiv",
-      "cat": "Hyperspectral",
-      "title": "Synthetic Data Augmentation for Functional Data: Wasserstein Risk Bounds and Diffusion-Based Conditional Generation",
-      "url": "https://arxiv.org/abs/2610.34120v1",
-      "date": "2026-10-25",
-      "summary": "Functional data are costly to collect; samples of tens to hundreds of curves are common. Synthetic data augmentation can help, but its theory is developed for finite-dimensional data and relies on total variation, which is uninformative fo…",
       "ai": false
     }
   ]

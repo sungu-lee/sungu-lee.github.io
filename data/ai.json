@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T00:25:04Z",
+  "updated": "2026-11-03T02:48:47Z",
   "source": "arXiv API (cs.CV · cs.LG · eess.IV), filtered to Earth-observation context",
   "window": "last 12 months",
   "trackCounts": {
@@ -21,7 +21,7 @@
     },
     {
       "month": "2026-01",
-      "count": 50
+      "count": 49
     },
     {
       "month": "2026-02",
@@ -40,8 +40,16 @@
       "count": 76
     }
   ],
-  "count": 26,
+  "count": 25,
   "papers": [
+    {
+      "track": "sar",
+      "title": "SAR-TS-BERT: Physics-Guided Self-Supervised Pre-Training With Polarimetric Features for SAR Time-Series Crop Classification",
+      "authors": "Jieqiu Wang, Yuhan Zhang, Bo Zheng 외 1명",
+      "url": "https://arxiv.org/abs/2610.41728v1",
+      "date": "2026-10-30",
+      "summary": "Multitemporal synthetic aperture radar (SAR) imagery provides continuous, cloud-free observations of crop phenology for agricultural monitoring in cloudy and rainy regions, yet high-accuracy classification typically requires extensive labeled samples. Althoug…"
+    },
     {
       "track": "vlm",
       "title": "A Unified Benchmark for Aerial-Enhanced Autonomous Driving: The KITScenes Aerial Dataset",
@@ -131,14 +139,6 @@
       "summary": "Few-shot remote sensing scene classification (FSRSSC) aims to recognize novel scene categories from only a few labeled images. Most FSRSSC methods summarize the feature map of an image by global average pooling, which treats the few objects that define an aer…"
     },
     {
-      "track": "ssl",
-      "title": "LoCA: Enabling Multi-Modality in Geospatial Location Encoders",
-      "authors": "Panagiotis Koromilas, Eleanna Vali, Diogenis Antonopoulos 외 7명",
-      "url": "https://arxiv.org/abs/2610.32894v1",
-      "date": "2026-10-23",
-      "summary": "Location encoders map geographic coordinates to high-dimensional descriptors through contrastive alignment with paired Earth Observation imagery. We prove that this construction is structurally limited: any Lipschitz location encoder produces an output of int…"
-    },
-    {
       "track": "restoration",
       "title": "SCDM-HTD: Spectral-Wise Conditional Diffusion Model for Hyperspectral Target Detection",
       "authors": "Dunbin Shen, Wenfeng Kong, Jianjun Liu 외 2명",
@@ -193,14 +193,6 @@
       "url": "https://arxiv.org/abs/2610.23416v1",
       "date": "2026-10-16",
       "summary": "Multimodal Large Language Models (MLLMs) have significantly advanced instruction-driven perception through the \"Embedding-as-Mask\" paradigm. However, extending this capability to Remote Sensing (RS) reasoning segmentation remains exceptionally challenging und…"
-    },
-    {
-      "track": "sar",
-      "title": "Data-Efficient ConvNeXt Pretraining for High-Resolution Sentinel-1 GRD SAR Representation Learning",
-      "authors": "Yuki Natsume, Sang-Ho Yun, Chai Kiat Yeo",
-      "url": "https://arxiv.org/abs/2610.21993v1",
-      "date": "2026-10-15",
-      "summary": "Labeled Sentinel-1 Ground Range Detected (S1GRD) datasets remain scarce, limiting supervised deep learning for land-surface remote sensing, while self-supervised pretraining for this domain has been dominated by Vision Transformer (ViT)-based masked image mod…"
     },
     {
       "track": "agentic",
