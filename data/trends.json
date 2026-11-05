@@ -1,11 +1,10 @@
 {
-  "updated": "2026-11-04T01:07:56Z",
+  "updated": "2026-11-05T01:21:20Z",
   "sources": [
-    "ESA",
     "arXiv"
   ],
   "count": 18,
-  "aiCount": 4,
+  "aiCount": 13,
   "categories": [
     "High-resolution EO",
     "Standard products · L1",
@@ -18,11 +17,92 @@
   "items": [
     {
       "source": "arXiv",
+      "cat": "Hyperspectral",
+      "title": "Spectral-spatial vision test-time training for hyperspectral image classification",
+      "url": "https://arxiv.org/abs/2611.02364v1",
+      "date": "2026-11-02",
+      "summary": "Hyperspectral image (HSI) classification requires the representation of contiguous spectral signatures and spatial context under limited labeled supervision. Vision test-time training (TTT) offers an alternative to fixed-weight token mixin…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "Multi-sensor fusion",
+      "title": "Bridging Low-Level Image Fusion and High-Level Semantic Understanding",
+      "url": "https://arxiv.org/abs/2611.02896v1",
+      "date": "2026-11-02",
+      "summary": "Remote sensing image fusion and semantic interpretation are usually optimized separately, so reconstruction quality need not preserve downstream retrieval utility. We propose LANCE, which uses structured language as an explicit, indexable …",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "Optical · multispectral",
+      "title": "EarthJev: Calibrated, Non-Generative Answers to Natural-Language Questions about Sentinel-2 Land Cover",
+      "url": "https://arxiv.org/abs/2611.02096v1",
+      "date": "2026-11-01",
+      "summary": "Vision-language models for remote sensing answer questions about satellite images by generating text: every answer costs a decoding loop, has to be parsed back to an option, and comes without a usable probability. We present EarthJev, a 0.…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "Hyperspectral",
+      "title": "SpecUltra: A Unified Foundation Model for Heterogeneous Spectral Images",
+      "url": "https://arxiv.org/abs/2611.01396v1",
+      "date": "2026-11-01",
+      "summary": "Spectral imagery, including hyperspectral image (HSI) and multispectral image (MSI), exhibits substantial heterogeneity in band numbers, wavelengths, spectral resolutions, hindering unified modeling and cross-sensor transfer. From the pers…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "Optical · multispectral",
+      "title": "Vision-based Sensing of Urban Environment using Hardware-Software co-design at Scale",
+      "url": "https://arxiv.org/abs/2611.00699v1",
+      "date": "2026-10-31",
+      "summary": "Urban environmental monitoring is crucial for climate-adaptive cities, yet current approaches rely heavily on human inspection, overhead remote sensing, or limited terrestrial RGB imagery, thereby lacking comprehensive multispectral perspe…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "Multi-sensor fusion",
+      "title": "From White Canes to Edge AI: A Survey of Assistive Navigation Technologies for Blind and Low-Vision Individuals",
+      "url": "https://arxiv.org/abs/2611.00671v1",
+      "date": "2026-10-31",
+      "summary": "Independent mobility is a foundational requirement for the autonomy of blind and low-vision (BLV) individuals, yet the assistive technologies that support it have historically evolved slowly. This survey systematically reviews 108 peer-rev…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "SAR",
+      "title": "SAR-TS-BERT: Physics-Guided Self-Supervised Pre-Training With Polarimetric Features for SAR Time-Series Crop Classification",
+      "url": "https://arxiv.org/abs/2610.41728v1",
+      "date": "2026-10-30",
+      "summary": "Multitemporal synthetic aperture radar (SAR) imagery provides continuous, cloud-free observations of crop phenology for agricultural monitoring in cloudy and rainy regions, yet high-accuracy classification typically requires extensive labe…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "Hyperspectral",
+      "title": "Spectral Haar Binarizer: Compact Boolean Contrast Representations for Hyperspectral Classification",
+      "url": "https://arxiv.org/abs/2610.41478v1",
+      "date": "2026-10-30",
+      "summary": "Tsetlin Machines offer an interpretable, hardware-friendly alternative to conventional machine learning models, but applying them to continuous hyperspectral measurements requires converting spectral signals into Boolean representations. S…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
       "cat": "High-resolution EO",
       "title": "Quantum-Inspired Convolutional Networks for High-Resolution Pseudo-Label Generation from Multimodal Earth Observation Data",
       "url": "https://arxiv.org/abs/2610.39773v1",
       "date": "2026-10-29",
       "summary": "Accurate land-cover mapping from multimodal Earth observation (EO) data remains a challenge in regions where high-resolution annotations are scarce or costly to obtain. This work introduces a quantum convolutional encoder-decoder network f…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "SAR",
+      "title": "Preserving the Manifold: Frozen Expert Alignment for Label-Efficient SAR Scene Understanding",
+      "url": "https://arxiv.org/abs/2610.25429v1",
+      "date": "2026-10-18",
+      "summary": "Cross-modal alignment of synthetic aperture radar (SAR) imagery to natural language is constrained by two distinct failures. The first is modality mismatch: text encoders pre-trained on optical imagery, such as CLIP, cannot be efficiently …",
       "ai": true
     },
     {
@@ -55,6 +135,15 @@
     {
       "source": "arXiv",
       "cat": "High-resolution EO",
+      "title": "The Galah survey and symbiotic stars. II. Discovery, validation, and intensive follow-up of 44 new systems accreting at the lowest detectable levels",
+      "url": "https://arxiv.org/abs/2611.05200v1",
+      "date": "2026-11-03",
+      "summary": "We report the discovery, validation, and characterization of 44 new symbiotic stars (SySts) accreting at the lowest detectable levels (Lacc = 10 percent of all known SySts in the Galaxy. As SySts likely spend most of their lifetimes in Low…",
+      "ai": false
+    },
+    {
+      "source": "arXiv",
+      "cat": "High-resolution EO",
       "title": "HyperFlow: Class-Incremental Semantic Change Detection via Hyperbolic Flow",
       "url": "https://arxiv.org/abs/2611.03245v1",
       "date": "2026-11-02",
@@ -71,111 +160,21 @@
       "ai": false
     },
     {
-      "source": "ESA",
-      "cat": "Observing the Earth",
-      "title": "Sentinel-6B enters service",
-      "url": "https://www.eumetsat.int/sentinel-6b-track-rising-seas-predict-storms-and-aid-forecasts",
-      "date": "2026-10-30",
-      "summary": "Sentinel-6B enters service",
-      "ai": false
-    },
-    {
-      "source": "ESA",
-      "cat": "Observing the Earth",
-      "title": "Earth from Space: Champi’s eerie eye",
-      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Earth_from_Space_Champi_s_eerie_eye",
-      "date": "2026-10-30",
-      "summary": "Image: This image of Super Typhoon Champi from Copernicus Sentinel-3 was captured on 21 October 2026 off the coasts of Taiwan and the Philippines.",
-      "ai": false
-    },
-    {
-      "source": "ESA",
-      "cat": "Observing the Earth",
-      "title": "Ice mission CRISTAL opens its wings",
-      "url": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Ice_mission_CRISTAL_opens_its_wings",
-      "date": "2026-10-26",
-      "summary": "With its solar arrays integrated and key qualification reviews under way, Europe’s new ice-monitoring satellite, CRISTAL, is moving from assembly into the demanding testing phase that will demonstrate its readiness for the rigours of launc…",
+      "source": "arXiv",
+      "cat": "Multi-sensor fusion",
+      "title": "A heteroskedasticity and autocorrelation consistent test for process noise calibration of Kalman filters in multi-sensor orbit determination",
+      "url": "https://arxiv.org/abs/2611.03477v1",
+      "date": "2026-11-02",
+      "summary": "Process noise calibration is a central problem in sequential orbit determination. If the process noise covariance is too small the filter is overconfident, and if it is too large it is overconservative. In both cases the estimation error g…",
       "ai": false
     },
     {
       "source": "arXiv",
-      "cat": "High-resolution EO",
-      "title": "Cross-Scale Sparse Attention for Referring Segmentation in Remote Sensing",
-      "url": "https://arxiv.org/abs/2610.33551v1",
-      "date": "2026-10-24",
-      "summary": "High-resolution remote sensing (RS) imagery provides fine spatial detail over large areas, making it essential for fine-grained scene understanding. Referring Remote Sensing Image Segmentation (RRSIS) aims to segment regions described by n…",
-      "ai": false
-    },
-    {
-      "source": "ESA",
-      "cat": "Observing the Earth",
-      "title": "Earth from Space: The pink city",
-      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Earth_from_Space_The_pink_city",
-      "date": "2026-10-23",
-      "summary": "Image: This image shows a detailed view of the city of Toulouse in southwest France, with its terracotta tiled rooftops lending it the nickname la ville rose, or the pink city.",
-      "ai": false
-    },
-    {
-      "source": "arXiv",
-      "cat": "High-resolution EO",
-      "title": "Bayesian Downscaling of Satellite-Derived Solar-Induced Chlorophyll Fluorescence",
-      "url": "https://arxiv.org/abs/2610.30508v1",
-      "date": "2026-10-21",
-      "summary": "We present an extendable Bayesian framework for spatial downscaling of satellite-derived measurements with coarse, irregular footprints. Motivated by measurements of solar-induced chlorophyll fluorescence (SIF) from the earth-observing OCO…",
-      "ai": false
-    },
-    {
-      "source": "arXiv",
-      "cat": "High-resolution EO",
-      "title": "OpenEarth-OVS44: A Multimodal Remote Sensing Dataset for Open-Vocabulary Segmentation",
-      "url": "https://arxiv.org/abs/2610.29642v1",
-      "date": "2026-10-21",
-      "summary": "In remote sensing, open-vocabulary segmentation is particularly important for flexible and scalable land-cover understanding across diverse regions, as it improves generalization to novel categories without requiring exhaustive pixel-level…",
-      "ai": false
-    },
-    {
-      "source": "ESA",
-      "cat": "Observing the Earth",
-      "title": "MetOp-SG-B1 weather satellite arrives at Europe’s Spaceport",
-      "url": "https://www.esa.int/Applications/Observing_the_Earth/Meteorological_missions/MetOp_Second_Generation/MetOp-SG-B1_weather_satellite_arrives_at_Europe_s_Spaceport",
-      "date": "2026-10-20",
-      "summary": "Following a 10-day voyage across the Atlantic from Bordeaux in France, the MetOp Second Generation-B1 weather satellite, has arrived at Europe’s Spaceport in French Guiana. After a short storage period, this new satellite will be prepared …",
-      "ai": false
-    },
-    {
-      "source": "ESA",
-      "cat": "Observing the Earth",
-      "title": "Sentinel-3C captures Hurricane Rachel",
-      "url": "https://www.esa.int/ESA_Multimedia/Images/2026/10/Sentinel-3C_captures_Hurricane_Rachel",
-      "date": "2026-10-19",
-      "summary": "Image: Demonstrating that the visible channels of Sentinel-3C’s sea and land surface temperature radiometer are working as expected, on 2 October the instrument captured this image of Hurricane Rachel over the eastern Pacific Ocean, off th…",
-      "ai": false
-    },
-    {
-      "source": "arXiv",
-      "cat": "Standard products · L1",
-      "title": "RSAJEV: Training-Free Abstaining Prototype Memory for Eliminating Silent Hallucination in JEV-Based Remote Sensing Classification",
-      "url": "https://arxiv.org/abs/2610.15742v1",
-      "date": "2026-10-11",
-      "summary": "Scene classification of remote sensing imagery with multimodal large language models (MLLMs) is formulated as a single-forward-pass decision problem: candidate class names are lettered options in the prompt, a registered answer slot is con…",
-      "ai": false
-    },
-    {
-      "source": "arXiv",
-      "cat": "Standard products · L1",
-      "title": "ObliCity: A Benchmark and Baseline for Roof-to-Ground Projection Displacement Correction",
-      "url": "https://arxiv.org/abs/2607.25210v1",
-      "date": "2026-07-28",
-      "summary": "Oblique-view urban remote sensing imagery inevitably exhibits geometric projection displacements between building roofs and footprints, leading to significant distortions in spatial structure. Existing approaches either ignore these deform…",
-      "ai": false
-    },
-    {
-      "source": "arXiv",
-      "cat": "Standard products · L1",
-      "title": "Integrating national forest inventory, airborne lidar, and satellite imagery for wall-to-wall mapping of forest structure with computer vision",
-      "url": "https://arxiv.org/abs/2606.20291v1",
-      "date": "2026-06-18",
-      "summary": "Remote sensing is increasingly relied upon to deliver actionable science for forest and wildfire risk management across large landscapes. Wall-to-wall, annually updated maps are a persistent need for effective forest management. Many plann…",
+      "cat": "Optical · multispectral",
+      "title": "The MASSIMAL Dataset: UAV Hyperspectral Images and Ground Truth Observations for Coastal Habitat Mapping in Norway",
+      "url": "https://arxiv.org/abs/2611.00763v1",
+      "date": "2026-10-31",
+      "summary": "The MASSIMAL dataset was collected in an effort to develop new remote sensing methods for mapping shallow water coastal habitats, such as kelp forests, seagrass meadows and maerl beds. The main component of the dataset is a set of hyperspe…",
       "ai": false
     }
   ]
