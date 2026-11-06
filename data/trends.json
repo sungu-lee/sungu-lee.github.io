@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-05T01:21:20Z",
+  "updated": "2026-11-06T01:24:59Z",
   "sources": [
     "arXiv"
   ],
   "count": 18,
-  "aiCount": 13,
+  "aiCount": 15,
   "categories": [
     "High-resolution EO",
     "Standard products · L1",
@@ -15,6 +15,51 @@
     "Multi-sensor fusion"
   ],
   "items": [
+    {
+      "source": "arXiv",
+      "cat": "Optical · multispectral",
+      "title": "CAPE-JEPA - Cross-modal Adversarial Probabilistic Embedding JEPA",
+      "url": "https://arxiv.org/abs/2611.06247v1",
+      "date": "2026-11-04",
+      "summary": "Cross-modal remote sensing image retrieval (RS-CMIR) requires representations that are simultaneously modality-invariant and semantically discriminative, despite the profound physical gap between heterogeneous sensors such as Synthetic Ape…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "Optical · multispectral",
+      "title": "CARM: Conformal Adaptive Risk Masking for Reliable Scientific Super-Resolution",
+      "url": "https://arxiv.org/abs/2611.06151v1",
+      "date": "2026-11-04",
+      "summary": "Deep learning-based super-resolution (SR) can reconstruct fine-scale Earth-observation fields from coarse observations, but reconstruction accuracy alone does not provide a calibrated rule for identifying reliable spatial regions. Conforma…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "Optical · multispectral",
+      "title": "ReTailor: A Residual Feature Tailoring Framework for Real-Time Cross-Sensor Pansharpening Adaptation",
+      "url": "https://arxiv.org/abs/2611.05811v1",
+      "date": "2026-11-04",
+      "summary": "Recent pansharpening models achieve strong fusion performance on trained sensors, yet often generalize poorly to unseen sensors. Existing cross-sensor adaptation is limited by target-sensor retraining, which requires target-sensor training…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "Hyperspectral",
+      "title": "Homology Features for X-Ray Hyperspectral Images Segmentation",
+      "url": "https://arxiv.org/abs/2611.06230v1",
+      "date": "2026-11-04",
+      "summary": "Characterizing Multi-Energy X-ray Transmission (XRT) hyperspectral images presents significant challenges for traditional classification frameworks due to high-dimensional redundancy and non-linear spectral overlaps. Although manifold lear…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "Hyperspectral",
+      "title": "Many Pixels, One Composition: Self-Supervised Spectra for Specimen-Level Prediction",
+      "url": "https://arxiv.org/abs/2611.06096v1",
+      "date": "2026-11-04",
+      "summary": "Can hyperspectral (HS) imaging be used to predict the elemental composition of physical specimens found on the Earth's surface? We approach this problem as a supervised regression task, using an open dataset of specimens, each comprising a…",
+      "ai": true
+    },
     {
       "source": "arXiv",
       "cat": "Hyperspectral",
@@ -53,38 +98,11 @@
     },
     {
       "source": "arXiv",
-      "cat": "Optical · multispectral",
-      "title": "Vision-based Sensing of Urban Environment using Hardware-Software co-design at Scale",
-      "url": "https://arxiv.org/abs/2611.00699v1",
-      "date": "2026-10-31",
-      "summary": "Urban environmental monitoring is crucial for climate-adaptive cities, yet current approaches rely heavily on human inspection, overhead remote sensing, or limited terrestrial RGB imagery, thereby lacking comprehensive multispectral perspe…",
-      "ai": true
-    },
-    {
-      "source": "arXiv",
-      "cat": "Multi-sensor fusion",
-      "title": "From White Canes to Edge AI: A Survey of Assistive Navigation Technologies for Blind and Low-Vision Individuals",
-      "url": "https://arxiv.org/abs/2611.00671v1",
-      "date": "2026-10-31",
-      "summary": "Independent mobility is a foundational requirement for the autonomy of blind and low-vision (BLV) individuals, yet the assistive technologies that support it have historically evolved slowly. This survey systematically reviews 108 peer-rev…",
-      "ai": true
-    },
-    {
-      "source": "arXiv",
       "cat": "SAR",
       "title": "SAR-TS-BERT: Physics-Guided Self-Supervised Pre-Training With Polarimetric Features for SAR Time-Series Crop Classification",
       "url": "https://arxiv.org/abs/2610.41728v1",
       "date": "2026-10-30",
       "summary": "Multitemporal synthetic aperture radar (SAR) imagery provides continuous, cloud-free observations of crop phenology for agricultural monitoring in cloudy and rainy regions, yet high-accuracy classification typically requires extensive labe…",
-      "ai": true
-    },
-    {
-      "source": "arXiv",
-      "cat": "Hyperspectral",
-      "title": "Spectral Haar Binarizer: Compact Boolean Contrast Representations for Hyperspectral Classification",
-      "url": "https://arxiv.org/abs/2610.41478v1",
-      "date": "2026-10-30",
-      "summary": "Tsetlin Machines offer an interpretable, hardware-friendly alternative to conventional machine learning models, but applying them to continuous hyperspectral measurements requires converting spectral signals into Boolean representations. S…",
       "ai": true
     },
     {
@@ -135,46 +153,28 @@
     {
       "source": "arXiv",
       "cat": "High-resolution EO",
-      "title": "The Galah survey and symbiotic stars. II. Discovery, validation, and intensive follow-up of 44 new systems accreting at the lowest detectable levels",
-      "url": "https://arxiv.org/abs/2611.05200v1",
-      "date": "2026-11-03",
-      "summary": "We report the discovery, validation, and characterization of 44 new symbiotic stars (SySts) accreting at the lowest detectable levels (Lacc = 10 percent of all known SySts in the Galaxy. As SySts likely spend most of their lifetimes in Low…",
+      "title": "TOP: Transmission-Oriented Remote Sensing Pansharpening",
+      "url": "https://arxiv.org/abs/2611.06430v1",
+      "date": "2026-11-04",
+      "summary": "Pansharpening has been extensively studied as a fundamental image fusion task in remote sensing. However, most existing methods focus on improving fusion quality under the implicit assumption that high-resolution observations have already …",
       "ai": false
     },
     {
       "source": "arXiv",
       "cat": "High-resolution EO",
-      "title": "HyperFlow: Class-Incremental Semantic Change Detection via Hyperbolic Flow",
-      "url": "https://arxiv.org/abs/2611.03245v1",
-      "date": "2026-11-02",
-      "summary": "Semantic change detection in remote sensing aims to identify and characterize land-cover transitions observed in pairs of satellite or aerial images. Existing methods assume a fixed set of change categories, limiting their applicability in…",
-      "ai": false
-    },
-    {
-      "source": "arXiv",
-      "cat": "High-resolution EO",
-      "title": "KAUSTics-Net: Diffusion-Based Through-Water UAV Restoration with a Semi-Synthetic Dataset",
-      "url": "https://arxiv.org/abs/2611.03120v1",
-      "date": "2026-11-02",
-      "summary": "Accurate mapping of shallow-water environments using unmanned aerial vehicle (UAV) imagery is challenged by water-induced distortions, including refraction, caustics, and wavelength-dependent attenuation. The scarcity of paired distorted a…",
+      "title": "Generative AI for urban planning: synthesizing land-use maps with satellite imagery via DualControlNet",
+      "url": "https://arxiv.org/abs/2611.05859v1",
+      "date": "2026-11-04",
+      "summary": "Various land-use models characterize land-use patterns and facilitate scenario planning. However, existing models are largely predictive, forecasting transitions based on numeric data without synthesizing new land-use maps from simple text…",
       "ai": false
     },
     {
       "source": "arXiv",
       "cat": "Multi-sensor fusion",
-      "title": "A heteroskedasticity and autocorrelation consistent test for process noise calibration of Kalman filters in multi-sensor orbit determination",
-      "url": "https://arxiv.org/abs/2611.03477v1",
-      "date": "2026-11-02",
-      "summary": "Process noise calibration is a central problem in sequential orbit determination. If the process noise covariance is too small the filter is overconfident, and if it is too large it is overconservative. In both cases the estimation error g…",
-      "ai": false
-    },
-    {
-      "source": "arXiv",
-      "cat": "Optical · multispectral",
-      "title": "The MASSIMAL Dataset: UAV Hyperspectral Images and Ground Truth Observations for Coastal Habitat Mapping in Norway",
-      "url": "https://arxiv.org/abs/2611.00763v1",
-      "date": "2026-10-31",
-      "summary": "The MASSIMAL dataset was collected in an effort to develop new remote sensing methods for mapping shallow water coastal habitats, such as kelp forests, seagrass meadows and maerl beds. The main component of the dataset is a set of hyperspe…",
+      "title": "Benchmarking Fine-Grained Visual Reasoning for Remote Sensing in Urban Management",
+      "url": "https://arxiv.org/abs/2611.06770v1",
+      "date": "2026-11-04",
+      "summary": "Fine-grained visual reasoning is essential for remote sensing in urban management, yet remains underexplored in the evaluation of multimodal large language models (MLLMs). We introduce UMBench, a fine-grained urban remote sensing benchmark…",
       "ai": false
     }
   ]
