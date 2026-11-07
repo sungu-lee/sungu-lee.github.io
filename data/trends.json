@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T01:24:59Z",
+  "updated": "2026-11-07T00:41:08Z",
   "sources": [
     "arXiv"
   ],
@@ -15,6 +15,15 @@
     "Multi-sensor fusion"
   ],
   "items": [
+    {
+      "source": "arXiv",
+      "cat": "High-resolution EO",
+      "title": "When GeoFMs Meet VHR: Benchmarking Foundation Models on Very High Resolution Earth Observation Imagery",
+      "url": "https://arxiv.org/abs/2611.08003v1",
+      "date": "2026-11-05",
+      "summary": "Geospatial foundation models are a widely adopted starting point for remote sensing tasks. Most are pretrained on Sentinel-1/2 and Landsat imagery at a ground sampling distance (GSD) of 10m or coarser. Many applications instead rely on ver…",
+      "ai": true
+    },
     {
       "source": "arXiv",
       "cat": "Optical · multispectral",
@@ -71,15 +80,6 @@
     },
     {
       "source": "arXiv",
-      "cat": "Multi-sensor fusion",
-      "title": "Bridging Low-Level Image Fusion and High-Level Semantic Understanding",
-      "url": "https://arxiv.org/abs/2611.02896v1",
-      "date": "2026-11-02",
-      "summary": "Remote sensing image fusion and semantic interpretation are usually optimized separately, so reconstruction quality need not preserve downstream retrieval utility. We propose LANCE, which uses structured language as an explicit, indexable …",
-      "ai": true
-    },
-    {
-      "source": "arXiv",
       "cat": "Optical · multispectral",
       "title": "EarthJev: Calibrated, Non-Generative Answers to Natural-Language Questions about Sentinel-2 Land Cover",
       "url": "https://arxiv.org/abs/2611.02096v1",
@@ -107,7 +107,7 @@
     },
     {
       "source": "arXiv",
-      "cat": "High-resolution EO",
+      "cat": "L2 value-added",
       "title": "Quantum-Inspired Convolutional Networks for High-Resolution Pseudo-Label Generation from Multimodal Earth Observation Data",
       "url": "https://arxiv.org/abs/2610.39773v1",
       "date": "2026-10-29",
@@ -153,28 +153,28 @@
     {
       "source": "arXiv",
       "cat": "High-resolution EO",
-      "title": "TOP: Transmission-Oriented Remote Sensing Pansharpening",
-      "url": "https://arxiv.org/abs/2611.06430v1",
-      "date": "2026-11-04",
-      "summary": "Pansharpening has been extensively studied as a fundamental image fusion task in remote sensing. However, most existing methods focus on improving fusion quality under the implicit assumption that high-resolution observations have already …",
+      "title": "Nowcasting of Tropical Cyclone Wind Fields and Intensity from Geostationary Imagery",
+      "url": "https://arxiv.org/abs/2611.08255v1",
+      "date": "2026-11-05",
+      "summary": "High-resolution tropical cyclone surface wind speeds derived from synthetic aperture radar (SAR) observations can support storm structure and intensity modelling, but remain spatially and temporally sparse and unavailable near-real-time. G…",
       "ai": false
     },
     {
       "source": "arXiv",
       "cat": "High-resolution EO",
-      "title": "Generative AI for urban planning: synthesizing land-use maps with satellite imagery via DualControlNet",
-      "url": "https://arxiv.org/abs/2611.05859v1",
-      "date": "2026-11-04",
-      "summary": "Various land-use models characterize land-use patterns and facilitate scenario planning. However, existing models are largely predictive, forecasting transitions based on numeric data without synthesizing new land-use maps from simple text…",
+      "title": "The Pristine survey XXXI. A stream offset from the Stream: very metal-poor stellar debris trailing 100$^{\\circ}$ from the LMC-SMC system",
+      "url": "https://arxiv.org/abs/2611.07563v1",
+      "date": "2026-11-05",
+      "summary": "Context: The stellar counterpart to the $200^\\circ$-long HI Stream from the Clouds probes their tidally stripped stellar populations and constrains their interaction history and structure before infall into the Milky Way. Aims: We investig…",
       "ai": false
     },
     {
       "source": "arXiv",
       "cat": "Multi-sensor fusion",
-      "title": "Benchmarking Fine-Grained Visual Reasoning for Remote Sensing in Urban Management",
-      "url": "https://arxiv.org/abs/2611.06770v1",
-      "date": "2026-11-04",
-      "summary": "Fine-grained visual reasoning is essential for remote sensing in urban management, yet remains underexplored in the evaluation of multimodal large language models (MLLMs). We introduce UMBench, a fine-grained urban remote sensing benchmark…",
+      "title": "TerraMesh-Masks: Open-Vocabulary Segmentation for Earth Observation",
+      "url": "https://arxiv.org/abs/2611.08081v1",
+      "date": "2026-11-05",
+      "summary": "Open-vocabulary segmentation (OVS) enables models to segment a variety of concepts specified in natural language, removing the need for fixed label sets and fine-tuning. While recent OVS approaches have shown strong performance on natural …",
       "ai": false
     }
   ]

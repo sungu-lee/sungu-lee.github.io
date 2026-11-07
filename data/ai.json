@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T01:26:01Z",
+  "updated": "2026-11-07T00:42:07Z",
   "source": "arXiv API (cs.CV · cs.LG · eess.IV), filtered to Earth-observation context",
   "window": "last 12 months",
   "trackCounts": {
@@ -40,8 +40,32 @@
       "count": 76
     }
   ],
-  "count": 26,
+  "count": 25,
   "papers": [
+    {
+      "track": "foundation",
+      "title": "When GeoFMs Meet VHR: Benchmarking Foundation Models on Very High Resolution Earth Observation Imagery",
+      "authors": "Kshitij Raj Sharma, Pierre Adorni, Minh-Tan Pham 외 2명",
+      "url": "https://arxiv.org/abs/2611.08003v1",
+      "date": "2026-11-05",
+      "summary": "Geospatial foundation models are a widely adopted starting point for remote sensing tasks. Most are pretrained on Sentinel-1/2 and Landsat imagery at a ground sampling distance (GSD) of 10m or coarser. Many applications instead rely on very high resolution (V…"
+    },
+    {
+      "track": "vlm",
+      "title": "TerraMesh-Masks: Open-Vocabulary Segmentation for Earth Observation",
+      "authors": "Benedikt Blumenstiel, Hugues Devimeux, Johannes Jakubik 외 1명",
+      "url": "https://arxiv.org/abs/2611.08081v1",
+      "date": "2026-11-05",
+      "summary": "Open-vocabulary segmentation (OVS) enables models to segment a variety of concepts specified in natural language, removing the need for fixed label sets and fine-tuning. While recent OVS approaches have shown strong performance on natural images, they transfe…"
+    },
+    {
+      "track": "sar",
+      "title": "Nowcasting of Tropical Cyclone Wind Fields and Intensity from Geostationary Imagery",
+      "authors": "Simon Donike, Pritthijit Nath, Cristina Radin 외 5명",
+      "url": "https://arxiv.org/abs/2611.08255v1",
+      "date": "2026-11-05",
+      "summary": "High-resolution tropical cyclone surface wind speeds derived from synthetic aperture radar (SAR) observations can support storm structure and intensity modelling, but remain spatially and temporally sparse and unavailable near-real-time. Geostationary satelli…"
+    },
     {
       "track": "foundation",
       "title": "XuanJian-DINOSAR: A SAR Foundation Model Based on Global and Local Semantic Consistency",
@@ -107,14 +131,6 @@
       "summary": "Deep learning-based super-resolution (SR) can reconstruct fine-scale Earth-observation fields from coarse observations, but reconstruction accuracy alone does not provide a calibrated rule for identifying reliable spatial regions. Conformal Mask Calibration (…"
     },
     {
-      "track": "ssl",
-      "title": "Basin2Vec: Learning Basin-Centric Embeddings for Scalable Hydrological Modeling",
-      "authors": "Muhammad Talha, Xiaofeng Liu, Yuan Yang 외 2명",
-      "url": "https://arxiv.org/abs/2611.05164v1",
-      "date": "2026-11-03",
-      "summary": "Reliable streamflow prediction across time and in ungauged basins requires representations that capture hydrologically relevant basin characteristics. Existing methods rely on either fixed handcrafted attributes or general-purpose Earth observation embeddings…"
-    },
-    {
       "track": "agentic",
       "title": "GeoFaham: Domain-Specialized Multi-Agent Geospatial Analytics for Disaster Response",
       "authors": "Muhammad Sohail Danish, Gilles Q. Hacheme, Akram Zaytar 외 5명",
@@ -161,14 +177,6 @@
       "url": "https://arxiv.org/abs/2611.03339v1",
       "date": "2026-11-02",
       "summary": "Geospatial text spotting involves locating and transcribing geographic labels, such as road names, district names, and landmarks, in raster maps. These labels are often small, densely arranged, and arbitrarily oriented. Although Arabic text recognition has be…"
-    },
-    {
-      "track": "vlm",
-      "title": "Bridging Low-Level Image Fusion and High-Level Semantic Understanding",
-      "authors": "Guangyuan Dong, Lingdong Shen, Xudong Zhang 외 8명",
-      "url": "https://arxiv.org/abs/2611.02896v1",
-      "date": "2026-11-02",
-      "summary": "Remote sensing image fusion and semantic interpretation are usually optimized separately, so reconstruction quality need not preserve downstream retrieval utility. We propose LANCE, which uses structured language as an explicit, indexable semantic state. A fr…"
     },
     {
       "track": "restoration",
@@ -219,14 +227,6 @@
       "summary": "Self-supervised vision transformers are increasingly used as reusable encoders for Earth observation, but their inference cost on the hardware available in the field is rarely characterized. We deploy a pretrained SAR-optical masked-autoencoder encoder on thr…"
     },
     {
-      "track": "foundation",
-      "title": "Accuracy and efficiency of compact foundation models for surface-water mapping during floods",
-      "authors": "Parastoo Farajpoor, Mohammadreza Narimani",
-      "url": "https://arxiv.org/abs/2610.34904v1",
-      "date": "2026-10-26",
-      "summary": "Pretrained Earth observation models may reduce the effort needed to map surface water, but their value depends on the alternative against which they are compared. We evaluated Prithvi-EO-2.0-Tiny using the 446 hand-labeled Sentinel-2 chips from 11 flood event…"
-    },
-    {
       "track": "agentic",
       "title": "AgenticCity-Bench: Longitudinal Multimodal Observations of Urban Dynamics with Agentic Reasoning",
       "authors": "Xiaofei Yu, Kailai Sun, Yanyu Mao 외 7명",
@@ -241,14 +241,6 @@
       "url": "https://arxiv.org/abs/2610.34742v1",
       "date": "2026-10-26",
       "summary": "Reconstructing 1-m imagery from Sentinel-2 combines two difficulties. The input and the reference are observed by different satellites, which differ in spatial resolution, spectral response, radiometry, acquisition time, and local geometry, so no synthetic de…"
-    },
-    {
-      "track": "sar",
-      "title": "A 105 MS/s 4.18 nJ/inference 0.765 $\\text{mm}^\\text{2}$ Mixed-Signal Streaming ML Engine for Wireless Baseband in 12LP+ FinFET",
-      "authors": "Oscar Castañeda, Lavinia Recchioni, Sueda Taner 외 3명",
-      "url": "https://arxiv.org/abs/2610.26552v1",
-      "date": "2026-10-19",
-      "summary": "We present SIXPPAC, the first streaming machine-learning engine for real-time integrated sensing and communication (ISAC) in wireless systems. SIXPPAC integrates two SAR ADCs and a digital binary-weight six-layer neural network (NN). The 0.765 mm$^\\text{2}$ 1…"
     }
   ],
   "warnings": [
