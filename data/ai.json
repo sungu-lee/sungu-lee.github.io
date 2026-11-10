@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T00:38:33Z",
+  "updated": "2026-11-10T03:18:27Z",
   "source": "arXiv API (cs.CV · cs.LG · eess.IV), filtered to Earth-observation context",
   "window": "last 12 months",
   "trackCounts": {
@@ -40,8 +40,40 @@
       "count": 76
     }
   ],
-  "count": 25,
+  "count": 24,
   "papers": [
+    {
+      "track": "vlm",
+      "title": "GeoJeV: Unified Spatial Probability for Training-Free Efficient Evidence Acquisition in Ultra-High-Resolution Remote Sensing",
+      "authors": "Xinyi Niu, Lingfeng Chen, Jiehua Zhang 외 4명",
+      "url": "https://arxiv.org/abs/2611.08879v1",
+      "date": "2026-11-06",
+      "summary": "Ultra-high-resolution (UHR) remote sensing imagery provides rich spatial details but poses challenges for accurate and efficient multimodal understanding. Existing evidence acquisition methods selectively explore relevant image regions, yet largely rely on ge…"
+    },
+    {
+      "track": "sar",
+      "title": "Continuous wavelet-based feature extraction for laser-induced breakdown spectroscopy classification of human plasma samples",
+      "authors": "Md Mahmudur Rahman, Atqiya Munawara Mahi, Nazim Ahmed Belabbaci 외 1명",
+      "url": "https://arxiv.org/abs/2611.09746v1",
+      "date": "2026-11-06",
+      "summary": "Extracting discriminative features from laser-induced breakdown spectroscopy (LIBS) spectra is important for the classification of complex biological samples. This study evaluates continuous wavelet transform (CWT)-based spectral peak extraction for distingui…"
+    },
+    {
+      "track": "sar",
+      "title": "Polarization Aware Deep Learning Framework for SAR Despeckling",
+      "authors": "Gianpaolo Passarello, Sergio Vitale, Hossein Aghababei 외 2명",
+      "url": "https://arxiv.org/abs/2611.10091v1",
+      "date": "2026-11-06",
+      "summary": "Speckle is an inherent characteristic of synthetic aperture radar (SAR) imagery that complicates image interpretation and the extraction of reliable information. Although deep-learning-based despeckling methods have demonstrated promising performance, their a…"
+    },
+    {
+      "track": "foundation",
+      "title": "Towards Label-Efficient Geospatial Foundation Model Adaptation via Positive-Unlabeled Learning for Building Damage Mapping",
+      "authors": "Hengwei Zhao, Qirui Wang, Zhuo Zheng 외 3명",
+      "url": "https://arxiv.org/abs/2611.08561v1",
+      "date": "2026-11-05",
+      "summary": "Geospatial foundation models (GFMs) are reshaping remote sensing by shifting the field from task-specific modeling toward general-purpose geospatial intelligence. Mapping the damage to buildings stands to benefit substantially from this shift, as GFMs pretrai…"
+    },
     {
       "track": "foundation",
       "title": "When GeoFMs Meet VHR: Benchmarking Foundation Models on Very High Resolution Earth Observation Imagery",
@@ -62,7 +94,7 @@
       "track": "sar",
       "title": "Nowcasting of Tropical Cyclone Wind Fields and Intensity from Geostationary Imagery",
       "authors": "Simon Donike, Pritthijit Nath, Cristina Radin 외 5명",
-      "url": "https://arxiv.org/abs/2611.08255v1",
+      "url": "https://arxiv.org/abs/2611.08255v2",
       "date": "2026-11-05",
       "summary": "High-resolution tropical cyclone surface wind speeds derived from synthetic aperture radar (SAR) observations can support storm structure and intensity modelling, but remain spatially and temporally sparse and unavailable near-real-time. Geostationary satelli…"
     },
@@ -81,6 +113,14 @@
       "url": "https://arxiv.org/abs/2611.06770v1",
       "date": "2026-11-04",
       "summary": "Fine-grained visual reasoning is essential for remote sensing in urban management, yet remains underexplored in the evaluation of multimodal large language models (MLLMs). We introduce UMBench, a fine-grained urban remote sensing benchmark built from unmanned…"
+    },
+    {
+      "track": "vlm",
+      "title": "EarthJev: Efficient Visual Evidence Acquisition and Decision for UHR Remote Sensing Understanding",
+      "authors": "Pengyu Dai, Yao Zhang, Jian Song 외 6명",
+      "url": "https://arxiv.org/abs/2611.10005v1",
+      "date": "2026-11-04",
+      "summary": "Ultra-high-resolution (UHR) remote sensing visual question answering (VQA) requires locating fine-grained evidence in large scenes under limited visual input budgets. Active observation addresses this challenge through selective exploration, but repeated gene…"
     },
     {
       "track": "vlm",
@@ -163,22 +203,6 @@
       "summary": "Source-only domain generalization (DG) for remote sensing semantic segmentation seeks reliable predictions in unseen domains without target-domain data during training. Although vision foundation models offer transferable knowledge, category recognition remai…"
     },
     {
-      "track": "vlm",
-      "title": "EO-Jev: Decision Model for Earth Observation",
-      "authors": "Mohamed Atef Abouelhadid, Diaa Addeen Abuhani, Muhammad Akhtar Munir 외 2명",
-      "url": "https://arxiv.org/abs/2611.03371v1",
-      "date": "2026-11-02",
-      "summary": "Earth observation (EO) workflows require selecting among known outcomes, estimating confidence, and processing large volumes of imagery. Generative vision-language models can address these tasks, but autoregressive decoding is computationally costly and their…"
-    },
-    {
-      "track": "vlm",
-      "title": "ArabGeoText: Tool-Augmented Vision-Language Models for Arabic Geospatial Text Spotting",
-      "authors": "Yakoub Bazi, Sarah Alsaleh, Mohamad M. Al Rahhal 외 2명",
-      "url": "https://arxiv.org/abs/2611.03339v1",
-      "date": "2026-11-02",
-      "summary": "Geospatial text spotting involves locating and transcribing geographic labels, such as road names, district names, and landmarks, in raster maps. These labels are often small, densely arranged, and arbitrarily oriented. Although Arabic text recognition has be…"
-    },
-    {
       "track": "restoration",
       "title": "KAUSTics-Net: Diffusion-Based Through-Water UAV Restoration with a Semi-Synthetic Dataset",
       "authors": "Dario Scilla, Omar A. Lopez, Kasper Johansen 외 2명",
@@ -201,38 +225,6 @@
       "url": "https://arxiv.org/abs/2610.41728v1",
       "date": "2026-10-30",
       "summary": "Multitemporal synthetic aperture radar (SAR) imagery provides continuous, cloud-free observations of crop phenology for agricultural monitoring in cloudy and rainy regions, yet high-accuracy classification typically requires extensive labeled samples. Althoug…"
-    },
-    {
-      "track": "sar",
-      "title": "Quantum-Inspired Convolutional Networks for High-Resolution Pseudo-Label Generation from Multimodal Earth Observation Data",
-      "authors": "Abhishek Singh, Giovanni Cuozzo, Alexander Jacob 외 1명",
-      "url": "https://arxiv.org/abs/2610.39773v1",
-      "date": "2026-10-29",
-      "summary": "Accurate land-cover mapping from multimodal Earth observation (EO) data remains a challenge in regions where high-resolution annotations are scarce or costly to obtain. This work introduces a quantum convolutional encoder-decoder network for pseudo-label gene…"
-    },
-    {
-      "track": "foundation",
-      "title": "Evaluating AlphaEarth Embeddings for Crop Classification: Separability, Temporal Dynamics, and Cross-Regional Transferability",
-      "authors": "Priyanka Goyal, Maitreyee Sar, Adway Mitra 외 1명",
-      "url": "https://arxiv.org/abs/2610.36857v2",
-      "date": "2026-10-27",
-      "summary": "Earth Observation (EO)-based agricultural monitoring is shifting from pixel-level spectral analysis toward representation-driven modeling, yet systematic evaluation of learned representations remains limited. Geospatial foundation models (FMs) generate high-d…"
-    },
-    {
-      "track": "sar",
-      "title": "Quantized Edge Inference of a Self-Supervised SAR-Optical Encoder on Commodity x86 Hardware",
-      "authors": "Christian Sanchez-Leon, Dongming Chen",
-      "url": "https://arxiv.org/abs/2610.37056v1",
-      "date": "2026-10-27",
-      "summary": "Self-supervised vision transformers are increasingly used as reusable encoders for Earth observation, but their inference cost on the hardware available in the field is rarely characterized. We deploy a pretrained SAR-optical masked-autoencoder encoder on thr…"
-    },
-    {
-      "track": "agentic",
-      "title": "AgenticCity-Bench: Longitudinal Multimodal Observations of Urban Dynamics with Agentic Reasoning",
-      "authors": "Xiaofei Yu, Kailai Sun, Yanyu Mao 외 7명",
-      "url": "https://arxiv.org/abs/2610.35293v1",
-      "date": "2026-10-26",
-      "summary": "City systems are shaped by interactions among infrastructure, human activity, and environmental conditions. Existing earth observation and urban benchmarks are limited in unified modeling and in capturing their joint dynamics. We introduce AgenticCity-Bench, …"
     },
     {
       "track": "restoration",

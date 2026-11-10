@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-09T00:37:32Z",
+  "updated": "2026-11-10T03:17:28Z",
   "sources": [
     "arXiv"
   ],
   "count": 18,
-  "aiCount": 15,
+  "aiCount": 16,
   "categories": [
     "High-resolution EO",
     "Standard products · L1",
@@ -15,6 +15,15 @@
     "Multi-sensor fusion"
   ],
   "items": [
+    {
+      "source": "arXiv",
+      "cat": "SAR",
+      "title": "Polarization Aware Deep Learning Framework for SAR Despeckling",
+      "url": "https://arxiv.org/abs/2611.10091v1",
+      "date": "2026-11-06",
+      "summary": "Speckle is an inherent characteristic of synthetic aperture radar (SAR) imagery that complicates image interpretation and the extraction of reliable information. Although deep-learning-based despeckling methods have demonstrated promising …",
+      "ai": true
+    },
     {
       "source": "arXiv",
       "cat": "High-resolution EO",
@@ -153,28 +162,19 @@
     {
       "source": "arXiv",
       "cat": "High-resolution EO",
-      "title": "Nowcasting of Tropical Cyclone Wind Fields and Intensity from Geostationary Imagery",
-      "url": "https://arxiv.org/abs/2611.08255v1",
-      "date": "2026-11-05",
-      "summary": "High-resolution tropical cyclone surface wind speeds derived from synthetic aperture radar (SAR) observations can support storm structure and intensity modelling, but remain spatially and temporally sparse and unavailable near-real-time. G…",
+      "title": "Super-resolved digital terrain models for GEDI geolocation correction: agreement with airborne LiDAR DTM-based corrections at the beam level, not the footprint level",
+      "url": "https://arxiv.org/abs/2611.09854v1",
+      "date": "2026-11-06",
+      "summary": "The Global Ecosystem Dynamics Investigation (GEDI) mission measures three-dimensional forest structure with a LiDAR aboard the International Space Station. GEDI observations have geolocation errors of about 10 m, which cause misalignment w…",
       "ai": false
     },
     {
       "source": "arXiv",
       "cat": "High-resolution EO",
-      "title": "The Pristine survey XXXI. A stream offset from the Stream: very metal-poor stellar debris trailing 100$^{\\circ}$ from the LMC-SMC system",
-      "url": "https://arxiv.org/abs/2611.07563v1",
-      "date": "2026-11-05",
-      "summary": "Context: The stellar counterpart to the $200^\\circ$-long HI Stream from the Clouds probes their tidally stripped stellar populations and constrains their interaction history and structure before infall into the Milky Way. Aims: We investig…",
-      "ai": false
-    },
-    {
-      "source": "arXiv",
-      "cat": "Multi-sensor fusion",
-      "title": "TerraMesh-Masks: Open-Vocabulary Segmentation for Earth Observation",
-      "url": "https://arxiv.org/abs/2611.08081v1",
-      "date": "2026-11-05",
-      "summary": "Open-vocabulary segmentation (OVS) enables models to segment a variety of concepts specified in natural language, removing the need for fixed label sets and fine-tuning. While recent OVS approaches have shown strong performance on natural …",
+      "title": "GeoJeV: Unified Spatial Probability for Training-Free Efficient Evidence Acquisition in Ultra-High-Resolution Remote Sensing",
+      "url": "https://arxiv.org/abs/2611.08879v1",
+      "date": "2026-11-06",
+      "summary": "Ultra-high-resolution (UHR) remote sensing imagery provides rich spatial details but poses challenges for accurate and efficient multimodal understanding. Existing evidence acquisition methods selectively explore relevant image regions, ye…",
       "ai": false
     }
   ]
