@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T01:14:02Z",
+  "updated": "2026-11-12T02:13:51Z",
   "source": "arXiv API (cs.CV · cs.LG · eess.IV), filtered to Earth-observation context",
   "window": "last 12 months",
   "trackCounts": {
@@ -25,15 +25,23 @@
     },
     {
       "month": "2026-02",
-      "count": 47
+      "count": 46
     },
     {
       "month": "2026-03",
-      "count": null
+      "count": 78
     },
     {
       "month": "2026-04",
-      "count": null
+      "count": 66
+    },
+    {
+      "month": "2026-05",
+      "count": 76
+    },
+    {
+      "month": "2026-06",
+      "count": 58
     },
     {
       "month": "2026-07",
@@ -56,11 +64,35 @@
   "papers": [
     {
       "track": "agentic",
+      "title": "DisasterAgent: An Evidence-Driven Agent for Verifiable Disaster Report Generation From Remote Sensing Imagery",
+      "authors": "Zhijian Li, Jiawei Song, Chao Ren 외 4명",
+      "url": "https://arxiv.org/abs/2611.13776v1",
+      "date": "2026-11-10",
+      "summary": "Remote sensing disaster assessment is moving from simple damage classification toward comprehensive report-level analysis. In this setting, responders need not only damage descriptions but also verifiable evidence to guide response and recovery. Recent vision…"
+    },
+    {
+      "track": "agentic",
       "title": "GeoPilot: Diagnosis-Guided Interventions and Geometric Evaluation for Aerial Reconstruction",
       "authors": "Pengyu Yin, Jie Pan, Junxiang Tan 외 3명",
       "url": "https://arxiv.org/abs/2611.11751v1",
       "date": "2026-11-09",
       "summary": "When a mesh reconstructed from aerial remote-sensing imagery disagrees with reference geometry, deciding what to change requires a diagnosis of the reconstruction process. We present GeoPilot, a workflow that turns diagnostics and prior observations into exec…"
+    },
+    {
+      "track": "restoration",
+      "title": "SpatialSR: Spatial Resolution-Centric Pipeline for Arbitrary-Scale Remote Sensing Super-Resolution",
+      "authors": "Yan Zhang, Runfeng Luo, Liangke Gao 외 3명",
+      "url": "https://arxiv.org/abs/2611.13046v1",
+      "date": "2026-11-09",
+      "summary": "Although remote sensing image arbitrary-scale super-resolution (RSI-ASSR) methods support reconstruction at arbitrary or continuous scales, they predominantly condition on the relative scale factor and have not sufficiently investigated the absolute spatial r…"
+    },
+    {
+      "track": "agentic",
+      "title": "EarthRecord: From Pixels to Land Change with Multimodal Agents over Four Decades of Satellite Imagery",
+      "authors": "Haoran Zhang, Huizhen Sun, Hanbin Wen 외 3명",
+      "url": "https://arxiv.org/abs/2611.12934v1",
+      "date": "2026-11-06",
+      "summary": "While multimodal agents now carry out complex data analysis with tools, their ability to turn decades of satellite imagery into reliable land-change analysis, crucial for Earth observation science, remains unmeasured. Existing benchmarks fall short: they pose…"
     },
     {
       "track": "agentic",
@@ -103,46 +135,18 @@
       "summary": "Recent pansharpening models achieve strong fusion performance on trained sensors, yet often generalize poorly to unseen sensors. Existing cross-sensor adaptation is limited by target-sensor retraining, which requires target-sensor training pairs and a dedicat…"
     },
     {
-      "track": "agentic",
-      "title": "GeoFaham: Domain-Specialized Multi-Agent Geospatial Analytics for Disaster Response",
-      "authors": "Muhammad Sohail Danish, Gilles Q. Hacheme, Akram Zaytar 외 5명",
-      "url": "https://arxiv.org/abs/2611.04977v1",
-      "date": "2026-11-03",
-      "summary": "Real-world geospatial decision support requires more than single-step retrieval or code generation. Disaster-response questions often involve multi-source workflows that combine spatial databases, map-derived features, satellite imagery, raster products, and …"
-    },
-    {
-      "track": "agentic",
-      "title": "Large Language Model-Assisted Adaptive Heuristic Search for Agile Earth Observation Satellite Scheduling",
-      "authors": "He Wang, Yeye Liu, Ruijie Li 외 5명",
-      "url": "https://arxiv.org/abs/2611.04458v1",
-      "date": "2026-11-03",
-      "summary": "Agile Earth observation satellites must coordinate imaging tasks within limited observation windows, while accounting for attitude maneuvering and onboard energy constraints. Competition among observation opportunities makes scheduling performance sensitive t…"
-    },
-    {
       "track": "restoration",
       "title": "KAUSTics-Net: Diffusion-Based Through-Water UAV Restoration with a Semi-Synthetic Dataset",
       "authors": "Dario Scilla, Omar A. Lopez, Kasper Johansen 외 2명",
       "url": "https://arxiv.org/abs/2611.03120v1",
       "date": "2026-11-02",
       "summary": "Accurate mapping of shallow-water environments using unmanned aerial vehicle (UAV) imagery is challenged by water-induced distortions, including refraction, caustics, and wavelength-dependent attenuation. The scarcity of paired distorted and reference imagery…"
-    },
-    {
-      "track": "restoration",
-      "title": "From Sentinel-2 to 1-m Imagery: Real-World $\\times 10$ Cross-Sensor Super-Resolution via Visual Autoregressive Modeling",
-      "authors": "Tailai Chen, Yuluxin Fu, Jie Deng 외 3명",
-      "url": "https://arxiv.org/abs/2610.34742v1",
-      "date": "2026-10-26",
-      "summary": "Reconstructing 1-m imagery from Sentinel-2 combines two difficulties. The input and the reference are observed by different satellites, which differ in spatial resolution, spectral response, radiometry, acquisition time, and local geometry, so no synthetic de…"
     }
   ],
   "warnings": [
-    "foundation: HTTP Error 429: Unknown Error",
-    "vlm: HTTP Error 429: Too Many Requests",
-    "sar: The read operation timed out",
-    "ssl: The read operation timed out",
-    "volume/2026-03: TimeoutError: The read operation timed out",
-    "volume/2026-04: TimeoutError: The read operation timed out",
-    "volume/2026-05: HTTP 429 Rate exceeded.",
-    "volume/2026-06: HTTP 429 Rate exceeded."
+    "foundation: The read operation timed out",
+    "vlm: HTTP Error 429: Unknown Error",
+    "sar: HTTP Error 429: Too Many Requests",
+    "ssl: HTTP Error 429: Unknown Error"
   ]
 }
