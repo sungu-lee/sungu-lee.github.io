@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-12T02:13:51Z",
+  "updated": "2026-11-13T01:44:18Z",
   "source": "arXiv API (cs.CV · cs.LG · eess.IV), filtered to Earth-observation context",
   "window": "last 12 months",
   "trackCounts": {
-    "foundation": 0,
-    "vlm": 0,
-    "sar": 0,
-    "ssl": 0,
+    "foundation": 5,
+    "vlm": 5,
+    "sar": 5,
+    "ssl": 5,
     "agentic": 5,
     "restoration": 5
   },
@@ -60,15 +60,103 @@
       "count": 45
     }
   ],
-  "count": 10,
+  "count": 28,
   "papers": [
     {
-      "track": "agentic",
+      "track": "foundation",
+      "title": "UniFlow-RS: Unified Generative Prediction for Heterogeneous Remote-Sensing Tasks",
+      "authors": "Jianlong He, Liang Liao, Jing Xiao 외 2명",
+      "url": "https://arxiv.org/abs/2611.14281v1",
+      "date": "2026-11-10",
+      "summary": "Remote-sensing foundation models increasingly unify representations across sensing modalities and downstream tasks, yet their prediction mechanisms remain largely task-specific. Separate decoders, prediction heads, and objectives leave prediction fragmented a…"
+    },
+    {
+      "track": "foundation",
+      "title": "Adapting a Vision Foundation Model for Fracture Characterization in Acoustic Image Logs",
+      "authors": "Guangyu Wang, Xiaodong Ma, Xinming Wu",
+      "url": "https://arxiv.org/abs/2611.13911v1",
+      "date": "2026-11-10",
+      "summary": "Natural fractures (NFs) and drilling-induced tensile fractures (DITFs) in acoustic image logs provide insights into rock mass structure and in situ stress, but manual characterization is time-consuming. Deep learning can automate this task, although expert-la…"
+    },
+    {
+      "track": "foundation",
+      "title": "Satellite Pretraining Is Not One Thing: A Matched-Pair Study of Generic and Earth-Observation Foundation Models for Scene Classification",
+      "authors": "Sandarbh Agrawal, Rakshith Sathish, Ashwathi Nambiar",
+      "url": "https://arxiv.org/abs/2611.13849v1",
+      "date": "2026-11-10",
+      "summary": "Geospatial foundation models are pretrained on satellite and aerial imagery, but whether such an encoder beats a strong generic one for few-label land-use/land-cover mapping remains unclear, as prior comparisons rarely isolate the pretraining data. We study f…"
+    },
+    {
+      "track": "vlm",
+      "title": "Towards Text-Only Remote Sensing Scene Classification via Semantic Proxy",
+      "authors": "Xianping Ma, Kunlin Wu, Xiaofeng Liu 외 2명",
+      "url": "https://arxiv.org/abs/2611.13851v1",
+      "date": "2026-11-10",
+      "summary": "Remote sensing scene classification (RSSC) is traditionally formulated as a vision-centric problem, where inference relies on rich visual representations extracted from images. In this work, we revisit this assumption by introducing text-only RSSC, a new prob…"
+    },
+    {
+      "track": "vlm",
+      "title": "Relaxing Cross-Modal Correspondence for Multimodal Remote Sensing Pretraining",
+      "authors": "Xianping Ma, Yu Zhang, Mingzhe Jiang 외 5명",
+      "url": "https://arxiv.org/abs/2611.13807v1",
+      "date": "2026-11-10",
+      "summary": "Multimodal remote sensing pretraining commonly relies on exact instance-level correspondence across modalities, implicitly treating strictly paired observations as a prerequisite for learning transferable representations. In this work, we revisit this assumpt…"
+    },
+    {
+      "track": "vlm",
       "title": "DisasterAgent: An Evidence-Driven Agent for Verifiable Disaster Report Generation From Remote Sensing Imagery",
       "authors": "Zhijian Li, Jiawei Song, Chao Ren 외 4명",
       "url": "https://arxiv.org/abs/2611.13776v1",
       "date": "2026-11-10",
       "summary": "Remote sensing disaster assessment is moving from simple damage classification toward comprehensive report-level analysis. In this setting, responders need not only damage descriptions but also verifiable evidence to guide response and recovery. Recent vision…"
+    },
+    {
+      "track": "sar",
+      "title": "RS-JEPA: Remote Sensing Joint-Embedding Predictive Architecture with Scan-Path Views for Cross-Sensor Image Retrieval",
+      "authors": "Tanishq Rachamalla, Srishti Kaushik, Muhammad Attique Khan 외 2명",
+      "url": "https://arxiv.org/abs/2611.14496v1",
+      "date": "2026-11-10",
+      "summary": "Cross-sensor remote sensing image retrieval aims to find scenes with the same content across heterogeneous sensors, such as SAR and optical or panchromatic (PAN) and multispectral (MS) imagery, without manual labels. Existing self-supervised methods either re…"
+    },
+    {
+      "track": "ssl",
+      "title": "CroCoMAE: Cross-modal self-supervised collaborative representation learning for SAR-optical remote sensing data",
+      "authors": "Vito Recchia, Giuseppe Guarino, Cássio Fraga Dantas 외 3명",
+      "url": "https://arxiv.org/abs/2611.14124v1",
+      "date": "2026-11-10",
+      "summary": "Remote sensing increasingly captures the Earth's surface through complementary sensors such as SAR and optical, yet ground-truth annotations remain scarce, limiting supervised approaches. Self-supervised learning (SSL) addresses the label scarcity, and cross-…"
+    },
+    {
+      "track": "foundation",
+      "title": "National-Scale Crop Type Mapping in Morocco Using Google AlphaEarth Foundations Embeddings and the Fields of the World Field Boundary Map",
+      "authors": "Walid Elbarz, Mohamed Bourriz, Vincent Simonneaux 외 2명",
+      "url": "https://arxiv.org/abs/2611.12681v1",
+      "date": "2026-11-09",
+      "summary": "Recent geospatial foundation models have introduced a new paradigm for large-scale Earth observation by providing pretrained embedding representations that can be directly exploited for downstream tasks. In this work, we investigate the use of Google AlphaEar…"
+    },
+    {
+      "track": "vlm",
+      "title": "Multimodal Road Closure Mapping via Cross-Modal Graph Attention",
+      "authors": "Izzeddin Teeti, Vaibhav Kango, Nidhi Sridhar 외 1명",
+      "url": "https://arxiv.org/abs/2611.13192v1",
+      "date": "2026-11-09",
+      "summary": "Accurate and timely identification of road closures is critical for large-scale navigation and logistics systems, yet remains challenging due to the need to jointly reason over visual evidence, spatial context, and road network topology. Existing approaches e…"
+    },
+    {
+      "track": "vlm",
+      "title": "GeoScope: Training-Free Program Execution beyond the Counting Horizon for Ultra-High-Resolution Remote Sensing Question Answering",
+      "authors": "Guohui Deng, Yuhang Jiang, Chengjun Wang 외 7명",
+      "url": "https://arxiv.org/abs/2611.12699v1",
+      "date": "2026-11-09",
+      "summary": "In ultra-high-resolution (UHR) remote sensing images, the objects that questions count in a region or relate by direction often span only a few pixels. Existing methods mainly decide where a vision-language model (VLM) should look and trust its answer in the …"
+    },
+    {
+      "track": "sar",
+      "title": "Cognitive Multi-Agent Search and Rescue: Language-Grounded Hierarchical Reinforcement Learning for Collaborative Robotics",
+      "authors": "Sepideh Ravanbakhsh, Hamidreza Moradi",
+      "url": "https://arxiv.org/abs/2611.13161v1",
+      "date": "2026-11-09",
+      "summary": "Effective search and rescue (SAR) operations require autonomous systems capable of coordinating multiple heterogeneous agents, adapting to dynamic hazards, and aligning with human mission intent. Existing language-guided reinforcement learning (RL) methods pr…"
     },
     {
       "track": "agentic",
@@ -87,6 +175,30 @@
       "summary": "Although remote sensing image arbitrary-scale super-resolution (RSI-ASSR) methods support reconstruction at arbitrary or continuous scales, they predominantly condition on the relative scale factor and have not sufficiently investigated the absolute spatial r…"
     },
     {
+      "track": "foundation",
+      "title": "Decomposing Earth Embeddings with Sparse Autoencoders",
+      "authors": "Vitus Benson, Fanny Yang, Markus Reichstein",
+      "url": "https://arxiv.org/abs/2611.11398v1",
+      "date": "2026-11-08",
+      "summary": "Earth observation foundation models produce global metre-resolution embeddings that underpin work across agriculture, ecology, hydrology, and beyond. Yet these embeddings are opaque: each dimension entangles unrelated physical concepts, which makes them diffi…"
+    },
+    {
+      "track": "sar",
+      "title": "Continuous wavelet-based feature extraction for laser-induced breakdown spectroscopy classification of human plasma samples",
+      "authors": "Md Mahmudur Rahman, Atqiya Munawara Mahi, Nazim Ahmed Belabbaci 외 1명",
+      "url": "https://arxiv.org/abs/2611.09746v1",
+      "date": "2026-11-06",
+      "summary": "Extracting discriminative features from laser-induced breakdown spectroscopy (LIBS) spectra is important for the classification of complex biological samples. This study evaluates continuous wavelet transform (CWT)-based spectral peak extraction for distingui…"
+    },
+    {
+      "track": "sar",
+      "title": "Polarization Aware Deep Learning Framework for SAR Despeckling",
+      "authors": "Gianpaolo Passarello, Sergio Vitale, Hossein Aghababei 외 2명",
+      "url": "https://arxiv.org/abs/2611.10091v2",
+      "date": "2026-11-06",
+      "summary": "Speckle is an inherent characteristic of synthetic aperture radar (SAR) imagery that complicates image interpretation and the extraction of reliable information. Although deep-learning-based despeckling methods have demonstrated promising performance, their a…"
+    },
+    {
       "track": "agentic",
       "title": "EarthRecord: From Pixels to Land Change with Multimodal Agents over Four Decades of Satellite Imagery",
       "authors": "Haoran Zhang, Huizhen Sun, Hanbin Wen 외 3명",
@@ -101,6 +213,38 @@
       "url": "https://arxiv.org/abs/2611.08879v1",
       "date": "2026-11-06",
       "summary": "Ultra-high-resolution (UHR) remote sensing imagery provides rich spatial details but poses challenges for accurate and efficient multimodal understanding. Existing evidence acquisition methods selectively explore relevant image regions, yet largely rely on ge…"
+    },
+    {
+      "track": "sar",
+      "title": "Nowcasting of Tropical Cyclone Wind Fields and Intensity from Geostationary Imagery",
+      "authors": "Simon Donike, Pritthijit Nath, Cristina Radin 외 5명",
+      "url": "https://arxiv.org/abs/2611.08255v2",
+      "date": "2026-11-05",
+      "summary": "High-resolution tropical cyclone surface wind speeds derived from synthetic aperture radar (SAR) observations can support storm structure and intensity modelling, but remain spatially and temporally sparse and unavailable near-real-time. Geostationary satelli…"
+    },
+    {
+      "track": "ssl",
+      "title": "When GeoFMs Meet VHR: Benchmarking Foundation Models on Very High Resolution Earth Observation Imagery",
+      "authors": "Kshitij Raj Sharma, Pierre Adorni, Minh-Tan Pham 외 2명",
+      "url": "https://arxiv.org/abs/2611.08003v1",
+      "date": "2026-11-05",
+      "summary": "Geospatial foundation models are a widely adopted starting point for remote sensing tasks. Most are pretrained on Sentinel-1/2 and Landsat imagery at a ground sampling distance (GSD) of 10m or coarser. Many applications instead rely on very high resolution (V…"
+    },
+    {
+      "track": "ssl",
+      "title": "CAPE-JEPA - Cross-modal Adversarial Probabilistic Embedding JEPA",
+      "authors": "Aniket Junghare, Biplab Banerjee",
+      "url": "https://arxiv.org/abs/2611.06247v1",
+      "date": "2026-11-04",
+      "summary": "Cross-modal remote sensing image retrieval (RS-CMIR) requires representations that are simultaneously modality-invariant and semantically discriminative, despite the profound physical gap between heterogeneous sensors such as Synthetic Aperture Radar (SAR) an…"
+    },
+    {
+      "track": "ssl",
+      "title": "XuanJian-DINOSAR: A SAR Foundation Model Based on Global and Local Semantic Consistency",
+      "authors": "Chunxiao Wu, Huixin Huang, Jialei Pan 외 9명",
+      "url": "https://arxiv.org/abs/2611.06105v1",
+      "date": "2026-11-04",
+      "summary": "Self-supervised pre-training on synthetic aperture radar (SAR) imagery enables transferable representations, but the optical-SAR domain gap and speckle perturbations limit representation stability. Most SAR foundation models use masked image modeling (MIM) th…"
     },
     {
       "track": "agentic",
@@ -143,10 +287,5 @@
       "summary": "Accurate mapping of shallow-water environments using unmanned aerial vehicle (UAV) imagery is challenged by water-induced distortions, including refraction, caustics, and wavelength-dependent attenuation. The scarcity of paired distorted and reference imagery…"
     }
   ],
-  "warnings": [
-    "foundation: The read operation timed out",
-    "vlm: HTTP Error 429: Unknown Error",
-    "sar: HTTP Error 429: Too Many Requests",
-    "ssl: HTTP Error 429: Unknown Error"
-  ]
+  "warnings": []
 }
