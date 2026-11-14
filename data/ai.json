@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T01:44:18Z",
+  "updated": "2026-11-14T01:20:57Z",
   "source": "arXiv API (cs.CV · cs.LG · eess.IV), filtered to Earth-observation context",
   "window": "last 12 months",
   "trackCounts": {
@@ -64,9 +64,57 @@
   "papers": [
     {
       "track": "foundation",
+      "title": "SpotDiff: A Plug-and-Play Framework for Zero-Shot Change Detection in Remote Sensing Imagery",
+      "authors": "Anit Upadhyaya, Ata Akbari Asanjan, Chaitanya Jalluri 외 2명",
+      "url": "https://arxiv.org/abs/2611.17172v1",
+      "date": "2026-11-12",
+      "summary": "Remote sensing change detection usually relies on large collections of temporally aligned, pixel-level annotations, which limits its scalability across regions, imaging platforms and application domains. Recent zero-shot approaches reduce the need for supervi…"
+    },
+    {
+      "track": "vlm",
+      "title": "RICapBench: A Fine-Grained Visual Understanding Benchmark Dataset for Vision-Language Models in Remote Sensing",
+      "authors": "Xue Wang, Yubin Xu, Kun Tan",
+      "url": "https://arxiv.org/abs/2611.16413v1",
+      "date": "2026-11-12",
+      "summary": "Advances in vision-language models (VLMs) have improved remote sensing image analysis and supported geospatial decision-making. However, fine-grained understanding of remote sensing imagery remains challenging for VLMs. Large variations in object scale, compl…"
+    },
+    {
+      "track": "vlm",
+      "title": "Gravity and Flight: Learning to Navigate Fine-Grained Remote Sensing Scenes",
+      "authors": "Yuheng Zong, Minghua Wang, Xin Zhao 외 3명",
+      "url": "https://arxiv.org/abs/2611.16408v1",
+      "date": "2026-11-12",
+      "summary": "Vision-language models are increasingly capable, yet their reasoning in complex remote sensing scenes can remain coarse-grained and insufficiently grounded in task-relevant visual evidence. We propose Gravity and Flight (G&F), a framework for scene specializa…"
+    },
+    {
+      "track": "vlm",
+      "title": "Fine-Grained Generative Hallucination Detection and Correction for Aerial Image Captioning",
+      "authors": "Debolena Basak, Somsubhra De, Maunendra Sankar Desarkar",
+      "url": "https://arxiv.org/abs/2611.15809v1",
+      "date": "2026-11-11",
+      "summary": "Aerial imagery captured by unmanned aerial vehicles (UAVs) plays a vital role in applications such as surveillance, disaster response, and large-scale environmental monitoring. Automatic generation of textual descriptions for such imagery is essential for red…"
+    },
+    {
+      "track": "vlm",
+      "title": "RSLiveBench-UAV: A Continually Evolving Vision-Language Benchmark for Aerial Spatial Intelligence",
+      "authors": "Yue Zhou, Jiawei Liu, Jue Chen 외 9명",
+      "url": "https://arxiv.org/abs/2611.14953v1",
+      "date": "2026-11-11",
+      "summary": "Aerial spatial intelligence (ASI) requires models to understand objects and spatial relationships across changing viewpoints and scales. Evaluating these abilities as models evolve calls for fresh physical observations, yet producing new aerial spatial questi…"
+    },
+    {
+      "track": "agentic",
+      "title": "SkillEarth: Teaching General-Purpose Agents to Act on Earth via Skill Evolution",
+      "authors": "Haojun Tang, Wenda Zhao, Xiang Zhou 외 3명",
+      "url": "https://arxiv.org/abs/2611.15481v1",
+      "date": "2026-11-11",
+      "summary": "Recently developed remote sensing (RS) agents execute real-world tasks with complex workflows through multi-step tool invocation. These agents, however, typically rely on predefined expertise or parameter updates. They thus require updating expert knowledge o…"
+    },
+    {
+      "track": "foundation",
       "title": "UniFlow-RS: Unified Generative Prediction for Heterogeneous Remote-Sensing Tasks",
       "authors": "Jianlong He, Liang Liao, Jing Xiao 외 2명",
-      "url": "https://arxiv.org/abs/2611.14281v1",
+      "url": "https://arxiv.org/abs/2611.14281v2",
       "date": "2026-11-10",
       "summary": "Remote-sensing foundation models increasingly unify representations across sensing modalities and downstream tasks, yet their prediction mechanisms remain largely task-specific. Separate decoders, prediction heads, and objectives leave prediction fragmented a…"
     },
@@ -95,22 +143,6 @@
       "summary": "Remote sensing scene classification (RSSC) is traditionally formulated as a vision-centric problem, where inference relies on rich visual representations extracted from images. In this work, we revisit this assumption by introducing text-only RSSC, a new prob…"
     },
     {
-      "track": "vlm",
-      "title": "Relaxing Cross-Modal Correspondence for Multimodal Remote Sensing Pretraining",
-      "authors": "Xianping Ma, Yu Zhang, Mingzhe Jiang 외 5명",
-      "url": "https://arxiv.org/abs/2611.13807v1",
-      "date": "2026-11-10",
-      "summary": "Multimodal remote sensing pretraining commonly relies on exact instance-level correspondence across modalities, implicitly treating strictly paired observations as a prerequisite for learning transferable representations. In this work, we revisit this assumpt…"
-    },
-    {
-      "track": "vlm",
-      "title": "DisasterAgent: An Evidence-Driven Agent for Verifiable Disaster Report Generation From Remote Sensing Imagery",
-      "authors": "Zhijian Li, Jiawei Song, Chao Ren 외 4명",
-      "url": "https://arxiv.org/abs/2611.13776v1",
-      "date": "2026-11-10",
-      "summary": "Remote sensing disaster assessment is moving from simple damage classification toward comprehensive report-level analysis. In this setting, responders need not only damage descriptions but also verifiable evidence to guide response and recovery. Recent vision…"
-    },
-    {
       "track": "sar",
       "title": "RS-JEPA: Remote Sensing Joint-Embedding Predictive Architecture with Scan-Path Views for Cross-Sensor Image Retrieval",
       "authors": "Tanishq Rachamalla, Srishti Kaushik, Muhammad Attique Khan 외 2명",
@@ -127,28 +159,20 @@
       "summary": "Remote sensing increasingly captures the Earth's surface through complementary sensors such as SAR and optical, yet ground-truth annotations remain scarce, limiting supervised approaches. Self-supervised learning (SSL) addresses the label scarcity, and cross-…"
     },
     {
+      "track": "agentic",
+      "title": "DisasterAgent: An Evidence-Driven Agent for Verifiable Disaster Report Generation From Remote Sensing Imagery",
+      "authors": "Zhijian Li, Jiawei Song, Chao Ren 외 4명",
+      "url": "https://arxiv.org/abs/2611.13776v1",
+      "date": "2026-11-10",
+      "summary": "Remote sensing disaster assessment is moving from simple damage classification toward comprehensive report-level analysis. In this setting, responders need not only damage descriptions but also verifiable evidence to guide response and recovery. Recent vision…"
+    },
+    {
       "track": "foundation",
       "title": "National-Scale Crop Type Mapping in Morocco Using Google AlphaEarth Foundations Embeddings and the Fields of the World Field Boundary Map",
       "authors": "Walid Elbarz, Mohamed Bourriz, Vincent Simonneaux 외 2명",
       "url": "https://arxiv.org/abs/2611.12681v1",
       "date": "2026-11-09",
       "summary": "Recent geospatial foundation models have introduced a new paradigm for large-scale Earth observation by providing pretrained embedding representations that can be directly exploited for downstream tasks. In this work, we investigate the use of Google AlphaEar…"
-    },
-    {
-      "track": "vlm",
-      "title": "Multimodal Road Closure Mapping via Cross-Modal Graph Attention",
-      "authors": "Izzeddin Teeti, Vaibhav Kango, Nidhi Sridhar 외 1명",
-      "url": "https://arxiv.org/abs/2611.13192v1",
-      "date": "2026-11-09",
-      "summary": "Accurate and timely identification of road closures is critical for large-scale navigation and logistics systems, yet remains challenging due to the need to jointly reason over visual evidence, spatial context, and road network topology. Existing approaches e…"
-    },
-    {
-      "track": "vlm",
-      "title": "GeoScope: Training-Free Program Execution beyond the Counting Horizon for Ultra-High-Resolution Remote Sensing Question Answering",
-      "authors": "Guohui Deng, Yuhang Jiang, Chengjun Wang 외 7명",
-      "url": "https://arxiv.org/abs/2611.12699v1",
-      "date": "2026-11-09",
-      "summary": "In ultra-high-resolution (UHR) remote sensing images, the objects that questions count in a region or relate by direction often span only a few pixels. Existing methods mainly decide where a vision-language model (VLM) should look and trust its answer in the …"
     },
     {
       "track": "sar",
@@ -175,14 +199,6 @@
       "summary": "Although remote sensing image arbitrary-scale super-resolution (RSI-ASSR) methods support reconstruction at arbitrary or continuous scales, they predominantly condition on the relative scale factor and have not sufficiently investigated the absolute spatial r…"
     },
     {
-      "track": "foundation",
-      "title": "Decomposing Earth Embeddings with Sparse Autoencoders",
-      "authors": "Vitus Benson, Fanny Yang, Markus Reichstein",
-      "url": "https://arxiv.org/abs/2611.11398v1",
-      "date": "2026-11-08",
-      "summary": "Earth observation foundation models produce global metre-resolution embeddings that underpin work across agriculture, ecology, hydrology, and beyond. Yet these embeddings are opaque: each dimension entangles unrelated physical concepts, which makes them diffi…"
-    },
-    {
       "track": "sar",
       "title": "Continuous wavelet-based feature extraction for laser-induced breakdown spectroscopy classification of human plasma samples",
       "authors": "Md Mahmudur Rahman, Atqiya Munawara Mahi, Nazim Ahmed Belabbaci 외 1명",
@@ -205,14 +221,6 @@
       "url": "https://arxiv.org/abs/2611.12934v1",
       "date": "2026-11-06",
       "summary": "While multimodal agents now carry out complex data analysis with tools, their ability to turn decades of satellite imagery into reliable land-change analysis, crucial for Earth observation science, remains unmeasured. Existing benchmarks fall short: they pose…"
-    },
-    {
-      "track": "agentic",
-      "title": "GeoJeV: Unified Spatial Probability for Training-Free Efficient Evidence Acquisition in Ultra-High-Resolution Remote Sensing",
-      "authors": "Xinyi Niu, Lingfeng Chen, Jiehua Zhang 외 4명",
-      "url": "https://arxiv.org/abs/2611.08879v1",
-      "date": "2026-11-06",
-      "summary": "Ultra-high-resolution (UHR) remote sensing imagery provides rich spatial details but poses challenges for accurate and efficient multimodal understanding. Existing evidence acquisition methods selectively explore relevant image regions, yet largely rely on ge…"
     },
     {
       "track": "sar",
@@ -245,14 +253,6 @@
       "url": "https://arxiv.org/abs/2611.06105v1",
       "date": "2026-11-04",
       "summary": "Self-supervised pre-training on synthetic aperture radar (SAR) imagery enables transferable representations, but the optical-SAR domain gap and speckle perturbations limit representation stability. Most SAR foundation models use masked image modeling (MIM) th…"
-    },
-    {
-      "track": "agentic",
-      "title": "Benchmarking Fine-Grained Visual Reasoning for Remote Sensing in Urban Management",
-      "authors": "Jiawei Zhang, Rizhao Cai, Dayan Guan",
-      "url": "https://arxiv.org/abs/2611.06770v1",
-      "date": "2026-11-04",
-      "summary": "Fine-grained visual reasoning is essential for remote sensing in urban management, yet remains underexplored in the evaluation of multimodal large language models (MLLMs). We introduce UMBench, a fine-grained urban remote sensing benchmark built from unmanned…"
     },
     {
       "track": "restoration",

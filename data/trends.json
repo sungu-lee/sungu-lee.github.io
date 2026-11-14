@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T01:43:05Z",
+  "updated": "2026-11-14T01:19:50Z",
   "sources": [
     "arXiv"
   ],
@@ -171,10 +171,10 @@
     {
       "source": "arXiv",
       "cat": "L2 value-added",
-      "title": "Satellite Pretraining Is Not One Thing: A Matched-Pair Study of Generic and Earth-Observation Foundation Models for Scene Classification",
-      "url": "https://arxiv.org/abs/2611.13849v1",
-      "date": "2026-11-10",
-      "summary": "Geospatial foundation models are pretrained on satellite and aerial imagery, but whether such an encoder beats a strong generic one for few-label land-use/land-cover mapping remains unclear, as prior comparisons rarely isolate the pretrain…",
+      "title": "Advancing global water cycle science with the upcoming MAGIC satellite mission through data assimilation",
+      "url": "https://arxiv.org/abs/2611.15421v1",
+      "date": "2026-11-11",
+      "summary": "The GRACE and GRACE-FO missions provide unique global measurements of terrestrial water storage anomalies (TWSA) from space since 2003. However, in order to spatially downscale the GRACE/-FO resolution of 300 km further, and to vertically …",
       "ai": false
     }
   ]
