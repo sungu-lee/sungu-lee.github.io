@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-16T00:50:56Z",
+  "updated": "2026-11-17T03:29:25Z",
   "sources": [
     "arXiv"
   ],
   "count": 18,
-  "aiCount": 17,
+  "aiCount": 18,
   "categories": [
     "High-resolution EO",
     "Standard products · L1",
@@ -15,6 +15,51 @@
     "Multi-sensor fusion"
   ],
   "items": [
+    {
+      "source": "arXiv",
+      "cat": "High-resolution EO",
+      "title": "An AI-enabled high-resolution chlorophyll-a forecasting model that outperforms the operational global biogeochemical system",
+      "url": "https://arxiv.org/abs/2611.17704v1",
+      "date": "2026-11-13",
+      "summary": "Surface chlorophyll-a concentration is a key indicator of marine phytoplankton variability, and short-term forecasts of its distribution provide advance information for marine ecosystem monitoring and management. However, interactions betw…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "L2 value-added",
+      "title": "Lens: Training-Free Semantic Search for Cross-Tile Object and Scene Retrieval in Satellite Imagery",
+      "url": "https://arxiv.org/abs/2611.18251v1",
+      "date": "2026-11-13",
+      "summary": "We developed Lens, a training-free system for semantic object and scene search across large satellite mosaics that requires no detector trained for the class of interest. Lens represents each tile with a frozen, self-supervised vision tran…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "Hyperspectral",
+      "title": "Few-Shot Open-Set Hyperspectral Pixel-Wise Classification with Spatial Aware Label Propagation",
+      "url": "https://arxiv.org/abs/2611.17974v1",
+      "date": "2026-11-13",
+      "summary": "Pixelwise classification of hyperspectral images (HSI) is a fundamental task in remote sensing, but its deployment in real-world applications is often limited by the scarcity of labeled data and the presence of unknown classes at inference…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "Hyperspectral",
+      "title": "nnAEU: a Simple and Efficient CNN-Autoencoder for Hyperspectral Unmixing",
+      "url": "https://arxiv.org/abs/2611.17956v1",
+      "date": "2026-11-13",
+      "summary": "Deep learning-based hyperspectral unmixing (HSU) has followed a trajectory of increasing architectural complexity, from simple autoencoders to transformers and, most recently, Mamba-based models, each claiming to advance the state of the a…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "High-resolution EO",
+      "title": "Augmenting Galaxy Catalogues using Machine Learning in the FLAMINGO Simulations",
+      "url": "https://arxiv.org/abs/2611.17425v1",
+      "date": "2026-11-12",
+      "summary": "Hydrodynamic simulations are instrumental in the analysis of observations such as galaxy clustering used for the estimation of cosmological parameters. However, for these purposes, the simulations need both a large box size and high resolu…",
+      "ai": true
+    },
     {
       "source": "arXiv",
       "cat": "L2 value-added",
@@ -62,15 +107,6 @@
     },
     {
       "source": "arXiv",
-      "cat": "Multi-sensor fusion",
-      "title": "Multimodal Road Closure Mapping via Cross-Modal Graph Attention",
-      "url": "https://arxiv.org/abs/2611.13192v1",
-      "date": "2026-11-09",
-      "summary": "Accurate and timely identification of road closures is critical for large-scale navigation and logistics systems, yet remains challenging due to the need to jointly reason over visual evidence, spatial context, and road network topology. E…",
-      "ai": true
-    },
-    {
-      "source": "arXiv",
       "cat": "SAR",
       "title": "Polarization Aware Deep Learning Framework for SAR Despeckling",
       "url": "https://arxiv.org/abs/2611.10091v2",
@@ -103,24 +139,6 @@
       "url": "https://arxiv.org/abs/2611.06230v1",
       "date": "2026-11-04",
       "summary": "Characterizing Multi-Energy X-ray Transmission (XRT) hyperspectral images presents significant challenges for traditional classification frameworks due to high-dimensional redundancy and non-linear spectral overlaps. Although manifold lear…",
-      "ai": true
-    },
-    {
-      "source": "arXiv",
-      "cat": "Hyperspectral",
-      "title": "Many Pixels, One Composition: Self-Supervised Spectra for Specimen-Level Prediction",
-      "url": "https://arxiv.org/abs/2611.06096v1",
-      "date": "2026-11-04",
-      "summary": "Can hyperspectral (HS) imaging be used to predict the elemental composition of physical specimens found on the Earth's surface? We approach this problem as a supervised regression task, using an open dataset of specimens, each comprising a…",
-      "ai": true
-    },
-    {
-      "source": "arXiv",
-      "cat": "Hyperspectral",
-      "title": "Spectral-spatial vision test-time training for hyperspectral image classification",
-      "url": "https://arxiv.org/abs/2611.02364v1",
-      "date": "2026-11-02",
-      "summary": "Hyperspectral image (HSI) classification requires the representation of contiguous spectral signatures and spatial context under limited labeled supervision. Vision test-time training (TTT) offers an alternative to fixed-weight token mixin…",
       "ai": true
     },
     {
@@ -158,24 +176,6 @@
       "date": "2026-10-04",
       "summary": "This paper presents the workflow for building an automated ArcGIS Pro tool using ArcPy to extract the Land Surface Temperature (LST) from Landsat 7, 8 and 9 datasets. The tool eliminates the need for manual band selection and repetitive ra…",
       "ai": true
-    },
-    {
-      "source": "arXiv",
-      "cat": "Standard products · L1",
-      "title": "TAR: Text Semantic Assisted Cross-modal Image Registration Framework for Optical and SAR Images",
-      "url": "https://arxiv.org/abs/2605.12064v1",
-      "date": "2026-05-12",
-      "summary": "Existing deep learning-based methods can capture shared features from optical and synthetic aperture radar (SAR) images for spatial alignment. However, optical-SAR registration remains challenging under large geometric deformations, becaus…",
-      "ai": true
-    },
-    {
-      "source": "arXiv",
-      "cat": "L2 value-added",
-      "title": "Advancing global water cycle science with the upcoming MAGIC satellite mission through data assimilation",
-      "url": "https://arxiv.org/abs/2611.15421v1",
-      "date": "2026-11-11",
-      "summary": "The GRACE and GRACE-FO missions provide unique global measurements of terrestrial water storage anomalies (TWSA) from space since 2003. However, in order to spatially downscale the GRACE/-FO resolution of 300 km further, and to vertically …",
-      "ai": false
     }
   ]
 }

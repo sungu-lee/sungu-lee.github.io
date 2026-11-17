@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T00:51:54Z",
+  "updated": "2026-11-17T03:30:26Z",
   "source": "arXiv API (cs.CV · cs.LG · eess.IV), filtered to Earth-observation context",
   "window": "last 12 months",
   "trackCounts": {
@@ -38,10 +38,66 @@
     {
       "month": "2026-05",
       "count": 76
+    },
+    {
+      "month": "2026-06",
+      "count": 58
+    },
+    {
+      "month": "2026-07",
+      "count": 57
     }
   ],
-  "count": 28,
+  "count": 26,
   "papers": [
+    {
+      "track": "vlm",
+      "title": "XLSAR-Bench: Towards Extremely Large SAR Imagery Understanding of MLLMs",
+      "authors": "La Jiang, Lingfeng Chen, Jiaqi Zhu 외 5명",
+      "url": "https://arxiv.org/abs/2611.19364v1",
+      "date": "2026-11-14",
+      "summary": "The rapid development of multimodal large language models (MLLMs) has highlighted the need for comprehensive benchmarks to assess their capabilities and limitations in remote sensing (RS). However, evaluating MLLMs in large-size synthetic aperture radar (SAR)…"
+    },
+    {
+      "track": "foundation",
+      "title": "Scaling Channel-Adaptive Self-Supervised Learning",
+      "authors": "Alice V. De Lorenci, Seungeun Yi, Theo Moutakanni 외 4명",
+      "url": "https://arxiv.org/abs/2611.18849v1",
+      "date": "2026-11-13",
+      "summary": "Recent advances in self-supervised pre-training of foundation models for natural images have made them a popular choice for various visual systems and applications. Self-supervised strategies are also promising in non-RGB scientific imaging domains such as in…"
+    },
+    {
+      "track": "vlm",
+      "title": "RAVEN-Bench: A Paired EO-IR Video QA Benchmark for Aerial Multimodal Understanding",
+      "authors": "Yu Hu, Jianyang Gu, Yue Cao 외 5명",
+      "url": "https://arxiv.org/abs/2611.18880v1",
+      "date": "2026-11-13",
+      "summary": "Multimodal large language models (MLLMs) have advanced rapidly in image and video understanding, yet their ability to reason over paired aerial electro-optical and infrared (EO-IR) videos remains poorly understood. Such video poses a harder test than standard…"
+    },
+    {
+      "track": "vlm",
+      "title": "DySENSE: Dynamic Spatiotemporal ENergy Synthesis and Emulation with Satellite Imagery",
+      "authors": "Kailai Sun, Zijie Gao, Mingyi He 외 5명",
+      "url": "https://arxiv.org/abs/2611.17878v1",
+      "date": "2026-11-13",
+      "summary": "Cities account for over two-thirds of the world's energy and more than 70% of global carbon dioxide emissions. City energy is essential for achieving the 2050 net-zero target and the UN's Sustainable Development Goals 7 and 11. Although existing studies have …"
+    },
+    {
+      "track": "ssl",
+      "title": "Few-Shot Open-Set Hyperspectral Pixel-Wise Classification with Spatial Aware Label Propagation",
+      "authors": "Matheus Pereira, Jefersson Santos, Laurent Najman",
+      "url": "https://arxiv.org/abs/2611.17974v1",
+      "date": "2026-11-13",
+      "summary": "Pixelwise classification of hyperspectral images (HSI) is a fundamental task in remote sensing, but its deployment in real-world applications is often limited by the scarcity of labeled data and the presence of unknown classes at inference time. In this work,…"
+    },
+    {
+      "track": "agentic",
+      "title": "Orbit-AWARE: From Onboard AI Deployment to Sustainable In-Orbit Intelligence",
+      "authors": "Yunxin Geng, Kaige Zhu, Tongtong Shu 외 6명",
+      "url": "https://arxiv.org/abs/2611.17689v1",
+      "date": "2026-11-13",
+      "summary": "The growing role of space computing in time-critical satellite services makes the long-term reliability of onboard artificial intelligence (AI) a mission-level requirement. Model drift can undermine this reliability through critical-observation suppression or…"
+    },
     {
       "track": "foundation",
       "title": "SpotDiff: A Plug-and-Play Framework for Zero-Shot Change Detection in Remote Sensing Imagery",
@@ -62,25 +118,17 @@
       "track": "vlm",
       "title": "Gravity and Flight: Learning to Navigate Fine-Grained Remote Sensing Scenes",
       "authors": "Yuheng Zong, Minghua Wang, Xin Zhao 외 3명",
-      "url": "https://arxiv.org/abs/2611.16408v1",
+      "url": "https://arxiv.org/abs/2611.16408v2",
       "date": "2026-11-12",
       "summary": "Vision-language models are increasingly capable, yet their reasoning in complex remote sensing scenes can remain coarse-grained and insufficiently grounded in task-relevant visual evidence. We propose Gravity and Flight (G&F), a framework for scene specializa…"
     },
     {
-      "track": "vlm",
+      "track": "agentic",
       "title": "Fine-Grained Generative Hallucination Detection and Correction for Aerial Image Captioning",
       "authors": "Debolena Basak, Somsubhra De, Maunendra Sankar Desarkar",
       "url": "https://arxiv.org/abs/2611.15809v1",
       "date": "2026-11-11",
       "summary": "Aerial imagery captured by unmanned aerial vehicles (UAVs) plays a vital role in applications such as surveillance, disaster response, and large-scale environmental monitoring. Automatic generation of textual descriptions for such imagery is essential for red…"
-    },
-    {
-      "track": "vlm",
-      "title": "RSLiveBench-UAV: A Continually Evolving Vision-Language Benchmark for Aerial Spatial Intelligence",
-      "authors": "Yue Zhou, Jiawei Liu, Jue Chen 외 9명",
-      "url": "https://arxiv.org/abs/2611.14953v1",
-      "date": "2026-11-11",
-      "summary": "Aerial spatial intelligence (ASI) requires models to understand objects and spatial relationships across changing viewpoints and scales. Evaluating these abilities as models evolve calls for fresh physical observations, yet producing new aerial spatial questi…"
     },
     {
       "track": "agentic",
@@ -115,14 +163,6 @@
       "summary": "Geospatial foundation models are pretrained on satellite and aerial imagery, but whether such an encoder beats a strong generic one for few-label land-use/land-cover mapping remains unclear, as prior comparisons rarely isolate the pretraining data. We study f…"
     },
     {
-      "track": "vlm",
-      "title": "Towards Text-Only Remote Sensing Scene Classification via Semantic Proxy",
-      "authors": "Xianping Ma, Kunlin Wu, Xiaofeng Liu 외 2명",
-      "url": "https://arxiv.org/abs/2611.13851v1",
-      "date": "2026-11-10",
-      "summary": "Remote sensing scene classification (RSSC) is traditionally formulated as a vision-centric problem, where inference relies on rich visual representations extracted from images. In this work, we revisit this assumption by introducing text-only RSSC, a new prob…"
-    },
-    {
       "track": "sar",
       "title": "RS-JEPA: Remote Sensing Joint-Embedding Predictive Architecture with Scan-Path Views for Cross-Sensor Image Retrieval",
       "authors": "Tanishq Rachamalla, Srishti Kaushik, Muhammad Attique Khan 외 2명",
@@ -139,36 +179,12 @@
       "summary": "Remote sensing increasingly captures the Earth's surface through complementary sensors such as SAR and optical, yet ground-truth annotations remain scarce, limiting supervised approaches. Self-supervised learning (SSL) addresses the label scarcity, and cross-…"
     },
     {
-      "track": "agentic",
-      "title": "DisasterAgent: An Evidence-Driven Agent for Verifiable Disaster Report Generation From Remote Sensing Imagery",
-      "authors": "Zhijian Li, Jiawei Song, Chao Ren 외 4명",
-      "url": "https://arxiv.org/abs/2611.13776v1",
-      "date": "2026-11-10",
-      "summary": "Remote sensing disaster assessment is moving from simple damage classification toward comprehensive report-level analysis. In this setting, responders need not only damage descriptions but also verifiable evidence to guide response and recovery. Recent vision…"
-    },
-    {
-      "track": "foundation",
-      "title": "National-Scale Crop Type Mapping in Morocco Using Google AlphaEarth Foundations Embeddings and the Fields of the World Field Boundary Map",
-      "authors": "Walid Elbarz, Mohamed Bourriz, Vincent Simonneaux 외 2명",
-      "url": "https://arxiv.org/abs/2611.12681v1",
-      "date": "2026-11-09",
-      "summary": "Recent geospatial foundation models have introduced a new paradigm for large-scale Earth observation by providing pretrained embedding representations that can be directly exploited for downstream tasks. In this work, we investigate the use of Google AlphaEar…"
-    },
-    {
       "track": "sar",
       "title": "Cognitive Multi-Agent Search and Rescue: Language-Grounded Hierarchical Reinforcement Learning for Collaborative Robotics",
       "authors": "Sepideh Ravanbakhsh, Hamidreza Moradi",
       "url": "https://arxiv.org/abs/2611.13161v1",
       "date": "2026-11-09",
       "summary": "Effective search and rescue (SAR) operations require autonomous systems capable of coordinating multiple heterogeneous agents, adapting to dynamic hazards, and aligning with human mission intent. Existing language-guided reinforcement learning (RL) methods pr…"
-    },
-    {
-      "track": "agentic",
-      "title": "GeoPilot: Diagnosis-Guided Interventions and Geometric Evaluation for Aerial Reconstruction",
-      "authors": "Pengyu Yin, Jie Pan, Junxiang Tan 외 3명",
-      "url": "https://arxiv.org/abs/2611.11751v1",
-      "date": "2026-11-09",
-      "summary": "When a mesh reconstructed from aerial remote-sensing imagery disagrees with reference geometry, deciding what to change requires a diagnosis of the reconstruction process. We present GeoPilot, a workflow that turns diagnostics and prior observations into exec…"
     },
     {
       "track": "restoration",
@@ -195,14 +211,6 @@
       "summary": "Speckle is an inherent characteristic of synthetic aperture radar (SAR) imagery that complicates image interpretation and the extraction of reliable information. Although deep-learning-based despeckling methods have demonstrated promising performance, their a…"
     },
     {
-      "track": "agentic",
-      "title": "EarthRecord: From Pixels to Land Change with Multimodal Agents over Four Decades of Satellite Imagery",
-      "authors": "Haoran Zhang, Huizhen Sun, Hanbin Wen 외 3명",
-      "url": "https://arxiv.org/abs/2611.12934v1",
-      "date": "2026-11-06",
-      "summary": "While multimodal agents now carry out complex data analysis with tools, their ability to turn decades of satellite imagery into reliable land-change analysis, crucial for Earth observation science, remains unmeasured. Existing benchmarks fall short: they pose…"
-    },
-    {
       "track": "sar",
       "title": "Nowcasting of Tropical Cyclone Wind Fields and Intensity from Geostationary Imagery",
       "authors": "Simon Donike, Pritthijit Nath, Cristina Radin 외 5명",
@@ -217,22 +225,6 @@
       "url": "https://arxiv.org/abs/2611.08003v1",
       "date": "2026-11-05",
       "summary": "Geospatial foundation models are a widely adopted starting point for remote sensing tasks. Most are pretrained on Sentinel-1/2 and Landsat imagery at a ground sampling distance (GSD) of 10m or coarser. Many applications instead rely on very high resolution (V…"
-    },
-    {
-      "track": "ssl",
-      "title": "CAPE-JEPA - Cross-modal Adversarial Probabilistic Embedding JEPA",
-      "authors": "Aniket Junghare, Biplab Banerjee",
-      "url": "https://arxiv.org/abs/2611.06247v1",
-      "date": "2026-11-04",
-      "summary": "Cross-modal remote sensing image retrieval (RS-CMIR) requires representations that are simultaneously modality-invariant and semantically discriminative, despite the profound physical gap between heterogeneous sensors such as Synthetic Aperture Radar (SAR) an…"
-    },
-    {
-      "track": "ssl",
-      "title": "XuanJian-DINOSAR: A SAR Foundation Model Based on Global and Local Semantic Consistency",
-      "authors": "Chunxiao Wu, Huixin Huang, Jialei Pan 외 9명",
-      "url": "https://arxiv.org/abs/2611.06105v1",
-      "date": "2026-11-04",
-      "summary": "Self-supervised pre-training on synthetic aperture radar (SAR) imagery enables transferable representations, but the optical-SAR domain gap and speckle perturbations limit representation stability. Most SAR foundation models use masked image modeling (MIM) th…"
     },
     {
       "track": "restoration",
@@ -268,8 +260,6 @@
     }
   ],
   "warnings": [
-    "volume/2026-06: HTTP 429 ",
-    "volume/2026-07: HTTP 429 ",
     "volume/2026-08: HTTP 429 ",
     "volume/2026-09: HTTP 429 ",
     "volume/2026-10: HTTP 429 "
