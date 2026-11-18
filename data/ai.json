@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17T03:30:26Z",
+  "updated": "2026-11-18T02:47:26Z",
   "source": "arXiv API (cs.CV · cs.LG · eess.IV), filtered to Earth-observation context",
   "window": "last 12 months",
   "trackCounts": {
@@ -46,10 +46,78 @@
     {
       "month": "2026-07",
       "count": 57
+    },
+    {
+      "month": "2026-08",
+      "count": 68
+    },
+    {
+      "month": "2026-09",
+      "count": 47
+    },
+    {
+      "month": "2026-10",
+      "count": 45
     }
   ],
-  "count": 26,
+  "count": 25,
   "papers": [
+    {
+      "track": "vlm",
+      "title": "Wildfire-SSR: Geolocation-Aware Multimodal Fusion for Structure-Level Wildfire Risk Assessment",
+      "authors": "Yu-Hsuan Ho, Yiming Xiao, Hao-En Lai 외 2명",
+      "url": "https://arxiv.org/abs/2611.21563v1",
+      "date": "2026-11-16",
+      "summary": "Structure-level wildfire vulnerability assessment is critical for reducing losses in wildland-urban interface communities, yet existing methods often fail to combine parcel-scale ignition pathways with community-scale geographic coverage. This study introduce…"
+    },
+    {
+      "track": "vlm",
+      "title": "Out of Sight, Into Memory: Compact Visual Latents Retain Local Evidence in Ultra-High-Resolution Remote Sensing",
+      "authors": "Meng Tang, Siyuan Du, Yuxin Liu 외 3명",
+      "url": "https://arxiv.org/abs/2611.21457v1",
+      "date": "2026-11-16",
+      "summary": "Question answering over ultra-high-resolution (UHR) remote sensing scenes poses a tension for multimodal large language models: global overviews obscure small objects and local attributes, whereas detailed crops consume substantial context. Compressing inspec…"
+    },
+    {
+      "track": "vlm",
+      "title": "PhaseCLIP: Phase-Aware Frequency-Domain Adaptation of Vision-Language Models for Few-Shot Remote-Sensing Classification",
+      "authors": "Mehmet Sergen Catal, Abdurrahman Gumus, Mehmet Zübeyir Ünlü",
+      "url": "https://arxiv.org/abs/2611.20787v1",
+      "date": "2026-11-16",
+      "summary": "Remote-sensing (RS) image scene classification aims to assign a semantic category to an overhead image, and in practice must often do so from only a handful of labelled examples, since annotation requires expert interpretation and the resulting labels transfe…"
+    },
+    {
+      "track": "restoration",
+      "title": "Rethinking Perceptual Similarity for Remote Sensing: Multi-Layer Attention Scoring and Human Preference Benchmarking",
+      "authors": "Eli Underwood, Marc Bosch, Neil Joshi 외 2명",
+      "url": "https://arxiv.org/abs/2611.21816v1",
+      "date": "2026-11-16",
+      "summary": "Perceptual similarity metrics for natural images transfer poorly to remote sensing (RS), where severe geospatial and semantic failures can remain visually plausible while still being decisively wrong for downstream use. To address this, we develop a novel hum…"
+    },
+    {
+      "track": "restoration",
+      "title": "From very fine Vertical Resolution to Range Super-Resolution on BIOMASS P-BAND SAR Data",
+      "authors": "Yanghai Yu, Stefano Tebaldini, Yang Lei 외 1명",
+      "url": "https://arxiv.org/abs/2611.21358v1",
+      "date": "2026-11-16",
+      "summary": "This paper demonstrates range super-resolution over arid regions using SAR tomography data with very fine vertical resolution from the European Space Agency's BIOMASS mission. As the first civilian spaceborne P-band SAR mission, BIOMASS is operating with a ba…"
+    },
+    {
+      "track": "restoration",
+      "title": "Model-based neural network for global floodplains analysis",
+      "authors": "Pierre Audisio, Barbara Belletti, Nelly Pustelnik",
+      "url": "https://arxiv.org/abs/2611.21146v1",
+      "date": "2026-11-16",
+      "summary": "We address the super-resolution of multispectral remote sensing imagery for long-term floodplain monitoring, enhancing Landsat acquisitions towards Sentinel-2 resolution. Exploiting the period during which both missions observed the same areas, we build DLhas…"
+    },
+    {
+      "track": "restoration",
+      "title": "STARS: Stage-Adaptive Responsibility Separation for Shadow Removal in Remote Sensing Images",
+      "authors": "Gaoliang Song, Chengjie Li, Pengju Liu 외 3명",
+      "url": "https://arxiv.org/abs/2611.20698v1",
+      "date": "2026-11-16",
+      "summary": "Shadows are a ubiquitous radiative attenuation phenomenon in remote sensing images and can severely affect high-resolution remote sensing interpretation tasks. In shadow removal, although introducing a mask prior provides explicit positional information for t…"
+    },
     {
       "track": "vlm",
       "title": "XLSAR-Bench: Towards Extremely Large SAR Imagery Understanding of MLLMs",
@@ -73,14 +141,6 @@
       "url": "https://arxiv.org/abs/2611.18880v1",
       "date": "2026-11-13",
       "summary": "Multimodal large language models (MLLMs) have advanced rapidly in image and video understanding, yet their ability to reason over paired aerial electro-optical and infrared (EO-IR) videos remains poorly understood. Such video poses a harder test than standard…"
-    },
-    {
-      "track": "vlm",
-      "title": "DySENSE: Dynamic Spatiotemporal ENergy Synthesis and Emulation with Satellite Imagery",
-      "authors": "Kailai Sun, Zijie Gao, Mingyi He 외 5명",
-      "url": "https://arxiv.org/abs/2611.17878v1",
-      "date": "2026-11-13",
-      "summary": "Cities account for over two-thirds of the world's energy and more than 70% of global carbon dioxide emissions. City energy is essential for achieving the 2050 net-zero target and the UN's Sustainable Development Goals 7 and 11. Although existing studies have …"
     },
     {
       "track": "ssl",
@@ -107,36 +167,12 @@
       "summary": "Remote sensing change detection usually relies on large collections of temporally aligned, pixel-level annotations, which limits its scalability across regions, imaging platforms and application domains. Recent zero-shot approaches reduce the need for supervi…"
     },
     {
-      "track": "vlm",
-      "title": "RICapBench: A Fine-Grained Visual Understanding Benchmark Dataset for Vision-Language Models in Remote Sensing",
-      "authors": "Xue Wang, Yubin Xu, Kun Tan",
-      "url": "https://arxiv.org/abs/2611.16413v1",
-      "date": "2026-11-12",
-      "summary": "Advances in vision-language models (VLMs) have improved remote sensing image analysis and supported geospatial decision-making. However, fine-grained understanding of remote sensing imagery remains challenging for VLMs. Large variations in object scale, compl…"
-    },
-    {
-      "track": "vlm",
-      "title": "Gravity and Flight: Learning to Navigate Fine-Grained Remote Sensing Scenes",
-      "authors": "Yuheng Zong, Minghua Wang, Xin Zhao 외 3명",
-      "url": "https://arxiv.org/abs/2611.16408v2",
-      "date": "2026-11-12",
-      "summary": "Vision-language models are increasingly capable, yet their reasoning in complex remote sensing scenes can remain coarse-grained and insufficiently grounded in task-relevant visual evidence. We propose Gravity and Flight (G&F), a framework for scene specializa…"
-    },
-    {
       "track": "agentic",
       "title": "Fine-Grained Generative Hallucination Detection and Correction for Aerial Image Captioning",
       "authors": "Debolena Basak, Somsubhra De, Maunendra Sankar Desarkar",
       "url": "https://arxiv.org/abs/2611.15809v1",
       "date": "2026-11-11",
       "summary": "Aerial imagery captured by unmanned aerial vehicles (UAVs) plays a vital role in applications such as surveillance, disaster response, and large-scale environmental monitoring. Automatic generation of textual descriptions for such imagery is essential for red…"
-    },
-    {
-      "track": "agentic",
-      "title": "SkillEarth: Teaching General-Purpose Agents to Act on Earth via Skill Evolution",
-      "authors": "Haojun Tang, Wenda Zhao, Xiang Zhou 외 3명",
-      "url": "https://arxiv.org/abs/2611.15481v1",
-      "date": "2026-11-11",
-      "summary": "Recently developed remote sensing (RS) agents execute real-world tasks with complex workflows through multi-step tool invocation. These agents, however, typically rely on predefined expertise or parameter updates. They thus require updating expert knowledge o…"
     },
     {
       "track": "foundation",
@@ -225,43 +261,7 @@
       "url": "https://arxiv.org/abs/2611.08003v1",
       "date": "2026-11-05",
       "summary": "Geospatial foundation models are a widely adopted starting point for remote sensing tasks. Most are pretrained on Sentinel-1/2 and Landsat imagery at a ground sampling distance (GSD) of 10m or coarser. Many applications instead rely on very high resolution (V…"
-    },
-    {
-      "track": "restoration",
-      "title": "TOP: Transmission-Oriented Remote Sensing Pansharpening",
-      "authors": "Zi-Han Cao, Jing-Ze Liang, Shao-Jie Wu 외 3명",
-      "url": "https://arxiv.org/abs/2611.06430v1",
-      "date": "2026-11-04",
-      "summary": "Pansharpening has been extensively studied as a fundamental image fusion task in remote sensing. However, most existing methods focus on improving fusion quality under the implicit assumption that high-resolution observations have already been fully downlinke…"
-    },
-    {
-      "track": "restoration",
-      "title": "CARM: Conformal Adaptive Risk Masking for Reliable Scientific Super-Resolution",
-      "authors": "Guangtao Zhang, Haonan Wu, Junxuan Gao 외 5명",
-      "url": "https://arxiv.org/abs/2611.06151v1",
-      "date": "2026-11-04",
-      "summary": "Deep learning-based super-resolution (SR) can reconstruct fine-scale Earth-observation fields from coarse observations, but reconstruction accuracy alone does not provide a calibrated rule for identifying reliable spatial regions. Conformal Mask Calibration (…"
-    },
-    {
-      "track": "restoration",
-      "title": "ReTailor: A Residual Feature Tailoring Framework for Real-Time Cross-Sensor Pansharpening Adaptation",
-      "authors": "Jing-Ze Liang, Wei-Jie Xiao, Zi-Han Cao 외 3명",
-      "url": "https://arxiv.org/abs/2611.05811v1",
-      "date": "2026-11-04",
-      "summary": "Recent pansharpening models achieve strong fusion performance on trained sensors, yet often generalize poorly to unseen sensors. Existing cross-sensor adaptation is limited by target-sensor retraining, which requires target-sensor training pairs and a dedicat…"
-    },
-    {
-      "track": "restoration",
-      "title": "KAUSTics-Net: Diffusion-Based Through-Water UAV Restoration with a Semi-Synthetic Dataset",
-      "authors": "Dario Scilla, Omar A. Lopez, Kasper Johansen 외 2명",
-      "url": "https://arxiv.org/abs/2611.03120v1",
-      "date": "2026-11-02",
-      "summary": "Accurate mapping of shallow-water environments using unmanned aerial vehicle (UAV) imagery is challenged by water-induced distortions, including refraction, caustics, and wavelength-dependent attenuation. The scarcity of paired distorted and reference imagery…"
     }
   ],
-  "warnings": [
-    "volume/2026-08: HTTP 429 ",
-    "volume/2026-09: HTTP 429 ",
-    "volume/2026-10: HTTP 429 "
-  ]
+  "warnings": []
 }

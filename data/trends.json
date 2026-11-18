@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-17T03:29:25Z",
+  "updated": "2026-11-18T02:46:26Z",
   "sources": [
     "arXiv"
   ],
   "count": 18,
-  "aiCount": 18,
+  "aiCount": 17,
   "categories": [
     "High-resolution EO",
     "Standard products · L1",
@@ -17,9 +17,27 @@
   "items": [
     {
       "source": "arXiv",
+      "cat": "Optical · multispectral",
+      "title": "Model-based neural network for global floodplains analysis",
+      "url": "https://arxiv.org/abs/2611.21146v1",
+      "date": "2026-11-16",
+      "summary": "We address the super-resolution of multispectral remote sensing imagery for long-term floodplain monitoring, enhancing Landsat acquisitions towards Sentinel-2 resolution. Exploiting the period during which both missions observed the same a…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "Multi-sensor fusion",
+      "title": "Wildfire-SSR: Geolocation-Aware Multimodal Fusion for Structure-Level Wildfire Risk Assessment",
+      "url": "https://arxiv.org/abs/2611.21563v1",
+      "date": "2026-11-16",
+      "summary": "Structure-level wildfire vulnerability assessment is critical for reducing losses in wildland-urban interface communities, yet existing methods often fail to combine parcel-scale ignition pathways with community-scale geographic coverage. …",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
       "cat": "High-resolution EO",
       "title": "An AI-enabled high-resolution chlorophyll-a forecasting model that outperforms the operational global biogeochemical system",
-      "url": "https://arxiv.org/abs/2611.17704v1",
+      "url": "https://arxiv.org/abs/2611.17704v2",
       "date": "2026-11-13",
       "summary": "Surface chlorophyll-a concentration is a key indicator of marine phytoplankton variability, and short-term forecasts of its distribution provide advance information for marine ecosystem monitoring and management. However, interactions betw…",
       "ai": true
@@ -80,25 +98,7 @@
     },
     {
       "source": "arXiv",
-      "cat": "Multi-sensor fusion",
-      "title": "DisasterAgent: An Evidence-Driven Agent for Verifiable Disaster Report Generation From Remote Sensing Imagery",
-      "url": "https://arxiv.org/abs/2611.13776v1",
-      "date": "2026-11-10",
-      "summary": "Remote sensing disaster assessment is moving from simple damage classification toward comprehensive report-level analysis. In this setting, responders need not only damage descriptions but also verifiable evidence to guide response and rec…",
-      "ai": true
-    },
-    {
-      "source": "arXiv",
-      "cat": "High-resolution EO",
-      "title": "GeoScope: Training-Free Program Execution beyond the Counting Horizon for Ultra-High-Resolution Remote Sensing Question Answering",
-      "url": "https://arxiv.org/abs/2611.12699v1",
-      "date": "2026-11-09",
-      "summary": "In ultra-high-resolution (UHR) remote sensing images, the objects that questions count in a region or relate by direction often span only a few pixels. Existing methods mainly decide where a vision-language model (VLM) should look and trus…",
-      "ai": true
-    },
-    {
-      "source": "arXiv",
-      "cat": "High-resolution EO",
+      "cat": "Optical · multispectral",
       "title": "SpatialSR: Spatial Resolution-Centric Pipeline for Arbitrary-Scale Remote Sensing Super-Resolution",
       "url": "https://arxiv.org/abs/2611.13046v1",
       "date": "2026-11-09",
@@ -112,24 +112,6 @@
       "url": "https://arxiv.org/abs/2611.10091v2",
       "date": "2026-11-06",
       "summary": "Speckle is an inherent characteristic of synthetic aperture radar (SAR) imagery that complicates image interpretation and the extraction of reliable information. Although deep-learning-based despeckling methods have demonstrated promising …",
-      "ai": true
-    },
-    {
-      "source": "arXiv",
-      "cat": "Optical · multispectral",
-      "title": "CAPE-JEPA - Cross-modal Adversarial Probabilistic Embedding JEPA",
-      "url": "https://arxiv.org/abs/2611.06247v1",
-      "date": "2026-11-04",
-      "summary": "Cross-modal remote sensing image retrieval (RS-CMIR) requires representations that are simultaneously modality-invariant and semantically discriminative, despite the profound physical gap between heterogeneous sensors such as Synthetic Ape…",
-      "ai": true
-    },
-    {
-      "source": "arXiv",
-      "cat": "Optical · multispectral",
-      "title": "CARM: Conformal Adaptive Risk Masking for Reliable Scientific Super-Resolution",
-      "url": "https://arxiv.org/abs/2611.06151v1",
-      "date": "2026-11-04",
-      "summary": "Deep learning-based super-resolution (SR) can reconstruct fine-scale Earth-observation fields from coarse observations, but reconstruction accuracy alone does not provide a calibrated rule for identifying reliable spatial regions. Conforma…",
       "ai": true
     },
     {
@@ -176,6 +158,24 @@
       "date": "2026-10-04",
       "summary": "This paper presents the workflow for building an automated ArcGIS Pro tool using ArcPy to extract the Land Surface Temperature (LST) from Landsat 7, 8 and 9 datasets. The tool eliminates the need for manual band selection and repetitive ra…",
       "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "Standard products · L1",
+      "title": "TAR: Text Semantic Assisted Cross-modal Image Registration Framework for Optical and SAR Images",
+      "url": "https://arxiv.org/abs/2605.12064v1",
+      "date": "2026-05-12",
+      "summary": "Existing deep learning-based methods can capture shared features from optical and synthetic aperture radar (SAR) images for spatial alignment. However, optical-SAR registration remains challenging under large geometric deformations, becaus…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "High-resolution EO",
+      "title": "Out of Sight, Into Memory: Compact Visual Latents Retain Local Evidence in Ultra-High-Resolution Remote Sensing",
+      "url": "https://arxiv.org/abs/2611.21457v1",
+      "date": "2026-11-16",
+      "summary": "Question answering over ultra-high-resolution (UHR) remote sensing scenes poses a tension for multimodal large language models: global overviews obscure small objects and local attributes, whereas detailed crops consume substantial context…",
+      "ai": false
     }
   ]
 }
