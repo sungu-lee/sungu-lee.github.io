@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-18T02:46:26Z",
+  "updated": "2026-11-19T02:21:50Z",
   "sources": [
     "arXiv"
   ],
   "count": 18,
-  "aiCount": 17,
+  "aiCount": 14,
   "categories": [
     "High-resolution EO",
     "Standard products · L1",
@@ -15,6 +15,15 @@
     "Multi-sensor fusion"
   ],
   "items": [
+    {
+      "source": "arXiv",
+      "cat": "Multi-sensor fusion",
+      "title": "SARVIA: Fast-Adapting the Strong SAR Foundation Models That Are Already in Your MLLMs",
+      "url": "https://arxiv.org/abs/2611.22273v1",
+      "date": "2026-11-17",
+      "summary": "Synthetic aperture radar (SAR) foundation models provide transferable representations for diverse perception tasks in all-weather Earth observation. However, their development often relies on costly large-scale SAR pretraining, raising the…",
+      "ai": true
+    },
     {
       "source": "arXiv",
       "cat": "Optical · multispectral",
@@ -71,15 +80,6 @@
     },
     {
       "source": "arXiv",
-      "cat": "High-resolution EO",
-      "title": "Augmenting Galaxy Catalogues using Machine Learning in the FLAMINGO Simulations",
-      "url": "https://arxiv.org/abs/2611.17425v1",
-      "date": "2026-11-12",
-      "summary": "Hydrodynamic simulations are instrumental in the analysis of observations such as galaxy clustering used for the estimation of cosmological parameters. However, for these purposes, the simulations need both a large box size and high resolu…",
-      "ai": true
-    },
-    {
-      "source": "arXiv",
       "cat": "L2 value-added",
       "title": "DailyWildfireCAN: A Dataset and Benchmark for Next-Day Wildfire Spread Prediction in Canada",
       "url": "https://arxiv.org/abs/2611.14207v1",
@@ -89,38 +89,11 @@
     },
     {
       "source": "arXiv",
-      "cat": "Optical · multispectral",
-      "title": "RS-JEPA: Remote Sensing Joint-Embedding Predictive Architecture with Scan-Path Views for Cross-Sensor Image Retrieval",
-      "url": "https://arxiv.org/abs/2611.14496v1",
-      "date": "2026-11-10",
-      "summary": "Cross-sensor remote sensing image retrieval aims to find scenes with the same content across heterogeneous sensors, such as SAR and optical or panchromatic (PAN) and multispectral (MS) imagery, without manual labels. Existing self-supervis…",
-      "ai": true
-    },
-    {
-      "source": "arXiv",
-      "cat": "Optical · multispectral",
-      "title": "SpatialSR: Spatial Resolution-Centric Pipeline for Arbitrary-Scale Remote Sensing Super-Resolution",
-      "url": "https://arxiv.org/abs/2611.13046v1",
-      "date": "2026-11-09",
-      "summary": "Although remote sensing image arbitrary-scale super-resolution (RSI-ASSR) methods support reconstruction at arbitrary or continuous scales, they predominantly condition on the relative scale factor and have not sufficiently investigated th…",
-      "ai": true
-    },
-    {
-      "source": "arXiv",
       "cat": "SAR",
       "title": "Polarization Aware Deep Learning Framework for SAR Despeckling",
       "url": "https://arxiv.org/abs/2611.10091v2",
       "date": "2026-11-06",
       "summary": "Speckle is an inherent characteristic of synthetic aperture radar (SAR) imagery that complicates image interpretation and the extraction of reliable information. Although deep-learning-based despeckling methods have demonstrated promising …",
-      "ai": true
-    },
-    {
-      "source": "arXiv",
-      "cat": "Hyperspectral",
-      "title": "Homology Features for X-Ray Hyperspectral Images Segmentation",
-      "url": "https://arxiv.org/abs/2611.06230v1",
-      "date": "2026-11-04",
-      "summary": "Characterizing Multi-Energy X-ray Transmission (XRT) hyperspectral images presents significant challenges for traditional classification frameworks due to high-dimensional redundancy and non-linear spectral overlaps. Although manifold lear…",
       "ai": true
     },
     {
@@ -171,10 +144,37 @@
     {
       "source": "arXiv",
       "cat": "High-resolution EO",
-      "title": "Out of Sight, Into Memory: Compact Visual Latents Retain Local Evidence in Ultra-High-Resolution Remote Sensing",
-      "url": "https://arxiv.org/abs/2611.21457v1",
-      "date": "2026-11-16",
-      "summary": "Question answering over ultra-high-resolution (UHR) remote sensing scenes poses a tension for multimodal large language models: global overviews obscure small objects and local attributes, whereas detailed crops consume substantial context…",
+      "title": "Zippers and Twisters II: The lopsidedness of satellite systems around local massive galaxies emerges from a shifting cosmic web landscape",
+      "url": "https://arxiv.org/abs/2611.23849v1",
+      "date": "2026-11-18",
+      "summary": "We investigate the role of the cosmic web on the origin and strength of lopsidedness in the distributions of luminous dwarf satellites around massive galaxies analogs in the high-resolution hydrodynamic simulation NewHorizon. Using common …",
+      "ai": false
+    },
+    {
+      "source": "arXiv",
+      "cat": "Multi-sensor fusion",
+      "title": "Developing a Subdistrict-Level Economic Progress Index Using Geospatial Data",
+      "url": "https://arxiv.org/abs/2611.23798v1",
+      "date": "2026-11-18",
+      "summary": "This paper develops an Economic Progress Index (EPI), a composite measure built from Earth Observation (EO) and open geospatial data with unsupervised Principal Component Analysis (PCA) weighting. The index captures the observable producti…",
+      "ai": false
+    },
+    {
+      "source": "arXiv",
+      "cat": "High-resolution EO",
+      "title": "You Only Encode Once: Sub-Pixel-Shifted Frames for Arbitrary-Scale Remote Sensing Super-Resolution with 2D Gaussian Splatting",
+      "url": "https://arxiv.org/abs/2611.22898v1",
+      "date": "2026-11-17",
+      "summary": "Arbitrary-scale super-resolution (ASSR) of remote sensing images remains challenging due to the limited high-frequency information in a single low-resolution (LR) observation. While multi-frame SR can exploit complementary sub-pixel inform…",
+      "ai": false
+    },
+    {
+      "source": "arXiv",
+      "cat": "High-resolution EO",
+      "title": "Sub-Meter Canopy Height Synthesis from Sentinel-2 via Anchored Residual Flow",
+      "url": "https://arxiv.org/abs/2611.22636v1",
+      "date": "2026-11-17",
+      "summary": "Canopy height models (CHMs) - per-pixel maps of vegetation top height - are essential for forest carbon accounting, wildfire fuel mapping, and tree-level ecology, yet sub-meter CHMs require airborne LiDAR refreshed on multi-year national c…",
       "ai": false
     }
   ]
