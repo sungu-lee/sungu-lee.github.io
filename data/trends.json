@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-20T02:06:52Z",
+  "updated": "2026-11-21T02:01:31Z",
   "sources": [
     "arXiv"
   ],
-  "count": 6,
-  "aiCount": 2,
+  "count": 18,
+  "aiCount": 13,
   "categories": [
     "High-resolution EO",
     "Standard products · L1",
@@ -17,25 +17,142 @@
   "items": [
     {
       "source": "arXiv",
-      "cat": "Multi-sensor fusion",
-      "title": "SARVIA: Fast-Adapting the Strong SAR Foundation Models That Are Already in Your MLLMs",
-      "url": "https://arxiv.org/abs/2611.22273v1",
-      "date": "2026-11-17",
-      "summary": "Synthetic aperture radar (SAR) foundation models provide transferable representations for diverse perception tasks in all-weather Earth observation. However, their development often relies on costly large-scale SAR pretraining, raising the…",
+      "cat": "High-resolution EO",
+      "title": "Fusing Multimodal CNN Features with Structurally-Masked Transformers for Hierarchical Sub-Pixel Tree Species Mapping",
+      "url": "https://arxiv.org/abs/2611.25824v1",
+      "date": "2026-11-19",
+      "summary": "Precise forest species mapping using spaceborne hyperspectral data is challenging due to high spectral similarity and the inherent sub-pixel heterogeneity of natural forest stands. While traditional deep learning models exploit spatial con…",
       "ai": true
     },
     {
       "source": "arXiv",
-      "cat": "Multi-sensor fusion",
-      "title": "Wildfire-SSR: Geolocation-Aware Multimodal Fusion for Structure-Level Wildfire Risk Assessment",
-      "url": "https://arxiv.org/abs/2611.21563v1",
+      "cat": "Hyperspectral",
+      "title": "Synthesizing hyperspectral Data using generative Models to train spectral Unmixing Methods for low-cost Crop Residue Cover Mapping",
+      "url": "https://arxiv.org/abs/2611.24827v1",
+      "date": "2026-11-18",
+      "summary": "The spectral range of the Field Imaging Nanosatellite for Crop residue Hyperspectral Mapping (FINCH), developed by the University of Toronto Aerospace Team's Space System Division, poses significant challenges for hyperspectral unmixing to…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "Optical · multispectral",
+      "title": "Model-based neural network for global floodplains analysis",
+      "url": "https://arxiv.org/abs/2611.21146v1",
       "date": "2026-11-16",
-      "summary": "Structure-level wildfire vulnerability assessment is critical for reducing losses in wildland-urban interface communities, yet existing methods often fail to combine parcel-scale ignition pathways with community-scale geographic coverage. …",
+      "summary": "We address the super-resolution of multispectral remote sensing imagery for long-term floodplain monitoring, enhancing Landsat acquisitions towards Sentinel-2 resolution. Exploiting the period during which both missions observed the same a…",
       "ai": true
     },
     {
       "source": "arXiv",
-      "cat": "Multi-sensor fusion",
+      "cat": "L2 value-added",
+      "title": "Lens: Training-Free Semantic Search for Cross-Tile Object and Scene Retrieval in Satellite Imagery",
+      "url": "https://arxiv.org/abs/2611.18251v1",
+      "date": "2026-11-13",
+      "summary": "We developed Lens, a training-free system for semantic object and scene search across large satellite mosaics that requires no detector trained for the class of interest. Lens represents each tile with a frozen, self-supervised vision tran…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "Hyperspectral",
+      "title": "Few-Shot Open-Set Hyperspectral Pixel-Wise Classification with Spatial Aware Label Propagation",
+      "url": "https://arxiv.org/abs/2611.17974v1",
+      "date": "2026-11-13",
+      "summary": "Pixelwise classification of hyperspectral images (HSI) is a fundamental task in remote sensing, but its deployment in real-world applications is often limited by the scarcity of labeled data and the presence of unknown classes at inference…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "Hyperspectral",
+      "title": "nnAEU: a Simple and Efficient CNN-Autoencoder for Hyperspectral Unmixing",
+      "url": "https://arxiv.org/abs/2611.17956v1",
+      "date": "2026-11-13",
+      "summary": "Deep learning-based hyperspectral unmixing (HSU) has followed a trajectory of increasing architectural complexity, from simple autoencoders to transformers and, most recently, Mamba-based models, each claiming to advance the state of the a…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "L2 value-added",
+      "title": "DailyWildfireCAN: A Dataset and Benchmark for Next-Day Wildfire Spread Prediction in Canada",
+      "url": "https://arxiv.org/abs/2611.14207v2",
+      "date": "2026-11-10",
+      "summary": "Wildfires represent a critical ecological and socio-economic challenge in Canada, where vast boreal forests and a warming climate have amplified the frequency and severity of extreme fire seasons. Predicting next-day wildfire spread can su…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "SAR",
+      "title": "Polarization Aware Deep Learning Framework for SAR Despeckling",
+      "url": "https://arxiv.org/abs/2611.10091v2",
+      "date": "2026-11-06",
+      "summary": "Speckle is an inherent characteristic of synthetic aperture radar (SAR) imagery that complicates image interpretation and the extraction of reliable information. Although deep-learning-based despeckling methods have demonstrated promising …",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "SAR",
+      "title": "SAR-TS-BERT: Physics-Guided Self-Supervised Pre-Training With Polarimetric Features for SAR Time-Series Crop Classification",
+      "url": "https://arxiv.org/abs/2610.41728v1",
+      "date": "2026-10-30",
+      "summary": "Multitemporal synthetic aperture radar (SAR) imagery provides continuous, cloud-free observations of crop phenology for agricultural monitoring in cloudy and rainy regions, yet high-accuracy classification typically requires extensive labe…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "SAR",
+      "title": "Preserving the Manifold: Frozen Expert Alignment for Label-Efficient SAR Scene Understanding",
+      "url": "https://arxiv.org/abs/2610.25429v1",
+      "date": "2026-10-18",
+      "summary": "Cross-modal alignment of synthetic aperture radar (SAR) imagery to natural language is constrained by two distinct failures. The first is modality mismatch: text encoders pre-trained on optical imagery, such as CLIP, cannot be efficiently …",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "Standard products · L1",
+      "title": "Multimodal Remote Sensing Image Registration: A Comprehensive Review, Challenges and Prospects",
+      "url": "https://arxiv.org/abs/2610.11176v1",
+      "date": "2026-10-08",
+      "summary": "Multimodal remote sensing image registration is a crucial prerequisite for the collaborative processing and downstream application of remote sensing data, such as image fusion, change detection, and target recognition. However, significant…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "Standard products · L1",
+      "title": "A Framework for Automated Multi-Source Satellite Data Analytics and LLM-Based Report Generation",
+      "url": "https://arxiv.org/abs/2610.05625v2",
+      "date": "2026-10-04",
+      "summary": "This paper presents the workflow for building an automated ArcGIS Pro tool using ArcPy to extract the Land Surface Temperature (LST) from Landsat 7, 8 and 9 datasets. The tool eliminates the need for manual band selection and repetitive ra…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "Standard products · L1",
+      "title": "TAR: Text Semantic Assisted Cross-modal Image Registration Framework for Optical and SAR Images",
+      "url": "https://arxiv.org/abs/2605.12064v1",
+      "date": "2026-05-12",
+      "summary": "Existing deep learning-based methods can capture shared features from optical and synthetic aperture radar (SAR) images for spatial alignment. However, optical-SAR registration remains challenging under large geometric deformations, becaus…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "High-resolution EO",
+      "title": "Characterization of the $b$-anisotropy for axisymmetric early-type galaxies in TNG50",
+      "url": "https://arxiv.org/abs/2611.24550v1",
+      "date": "2026-11-18",
+      "summary": "High-quality observations reveal that internal dynamics of axisymmetric ETGs can be more complicated than commonly adopted in modelizations based on the Jeans equations (JEs), with the identity of the radial and vertical velocity dispersio…",
+      "ai": false
+    },
+    {
+      "source": "arXiv",
+      "cat": "High-resolution EO",
+      "title": "Zippers and Twisters II: The lopsidedness of satellite systems around local massive galaxies emerges from a shifting cosmic web landscape",
+      "url": "https://arxiv.org/abs/2611.23849v1",
+      "date": "2026-11-18",
+      "summary": "We investigate the role of the cosmic web on the origin and strength of lopsidedness in the distributions of luminous dwarf satellites around massive galaxies analogs in the high-resolution hydrodynamic simulation NewHorizon. Using common …",
+      "ai": false
+    },
+    {
+      "source": "arXiv",
+      "cat": "Hyperspectral",
       "title": "Benchmarking Reasoning Reliability,Prior_Evidence Contrast,and Spectral Discrimination in Remote-Sensing Geological Image Interpretation",
       "url": "https://arxiv.org/abs/2611.24068v1",
       "date": "2026-11-18",
@@ -44,29 +161,20 @@
     },
     {
       "source": "arXiv",
-      "cat": "Multi-sensor fusion",
-      "title": "Developing a Subdistrict-Level Economic Progress Index Using Geospatial Data",
-      "url": "https://arxiv.org/abs/2611.23798v1",
-      "date": "2026-11-18",
-      "summary": "This paper develops an Economic Progress Index (EPI), a composite measure built from Earth Observation (EO) and open geospatial data with unsupervised Principal Component Analysis (PCA) weighting. The index captures the observable producti…",
+      "cat": "High-resolution EO",
+      "title": "You Only Encode Once: Sub-Pixel-Shifted Frames for Arbitrary-Scale Remote Sensing Super-Resolution with 2D Gaussian Splatting",
+      "url": "https://arxiv.org/abs/2611.22898v1",
+      "date": "2026-11-17",
+      "summary": "Arbitrary-scale super-resolution (ASSR) of remote sensing images remains challenging due to the limited high-frequency information in a single low-resolution (LR) observation. While multi-frame SR can exploit complementary sub-pixel inform…",
       "ai": false
     },
     {
       "source": "arXiv",
-      "cat": "Multi-sensor fusion",
-      "title": "Out of Sight, Into Memory: Compact Visual Latents Retain Local Evidence in Ultra-High-Resolution Remote Sensing",
-      "url": "https://arxiv.org/abs/2611.21457v1",
-      "date": "2026-11-16",
-      "summary": "Question answering over ultra-high-resolution (UHR) remote sensing scenes poses a tension for multimodal large language models: global overviews obscure small objects and local attributes, whereas detailed crops consume substantial context…",
-      "ai": false
-    },
-    {
-      "source": "arXiv",
-      "cat": "Multi-sensor fusion",
-      "title": "XLSAR-Bench: Towards Extremely Large SAR Imagery Understanding of MLLMs",
-      "url": "https://arxiv.org/abs/2611.19364v1",
-      "date": "2026-11-14",
-      "summary": "The rapid development of multimodal large language models (MLLMs) has highlighted the need for comprehensive benchmarks to assess their capabilities and limitations in remote sensing (RS). However, evaluating MLLMs in large-size synthetic …",
+      "cat": "High-resolution EO",
+      "title": "Sub-Meter Canopy Height Synthesis from Sentinel-2 via Anchored Residual Flow",
+      "url": "https://arxiv.org/abs/2611.22636v1",
+      "date": "2026-11-17",
+      "summary": "Canopy height models (CHMs) - per-pixel maps of vegetation top height - are essential for forest carbon accounting, wildfire fuel mapping, and tree-level ecology, yet sub-meter CHMs require airborne LiDAR refreshed on multi-year national c…",
       "ai": false
     }
   ]
