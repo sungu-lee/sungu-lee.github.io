@@ -1,183 +1,48 @@
 {
-  "updated": "2026-11-22T01:09:15Z",
+  "updated": "2026-11-23T01:33:33Z",
   "source": "arXiv API (cs.CV · cs.LG · eess.IV), filtered to Earth-observation context",
   "window": "last 12 months",
   "trackCounts": {
-    "foundation": 5,
-    "vlm": 5,
-    "sar": 5,
+    "foundation": 0,
+    "vlm": 0,
+    "sar": 0,
     "ssl": 0,
     "agentic": 0,
     "restoration": 0
   },
   "volume": [
     {
-      "month": "2025-12",
-      "count": null
-    },
-    {
-      "month": "2026-01",
-      "count": null
-    },
-    {
-      "month": "2026-02",
-      "count": 46
-    },
-    {
       "month": "2026-03",
       "count": 78
     },
     {
-      "month": "2026-04",
-      "count": 66
-    },
-    {
-      "month": "2026-05",
-      "count": 76
-    },
-    {
       "month": "2026-06",
-      "count": 58
-    },
-    {
-      "month": "2026-07",
-      "count": 57
-    },
-    {
-      "month": "2026-08",
-      "count": 68
+      "count": null
     },
     {
       "month": "2026-09",
-      "count": 47
-    },
-    {
-      "month": "2026-10",
       "count": null
     }
   ],
-  "count": 14,
-  "papers": [
-    {
-      "track": "vlm",
-      "title": "RemoteVLPG: How to Obtain a Specific VLM for Language-Guided Path Generation on Remote Sensing Images?",
-      "authors": "Junzhe Dang, Mengmeng Zhang, Yuxiang Zhang 외 1명",
-      "url": "https://arxiv.org/abs/2611.25458v1",
-      "date": "2026-11-19",
-      "summary": "We study how to obtain a task-specific Vision-Language Model (VLM) for language-guided path generation between start and end points on remote sensing images. We explore this question from three aspects. First, we implement three widely used architectural appr…"
-    },
-    {
-      "track": "vlm",
-      "title": "Benchmarking Reasoning Reliability,Prior_Evidence Contrast,and Spectral Discrimination in Remote-Sensing Geological Image Interpretation",
-      "authors": "Jun Wang, Fengpeng Li, Wei Han 외 6명",
-      "url": "https://arxiv.org/abs/2611.24068v1",
-      "date": "2026-11-18",
-      "summary": "Reliable lithology interpretation requires accurate geological recognition and reasoning grounded in visual evidence. Although Multimodal Large Language Models show promise in remote sensing, their reliability in geological interpretation remains unclear. We …"
-    },
-    {
-      "track": "foundation",
-      "title": "DARWIN: a Geospatial Foundation Model for Marine Intelligence",
-      "authors": "Coen van den Elsen, Laurens Geffert",
-      "url": "https://arxiv.org/abs/2611.22496v1",
-      "date": "2026-11-17",
-      "summary": "We present DARWIN, a geospatial foundation model for marine intelligence. Recent Earth-observation foundation models have concentrated on terrestrial domains. The marine realm poses distinct challenges: missingness, multi-modal physical and biogeochemical var…"
-    },
-    {
-      "track": "foundation",
-      "title": "SARVIA: Fast-Adapting the Strong SAR Foundation Models That Are Already in Your MLLMs",
-      "authors": "Yuxuan Li, Zichen Tian, Qianru Sun",
-      "url": "https://arxiv.org/abs/2611.22273v1",
-      "date": "2026-11-17",
-      "summary": "Synthetic aperture radar (SAR) foundation models provide transferable representations for diverse perception tasks in all-weather Earth observation. However, their development often relies on costly large-scale SAR pretraining, raising the question of whether…"
-    },
-    {
-      "track": "vlm",
-      "title": "Wildfire-SSR: Geolocation-Aware Multimodal Fusion for Structure-Level Wildfire Risk Assessment",
-      "authors": "Yu-Hsuan Ho, Yiming Xiao, Hao-En Lai 외 2명",
-      "url": "https://arxiv.org/abs/2611.21563v1",
-      "date": "2026-11-16",
-      "summary": "Structure-level wildfire vulnerability assessment is critical for reducing losses in wildland-urban interface communities, yet existing methods often fail to combine parcel-scale ignition pathways with community-scale geographic coverage. This study introduce…"
-    },
-    {
-      "track": "vlm",
-      "title": "Out of Sight, Into Memory: Compact Visual Latents Retain Local Evidence in Ultra-High-Resolution Remote Sensing",
-      "authors": "Meng Tang, Siyuan Du, Yuxin Liu 외 3명",
-      "url": "https://arxiv.org/abs/2611.21457v1",
-      "date": "2026-11-16",
-      "summary": "Question answering over ultra-high-resolution (UHR) remote sensing scenes poses a tension for multimodal large language models: global overviews obscure small objects and local attributes, whereas detailed crops consume substantial context. Compressing inspec…"
-    },
-    {
-      "track": "foundation",
-      "title": "Scaling Channel-Adaptive Self-Supervised Learning",
-      "authors": "Alice V. De Lorenci, Seungeun Yi, Theo Moutakanni 외 4명",
-      "url": "https://arxiv.org/abs/2611.18849v1",
-      "date": "2026-11-13",
-      "summary": "Recent advances in self-supervised pre-training of foundation models for natural images have made them a popular choice for various visual systems and applications. Self-supervised strategies are also promising in non-RGB scientific imaging domains such as in…"
-    },
-    {
-      "track": "foundation",
-      "title": "SpotDiff: A Plug-and-Play Framework for Zero-Shot Change Detection in Remote Sensing Imagery",
-      "authors": "Anit Upadhyaya, Ata Akbari Asanjan, Chaitanya Jalluri 외 2명",
-      "url": "https://arxiv.org/abs/2611.17172v1",
-      "date": "2026-11-12",
-      "summary": "Remote sensing change detection usually relies on large collections of temporally aligned, pixel-level annotations, which limits its scalability across regions, imaging platforms and application domains. Recent zero-shot approaches reduce the need for supervi…"
-    },
-    {
-      "track": "foundation",
-      "title": "UniFlow-RS: Unified Generative Prediction for Heterogeneous Remote-Sensing Tasks",
-      "authors": "Jianlong He, Liang Liao, Jing Xiao 외 2명",
-      "url": "https://arxiv.org/abs/2611.14281v2",
-      "date": "2026-11-10",
-      "summary": "Remote-sensing foundation models increasingly unify representations across sensing modalities and downstream tasks, yet their prediction mechanisms remain largely task-specific. Separate decoders, prediction heads, and objectives leave prediction fragmented a…"
-    },
-    {
-      "track": "sar",
-      "title": "RS-JEPA: Remote Sensing Joint-Embedding Predictive Architecture with Scan-Path Views for Cross-Sensor Image Retrieval",
-      "authors": "Tanishq Rachamalla, Srishti Kaushik, Muhammad Attique Khan 외 2명",
-      "url": "https://arxiv.org/abs/2611.14496v1",
-      "date": "2026-11-10",
-      "summary": "Cross-sensor remote sensing image retrieval aims to find scenes with the same content across heterogeneous sensors, such as SAR and optical or panchromatic (PAN) and multispectral (MS) imagery, without manual labels. Existing self-supervised methods either re…"
-    },
-    {
-      "track": "sar",
-      "title": "Cognitive Multi-Agent Search and Rescue: Language-Grounded Hierarchical Reinforcement Learning for Collaborative Robotics",
-      "authors": "Sepideh Ravanbakhsh, Hamidreza Moradi",
-      "url": "https://arxiv.org/abs/2611.13161v1",
-      "date": "2026-11-09",
-      "summary": "Effective search and rescue (SAR) operations require autonomous systems capable of coordinating multiple heterogeneous agents, adapting to dynamic hazards, and aligning with human mission intent. Existing language-guided reinforcement learning (RL) methods pr…"
-    },
-    {
-      "track": "sar",
-      "title": "Continuous wavelet-based feature extraction for laser-induced breakdown spectroscopy classification of human plasma samples",
-      "authors": "Md Mahmudur Rahman, Atqiya Munawara Mahi, Nazim Ahmed Belabbaci 외 1명",
-      "url": "https://arxiv.org/abs/2611.09746v1",
-      "date": "2026-11-06",
-      "summary": "Extracting discriminative features from laser-induced breakdown spectroscopy (LIBS) spectra is important for the classification of complex biological samples. This study evaluates continuous wavelet transform (CWT)-based spectral peak extraction for distingui…"
-    },
-    {
-      "track": "sar",
-      "title": "Polarization Aware Deep Learning Framework for SAR Despeckling",
-      "authors": "Gianpaolo Passarello, Sergio Vitale, Hossein Aghababei 외 2명",
-      "url": "https://arxiv.org/abs/2611.10091v2",
-      "date": "2026-11-06",
-      "summary": "Speckle is an inherent characteristic of synthetic aperture radar (SAR) imagery that complicates image interpretation and the extraction of reliable information. Although deep-learning-based despeckling methods have demonstrated promising performance, their a…"
-    },
-    {
-      "track": "sar",
-      "title": "Nowcasting of Tropical Cyclone Wind Fields and Intensity from Geostationary Imagery",
-      "authors": "Simon Donike, Pritthijit Nath, Cristina Radin 외 5명",
-      "url": "https://arxiv.org/abs/2611.08255v2",
-      "date": "2026-11-05",
-      "summary": "High-resolution tropical cyclone surface wind speeds derived from synthetic aperture radar (SAR) observations can support storm structure and intensity modelling, but remain spatially and temporally sparse and unavailable near-real-time. Geostationary satelli…"
-    }
-  ],
+  "count": 0,
+  "papers": [],
   "warnings": [
-    "ssl: The read operation timed out",
+    "foundation: The read operation timed out",
+    "vlm: The read operation timed out",
+    "sar: HTTP Error 429: Unknown Error",
+    "ssl: HTTP Error 429: Unknown Error",
     "agentic: HTTP Error 429: Unknown Error",
     "restoration: HTTP Error 429: Unknown Error",
     "volume/2025-11: HTTP 429 Rate exceeded.",
-    "volume/2025-12: TimeoutError: The read operation timed out",
-    "volume/2026-01: TimeoutError: The read operation timed out",
-    "volume/2026-10: TimeoutError: The read operation timed out"
+    "volume/2025-12: HTTP 429 Rate exceeded.",
+    "volume/2026-01: HTTP 429 Rate exceeded.",
+    "volume/2026-02: HTTP 429 Rate exceeded.",
+    "volume/2026-04: HTTP 429 Rate exceeded.",
+    "volume/2026-05: HTTP 429 Rate exceeded.",
+    "volume/2026-06: TimeoutError: The read operation timed out",
+    "volume/2026-07: HTTP 429 Rate exceeded.",
+    "volume/2026-08: HTTP 429 Rate exceeded.",
+    "volume/2026-09: TimeoutError: The read operation timed out",
+    "volume/2026-10: HTTP 429 Rate exceeded."
   ]
 }

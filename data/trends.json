@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-22T01:03:05Z",
+  "updated": "2026-11-23T01:29:36Z",
   "sources": [
     "arXiv"
   ],
-  "count": 12,
-  "aiCount": 4,
+  "count": 6,
+  "aiCount": 2,
   "categories": [
     "High-resolution EO",
     "Standard products · L1",
@@ -31,24 +31,6 @@
       "url": "https://arxiv.org/abs/2611.21146v1",
       "date": "2026-11-16",
       "summary": "We address the super-resolution of multispectral remote sensing imagery for long-term floodplain monitoring, enhancing Landsat acquisitions towards Sentinel-2 resolution. Exploiting the period during which both missions observed the same a…",
-      "ai": true
-    },
-    {
-      "source": "arXiv",
-      "cat": "L2 value-added",
-      "title": "Lens: Training-Free Semantic Search for Cross-Tile Object and Scene Retrieval in Satellite Imagery",
-      "url": "https://arxiv.org/abs/2611.18251v1",
-      "date": "2026-11-13",
-      "summary": "We developed Lens, a training-free system for semantic object and scene search across large satellite mosaics that requires no detector trained for the class of interest. Lens represents each tile with a frozen, self-supervised vision tran…",
-      "ai": true
-    },
-    {
-      "source": "arXiv",
-      "cat": "L2 value-added",
-      "title": "DailyWildfireCAN: A Dataset and Benchmark for Next-Day Wildfire Spread Prediction in Canada",
-      "url": "https://arxiv.org/abs/2611.14207v2",
-      "date": "2026-11-10",
-      "summary": "Wildfires represent a critical ecological and socio-economic challenge in Canada, where vast boreal forests and a warming climate have amplified the frequency and severity of extreme fire seasons. Predicting next-day wildfire spread can su…",
       "ai": true
     },
     {
@@ -85,42 +67,6 @@
       "url": "https://arxiv.org/abs/2611.21358v1",
       "date": "2026-11-16",
       "summary": "This paper demonstrates range super-resolution over arid regions using SAR tomography data with very fine vertical resolution from the European Space Agency's BIOMASS mission. As the first civilian spaceborne P-band SAR mission, BIOMASS is…",
-      "ai": false
-    },
-    {
-      "source": "arXiv",
-      "cat": "L2 value-added",
-      "title": "Advancing global water cycle science with the upcoming MAGIC satellite mission through data assimilation",
-      "url": "https://arxiv.org/abs/2611.15421v1",
-      "date": "2026-11-11",
-      "summary": "The GRACE and GRACE-FO missions provide unique global measurements of terrestrial water storage anomalies (TWSA) from space since 2003. However, in order to spatially downscale the GRACE/-FO resolution of 300 km further, and to vertically …",
-      "ai": false
-    },
-    {
-      "source": "arXiv",
-      "cat": "L2 value-added",
-      "title": "Satellite Pretraining Is Not One Thing: A Matched-Pair Study of Generic and Earth-Observation Foundation Models for Scene Classification",
-      "url": "https://arxiv.org/abs/2611.13849v1",
-      "date": "2026-11-10",
-      "summary": "Geospatial foundation models are pretrained on satellite and aerial imagery, but whether such an encoder beats a strong generic one for few-label land-use/land-cover mapping remains unclear, as prior comparisons rarely isolate the pretrain…",
-      "ai": false
-    },
-    {
-      "source": "arXiv",
-      "cat": "L2 value-added",
-      "title": "Decomposing Earth Embeddings with Sparse Autoencoders",
-      "url": "https://arxiv.org/abs/2611.11398v1",
-      "date": "2026-11-08",
-      "summary": "Earth observation foundation models produce global metre-resolution embeddings that underpin work across agriculture, ecology, hydrology, and beyond. Yet these embeddings are opaque: each dimension entangles unrelated physical concepts, wh…",
-      "ai": false
-    },
-    {
-      "source": "arXiv",
-      "cat": "L2 value-added",
-      "title": "Predicting next-week VIIRS fire detections in Bolivia: a reproducible benchmark with temporal and geographic evaluation",
-      "url": "https://arxiv.org/abs/2611.08539v1",
-      "date": "2026-11-05",
-      "summary": "Weekly detection forecasts could help prioritize fire monitoring across Bolivia. We estimate the probability of at least one fire detection by the Visible Infrared Imaging Radiometer Suite (VIIRS) on the Suomi National Polar-orbiting Partn…",
       "ai": false
     }
   ]
