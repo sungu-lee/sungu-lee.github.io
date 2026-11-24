@@ -1,48 +1,267 @@
 {
-  "updated": "2026-11-23T01:33:33Z",
+  "updated": "2026-11-24T05:11:31Z",
   "source": "arXiv API (cs.CV · cs.LG · eess.IV), filtered to Earth-observation context",
   "window": "last 12 months",
   "trackCounts": {
-    "foundation": 0,
-    "vlm": 0,
-    "sar": 0,
-    "ssl": 0,
-    "agentic": 0,
-    "restoration": 0
+    "foundation": 5,
+    "vlm": 5,
+    "sar": 5,
+    "ssl": 5,
+    "agentic": 5,
+    "restoration": 5
   },
   "volume": [
+    {
+      "month": "2025-11",
+      "count": 63
+    },
+    {
+      "month": "2025-12",
+      "count": 55
+    },
+    {
+      "month": "2026-01",
+      "count": 48
+    },
+    {
+      "month": "2026-02",
+      "count": 46
+    },
     {
       "month": "2026-03",
       "count": 78
     },
     {
+      "month": "2026-04",
+      "count": 66
+    },
+    {
+      "month": "2026-05",
+      "count": 76
+    },
+    {
       "month": "2026-06",
-      "count": null
+      "count": 58
+    },
+    {
+      "month": "2026-07",
+      "count": 57
+    },
+    {
+      "month": "2026-08",
+      "count": 68
     },
     {
       "month": "2026-09",
-      "count": null
+      "count": 47
+    },
+    {
+      "month": "2026-10",
+      "count": 44
     }
   ],
-  "count": 0,
-  "papers": [],
-  "warnings": [
-    "foundation: The read operation timed out",
-    "vlm: The read operation timed out",
-    "sar: HTTP Error 429: Unknown Error",
-    "ssl: HTTP Error 429: Unknown Error",
-    "agentic: HTTP Error 429: Unknown Error",
-    "restoration: HTTP Error 429: Unknown Error",
-    "volume/2025-11: HTTP 429 Rate exceeded.",
-    "volume/2025-12: HTTP 429 Rate exceeded.",
-    "volume/2026-01: HTTP 429 Rate exceeded.",
-    "volume/2026-02: HTTP 429 Rate exceeded.",
-    "volume/2026-04: HTTP 429 Rate exceeded.",
-    "volume/2026-05: HTTP 429 Rate exceeded.",
-    "volume/2026-06: TimeoutError: The read operation timed out",
-    "volume/2026-07: HTTP 429 Rate exceeded.",
-    "volume/2026-08: HTTP 429 Rate exceeded.",
-    "volume/2026-09: TimeoutError: The read operation timed out",
-    "volume/2026-10: HTTP 429 Rate exceeded."
-  ]
+  "count": 25,
+  "papers": [
+    {
+      "track": "foundation",
+      "title": "Benchmarking Geospatial Foundation Models under Calibrated Label Errors",
+      "authors": "Mollah Md Saif, Showrin Rahman, Anindya Majumder 외 2명",
+      "url": "https://arxiv.org/abs/2611.30215v1",
+      "date": "2026-11-23",
+      "summary": "Earth-observation labels from maps, older products or hurried annotation arrive misaligned, coarse, loosely outlined or incomplete. Geospatial foundation models (GFMs) are nevertheless benchmarked with labels taken as correct. A practitioner therefore cannot …"
+    },
+    {
+      "track": "foundation",
+      "title": "Geospatial foundation models and deep learning for climate resilience: a review of transfer, uncertainty and decision readiness",
+      "authors": "Parastoo Farajpoor, Mohammadreza Narimani",
+      "url": "https://arxiv.org/abs/2611.30198v1",
+      "date": "2026-11-23",
+      "summary": "Geospatial foundation models can reuse information learned from large Earth-observation archives, but their value for climate resilience depends on whether that information transfers to unfamiliar events, regions and observing conditions. This review connects…"
+    },
+    {
+      "track": "foundation",
+      "title": "Segment Anything In-Context via Visual Demonstrations",
+      "authors": "Yuzhu Wang, Manni Duan, Hongliang Ye 외 1명",
+      "url": "https://arxiv.org/abs/2611.29896v1",
+      "date": "2026-11-23",
+      "summary": "We present the Segment Anything Model via Visual Demonstrations (SAYD), a foundation model for in-context segmentation. Given visual demos comprising prompt images and their segmentation masks, SAYD segments coherent regions (e.g., objects or their parts) in …"
+    },
+    {
+      "track": "vlm",
+      "title": "SpectralRoute: Adaptive Spectral Routing for Training-Free Open-Vocabulary Hyperspectral Segmentation",
+      "authors": "Qingmei Li, Xiaoya Fan, Juepeng Zheng 외 2명",
+      "url": "https://arxiv.org/abs/2611.29919v1",
+      "date": "2026-11-23",
+      "summary": "Open-vocabulary semantic segmentation enables the recognition of arbitrary categories through natural language descriptions and has recently been extended from natural images to remote sensing. However, existing approaches primarily focus on three-channel opt…"
+    },
+    {
+      "track": "foundation",
+      "title": "FM4SAR-Bench 1.0: Towards A Fair Benchmark for Evaluating Foundation Models for SAR Image Interpretation",
+      "authors": "Mingyao Chen, Yongxiang Liu, Tianpeng Liu 외 10명",
+      "url": "https://arxiv.org/abs/2611.27158v1",
+      "date": "2026-11-20",
+      "summary": "Foundation models have advanced SAR image interpretation but created a heterogeneous, fragmented model ecosystem. Existing models differ substantially in their input, training data, objectives, architectures, and release policy, yet the field lacks a unified …"
+    },
+    {
+      "track": "foundation",
+      "title": "How Does SAM-3 Adapt? Capacity, Update Geometry, and Domain Transfer",
+      "authors": "Allan Kazakov, Abdurrahman Javat, Duygu Cakir",
+      "url": "https://arxiv.org/abs/2611.27142v1",
+      "date": "2026-11-20",
+      "summary": "Promptable segmentation foundation models are increasingly used in specialized domains, but it remains unclear how SAM-3 should be fine-tuned when adapting it beyond its original training distribution. We study this question by comparing five adaptation famil…"
+    },
+    {
+      "track": "vlm",
+      "title": "WINSO: A Large-Size Very-High-Resolution Remote Sensing Dataset for Wind Turbine Detection and Solar Panel Segmentation",
+      "authors": "Di Wang, Ke Li, Zhaokun Li 외 5명",
+      "url": "https://arxiv.org/abs/2611.27241v1",
+      "date": "2026-11-20",
+      "summary": "Wind and solar energy are central to the global transition toward net-zero emissions and sustainable development. Accurate spatial inventories of wind and solar facilities are essential for future energy planning. Satellite remote sensing provides a practical…"
+    },
+    {
+      "track": "sar",
+      "title": "PIU-CR: Physics-Informed Deep Unfolding with SAR-Optical Image Fusion for Cloud Removal",
+      "authors": "Gengque Fan, Han Xu, Junxi Li 외 3명",
+      "url": "https://arxiv.org/abs/2611.27093v1",
+      "date": "2026-11-20",
+      "summary": "Multi-modal cloud removal exploits complementary optical and synthetic aperture radar (SAR) images to restore cloud-degraded remote sensing images. Most existing methods rely on black-box, data-driven architectures with limited interpretability of cross-modal…"
+    },
+    {
+      "track": "agentic",
+      "title": "RemoteEvolver: Expanding Earth Observation Capabilities through Agent Harness Evolution",
+      "authors": "Shengxiang Xu, Liang Yao, Shuyi Chen 외 9명",
+      "url": "https://arxiv.org/abs/2611.27110v1",
+      "date": "2026-11-20",
+      "summary": "We are interested in developing a continually self-improving remote sensing agentic system. It should identify and address its capability gaps, retaining the resulting improvements to enhance performance on subsequent tasks. However, existing systems typicall…"
+    },
+    {
+      "track": "vlm",
+      "title": "RemoteVLPG: How to Obtain a Specific VLM for Language-Guided Path Generation on Remote Sensing Images?",
+      "authors": "Junzhe Dang, Mengmeng Zhang, Yuxiang Zhang 외 1명",
+      "url": "https://arxiv.org/abs/2611.25458v1",
+      "date": "2026-11-19",
+      "summary": "We study how to obtain a task-specific Vision-Language Model (VLM) for language-guided path generation between start and end points on remote sensing images. We explore this question from three aspects. First, we implement three widely used architectural appr…"
+    },
+    {
+      "track": "ssl",
+      "title": "From Data Alignment to Parameter Generation: Few-Shot Cross-City Traffic Prediction with Conditional Diffusion",
+      "authors": "Shengchun Wang, Yuhang Lin, Tong Li 외 5명",
+      "url": "https://arxiv.org/abs/2611.25592v1",
+      "date": "2026-11-19",
+      "summary": "Accurate mobile traffic forecasting is crucial for network service management, supporting proactive capacity provisioning, congestion mitigation, and energy-efficient operation. However, many cities and regions are data-scarce (e.g., newly deployed or poorly …"
+    },
+    {
+      "track": "vlm",
+      "title": "Benchmarking Reasoning Reliability,Prior_Evidence Contrast,and Spectral Discrimination in Remote-Sensing Geological Image Interpretation",
+      "authors": "Jun Wang, Fengpeng Li, Wei Han 외 6명",
+      "url": "https://arxiv.org/abs/2611.24068v1",
+      "date": "2026-11-18",
+      "summary": "Reliable lithology interpretation requires accurate geological recognition and reasoning grounded in visual evidence. Although Multimodal Large Language Models show promise in remote sensing, their reliability in geological interpretation remains unclear. We …"
+    },
+    {
+      "track": "ssl",
+      "title": "DARWIN: a Geospatial Foundation Model for Marine Intelligence",
+      "authors": "Coen van den Elsen, Laurens Geffert",
+      "url": "https://arxiv.org/abs/2611.22496v1",
+      "date": "2026-11-17",
+      "summary": "We present DARWIN, a geospatial foundation model for marine intelligence. Recent Earth-observation foundation models have concentrated on terrestrial domains. The marine realm poses distinct challenges: missingness, multi-modal physical and biogeochemical var…"
+    },
+    {
+      "track": "ssl",
+      "title": "SARVIA: Fast-Adapting the Strong SAR Foundation Models That Are Already in Your MLLMs",
+      "authors": "Yuxuan Li, Zichen Tian, Qianru Sun",
+      "url": "https://arxiv.org/abs/2611.22273v1",
+      "date": "2026-11-17",
+      "summary": "Synthetic aperture radar (SAR) foundation models provide transferable representations for diverse perception tasks in all-weather Earth observation. However, their development often relies on costly large-scale SAR pretraining, raising the question of whether…"
+    },
+    {
+      "track": "restoration",
+      "title": "You Only Encode Once: Sub-Pixel-Shifted Frames for Arbitrary-Scale Remote Sensing Super-Resolution with 2D Gaussian Splatting",
+      "authors": "Canjie Liu, Liuqian Wang, Qi Ming 외 5명",
+      "url": "https://arxiv.org/abs/2611.22898v1",
+      "date": "2026-11-17",
+      "summary": "Arbitrary-scale super-resolution (ASSR) of remote sensing images remains challenging due to the limited high-frequency information in a single low-resolution (LR) observation. While multi-frame SR can exploit complementary sub-pixel information, existing appr…"
+    },
+    {
+      "track": "restoration",
+      "title": "Rethinking Perceptual Similarity for Remote Sensing: Multi-Layer Attention Scoring and Human Preference Benchmarking",
+      "authors": "Eli Underwood, Marc Bosch, Neil Joshi 외 2명",
+      "url": "https://arxiv.org/abs/2611.21816v1",
+      "date": "2026-11-16",
+      "summary": "Perceptual similarity metrics for natural images transfer poorly to remote sensing (RS), where severe geospatial and semantic failures can remain visually plausible while still being decisively wrong for downstream use. To address this, we develop a novel hum…"
+    },
+    {
+      "track": "restoration",
+      "title": "From very fine Vertical Resolution to Range Super-Resolution on BIOMASS P-BAND SAR Data",
+      "authors": "Yanghai Yu, Stefano Tebaldini, Yang Lei 외 1명",
+      "url": "https://arxiv.org/abs/2611.21358v1",
+      "date": "2026-11-16",
+      "summary": "This paper demonstrates range super-resolution over arid regions using SAR tomography data with very fine vertical resolution from the European Space Agency's BIOMASS mission. As the first civilian spaceborne P-band SAR mission, BIOMASS is operating with a ba…"
+    },
+    {
+      "track": "restoration",
+      "title": "Model-based neural network for global floodplains analysis",
+      "authors": "Pierre Audisio, Barbara Belletti, Nelly Pustelnik",
+      "url": "https://arxiv.org/abs/2611.21146v1",
+      "date": "2026-11-16",
+      "summary": "We address the super-resolution of multispectral remote sensing imagery for long-term floodplain monitoring, enhancing Landsat acquisitions towards Sentinel-2 resolution. Exploiting the period during which both missions observed the same areas, we build DLhas…"
+    },
+    {
+      "track": "restoration",
+      "title": "STARS: Stage-Adaptive Responsibility Separation for Shadow Removal in Remote Sensing Images",
+      "authors": "Gaoliang Song, Chengjie Li, Pengju Liu 외 3명",
+      "url": "https://arxiv.org/abs/2611.20698v1",
+      "date": "2026-11-16",
+      "summary": "Shadows are a ubiquitous radiative attenuation phenomenon in remote sensing images and can severely affect high-resolution remote sensing interpretation tasks. In shadow removal, although introducing a mask prior provides explicit positional information for t…"
+    },
+    {
+      "track": "ssl",
+      "title": "Scaling Channel-Adaptive Self-Supervised Learning",
+      "authors": "Alice V. De Lorenci, Seungeun Yi, Theo Moutakanni 외 4명",
+      "url": "https://arxiv.org/abs/2611.18849v1",
+      "date": "2026-11-13",
+      "summary": "Recent advances in self-supervised pre-training of foundation models for natural images have made them a popular choice for various visual systems and applications. Self-supervised strategies are also promising in non-RGB scientific imaging domains such as in…"
+    },
+    {
+      "track": "ssl",
+      "title": "Few-Shot Open-Set Hyperspectral Pixel-Wise Classification with Spatial Aware Label Propagation",
+      "authors": "Matheus Pereira, Jefersson Santos, Laurent Najman",
+      "url": "https://arxiv.org/abs/2611.17974v1",
+      "date": "2026-11-13",
+      "summary": "Pixelwise classification of hyperspectral images (HSI) is a fundamental task in remote sensing, but its deployment in real-world applications is often limited by the scarcity of labeled data and the presence of unknown classes at inference time. In this work,…"
+    },
+    {
+      "track": "sar",
+      "title": "RS-JEPA: Remote Sensing Joint-Embedding Predictive Architecture with Scan-Path Views for Cross-Sensor Image Retrieval",
+      "authors": "Tanishq Rachamalla, Srishti Kaushik, Muhammad Attique Khan 외 2명",
+      "url": "https://arxiv.org/abs/2611.14496v1",
+      "date": "2026-11-10",
+      "summary": "Cross-sensor remote sensing image retrieval aims to find scenes with the same content across heterogeneous sensors, such as SAR and optical or panchromatic (PAN) and multispectral (MS) imagery, without manual labels. Existing self-supervised methods either re…"
+    },
+    {
+      "track": "sar",
+      "title": "Cognitive Multi-Agent Search and Rescue: Language-Grounded Hierarchical Reinforcement Learning for Collaborative Robotics",
+      "authors": "Sepideh Ravanbakhsh, Hamidreza Moradi",
+      "url": "https://arxiv.org/abs/2611.13161v1",
+      "date": "2026-11-09",
+      "summary": "Effective search and rescue (SAR) operations require autonomous systems capable of coordinating multiple heterogeneous agents, adapting to dynamic hazards, and aligning with human mission intent. Existing language-guided reinforcement learning (RL) methods pr…"
+    },
+    {
+      "track": "sar",
+      "title": "Continuous wavelet-based feature extraction for laser-induced breakdown spectroscopy classification of human plasma samples",
+      "authors": "Md Mahmudur Rahman, Atqiya Munawara Mahi, Nazim Ahmed Belabbaci 외 1명",
+      "url": "https://arxiv.org/abs/2611.09746v1",
+      "date": "2026-11-06",
+      "summary": "Extracting discriminative features from laser-induced breakdown spectroscopy (LIBS) spectra is important for the classification of complex biological samples. This study evaluates continuous wavelet transform (CWT)-based spectral peak extraction for distingui…"
+    },
+    {
+      "track": "sar",
+      "title": "Polarization Aware Deep Learning Framework for SAR Despeckling",
+      "authors": "Gianpaolo Passarello, Sergio Vitale, Hossein Aghababei 외 2명",
+      "url": "https://arxiv.org/abs/2611.10091v2",
+      "date": "2026-11-06",
+      "summary": "Speckle is an inherent characteristic of synthetic aperture radar (SAR) imagery that complicates image interpretation and the extraction of reliable information. Although deep-learning-based despeckling methods have demonstrated promising performance, their a…"
+    }
+  ],
+  "warnings": []
 }
