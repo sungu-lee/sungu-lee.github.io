@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T05:10:27Z",
+  "updated": "2026-11-25T03:59:10Z",
   "sources": [
     "arXiv"
   ],
@@ -15,6 +15,15 @@
     "Multi-sensor fusion"
   ],
   "items": [
+    {
+      "source": "arXiv",
+      "cat": "High-resolution EO",
+      "title": "Sequential Monitoring of Image Streams Using Energy Statistics",
+      "url": "https://arxiv.org/abs/2611.30700v1",
+      "date": "2026-11-23",
+      "summary": "Sequential monitoring of image data is a high-velocity, high-dimensional big data problem in statistics and machine learning, with wide applications in manufacturing industries, satellite imaging, medical diagnostics, and remote sensing. T…",
+      "ai": true
+    },
     {
       "source": "arXiv",
       "cat": "L2 value-added",
@@ -44,7 +53,7 @@
     },
     {
       "source": "arXiv",
-      "cat": "High-resolution EO",
+      "cat": "Optical · multispectral",
       "title": "Fusing Multimodal CNN Features with Structurally-Masked Transformers for Hierarchical Sub-Pixel Tree Species Mapping",
       "url": "https://arxiv.org/abs/2611.25824v1",
       "date": "2026-11-19",
@@ -67,15 +76,6 @@
       "url": "https://arxiv.org/abs/2611.28129v1",
       "date": "2026-11-18",
       "summary": "Cities are sensed by many platforms at once: on-board cameras, LiDAR and radar on autonomous vehicles, roadside units at intersections, drones and satellites overhead, and the GNSS traces of millions of trips. Yet most learned representati…",
-      "ai": true
-    },
-    {
-      "source": "arXiv",
-      "cat": "Multi-sensor fusion",
-      "title": "SARVIA: Fast-Adapting the Strong SAR Foundation Models That Are Already in Your MLLMs",
-      "url": "https://arxiv.org/abs/2611.22273v1",
-      "date": "2026-11-17",
-      "summary": "Synthetic aperture radar (SAR) foundation models provide transferable representations for diverse perception tasks in all-weather Earth observation. However, their development often relies on costly large-scale SAR pretraining, raising the…",
       "ai": true
     },
     {
@@ -152,29 +152,29 @@
     },
     {
       "source": "arXiv",
-      "cat": "Optical · multispectral",
-      "title": "Benchmarking Geospatial Foundation Models under Calibrated Label Errors",
-      "url": "https://arxiv.org/abs/2611.30215v1",
-      "date": "2026-11-23",
-      "summary": "Earth-observation labels from maps, older products or hurried annotation arrive misaligned, coarse, loosely outlined or incomplete. Geospatial foundation models (GFMs) are nevertheless benchmarked with labels taken as correct. A practition…",
+      "cat": "High-resolution EO",
+      "title": "Adaptive and Detection-Aware Super-Resolution for Small Object Detection",
+      "url": "https://arxiv.org/abs/2611.32394v1",
+      "date": "2026-11-24",
+      "summary": "Image super-resolution aims to reconstruct a high-resolution image from a low-resolution input and is relevant for surveillance, satellite imagery, medical imaging, and object detection. This paper investigates SRCNN-based single-image sup…",
       "ai": false
     },
     {
       "source": "arXiv",
-      "cat": "Optical · multispectral",
-      "title": "Designing Incoherent Multispectral Diffractive Optical Networks for Satellite Image Classification",
-      "url": "https://arxiv.org/abs/2611.30079v1",
+      "cat": "High-resolution EO",
+      "title": "Revisiting TOI-2120 b: Updated mass and radius constraints on a sub-Neptune orbiting an M4 dwarf",
+      "url": "https://arxiv.org/abs/2611.31406v1",
       "date": "2026-11-23",
-      "summary": "Optical neural networks and diffractive optical computing provide a promising route for performing task-specific inference with high parallelism and lightweight electronic post-processing. These advantages are especially attractive for mul…",
+      "summary": "We present updated mass and radius measurements of TOI-2120 b, a short-period (5.80 days) planet orbiting a mid-M dwarf identified by the Transiting Exoplanet Survey Satellite (TESS). TOI-2120 b was previously validated through transit pho…",
       "ai": false
     },
     {
       "source": "arXiv",
-      "cat": "Hyperspectral",
-      "title": "KGLP-Net: Kalman-Reliable Global--Local Learning With Group Fisher Pruning for Hyperspectral Image Classification",
-      "url": "https://arxiv.org/abs/2611.29944v1",
+      "cat": "High-resolution EO",
+      "title": "Extragalactic carbon-monoxide (CO) as a CMB foreground: an analytic halo model for the CO auto-spectrum and its correlation with the Cosmic Infrared Background",
+      "url": "https://arxiv.org/abs/2611.30959v1",
       "date": "2026-11-23",
-      "summary": "Accurate hyperspectral image (HSI) classification requires both the effective integration of broad spatial context and fine-grained spectral--spatial information surrounding target pixels. However, the reliability of these complementary re…",
+      "summary": "Context. Carbon Monoxide (CO) lines emitted by star-forming galaxies are redshifted into the frequency bands of the Cosmic Microwave Background (CMB) experiments. Their correlation with the Cosmic Infrared Background (CIB) may be a non-neg…",
       "ai": false
     }
   ]
