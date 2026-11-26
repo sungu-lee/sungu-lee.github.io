@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25T04:00:09Z",
+  "updated": "2026-11-26T03:25:39Z",
   "source": "arXiv API (cs.CV · cs.LG · eess.IV), filtered to Earth-observation context",
   "window": "last 12 months",
   "trackCounts": {
@@ -40,8 +40,72 @@
       "count": 76
     }
   ],
-  "count": 26,
+  "count": 27,
   "papers": [
+    {
+      "track": "foundation",
+      "title": "Assessing the Physical Interpretability of AlphaEarth Foundation Embeddings Through Multi-Sensor Satellite Time-Series Benchmarking for Agricultural Mapping",
+      "authors": "El Houcine El Moussaoui, Chouaib El Hachimi, Saïd Khabba 외 5명",
+      "url": "https://arxiv.org/abs/2611.34019v1",
+      "date": "2026-11-25",
+      "summary": "Accurate and dynamic maps of agricultural LULC are important for agricultural water resource management, particularly in areas where water scarcity is prevalent, such as Morocco. Here, we evaluate the utility of AlphaEarth Foundation Model (AEF) embeddings fo…"
+    },
+    {
+      "track": "foundation",
+      "title": "Bridging Transferability and Discriminability via Positive-Unlabeled Domain Adaptation for Building Damage Mapping Across Disaster Events",
+      "authors": "Qirui Wang, Hengwei Zhao, Xiaoshu Yang 외 5명",
+      "url": "https://arxiv.org/abs/2611.33790v1",
+      "date": "2026-11-25",
+      "summary": "Mapping the damage to buildings following natural and human-caused disasters is essential for disaster response and humanitarian assistance. However, differences in hazard types, geographic environments, building characteristics, and imaging conditions cause …"
+    },
+    {
+      "track": "sar",
+      "title": "Rethinking Unsupervised Cross-Modal Homography Estimation:Spatially Aware Representations and Geometric Consistency Learning",
+      "authors": "Zhuoran Yang, Junchen Yu, Runmin Zhang 외 4명",
+      "url": "https://arxiv.org/abs/2611.34021v1",
+      "date": "2026-11-25",
+      "summary": "Unsupervised cross-modal homography estimation is challenging because appearance differences obscure shared geometric structures. Separating modality transfer from homography estimation helps reduce these differences, but accurate alignment still requires eff…"
+    },
+    {
+      "track": "foundation",
+      "title": "On the Capabilities and Limitations of Zero-Shot Open-Vocabulary Cloud Segmentation",
+      "authors": "Jose Sosa, Thomas Gillet, Rim Sleimi 외 1명",
+      "url": "https://arxiv.org/abs/2611.32625v1",
+      "date": "2026-11-24",
+      "summary": "Recent advances in vision-language foundation models have enabled open-vocabulary semantic segmentation (OVSS) without task-specific training, offering new opportunities for Earth Observation (EO) applications. However, their capabilities for cloud detection …"
+    },
+    {
+      "track": "foundation",
+      "title": "HS-OVSeg: Multi-Granularity Open-Vocabulary Semantic Segmentation in Remote Sensing via Heterogeneous Supervision",
+      "authors": "Wei Huang, Chenying Liu, Xudong Kang 외 1명",
+      "url": "https://arxiv.org/abs/2611.32518v1",
+      "date": "2026-11-24",
+      "summary": "Open-vocabulary semantic segmentation (OVSS) enables flexible, text-driven mapping of remote sensing (RS) imagery beyond predefined categories. Despite advances in segmentation foundation models, RS-OVSS remains constrained by the scarcity of large-scale, sem…"
+    },
+    {
+      "track": "vlm",
+      "title": "Benchmarking Segmentation Models for Scalable Mangrove Mapping with Sentinel-1/2 Imagery",
+      "authors": "Damba Koné, Sara Mobsite, Joris Guérin 외 2명",
+      "url": "https://arxiv.org/abs/2611.33369v1",
+      "date": "2026-11-24",
+      "summary": "Mangroves are dynamic coastal ecosystems that contribute to carbon storage, coastal protection and biodiversity conservation, but are vulnerable to climate change. Very-high-resolution imagery such as Pléiades enables detailed mangrove mapping but it is costl…"
+    },
+    {
+      "track": "vlm",
+      "title": "Beyond Static Semantics: Instance-Adaptive Vision-Language Alignment for Building Damage Assessment",
+      "authors": "Hang Yin, Jiepan Li, Hongruixuan Chen 외 2명",
+      "url": "https://arxiv.org/abs/2611.32777v1",
+      "date": "2026-11-24",
+      "summary": "Instance-level building damage assessment (IBDA) from bi-temporal remote sensing imagery remains challenging, as the same damage grade may exhibit diverse visual manifestations across individual buildings. Natural language offers explicit descriptions of phys…"
+    },
+    {
+      "track": "vlm",
+      "title": "Resource-Efficient Multimodal Fusion for Early Rice Blast Forecasting in Sustainable Agriculture",
+      "authors": "Shubhajyoti Das, Pritam Bikram, Arindam Biswas 외 3명",
+      "url": "https://arxiv.org/abs/2611.33237v1",
+      "date": "2026-11-24",
+      "summary": "Resource-efficient artificial intelligence has become increasingly important for sustainable agriculture, where timely disease forecasting must be achieved under computational and energy constraints. Early estimation of rice blast can enhance food security by…"
+    },
     {
       "track": "vlm",
       "title": "Beyond Before-and-After Images: Evaluating Temporal Grounding in a Lightweight VLM for Disaster Assessment",
@@ -67,54 +131,6 @@
       "summary": "Earth-observation labels from maps, older products or hurried annotation arrive misaligned, coarse, loosely outlined or incomplete. Geospatial foundation models (GFMs) are nevertheless benchmarked with labels taken as correct. A practitioner therefore cannot …"
     },
     {
-      "track": "foundation",
-      "title": "Geospatial foundation models and deep learning for climate resilience: a review of transfer, uncertainty and decision readiness",
-      "authors": "Parastoo Farajpoor, Mohammadreza Narimani",
-      "url": "https://arxiv.org/abs/2611.30198v1",
-      "date": "2026-11-23",
-      "summary": "Geospatial foundation models can reuse information learned from large Earth-observation archives, but their value for climate resilience depends on whether that information transfers to unfamiliar events, regions and observing conditions. This review connects…"
-    },
-    {
-      "track": "foundation",
-      "title": "Segment Anything In-Context via Visual Demonstrations",
-      "authors": "Yuzhu Wang, Manni Duan, Hongliang Ye 외 1명",
-      "url": "https://arxiv.org/abs/2611.29896v1",
-      "date": "2026-11-23",
-      "summary": "We present the Segment Anything Model via Visual Demonstrations (SAYD), a foundation model for in-context segmentation. Given visual demos comprising prompt images and their segmentation masks, SAYD segments coherent regions (e.g., objects or their parts) in …"
-    },
-    {
-      "track": "vlm",
-      "title": "SpectralRoute: Adaptive Spectral Routing for Training-Free Open-Vocabulary Hyperspectral Segmentation",
-      "authors": "Qingmei Li, Xiaoya Fan, Juepeng Zheng 외 2명",
-      "url": "https://arxiv.org/abs/2611.29919v1",
-      "date": "2026-11-23",
-      "summary": "Open-vocabulary semantic segmentation enables the recognition of arbitrary categories through natural language descriptions and has recently been extended from natural images to remote sensing. However, existing approaches primarily focus on three-channel opt…"
-    },
-    {
-      "track": "foundation",
-      "title": "FM4SAR-Bench 1.0: Towards A Fair Benchmark for Evaluating Foundation Models for SAR Image Interpretation",
-      "authors": "Mingyao Chen, Yongxiang Liu, Tianpeng Liu 외 10명",
-      "url": "https://arxiv.org/abs/2611.27158v1",
-      "date": "2026-11-20",
-      "summary": "Foundation models have advanced SAR image interpretation but created a heterogeneous, fragmented model ecosystem. Existing models differ substantially in their input, training data, objectives, architectures, and release policy, yet the field lacks a unified …"
-    },
-    {
-      "track": "foundation",
-      "title": "How Does SAM-3 Adapt? Capacity, Update Geometry, and Domain Transfer",
-      "authors": "Allan Kazakov, Abdurrahman Javat, Duygu Cakir",
-      "url": "https://arxiv.org/abs/2611.27142v1",
-      "date": "2026-11-20",
-      "summary": "Promptable segmentation foundation models are increasingly used in specialized domains, but it remains unclear how SAM-3 should be fine-tuned when adapting it beyond its original training distribution. We study this question by comparing five adaptation famil…"
-    },
-    {
-      "track": "vlm",
-      "title": "WINSO: A Large-Size Very-High-Resolution Remote Sensing Dataset for Wind Turbine Detection and Solar Panel Segmentation",
-      "authors": "Di Wang, Ke Li, Zhaokun Li 외 5명",
-      "url": "https://arxiv.org/abs/2611.27241v1",
-      "date": "2026-11-20",
-      "summary": "Wind and solar energy are central to the global transition toward net-zero emissions and sustainable development. Accurate spatial inventories of wind and solar facilities are essential for future energy planning. Satellite remote sensing provides a practical…"
-    },
-    {
       "track": "sar",
       "title": "PIU-CR: Physics-Informed Deep Unfolding with SAR-Optical Image Fusion for Cloud Removal",
       "authors": "Gengque Fan, Han Xu, Junxi Li 외 3명",
@@ -124,19 +140,19 @@
     },
     {
       "track": "agentic",
+      "title": "FM4SAR-Bench 1.0: Towards A Fair Benchmark for Evaluating Foundation Models for SAR Image Interpretation",
+      "authors": "Mingyao Chen, Yongxiang Liu, Tianpeng Liu 외 10명",
+      "url": "https://arxiv.org/abs/2611.27158v1",
+      "date": "2026-11-20",
+      "summary": "Foundation models have advanced SAR image interpretation but created a heterogeneous, fragmented model ecosystem. Existing models differ substantially in their input, training data, objectives, architectures, and release policy, yet the field lacks a unified …"
+    },
+    {
+      "track": "agentic",
       "title": "RemoteEvolver: Expanding Earth Observation Capabilities through Agent Harness Evolution",
       "authors": "Shengxiang Xu, Liang Yao, Shuyi Chen 외 9명",
       "url": "https://arxiv.org/abs/2611.27110v1",
       "date": "2026-11-20",
       "summary": "We are interested in developing a continually self-improving remote sensing agentic system. It should identify and address its capability gaps, retaining the resulting improvements to enhance performance on subsequent tasks. However, existing systems typicall…"
-    },
-    {
-      "track": "vlm",
-      "title": "RemoteVLPG: How to Obtain a Specific VLM for Language-Guided Path Generation on Remote Sensing Images?",
-      "authors": "Junzhe Dang, Mengmeng Zhang, Yuxiang Zhang 외 1명",
-      "url": "https://arxiv.org/abs/2611.25458v1",
-      "date": "2026-11-19",
-      "summary": "We study how to obtain a task-specific Vision-Language Model (VLM) for language-guided path generation between start and end points on remote sensing images. We explore this question from three aspects. First, we implement three widely used architectural appr…"
     },
     {
       "track": "ssl",
@@ -221,8 +237,8 @@
     {
       "track": "sar",
       "title": "RS-JEPA: Remote Sensing Joint-Embedding Predictive Architecture with Scan-Path Views for Cross-Sensor Image Retrieval",
-      "authors": "Tanishq Rachamalla, Srishti Kaushik, Muhammad Attique Khan 외 2명",
-      "url": "https://arxiv.org/abs/2611.14496v1",
+      "authors": "Tanishq Rachamalla, Srishti Kaushik, Muhammad Attique Khan 외 1명",
+      "url": "https://arxiv.org/abs/2611.14496v2",
       "date": "2026-11-10",
       "summary": "Cross-sensor remote sensing image retrieval aims to find scenes with the same content across heterogeneous sensors, such as SAR and optical or panchromatic (PAN) and multispectral (MS) imagery, without manual labels. Existing self-supervised methods either re…"
     },
@@ -241,14 +257,6 @@
       "url": "https://arxiv.org/abs/2611.09746v1",
       "date": "2026-11-06",
       "summary": "Extracting discriminative features from laser-induced breakdown spectroscopy (LIBS) spectra is important for the classification of complex biological samples. This study evaluates continuous wavelet transform (CWT)-based spectral peak extraction for distingui…"
-    },
-    {
-      "track": "sar",
-      "title": "Polarization Aware Deep Learning Framework for SAR Despeckling",
-      "authors": "Gianpaolo Passarello, Sergio Vitale, Hossein Aghababei 외 2명",
-      "url": "https://arxiv.org/abs/2611.10091v2",
-      "date": "2026-11-06",
-      "summary": "Speckle is an inherent characteristic of synthetic aperture radar (SAR) imagery that complicates image interpretation and the extraction of reliable information. Although deep-learning-based despeckling methods have demonstrated promising performance, their a…"
     }
   ],
   "warnings": [

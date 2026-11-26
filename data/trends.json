@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-25T03:59:10Z",
+  "updated": "2026-11-26T03:24:41Z",
   "sources": [
     "arXiv"
   ],
   "count": 18,
-  "aiCount": 15,
+  "aiCount": 16,
   "categories": [
     "High-resolution EO",
     "Standard products · L1",
@@ -15,6 +15,42 @@
     "Multi-sensor fusion"
   ],
   "items": [
+    {
+      "source": "arXiv",
+      "cat": "L2 value-added",
+      "title": "Assessing the Physical Interpretability of AlphaEarth Foundation Embeddings Through Multi-Sensor Satellite Time-Series Benchmarking for Agricultural Mapping",
+      "url": "https://arxiv.org/abs/2611.34019v1",
+      "date": "2026-11-25",
+      "summary": "Accurate and dynamic maps of agricultural LULC are important for agricultural water resource management, particularly in areas where water scarcity is prevalent, such as Morocco. Here, we evaluate the utility of AlphaEarth Foundation Model…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "High-resolution EO",
+      "title": "Benchmarking Segmentation Models for Scalable Mangrove Mapping with Sentinel-1/2 Imagery",
+      "url": "https://arxiv.org/abs/2611.33369v1",
+      "date": "2026-11-24",
+      "summary": "Mangroves are dynamic coastal ecosystems that contribute to carbon storage, coastal protection and biodiversity conservation, but are vulnerable to climate change. Very-high-resolution imagery such as Pléiades enables detailed mangrove map…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "L2 value-added",
+      "title": "An Integrated Remote Sensing and Machine Learning Framework for Mapping Hazard Associated with Leached Metals",
+      "url": "https://arxiv.org/abs/2611.32505v1",
+      "date": "2026-11-24",
+      "summary": "This study integrates satellite remote sensing, groundwater monitoring, and machine learning to map leached-metal-associated hazards at four coal combustion residual (CCR) sites in Virginia, USA. Constituent-specific groundwater concentrat…",
+      "ai": true
+    },
+    {
+      "source": "arXiv",
+      "cat": "Multi-sensor fusion",
+      "title": "Resource-Efficient Multimodal Fusion for Early Rice Blast Forecasting in Sustainable Agriculture",
+      "url": "https://arxiv.org/abs/2611.33237v1",
+      "date": "2026-11-24",
+      "summary": "Resource-efficient artificial intelligence has become increasingly important for sustainable agriculture, where timely disease forecasting must be achieved under computational and energy constraints. Early estimation of rice blast can enha…",
+      "ai": true
+    },
     {
       "source": "arXiv",
       "cat": "High-resolution EO",
@@ -31,15 +67,6 @@
       "url": "https://arxiv.org/abs/2611.29919v1",
       "date": "2026-11-23",
       "summary": "Open-vocabulary semantic segmentation enables the recognition of arbitrary categories through natural language descriptions and has recently been extended from natural images to remote sensing. However, existing approaches primarily focus …",
-      "ai": true
-    },
-    {
-      "source": "arXiv",
-      "cat": "High-resolution EO",
-      "title": "WINSO: A Large-Size Very-High-Resolution Remote Sensing Dataset for Wind Turbine Detection and Solar Panel Segmentation",
-      "url": "https://arxiv.org/abs/2611.27241v1",
-      "date": "2026-11-20",
-      "summary": "Wind and solar energy are central to the global transition toward net-zero emissions and sustainable development. Accurate spatial inventories of wind and solar facilities are essential for future energy planning. Satellite remote sensing …",
       "ai": true
     },
     {
@@ -71,15 +98,6 @@
     },
     {
       "source": "arXiv",
-      "cat": "Multi-sensor fusion",
-      "title": "Urban State Representation for Autonomous Mobility: A Survey of Multimodal Perception, Architectures, Datasets, and Benchmarks",
-      "url": "https://arxiv.org/abs/2611.28129v1",
-      "date": "2026-11-18",
-      "summary": "Cities are sensed by many platforms at once: on-board cameras, LiDAR and radar on autonomous vehicles, roadside units at intersections, drones and satellites overhead, and the GNSS traces of millions of trips. Yet most learned representati…",
-      "ai": true
-    },
-    {
-      "source": "arXiv",
       "cat": "L2 value-added",
       "title": "Lens: Training-Free Semantic Search for Cross-Tile Object and Scene Retrieval in Satellite Imagery",
       "url": "https://arxiv.org/abs/2611.18251v1",
@@ -94,15 +112,6 @@
       "url": "https://arxiv.org/abs/2611.17974v1",
       "date": "2026-11-13",
       "summary": "Pixelwise classification of hyperspectral images (HSI) is a fundamental task in remote sensing, but its deployment in real-world applications is often limited by the scarcity of labeled data and the presence of unknown classes at inference…",
-      "ai": true
-    },
-    {
-      "source": "arXiv",
-      "cat": "L2 value-added",
-      "title": "DailyWildfireCAN: A Dataset and Benchmark for Next-Day Wildfire Spread Prediction in Canada",
-      "url": "https://arxiv.org/abs/2611.14207v3",
-      "date": "2026-11-10",
-      "summary": "Wildfires represent a critical ecological and socio-economic challenge in Canada, where vast boreal forests and a warming climate have amplified the frequency and severity of extreme fire seasons. Predicting next-day wildfire spread can su…",
       "ai": true
     },
     {
@@ -152,29 +161,20 @@
     },
     {
       "source": "arXiv",
-      "cat": "High-resolution EO",
-      "title": "Adaptive and Detection-Aware Super-Resolution for Small Object Detection",
-      "url": "https://arxiv.org/abs/2611.32394v1",
-      "date": "2026-11-24",
-      "summary": "Image super-resolution aims to reconstruct a high-resolution image from a low-resolution input and is relevant for surveillance, satellite imagery, medical imaging, and object detection. This paper investigates SRCNN-based single-image sup…",
+      "cat": "L2 value-added",
+      "title": "Interpreting Speckle Effects Through Neuron Interventions",
+      "url": "https://arxiv.org/abs/2611.33632v1",
+      "date": "2026-11-25",
+      "summary": "Speckle, the multiplicative noise inherent to synthetic aperture radar (SAR) imaging, reduces the performance of pretrained SAR models. We use interpretability methods to examine its effects inside pretrained vision models. We identify neu…",
       "ai": false
     },
     {
       "source": "arXiv",
-      "cat": "High-resolution EO",
-      "title": "Revisiting TOI-2120 b: Updated mass and radius constraints on a sub-Neptune orbiting an M4 dwarf",
-      "url": "https://arxiv.org/abs/2611.31406v1",
-      "date": "2026-11-23",
-      "summary": "We present updated mass and radius measurements of TOI-2120 b, a short-period (5.80 days) planet orbiting a mid-M dwarf identified by the Transiting Exoplanet Survey Satellite (TESS). TOI-2120 b was previously validated through transit pho…",
-      "ai": false
-    },
-    {
-      "source": "arXiv",
-      "cat": "High-resolution EO",
-      "title": "Extragalactic carbon-monoxide (CO) as a CMB foreground: an analytic halo model for the CO auto-spectrum and its correlation with the Cosmic Infrared Background",
-      "url": "https://arxiv.org/abs/2611.30959v1",
-      "date": "2026-11-23",
-      "summary": "Context. Carbon Monoxide (CO) lines emitted by star-forming galaxies are redshifted into the frequency bands of the Cosmic Microwave Background (CMB) experiments. Their correlation with the Cosmic Infrared Background (CIB) may be a non-neg…",
+      "cat": "SAR",
+      "title": "MOVR-SAR: A Multi-resolution SAR Registration Dataset under Orbit-crossing and View-variant Imaging Differences",
+      "url": "https://arxiv.org/abs/2611.33673v1",
+      "date": "2026-11-25",
+      "summary": "Synthetic aperture radar (SAR) image registration under varying acquisition geometries is challenging because orbit direction, look side, and incidence angle affect backscatter, terrain-induced distortion, and feature visibility. However, …",
       "ai": false
     }
   ]
