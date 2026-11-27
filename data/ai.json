@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T03:25:39Z",
+  "updated": "2026-11-27T03:33:06Z",
   "source": "arXiv API (cs.CV · cs.LG · eess.IV), filtered to Earth-observation context",
   "window": "last 12 months",
   "trackCounts": {
@@ -44,6 +44,14 @@
   "papers": [
     {
       "track": "foundation",
+      "title": "Enhancing Maritime Domain Awareness using Latent Space Representations",
+      "authors": "Rikard Vinge, Miguel A. Belenguer-Plomer, Isabelle Wittmann 외 4명",
+      "url": "https://arxiv.org/abs/2611.34899v1",
+      "date": "2026-11-25",
+      "summary": "This work presents a novel application of Earth Observation (EO) embeddings for Maritime Domain Awareness (MDA) from the perspective of the geospatial foundation model TerraMind. By operating directly on compressed latent-space representations rather than on …"
+    },
+    {
+      "track": "foundation",
       "title": "Assessing the Physical Interpretability of AlphaEarth Foundation Embeddings Through Multi-Sensor Satellite Time-Series Benchmarking for Agricultural Mapping",
       "authors": "El Houcine El Moussaoui, Chouaib El Hachimi, Saïd Khabba 외 5명",
       "url": "https://arxiv.org/abs/2611.34019v1",
@@ -57,6 +65,14 @@
       "url": "https://arxiv.org/abs/2611.33790v1",
       "date": "2026-11-25",
       "summary": "Mapping the damage to buildings following natural and human-caused disasters is essential for disaster response and humanitarian assistance. However, differences in hazard types, geographic environments, building characteristics, and imaging conditions cause …"
+    },
+    {
+      "track": "vlm",
+      "title": "Seeing the Right Context: Grounded On-Policy Distillation for Remote Sensing",
+      "authors": "Yichang Luo, Hourun Zhu, Shixiong Liu 외 4명",
+      "url": "https://arxiv.org/abs/2611.34700v1",
+      "date": "2026-11-25",
+      "summary": "Remote sensing scene understanding requires multimodal large language models (MLLMs) to interpret queried targets in relation to nearby objects and surrounding structures, which serve as spatial references or define the scope of an answer. However, standard a…"
     },
     {
       "track": "sar",
@@ -107,28 +123,12 @@
       "summary": "Resource-efficient artificial intelligence has become increasingly important for sustainable agriculture, where timely disease forecasting must be achieved under computational and energy constraints. Early estimation of rice blast can enhance food security by…"
     },
     {
-      "track": "vlm",
-      "title": "Beyond Before-and-After Images: Evaluating Temporal Grounding in a Lightweight VLM for Disaster Assessment",
-      "authors": "Shubh Garg, Pratham Arora, Debabrata Ghosh",
-      "url": "https://arxiv.org/abs/2611.32022v1",
-      "date": "2026-11-24",
-      "summary": "Bi-temporal satellite imagery is central to disaster assessment: deciding what was damaged requires comparing a pre-event scene with its post-event counterpart. A vision-language model (VLM) can nonetheless appear to answer change questions while relying main…"
-    },
-    {
       "track": "restoration",
       "title": "Adaptive and Detection-Aware Super-Resolution for Small Object Detection",
       "authors": "Cezica-Elena Luncanu, Stelian Spînu",
       "url": "https://arxiv.org/abs/2611.32394v1",
       "date": "2026-11-24",
       "summary": "Image super-resolution aims to reconstruct a high-resolution image from a low-resolution input and is relevant for surveillance, satellite imagery, medical imaging, and object detection. This paper investigates SRCNN-based single-image super-resolution for a …"
-    },
-    {
-      "track": "foundation",
-      "title": "Benchmarking Geospatial Foundation Models under Calibrated Label Errors",
-      "authors": "Mollah Md Saif, Showrin Rahman, Anindya Majumder 외 2명",
-      "url": "https://arxiv.org/abs/2611.30215v1",
-      "date": "2026-11-23",
-      "summary": "Earth-observation labels from maps, older products or hurried annotation arrive misaligned, coarse, loosely outlined or incomplete. Geospatial foundation models (GFMs) are nevertheless benchmarked with labels taken as correct. A practitioner therefore cannot …"
     },
     {
       "track": "sar",
@@ -171,6 +171,14 @@
       "summary": "Reliable lithology interpretation requires accurate geological recognition and reasoning grounded in visual evidence. Although Multimodal Large Language Models show promise in remote sensing, their reliability in geological interpretation remains unclear. We …"
     },
     {
+      "track": "sar",
+      "title": "Wall-to-wall maps of canopy height and aboveground carbon across the Atlantic Forest",
+      "authors": "Matheus Pinheiro Ferreira, Thiago Carmuega Rabaçal, Giulio Brossi Santoro 외 15명",
+      "url": "https://arxiv.org/abs/2611.23048v3",
+      "date": "2026-11-17",
+      "summary": "Global canopy height maps are increasingly used to estimate forest carbon, yet their regional accuracy is rarely tested. We present wall-to-wall maps of canopy height (10 m) and aboveground carbon density (30 m) for the Brazilian Atlantic Forest in 2024. Heig…"
+    },
+    {
       "track": "ssl",
       "title": "DARWIN: a Geospatial Foundation Model for Marine Intelligence",
       "authors": "Coen van den Elsen, Laurens Geffert",
@@ -204,9 +212,9 @@
     },
     {
       "track": "restoration",
-      "title": "From very fine Vertical Resolution to Range Super-Resolution on BIOMASS P-BAND SAR Data",
+      "title": "From Very Fine Vertical Resolution to Range Super-Resolution on BIOMASS P-BAND SAR Data",
       "authors": "Yanghai Yu, Stefano Tebaldini, Yang Lei 외 1명",
-      "url": "https://arxiv.org/abs/2611.21358v1",
+      "url": "https://arxiv.org/abs/2611.21358v2",
       "date": "2026-11-16",
       "summary": "This paper demonstrates range super-resolution over arid regions using SAR tomography data with very fine vertical resolution from the European Space Agency's BIOMASS mission. As the first civilian spaceborne P-band SAR mission, BIOMASS is operating with a ba…"
     },
@@ -249,14 +257,6 @@
       "url": "https://arxiv.org/abs/2611.13161v1",
       "date": "2026-11-09",
       "summary": "Effective search and rescue (SAR) operations require autonomous systems capable of coordinating multiple heterogeneous agents, adapting to dynamic hazards, and aligning with human mission intent. Existing language-guided reinforcement learning (RL) methods pr…"
-    },
-    {
-      "track": "sar",
-      "title": "Continuous wavelet-based feature extraction for laser-induced breakdown spectroscopy classification of human plasma samples",
-      "authors": "Md Mahmudur Rahman, Atqiya Munawara Mahi, Nazim Ahmed Belabbaci 외 1명",
-      "url": "https://arxiv.org/abs/2611.09746v1",
-      "date": "2026-11-06",
-      "summary": "Extracting discriminative features from laser-induced breakdown spectroscopy (LIBS) spectra is important for the classification of complex biological samples. This study evaluates continuous wavelet transform (CWT)-based spectral peak extraction for distingui…"
     }
   ],
   "warnings": [
